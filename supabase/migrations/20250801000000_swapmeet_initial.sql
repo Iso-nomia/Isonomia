@@ -1,0 +1,23 @@
+-- SwapMeet initial tables
+CREATE TABLE IF NOT EXISTS section (
+  id SERIAL PRIMARY KEY,
+  x INT NOT NULL,
+  y INT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS stall (
+  id SERIAL PRIMARY KEY,
+  section_id INT REFERENCES section(id),
+  owner_id BIGINT NOT NULL REFERENCES users(id),
+  name TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS item (
+  id SERIAL PRIMARY KEY,
+  stall_id INT REFERENCES stall(id),
+  name TEXT NOT NULL,
+  price_cents INT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);

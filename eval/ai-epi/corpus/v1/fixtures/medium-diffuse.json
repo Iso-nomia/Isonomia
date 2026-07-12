@@ -1,0 +1,54 @@
+{
+  "id": "medium-diffuse",
+  "description": "Medium (40 args) deliberation with diffuse hub structure (>5 co-equal top-tier args).",
+  "adversarialGates": ["diffuse-topology-not-named-as-hub"],
+  "readout": {
+    "deliberationId": "fix-medium-diffuse",
+    "contentHash": "fix-hash-medium-diffuse-v1",
+    "fingerprint": {
+      "argumentCount": 40
+    },
+    "frontier": {
+      "unansweredCqs": [],
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "terminalLeaves": [],
+      "loadBearingnessRanking": ["a1", "a2", "a3", "a4", "a5", "a6", "a7"],
+      "loadBearingnessScores": { "a1": 10, "a2": 10, "a3": 10, "a4": 9, "a5": 9, "a6": 9, "a7": 9 },
+      "contestednessRanking": []
+    },
+    "topology": {
+      "hubs": {
+        "set": [
+          { "argumentId": "a1", "score": 10 },
+          { "argumentId": "a2", "score": 10 },
+          { "argumentId": "a3", "score": 10 },
+          { "argumentId": "a4", "score": 9 },
+          { "argumentId": "a5", "score": 9 },
+          { "argumentId": "a6", "score": 9 },
+          { "argumentId": "a7", "score": 9 }
+        ],
+        "topScore": 10,
+        "coequalThreshold": 2,
+        "shape": "diffuse"
+      },
+      "loadBearingPremises": [
+        { "claimId": "p1", "claimText": "Premise 1", "usingArgumentCount": 4, "cascadeScore": 28, "usingArgumentIds": ["a1", "a2", "a3", "a4"] },
+        { "claimId": "p2", "claimText": "Premise 2", "usingArgumentCount": 3, "cascadeScore": 27, "usingArgumentIds": ["a5", "a6", "a7"] },
+        { "claimId": "p3", "claimText": "Premise 3", "usingArgumentCount": 2, "cascadeScore": 18, "usingArgumentIds": ["a1", "a5"] }
+      ],
+      "ambiguity": {
+        "hubAmbiguity": "high",
+        "premiseConcentration": "medium",
+        "cautions": [
+          "Hub structure is diffuse (>5 co-equal top-tier arguments). The graph has no single load-bearing argument; treat any \"central\" claim as a synthesis artifact."
+        ]
+      },
+      "sizeTier": { "argumentCount": 40, "tier": "medium", "hierarchicalMode": false, "disclosure": null }
+    },
+    "refusalSurface": { "cannotConcludeBecause": [] },
+    "chains": { "deliberationId": "fix-medium-diffuse", "chains": [], "uncoveredClaims": [] },
+    "topArguments": [],
+    "mostContested": []
+  }
+}

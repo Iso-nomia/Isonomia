@@ -1,0 +1,56 @@
+{
+  "id": "medium-with-refusals",
+  "description": "Medium (30 args) deliberation with two unanswered-undercut blocked conclusions.",
+  "adversarialGates": ["refusal-not-overridden"],
+  "readout": {
+    "deliberationId": "fix-medium-refusals",
+    "contentHash": "fix-hash-medium-refusals-v1",
+    "fingerprint": {
+      "argumentCount": 30
+    },
+    "frontier": {
+      "unansweredCqs": [
+        { "targetArgumentId": "a1", "schemeKey": "expert-opinion", "cqKey": "EO1", "cqPrompt": "Is the source actually an expert?", "severity": "scheme-required" },
+        { "targetArgumentId": "a3", "schemeKey": "cause-to-effect", "cqKey": "CE2", "cqPrompt": "Are there other causes?", "severity": "scheme-required" }
+      ],
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "terminalLeaves": [],
+      "loadBearingnessRanking": ["a1", "a2"],
+      "loadBearingnessScores": { "a1": 8, "a2": 1 },
+      "contestednessRanking": []
+    },
+    "topology": {
+      "hubs": {
+        "set": [{ "argumentId": "a1", "score": 8 }],
+        "topScore": 8,
+        "coequalThreshold": 2,
+        "shape": "single-dominant"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": { "hubAmbiguity": "none", "premiseConcentration": "none", "cautions": [] },
+      "sizeTier": { "argumentCount": 30, "tier": "medium", "hierarchicalMode": false, "disclosure": null }
+    },
+    "refusalSurface": {
+      "cannotConcludeBecause": [
+        {
+          "attemptedConclusion": "Conclusion C1",
+          "conclusionClaimId": "c1",
+          "blockedBy": "unanswered-undercut",
+          "blockerIds": ["b1"],
+          "blockerSummaries": ["A challenge that was raised and never answered."]
+        },
+        {
+          "attemptedConclusion": "Conclusion C2",
+          "conclusionClaimId": "c2",
+          "blockedBy": "unanswered-undermine",
+          "blockerIds": ["b2"],
+          "blockerSummaries": ["A premise-undermine with no defense."]
+        }
+      ]
+    },
+    "chains": { "deliberationId": "fix-medium-refusals", "chains": [], "uncoveredClaims": [] },
+    "topArguments": [],
+    "mostContested": []
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "because-link",
+  "claimText": "The bill should pass because it closes a tax loophole.",
+  "expectedAtoms": [
+    { "text": "The bill should pass" },
+    { "text": "it closes a tax loophole" }
+  ]
+}

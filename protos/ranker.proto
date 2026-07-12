@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Ranker {
+  rpc Rank (RankRequest) returns (RankResponse);
+}
+
+message RankRequest {
+  string viewer_id = 1;
+  repeated string candidate_ids = 2;
+}
+
+message RankResponse {
+  repeated string ranked_ids = 1;
+}

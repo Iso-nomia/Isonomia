@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "aif": "http://www.arg.dundee.ac.uk/aif#",
+    "as":  "http://arg.tech/ont/schemes#",
+    "cq":  "http://arg.tech/ont/cq#",
+    "mesh": "http://mesh-platform.io/ontology/aif#",
+     "nodes": "@graph",
+     "text": "aif:text",
+     "usesScheme": "aif:usesScheme",
+     "InformationNode": "aif:InformationNode",
+     "RA": "aif:RA",
+     "CA": "aif:CA",
+     "PA": "aif:PA",
+     "Premise": "aif:Premise",
+     "Conclusion": "aif:Conclusion",
+     "ConflictingElement": "aif:ConflictingElement",
+     "ConflictedElement": "aif:ConflictedElement",
+     "PreferredElement": "aif:PreferredElement",
+     "DispreferredElement": "aif:DispreferredElement",
+     "Illocutes": "aif:illocutes",
+     "Replies": "aif:replies",
+    "CriticalQuestion": "cq:CriticalQuestion",
+    "hasCriticalQuestion": "as:hasCriticalQuestion",
+    "attackType": "cq:attackType",
+    "targetScope": "cq:targetScope",
+    "status": "cq:status",
+    "appliesSchemeKey": "as:appliesSchemeKey",
+    "behaviourFingerprint": "mesh:behaviourFingerprint"
+  }
+}

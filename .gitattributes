@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+cython_output/* linguist-generated=true
+*.c linguist-generated=true
+*.cpp linguist-generated=true
+python-packages/** linguist-vendored
+*.ipynb linguist-documentation=true
+migrations/*.py linguist-generated=true

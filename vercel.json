@@ -1,0 +1,12 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+  
+    "regions": ["iad1"], 
+  
+    "crons": [
+      {
+        "path": "/api/_cron/favorites_builder",
+        "schedule": "0 2 * * *"
+      }
+    ]
+  }

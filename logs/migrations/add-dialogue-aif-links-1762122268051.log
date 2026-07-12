@@ -1,0 +1,2125 @@
+[2025-11-02T22:24:28.051Z] ================================================================================
+[2025-11-02T22:24:28.052Z] Starting Dialogue AIF Links Migration
+[2025-11-02T22:24:28.052Z] Mode: PRODUCTION
+[2025-11-02T22:24:28.052Z] ================================================================================
+[2025-11-02T22:24:28.686Z] 
+Found 207 dialogue moves to process
+[2025-11-02T22:24:28.687Z] 
+⚠️  WARNING: This will modify the database!
+[2025-11-02T22:24:28.687Z] Press Ctrl+C to cancel, or wait 5 seconds to continue...
+
+[2025-11-02T22:24:33.687Z] Proceeding with migration...
+
+[2025-11-02T22:24:33.688Z] 
+================================================================================
+[2025-11-02T22:24:33.688Z] Processing batch 1 (offset 0)
+[2025-11-02T22:24:33.688Z] ================================================================================
+[2025-11-02T22:24:33.993Z] 
+Processing move cmf3d0msw0008rmmeyiivhgzg (WHY) at 2025-09-03T02:30:08.186Z
+[2025-11-02T22:24:33.993Z]   Creating DM-node: DM:cmf3d0msw0008rmmeyiivhgzg (WHY)
+[2025-11-02T22:24:34.239Z]   Creating edge: DM:cmf3d0msw0008rmmeyiivhgzg --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:34.487Z]   Updating DialogueMove.aifRepresentation: DM:cmf3d0msw0008rmmeyiivhgzg
+[2025-11-02T22:24:34.763Z]   ERROR processing move cmf3d0msw0008rmmeyiivhgzg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:34.764Z] 
+Processing move cmf3d0n4z0009rmmedmivh0x7 (WHY) at 2025-09-03T02:30:08.676Z
+[2025-11-02T22:24:34.764Z]   Creating DM-node: DM:cmf3d0n4z0009rmmedmivh0x7 (WHY)
+[2025-11-02T22:24:35.002Z]   Creating edge: DM:cmf3d0n4z0009rmmedmivh0x7 --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:35.250Z]   Updating DialogueMove.aifRepresentation: DM:cmf3d0n4z0009rmmedmivh0x7
+[2025-11-02T22:24:35.490Z]   ERROR processing move cmf3d0n4z0009rmmedmivh0x7: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:35.491Z] 
+Processing move cmf3deojz000armme4eg17lqk (WHY) at 2025-09-03T02:41:03.696Z
+[2025-11-02T22:24:35.491Z]   Creating DM-node: DM:cmf3deojz000armme4eg17lqk (WHY)
+[2025-11-02T22:24:35.739Z]   Creating edge: DM:cmf3deojz000armme4eg17lqk --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:35.977Z]   Updating DialogueMove.aifRepresentation: DM:cmf3deojz000armme4eg17lqk
+[2025-11-02T22:24:36.225Z]   ERROR processing move cmf3deojz000armme4eg17lqk: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:36.225Z] 
+Processing move cmf3deqfo000brmmevkdqepw5 (WHY) at 2025-09-03T02:41:06.132Z
+[2025-11-02T22:24:36.225Z]   Creating DM-node: DM:cmf3deqfo000brmmevkdqepw5 (WHY)
+[2025-11-02T22:24:36.468Z]   Creating edge: DM:cmf3deqfo000brmmevkdqepw5 --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:36.719Z]   Updating DialogueMove.aifRepresentation: DM:cmf3deqfo000brmmevkdqepw5
+[2025-11-02T22:24:36.955Z]   ERROR processing move cmf3deqfo000brmmevkdqepw5: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:36.955Z] 
+Processing move cmf3drnhh000crmmeowbl3t5o (GROUNDS) at 2025-09-03T02:51:08.783Z
+[2025-11-02T22:24:36.955Z]   Creating DM-node: DM:cmf3drnhh000crmmeowbl3t5o (GROUNDS)
+[2025-11-02T22:24:37.194Z]   Creating edge: DM:cmf3drnhh000crmmeowbl3t5o --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:37.427Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drnhh000crmmeowbl3t5o
+[2025-11-02T22:24:37.665Z]   ERROR processing move cmf3drnhh000crmmeowbl3t5o: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:37.665Z] 
+Processing move cmf3drped000drmmenh6rr8sb (WHY) at 2025-09-03T02:51:11.317Z
+[2025-11-02T22:24:37.665Z]   Creating DM-node: DM:cmf3drped000drmmenh6rr8sb (WHY)
+[2025-11-02T22:24:37.905Z]   Creating edge: DM:cmf3drped000drmmenh6rr8sb --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:38.141Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drped000drmmenh6rr8sb
+[2025-11-02T22:24:38.380Z]   ERROR processing move cmf3drped000drmmenh6rr8sb: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:38.380Z] 
+Processing move cmf3drpx2000ermme76bx0t0x (GROUNDS) at 2025-09-03T02:51:11.990Z
+[2025-11-02T22:24:38.380Z]   Creating DM-node: DM:cmf3drpx2000ermme76bx0t0x (GROUNDS)
+[2025-11-02T22:24:38.617Z]   Creating edge: DM:cmf3drpx2000ermme76bx0t0x --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:38.856Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drpx2000ermme76bx0t0x
+[2025-11-02T22:24:39.098Z]   ERROR processing move cmf3drpx2000ermme76bx0t0x: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:39.098Z] 
+Processing move cmf3drq73000frmme5uxavgjz (GROUNDS) at 2025-09-03T02:51:12.351Z
+[2025-11-02T22:24:39.098Z]   Creating DM-node: DM:cmf3drq73000frmme5uxavgjz (GROUNDS)
+[2025-11-02T22:24:39.845Z]   Creating edge: DM:cmf3drq73000frmme5uxavgjz --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:40.086Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drq73000frmme5uxavgjz
+[2025-11-02T22:24:40.339Z]   ERROR processing move cmf3drq73000frmme5uxavgjz: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:40.339Z] 
+Processing move cmf3drt42000grmme9tkxg6iq (GROUNDS) at 2025-09-03T02:51:16.130Z
+[2025-11-02T22:24:40.339Z]   Creating DM-node: DM:cmf3drt42000grmme9tkxg6iq (GROUNDS)
+[2025-11-02T22:24:40.603Z]   Creating edge: DM:cmf3drt42000grmme9tkxg6iq --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:40.844Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drt42000grmme9tkxg6iq
+[2025-11-02T22:24:41.078Z]   ERROR processing move cmf3drt42000grmme9tkxg6iq: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:41.078Z] 
+Processing move cmf3drthm000hrmmelch1n9ng (WHY) at 2025-09-03T02:51:16.618Z
+[2025-11-02T22:24:41.078Z]   Creating DM-node: DM:cmf3drthm000hrmmelch1n9ng (WHY)
+[2025-11-02T22:24:41.325Z]   Creating edge: DM:cmf3drthm000hrmmelch1n9ng --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:41.562Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drthm000hrmmelch1n9ng
+[2025-11-02T22:24:41.816Z]   ERROR processing move cmf3drthm000hrmmelch1n9ng: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:41.816Z] 
+Processing move cmf3f62g5000irmmehbucny23 (WHY) at 2025-09-03T03:30:20.976Z
+[2025-11-02T22:24:41.816Z]   Creating DM-node: DM:cmf3f62g5000irmmehbucny23 (WHY)
+[2025-11-02T22:24:42.064Z]   Creating edge: DM:cmf3f62g5000irmmehbucny23 --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:42.316Z]   Updating DialogueMove.aifRepresentation: DM:cmf3f62g5000irmmehbucny23
+[2025-11-02T22:24:42.569Z]   ERROR processing move cmf3f62g5000irmmehbucny23: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:42.569Z] 
+Processing move cmf3f63mt000jrmmet84w1rar (WHY) at 2025-09-03T03:30:22.565Z
+[2025-11-02T22:24:42.569Z]   Creating DM-node: DM:cmf3f63mt000jrmmet84w1rar (WHY)
+[2025-11-02T22:24:42.818Z]   Creating edge: DM:cmf3f63mt000jrmmet84w1rar --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:43.070Z]   Updating DialogueMove.aifRepresentation: DM:cmf3f63mt000jrmmet84w1rar
+[2025-11-02T22:24:43.312Z]   ERROR processing move cmf3f63mt000jrmmet84w1rar: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:43.312Z] 
+Processing move cmf3f6jl4000krmme04usvnnp (ASSERT) at 2025-09-03T03:30:43.189Z
+[2025-11-02T22:24:43.312Z]   Creating DM-node: DM:cmf3f6jl4000krmme04usvnnp (ASSERT)
+[2025-11-02T22:24:43.556Z]   Creating edge: DM:cmf3f6jl4000krmme04usvnnp --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:43.844Z]   Updating DialogueMove.aifRepresentation: DM:cmf3f6jl4000krmme04usvnnp
+[2025-11-02T22:24:44.084Z]   ERROR processing move cmf3f6jl4000krmme04usvnnp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:44.085Z] 
+Processing move cmf3fag44000lrmmepqgvpg9w (WHY) at 2025-09-03T03:33:45.300Z
+[2025-11-02T22:24:44.085Z]   Creating DM-node: DM:cmf3fag44000lrmmepqgvpg9w (WHY)
+[2025-11-02T22:24:44.321Z]   Creating edge: DM:cmf3fag44000lrmmepqgvpg9w --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:44.567Z]   Updating DialogueMove.aifRepresentation: DM:cmf3fag44000lrmmepqgvpg9w
+[2025-11-02T22:24:44.804Z]   ERROR processing move cmf3fag44000lrmmepqgvpg9w: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:44.804Z] 
+Processing move cmf3fairc000mrmme5671j0ad (GROUNDS) at 2025-09-03T03:33:48.792Z
+[2025-11-02T22:24:44.804Z]   Creating DM-node: DM:cmf3fairc000mrmme5671j0ad (GROUNDS)
+[2025-11-02T22:24:45.041Z]   Creating edge: DM:cmf3fairc000mrmme5671j0ad --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:45.275Z]   Updating DialogueMove.aifRepresentation: DM:cmf3fairc000mrmme5671j0ad
+[2025-11-02T22:24:45.512Z]   ERROR processing move cmf3fairc000mrmme5671j0ad: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:45.512Z] 
+Processing move cmf3faiv3000nrmmeiywrw6vi (WHY) at 2025-09-03T03:33:48.881Z
+[2025-11-02T22:24:45.512Z]   Creating DM-node: DM:cmf3faiv3000nrmmeiywrw6vi (WHY)
+[2025-11-02T22:24:45.746Z]   Creating edge: DM:cmf3faiv3000nrmmeiywrw6vi --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:24:45.980Z]   Updating DialogueMove.aifRepresentation: DM:cmf3faiv3000nrmmeiywrw6vi
+[2025-11-02T22:24:46.222Z]   ERROR processing move cmf3faiv3000nrmmeiywrw6vi: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:46.222Z] 
+Processing move cmf3g657c000ormme7g73op6s (RETRACT) at 2025-09-03T03:58:24.161Z
+[2025-11-02T22:24:46.223Z]   Creating DM-node: DM:cmf3g657c000ormme7g73op6s (RETRACT)
+[2025-11-02T22:24:46.455Z]   Creating edge: DM:cmf3g657c000ormme7g73op6s --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:46.707Z]   Updating DialogueMove.aifRepresentation: DM:cmf3g657c000ormme7g73op6s
+[2025-11-02T22:24:46.946Z]   ERROR processing move cmf3g657c000ormme7g73op6s: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:46.946Z] 
+Processing move cmf3g6bwv000prmme3d2esdnx (GROUNDS) at 2025-09-03T03:58:32.912Z
+[2025-11-02T22:24:46.946Z]   Creating DM-node: DM:cmf3g6bwv000prmme3d2esdnx (GROUNDS)
+[2025-11-02T22:24:47.174Z]   Creating edge: DM:cmf3g6bwv000prmme3d2esdnx --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:47.411Z]   Updating DialogueMove.aifRepresentation: DM:cmf3g6bwv000prmme3d2esdnx
+[2025-11-02T22:24:47.646Z]   ERROR processing move cmf3g6bwv000prmme3d2esdnx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:47.646Z] 
+Processing move cmfc64tll0002rakphww2kjpt (GROUNDS) at 2025-09-09T06:27:21.945Z
+[2025-11-02T22:24:47.646Z]   Creating DM-node: DM:cmfc64tll0002rakphww2kjpt (GROUNDS)
+[2025-11-02T22:24:47.878Z]   Creating edge: DM:cmfc64tll0002rakphww2kjpt --commitsTo--> I:Offer
+[2025-11-02T22:24:48.122Z]   Updating DialogueMove.aifRepresentation: DM:cmfc64tll0002rakphww2kjpt
+[2025-11-02T22:24:48.367Z]   ERROR processing move cmfc64tll0002rakphww2kjpt: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:48.367Z] 
+Processing move cmfc64tlk0000rakpywcq088a (ASSERT) at 2025-09-09T06:27:21.945Z
+[2025-11-02T22:24:48.367Z]   Creating DM-node: DM:cmfc64tlk0000rakpywcq088a (ASSERT)
+[2025-11-02T22:24:48.594Z]   Creating edge: DM:cmfc64tlk0000rakpywcq088a --commitsTo--> I:Offer
+[2025-11-02T22:24:48.834Z]   Updating DialogueMove.aifRepresentation: DM:cmfc64tlk0000rakpywcq088a
+[2025-11-02T22:24:49.066Z]   ERROR processing move cmfc64tlk0000rakpywcq088a: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:49.067Z] 
+Processing move cmfc64tll0001rakp0556khnw (GROUNDS) at 2025-09-09T06:27:21.945Z
+[2025-11-02T22:24:49.067Z]   Creating DM-node: DM:cmfc64tll0001rakp0556khnw (GROUNDS)
+[2025-11-02T22:24:49.317Z]   Creating edge: DM:cmfc64tll0001rakp0556khnw --commitsTo--> I:Offer
+[2025-11-02T22:24:49.567Z]   Updating DialogueMove.aifRepresentation: DM:cmfc64tll0001rakp0556khnw
+[2025-11-02T22:24:49.797Z]   ERROR processing move cmfc64tll0001rakp0556khnw: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:49.797Z] 
+Processing move cmfd4nkgq0007rmdb2y4hrs60 (GROUNDS) at 2025-09-09T22:33:43.443Z
+[2025-11-02T22:24:49.798Z]   Creating DM-node: DM:cmfd4nkgq0007rmdb2y4hrs60 (GROUNDS)
+[2025-11-02T22:24:50.031Z]   Creating edge: DM:cmfd4nkgq0007rmdb2y4hrs60 --commitsTo--> I:cmf5xgzc2001frmvmylg02oi8
+[2025-11-02T22:24:50.279Z]   Updating DialogueMove.aifRepresentation: DM:cmfd4nkgq0007rmdb2y4hrs60
+[2025-11-02T22:24:50.516Z]   ERROR processing move cmfd4nkgq0007rmdb2y4hrs60: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:50.516Z] 
+Processing move cmfd6uylw003lrmdbkeaefvbg (GROUNDS) at 2025-09-09T23:35:27.594Z
+[2025-11-02T22:24:50.516Z]   Creating DM-node: DM:cmfd6uylw003lrmdbkeaefvbg (GROUNDS)
+[2025-11-02T22:24:50.934Z]   Creating edge: DM:cmfd6uylw003lrmdbkeaefvbg --repliesTo--> RA:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:51.167Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6uylw003lrmdbkeaefvbg
+[2025-11-02T22:24:51.409Z]   ERROR processing move cmfd6uylw003lrmdbkeaefvbg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:51.409Z] 
+Processing move cmfd6v41x003wrmdbgkbe6rqp (GROUNDS) at 2025-09-09T23:35:34.651Z
+[2025-11-02T22:24:51.409Z]   Creating DM-node: DM:cmfd6v41x003wrmdbgkbe6rqp (GROUNDS)
+[2025-11-02T22:24:51.647Z]   Creating edge: DM:cmfd6v41x003wrmdbgkbe6rqp --repliesTo--> RA:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:51.882Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6v41x003wrmdbgkbe6rqp
+[2025-11-02T22:24:52.119Z]   ERROR processing move cmfd6v41x003wrmdbgkbe6rqp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:52.120Z] 
+Processing move cmfd6xdrz005rrmdb3e0bule8 (GROUNDS) at 2025-09-09T23:37:20.639Z
+[2025-11-02T22:24:52.120Z]   Creating DM-node: DM:cmfd6xdrz005rrmdb3e0bule8 (GROUNDS)
+[2025-11-02T22:24:52.348Z]   Creating edge: DM:cmfd6xdrz005rrmdb3e0bule8 --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:52.598Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6xdrz005rrmdb3e0bule8
+[2025-11-02T22:24:52.824Z]   ERROR processing move cmfd6xdrz005rrmdb3e0bule8: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:52.824Z] 
+Processing move cmfd6xgor0062rmdbx78tjpav (RETRACT) at 2025-09-09T23:37:24.412Z
+[2025-11-02T22:24:52.824Z]   Creating DM-node: DM:cmfd6xgor0062rmdbx78tjpav (RETRACT)
+[2025-11-02T22:24:53.064Z]   Creating edge: DM:cmfd6xgor0062rmdbx78tjpav --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:53.300Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6xgor0062rmdbx78tjpav
+[2025-11-02T22:24:53.536Z]   ERROR processing move cmfd6xgor0062rmdbx78tjpav: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:53.536Z] 
+Processing move cmfd6xh780063rmdbo74hkj19 (GROUNDS) at 2025-09-09T23:37:25.003Z
+[2025-11-02T22:24:53.536Z]   Creating DM-node: DM:cmfd6xh780063rmdbo74hkj19 (GROUNDS)
+[2025-11-02T22:24:53.771Z]   Creating edge: DM:cmfd6xh780063rmdbo74hkj19 --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:54.012Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6xh780063rmdbo74hkj19
+[2025-11-02T22:24:54.263Z]   ERROR processing move cmfd6xh780063rmdbo74hkj19: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:54.263Z] 
+Processing move cmfd6zo0i008yrmdbn533jah2 (GROUNDS) at 2025-09-09T23:39:07.218Z
+[2025-11-02T22:24:54.263Z]   Creating DM-node: DM:cmfd6zo0i008yrmdbn533jah2 (GROUNDS)
+[2025-11-02T22:24:54.497Z]   Creating edge: DM:cmfd6zo0i008yrmdbn533jah2 --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:54.730Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zo0i008yrmdbn533jah2
+[2025-11-02T22:24:54.971Z]   ERROR processing move cmfd6zo0i008yrmdbn533jah2: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:54.971Z] 
+Processing move cmfd6zovq0093rmdbrrqogpg6 (GROUNDS) at 2025-09-09T23:39:08.342Z
+[2025-11-02T22:24:54.971Z]   Creating DM-node: DM:cmfd6zovq0093rmdbrrqogpg6 (GROUNDS)
+[2025-11-02T22:24:55.208Z]   Creating edge: DM:cmfd6zovq0093rmdbrrqogpg6 --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:55.444Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zovq0093rmdbrrqogpg6
+[2025-11-02T22:24:55.676Z]   ERROR processing move cmfd6zovq0093rmdbrrqogpg6: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:55.677Z] 
+Processing move cmfd6zpta0098rmdbjqt5y3bc (GROUNDS) at 2025-09-09T23:39:09.550Z
+[2025-11-02T22:24:55.677Z]   Creating DM-node: DM:cmfd6zpta0098rmdbjqt5y3bc (GROUNDS)
+[2025-11-02T22:24:55.921Z]   Creating edge: DM:cmfd6zpta0098rmdbjqt5y3bc --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:56.165Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zpta0098rmdbjqt5y3bc
+[2025-11-02T22:24:56.398Z]   ERROR processing move cmfd6zpta0098rmdbjqt5y3bc: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:56.398Z] 
+Processing move cmfd6zuwq0099rmdbbha3iv14 (RETRACT) at 2025-09-09T23:39:16.155Z
+[2025-11-02T22:24:56.398Z]   Creating DM-node: DM:cmfd6zuwq0099rmdbbha3iv14 (RETRACT)
+[2025-11-02T22:24:56.629Z]   Creating edge: DM:cmfd6zuwq0099rmdbbha3iv14 --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:56.878Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zuwq0099rmdbbha3iv14
+[2025-11-02T22:24:57.122Z]   ERROR processing move cmfd6zuwq0099rmdbbha3iv14: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:57.122Z] 
+Processing move cmfd76upp00d6rmdblurasom9 (RETRACT) at 2025-09-09T23:44:42.493Z
+[2025-11-02T22:24:57.122Z]   Creating DM-node: DM:cmfd76upp00d6rmdblurasom9 (RETRACT)
+[2025-11-02T22:24:57.355Z]   Creating edge: DM:cmfd76upp00d6rmdblurasom9 --repliesTo--> RA:argument:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:57.598Z]   Updating DialogueMove.aifRepresentation: DM:cmfd76upp00d6rmdblurasom9
+[2025-11-02T22:24:57.836Z]   ERROR processing move cmfd76upp00d6rmdblurasom9: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:57.837Z] 
+Processing move cmfd77bmu00djrmdb7a1teyhv (WHY) at 2025-09-09T23:45:04.422Z
+[2025-11-02T22:24:57.837Z]   Creating DM-node: DM:cmfd77bmu00djrmdb7a1teyhv (WHY)
+[2025-11-02T22:24:58.076Z]   Creating edge: DM:cmfd77bmu00djrmdb7a1teyhv --repliesTo--> RA:argument:argument:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:58.314Z]   Updating DialogueMove.aifRepresentation: DM:cmfd77bmu00djrmdb7a1teyhv
+[2025-11-02T22:24:58.560Z]   ERROR processing move cmfd77bmu00djrmdb7a1teyhv: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:58.561Z] 
+Processing move cmfd7ez5u00kermdbs31llkml (WHY) at 2025-09-09T23:51:01.506Z
+[2025-11-02T22:24:58.561Z]   Creating DM-node: DM:cmfd7ez5u00kermdbs31llkml (WHY)
+[2025-11-02T22:24:58.808Z]   Creating edge: DM:cmfd7ez5u00kermdbs31llkml --repliesTo--> RA:argument:argument:argument:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:24:59.089Z]   Updating DialogueMove.aifRepresentation: DM:cmfd7ez5u00kermdbs31llkml
+[2025-11-02T22:24:59.524Z]   ERROR processing move cmfd7ez5u00kermdbs31llkml: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:24:59.524Z] 
+Processing move cmfd7f8gl00kzrmdbb3j7y54w (GROUNDS) at 2025-09-09T23:51:13.483Z
+[2025-11-02T22:24:59.524Z]   Creating DM-node: DM:cmfd7f8gl00kzrmdbb3j7y54w (GROUNDS)
+[2025-11-02T22:24:59.772Z]   Creating edge: DM:cmfd7f8gl00kzrmdbb3j7y54w --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:25:00.023Z]   Updating DialogueMove.aifRepresentation: DM:cmfd7f8gl00kzrmdbb3j7y54w
+[2025-11-02T22:25:00.251Z]   ERROR processing move cmfd7f8gl00kzrmdbb3j7y54w: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:00.251Z] 
+Processing move cmfega715004prmr98be6klhg (ASSERT) at 2025-09-10T20:47:01.144Z
+[2025-11-02T22:25:00.251Z]   Creating DM-node: DM:cmfega715004prmr98be6klhg (ASSERT)
+[2025-11-02T22:25:00.505Z]   Creating edge: DM:cmfega715004prmr98be6klhg --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:00.754Z]   Updating DialogueMove.aifRepresentation: DM:cmfega715004prmr98be6klhg
+[2025-11-02T22:25:00.985Z]   ERROR processing move cmfega715004prmr98be6klhg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:00.985Z] 
+Processing move cmfega715004qrmr9t23vux6t (WHY) at 2025-09-10T20:47:01.144Z
+[2025-11-02T22:25:00.985Z]   Creating DM-node: DM:cmfega715004qrmr9t23vux6t (WHY)
+[2025-11-02T22:25:01.219Z]   Creating edge: DM:cmfega715004qrmr9t23vux6t --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:01.453Z]   Updating DialogueMove.aifRepresentation: DM:cmfega715004qrmr9t23vux6t
+[2025-11-02T22:25:01.687Z]   ERROR processing move cmfega715004qrmr9t23vux6t: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:01.688Z] 
+Processing move cmfegl1m800e8rmr9l5g0f0mf (WHY) at 2025-09-10T20:55:27.344Z
+[2025-11-02T22:25:01.688Z]   Creating DM-node: DM:cmfegl1m800e8rmr9l5g0f0mf (WHY)
+[2025-11-02T22:25:01.939Z]   Creating edge: DM:cmfegl1m800e8rmr9l5g0f0mf --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:02.183Z]   Updating DialogueMove.aifRepresentation: DM:cmfegl1m800e8rmr9l5g0f0mf
+[2025-11-02T22:25:02.421Z]   ERROR processing move cmfegl1m800e8rmr9l5g0f0mf: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:02.421Z] 
+Processing move cmfegl1m800e7rmr92bpiqtt0 (ASSERT) at 2025-09-10T20:55:27.344Z
+[2025-11-02T22:25:02.422Z]   Creating DM-node: DM:cmfegl1m800e7rmr92bpiqtt0 (ASSERT)
+[2025-11-02T22:25:02.663Z]   Creating edge: DM:cmfegl1m800e7rmr92bpiqtt0 --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:02.916Z]   Updating DialogueMove.aifRepresentation: DM:cmfegl1m800e7rmr92bpiqtt0
+[2025-11-02T22:25:03.152Z]   ERROR processing move cmfegl1m800e7rmr92bpiqtt0: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:03.152Z] 
+Processing move cmfejiy5t00irrmr9bxe91vd8 (ASSERT) at 2025-09-10T22:17:48.401Z
+[2025-11-02T22:25:03.152Z]   Creating DM-node: DM:cmfejiy5t00irrmr9bxe91vd8 (ASSERT)
+[2025-11-02T22:25:03.402Z]   Creating edge: DM:cmfejiy5t00irrmr9bxe91vd8 --repliesTo--> RA:cmf5pjf7w0005rmy4ptwnmq99
+[2025-11-02T22:25:03.648Z]   Updating DialogueMove.aifRepresentation: DM:cmfejiy5t00irrmr9bxe91vd8
+[2025-11-02T22:25:03.891Z]   ERROR processing move cmfejiy5t00irrmr9bxe91vd8: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:03.891Z] 
+Processing move cmfeynpm700nvrmr90j88819e (WHY) at 2025-09-11T05:21:24.774Z
+[2025-11-02T22:25:03.891Z]   Creating DM-node: DM:cmfeynpm700nvrmr90j88819e (WHY)
+[2025-11-02T22:25:04.138Z]   Creating edge: DM:cmfeynpm700nvrmr90j88819e --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:25:04.385Z]   Updating DialogueMove.aifRepresentation: DM:cmfeynpm700nvrmr90j88819e
+[2025-11-02T22:25:04.632Z]   ERROR processing move cmfeynpm700nvrmr90j88819e: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:04.633Z] 
+Processing move cmfeysll600smrmr97f4zbuuw (GROUNDS) at 2025-09-11T05:25:12.831Z
+[2025-11-02T22:25:04.633Z]   Creating DM-node: DM:cmfeysll600smrmr97f4zbuuw (GROUNDS)
+[2025-11-02T22:25:04.873Z]   Creating edge: DM:cmfeysll600smrmr97f4zbuuw --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:25:05.116Z]   Updating DialogueMove.aifRepresentation: DM:cmfeysll600smrmr97f4zbuuw
+[2025-11-02T22:25:05.355Z]   ERROR processing move cmfeysll600smrmr97f4zbuuw: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:05.355Z] 
+Processing move cmfeysmyh00srrmr9ijtxvyc5 (RETRACT) at 2025-09-11T05:25:14.607Z
+[2025-11-02T22:25:05.356Z]   Creating DM-node: DM:cmfeysmyh00srrmr9ijtxvyc5 (RETRACT)
+[2025-11-02T22:25:05.621Z]   Creating edge: DM:cmfeysmyh00srrmr9ijtxvyc5 --repliesTo--> RA:cmf5pjf7w0005rmy4ptwnmq99
+[2025-11-02T22:25:05.872Z]   Updating DialogueMove.aifRepresentation: DM:cmfeysmyh00srrmr9ijtxvyc5
+[2025-11-02T22:25:06.116Z]   ERROR processing move cmfeysmyh00srrmr9ijtxvyc5: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:06.116Z] 
+Processing move cmfeysph100ssrmr98koi33jg (WHY) at 2025-09-11T05:25:17.941Z
+[2025-11-02T22:25:06.117Z]   Creating DM-node: DM:cmfeysph100ssrmr98koi33jg (WHY)
+[2025-11-02T22:25:06.361Z]   Creating edge: DM:cmfeysph100ssrmr98koi33jg --repliesTo--> RA:cmf4sajr10001rme9z2dnubf7
+[2025-11-02T22:25:06.593Z]   Updating DialogueMove.aifRepresentation: DM:cmfeysph100ssrmr98koi33jg
+[2025-11-02T22:25:06.826Z]   ERROR processing move cmfeysph100ssrmr98koi33jg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:06.826Z] 
+Processing move cmfeyspsn00svrmr9kobk2g0j (WHY) at 2025-09-11T05:25:18.360Z
+[2025-11-02T22:25:06.826Z]   Creating DM-node: DM:cmfeyspsn00svrmr9kobk2g0j (WHY)
+[2025-11-02T22:25:07.068Z]   Creating edge: DM:cmfeyspsn00svrmr9kobk2g0j --repliesTo--> RA:cmf5pjf7w0005rmy4ptwnmq99
+[2025-11-02T22:25:07.306Z]   Updating DialogueMove.aifRepresentation: DM:cmfeyspsn00svrmr9kobk2g0j
+[2025-11-02T22:25:07.556Z]   ERROR processing move cmfeyspsn00svrmr9kobk2g0j: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:07.556Z] 
+Processing move cmfez62o700zarmr9fldnefsg (WHY) at 2025-09-11T05:35:41.505Z
+[2025-11-02T22:25:07.556Z]   Creating DM-node: DM:cmfez62o700zarmr9fldnefsg (WHY)
+[2025-11-02T22:25:07.794Z]   Creating edge: DM:cmfez62o700zarmr9fldnefsg --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:25:08.056Z]   Updating DialogueMove.aifRepresentation: DM:cmfez62o700zarmr9fldnefsg
+[2025-11-02T22:25:08.299Z]   ERROR processing move cmfez62o700zarmr9fldnefsg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:08.299Z] 
+Processing move cmff2gmy301fgrmr96d9qdhm0 (WHY) at 2025-09-11T07:07:53.153Z
+[2025-11-02T22:25:08.299Z]   Creating DM-node: DM:cmff2gmy301fgrmr96d9qdhm0 (WHY)
+[2025-11-02T22:25:08.542Z]   Creating edge: DM:cmff2gmy301fgrmr96d9qdhm0 --repliesTo--> RA:cmexne7xp000rrmgsazhmv6ai
+[2025-11-02T22:25:08.790Z]   Updating DialogueMove.aifRepresentation: DM:cmff2gmy301fgrmr96d9qdhm0
+[2025-11-02T22:25:09.032Z]   ERROR processing move cmff2gmy301fgrmr96d9qdhm0: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:09.032Z] 
+Processing move cmff2gnyx01fhrmr9hwqdowc8 (WHY) at 2025-09-11T07:07:54.586Z
+[2025-11-02T22:25:09.032Z]   Creating DM-node: DM:cmff2gnyx01fhrmr9hwqdowc8 (WHY)
+[2025-11-02T22:25:09.480Z]   Creating edge: DM:cmff2gnyx01fhrmr9hwqdowc8 --repliesTo--> RA:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:25:09.718Z]   Updating DialogueMove.aifRepresentation: DM:cmff2gnyx01fhrmr9hwqdowc8
+[2025-11-02T22:25:09.982Z]   ERROR processing move cmff2gnyx01fhrmr9hwqdowc8: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:09.982Z] 
+Processing move cmff2h1cs01gbrmr958aywqf0 (WHY) at 2025-09-11T07:08:11.932Z
+[2025-11-02T22:25:09.982Z]   Creating DM-node: DM:cmff2h1cs01gbrmr958aywqf0 (WHY)
+[2025-11-02T22:25:10.231Z]   Creating edge: DM:cmff2h1cs01gbrmr958aywqf0 --repliesTo--> RA:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:25:10.481Z]   Updating DialogueMove.aifRepresentation: DM:cmff2h1cs01gbrmr958aywqf0
+[2025-11-02T22:25:10.733Z]   ERROR processing move cmff2h1cs01gbrmr958aywqf0: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:10.734Z] 
+Processing move cmff2h1cr01garmr9zbvmh98d (WHY) at 2025-09-11T07:08:11.932Z
+[2025-11-02T22:25:10.734Z]   Creating DM-node: DM:cmff2h1cr01garmr9zbvmh98d (WHY)
+[2025-11-02T22:25:11.000Z]   Creating edge: DM:cmff2h1cr01garmr9zbvmh98d --repliesTo--> RA:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:25:11.288Z]   Updating DialogueMove.aifRepresentation: DM:cmff2h1cr01garmr9zbvmh98d
+[2025-11-02T22:25:11.533Z]   ERROR processing move cmff2h1cr01garmr9zbvmh98d: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:11.533Z] 
+Batch complete: 50 nodes, 50 edges, 0 moves updated
+[2025-11-02T22:25:11.533Z] 
+================================================================================
+[2025-11-02T22:25:11.533Z] Processing batch 2 (offset 50)
+[2025-11-02T22:25:11.533Z] ================================================================================
+[2025-11-02T22:25:11.820Z] 
+Processing move cmffz7fp2000brmc9nuozb6mp (WHY) at 2025-09-11T22:24:31.285Z
+[2025-11-02T22:25:11.820Z]   Creating DM-node: DM:cmffz7fp2000brmc9nuozb6mp (WHY)
+[2025-11-02T22:25:12.070Z]   Creating edge: DM:cmffz7fp2000brmc9nuozb6mp --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:12.310Z]   Updating DialogueMove.aifRepresentation: DM:cmffz7fp2000brmc9nuozb6mp
+[2025-11-02T22:25:12.555Z]   ERROR processing move cmffz7fp2000brmc9nuozb6mp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:12.555Z] 
+Processing move cmffz7fp2000armc99sgllfpx (ASSERT) at 2025-09-11T22:24:31.285Z
+[2025-11-02T22:25:12.556Z]   Creating DM-node: DM:cmffz7fp2000armc99sgllfpx (ASSERT)
+[2025-11-02T22:25:12.800Z]   Creating edge: DM:cmffz7fp2000armc99sgllfpx --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:13.043Z]   Updating DialogueMove.aifRepresentation: DM:cmffz7fp2000armc99sgllfpx
+[2025-11-02T22:25:13.283Z]   ERROR processing move cmffz7fp2000armc99sgllfpx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:13.283Z] 
+Processing move cmffzjxlw00flrmc9az0y2t58 (ASSERT) at 2025-09-11T22:34:14.286Z
+[2025-11-02T22:25:13.283Z]   Creating DM-node: DM:cmffzjxlw00flrmc9az0y2t58 (ASSERT)
+[2025-11-02T22:25:13.533Z]   Creating edge: DM:cmffzjxlw00flrmc9az0y2t58 --commitsTo--> I:cmffzjvgp00fjrmc99ph20tmh
+[2025-11-02T22:25:13.770Z]   Updating DialogueMove.aifRepresentation: DM:cmffzjxlw00flrmc9az0y2t58
+[2025-11-02T22:25:14.022Z]   ERROR processing move cmffzjxlw00flrmc9az0y2t58: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:14.022Z] 
+Processing move cmfg3spip00iyrm26wbhg8uey (WHY) at 2025-09-12T00:33:02.257Z
+[2025-11-02T22:25:14.022Z]   Creating DM-node: DM:cmfg3spip00iyrm26wbhg8uey (WHY)
+[2025-11-02T22:25:14.318Z]   Creating edge: DM:cmfg3spip00iyrm26wbhg8uey --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:25:14.567Z]   Updating DialogueMove.aifRepresentation: DM:cmfg3spip00iyrm26wbhg8uey
+[2025-11-02T22:25:14.801Z]   ERROR processing move cmfg3spip00iyrm26wbhg8uey: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:14.802Z] 
+Processing move cmfg3spwe00izrm26jjijiosx (WHY) at 2025-09-12T00:33:02.750Z
+[2025-11-02T22:25:14.802Z]   Creating DM-node: DM:cmfg3spwe00izrm26jjijiosx (WHY)
+[2025-11-02T22:25:15.036Z]   Creating edge: DM:cmfg3spwe00izrm26jjijiosx --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:25:15.271Z]   Updating DialogueMove.aifRepresentation: DM:cmfg3spwe00izrm26jjijiosx
+[2025-11-02T22:25:15.510Z]   ERROR processing move cmfg3spwe00izrm26jjijiosx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:15.510Z] 
+Processing move cmfg567qy0000rmpmbxnh23z3 (ASSERT) at 2025-09-12T01:11:32.026Z
+[2025-11-02T22:25:15.510Z]   Creating DM-node: DM:cmfg567qy0000rmpmbxnh23z3 (ASSERT)
+[2025-11-02T22:25:15.756Z]   Creating edge: DM:cmfg567qy0000rmpmbxnh23z3 --commitsTo--> I:C_core
+[2025-11-02T22:25:16.009Z]   Updating DialogueMove.aifRepresentation: DM:cmfg567qy0000rmpmbxnh23z3
+[2025-11-02T22:25:16.266Z]   ERROR processing move cmfg567qy0000rmpmbxnh23z3: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:16.267Z] 
+Processing move cmfg567qy0001rmpm5trfrq0i (WHY) at 2025-09-12T01:11:32.026Z
+[2025-11-02T22:25:16.267Z]   Creating DM-node: DM:cmfg567qy0001rmpm5trfrq0i (WHY)
+[2025-11-02T22:25:16.506Z]   Creating edge: DM:cmfg567qy0001rmpm5trfrq0i --commitsTo--> I:C_core
+[2025-11-02T22:25:16.761Z]   Updating DialogueMove.aifRepresentation: DM:cmfg567qy0001rmpm5trfrq0i
+[2025-11-02T22:25:17.011Z]   ERROR processing move cmfg567qy0001rmpm5trfrq0i: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:17.011Z] 
+Processing move cmfg567qz0002rmpmn4ps859n (GROUNDS) at 2025-09-12T01:11:32.026Z
+[2025-11-02T22:25:17.011Z]   Creating DM-node: DM:cmfg567qz0002rmpmn4ps859n (GROUNDS)
+[2025-11-02T22:25:17.248Z]   Creating edge: DM:cmfg567qz0002rmpmn4ps859n --commitsTo--> I:C_core
+[2025-11-02T22:25:17.487Z]   Updating DialogueMove.aifRepresentation: DM:cmfg567qz0002rmpmn4ps859n
+[2025-11-02T22:25:17.727Z]   ERROR processing move cmfg567qz0002rmpmn4ps859n: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:17.727Z] 
+Processing move cmfg58myc0000rmx64qo3cykx (ASSERT) at 2025-09-12T01:13:25.045Z
+[2025-11-02T22:25:17.727Z]   Creating DM-node: DM:cmfg58myc0000rmx64qo3cykx (ASSERT)
+[2025-11-02T22:25:17.962Z]   Creating edge: DM:cmfg58myc0000rmx64qo3cykx --commitsTo--> I:C_core
+[2025-11-02T22:25:18.196Z]   Updating DialogueMove.aifRepresentation: DM:cmfg58myc0000rmx64qo3cykx
+[2025-11-02T22:25:18.442Z]   ERROR processing move cmfg58myc0000rmx64qo3cykx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:18.442Z] 
+Processing move cmfg58myc0002rmx6bc4faglz (GROUNDS) at 2025-09-12T01:13:25.045Z
+[2025-11-02T22:25:18.442Z]   Creating DM-node: DM:cmfg58myc0002rmx6bc4faglz (GROUNDS)
+[2025-11-02T22:25:18.683Z]   Creating edge: DM:cmfg58myc0002rmx6bc4faglz --commitsTo--> I:C_core
+[2025-11-02T22:25:18.929Z]   Updating DialogueMove.aifRepresentation: DM:cmfg58myc0002rmx6bc4faglz
+[2025-11-02T22:25:19.178Z]   ERROR processing move cmfg58myc0002rmx6bc4faglz: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:19.178Z] 
+Processing move cmfg58myc0001rmx68wkuxw2x (WHY) at 2025-09-12T01:13:25.045Z
+[2025-11-02T22:25:19.178Z]   Creating DM-node: DM:cmfg58myc0001rmx68wkuxw2x (WHY)
+[2025-11-02T22:25:19.418Z]   Creating edge: DM:cmfg58myc0001rmx68wkuxw2x --commitsTo--> I:C_core
+[2025-11-02T22:25:19.655Z]   Updating DialogueMove.aifRepresentation: DM:cmfg58myc0001rmx68wkuxw2x
+[2025-11-02T22:25:19.898Z]   ERROR processing move cmfg58myc0001rmx68wkuxw2x: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:19.898Z] 
+Processing move cmfgazxr701u4rm26unqs8cdk (WHY) at 2025-09-12T03:54:36.835Z
+[2025-11-02T22:25:19.898Z]   Creating DM-node: DM:cmfgazxr701u4rm26unqs8cdk (WHY)
+[2025-11-02T22:25:20.129Z]   Creating edge: DM:cmfgazxr701u4rm26unqs8cdk --commitsTo--> I:cmf5xgzc2001frmvmylg02oi8
+[2025-11-02T22:25:20.372Z]   Updating DialogueMove.aifRepresentation: DM:cmfgazxr701u4rm26unqs8cdk
+[2025-11-02T22:25:21.161Z]   ERROR processing move cmfgazxr701u4rm26unqs8cdk: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:21.161Z] 
+Processing move cmfgb0isa01urrm26z6vhcebz (GROUNDS) at 2025-09-12T03:55:04.091Z
+[2025-11-02T22:25:21.161Z]   Creating DM-node: DM:cmfgb0isa01urrm26z6vhcebz (GROUNDS)
+[2025-11-02T22:25:21.411Z]   Creating edge: DM:cmfgb0isa01urrm26z6vhcebz --commitsTo--> I:cmf5xgzc2001frmvmylg02oi8
+[2025-11-02T22:25:21.668Z]   Updating DialogueMove.aifRepresentation: DM:cmfgb0isa01urrm26z6vhcebz
+[2025-11-02T22:25:21.914Z]   ERROR processing move cmfgb0isa01urrm26z6vhcebz: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:21.915Z] 
+Processing move cmfhi025d0086rmnpo1aootph (WHY) at 2025-09-12T23:58:26.017Z
+[2025-11-02T22:25:21.915Z]   Creating DM-node: DM:cmfhi025d0086rmnpo1aootph (WHY)
+[2025-11-02T22:25:22.151Z]   Creating edge: DM:cmfhi025d0086rmnpo1aootph --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:25:22.404Z]   Updating DialogueMove.aifRepresentation: DM:cmfhi025d0086rmnpo1aootph
+[2025-11-02T22:25:22.644Z]   ERROR processing move cmfhi025d0086rmnpo1aootph: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:22.644Z] 
+Processing move cmfhi0996008rrmnpmxu8cm0v (GROUNDS) at 2025-09-12T23:58:35.227Z
+[2025-11-02T22:25:22.644Z]   Creating DM-node: DM:cmfhi0996008rrmnpmxu8cm0v (GROUNDS)
+[2025-11-02T22:25:22.898Z]   Creating edge: DM:cmfhi0996008rrmnpmxu8cm0v --repliesTo--> RA:cmfg4b7pz018jrm26d8b8geoz
+[2025-11-02T22:25:23.147Z]   Updating DialogueMove.aifRepresentation: DM:cmfhi0996008rrmnpmxu8cm0v
+[2025-11-02T22:25:23.381Z]   ERROR processing move cmfhi0996008rrmnpmxu8cm0v: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:23.381Z] 
+Processing move cmfhiipnb00fnrmnp779bf5lr (GROUNDS) at 2025-09-13T00:12:56.279Z
+[2025-11-02T22:25:23.381Z]   Creating DM-node: DM:cmfhiipnb00fnrmnp779bf5lr (GROUNDS)
+[2025-11-02T22:25:23.613Z]   Creating edge: DM:cmfhiipnb00fnrmnp779bf5lr --repliesTo--> RA:cmfg4bct5018lrm26c74ty170
+[2025-11-02T22:25:23.863Z]   Updating DialogueMove.aifRepresentation: DM:cmfhiipnb00fnrmnp779bf5lr
+[2025-11-02T22:25:24.118Z]   ERROR processing move cmfhiipnb00fnrmnp779bf5lr: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:24.118Z] 
+Processing move cmfhiisjo00fsrmnp67wjq2r1 (WHY) at 2025-09-13T00:13:00.036Z
+[2025-11-02T22:25:24.118Z]   Creating DM-node: DM:cmfhiisjo00fsrmnp67wjq2r1 (WHY)
+[2025-11-02T22:25:24.361Z]   Creating edge: DM:cmfhiisjo00fsrmnp67wjq2r1 --repliesTo--> RA:cmfg4b7pz018jrm26d8b8geoz
+[2025-11-02T22:25:24.610Z]   Updating DialogueMove.aifRepresentation: DM:cmfhiisjo00fsrmnp67wjq2r1
+[2025-11-02T22:25:24.846Z]   ERROR processing move cmfhiisjo00fsrmnp67wjq2r1: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:24.847Z] 
+Processing move cmfhn4nau00tdrmnpy5njkp28 (GROUNDS) at 2025-09-13T02:21:58.134Z
+[2025-11-02T22:25:24.847Z]   Creating DM-node: DM:cmfhn4nau00tdrmnpy5njkp28 (GROUNDS)
+[2025-11-02T22:25:25.095Z]   Creating edge: DM:cmfhn4nau00tdrmnpy5njkp28 --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:25.330Z]   Updating DialogueMove.aifRepresentation: DM:cmfhn4nau00tdrmnpy5njkp28
+[2025-11-02T22:25:25.575Z]   ERROR processing move cmfhn4nau00tdrmnpy5njkp28: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:25.575Z] 
+Processing move cmfhn548l00tgrmnp3s2b21x7 (GROUNDS) at 2025-09-13T02:22:20.086Z
+[2025-11-02T22:25:25.575Z]   Creating DM-node: DM:cmfhn548l00tgrmnp3s2b21x7 (GROUNDS)
+[2025-11-02T22:25:25.819Z]   Creating edge: DM:cmfhn548l00tgrmnp3s2b21x7 --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:25:26.063Z]   Updating DialogueMove.aifRepresentation: DM:cmfhn548l00tgrmnp3s2b21x7
+[2025-11-02T22:25:26.298Z]   ERROR processing move cmfhn548l00tgrmnp3s2b21x7: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:26.299Z] 
+Processing move cmfho5440017drmnpkdcm49hg (ASSERT) at 2025-09-13T02:50:19.536Z
+[2025-11-02T22:25:26.299Z]   Creating DM-node: DM:cmfho5440017drmnpkdcm49hg (ASSERT)
+[2025-11-02T22:25:26.547Z]   Creating edge: DM:cmfho5440017drmnpkdcm49hg --commitsTo--> I:cmffzjvgp00fjrmc99ph20tmh
+[2025-11-02T22:25:26.804Z]   Updating DialogueMove.aifRepresentation: DM:cmfho5440017drmnpkdcm49hg
+[2025-11-02T22:25:27.049Z]   ERROR processing move cmfho5440017drmnpkdcm49hg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:27.050Z] 
+Processing move cmfho5442017ermnpnd5kd8m9 (WHY) at 2025-09-13T02:50:19.539Z
+[2025-11-02T22:25:27.050Z]   Creating DM-node: DM:cmfho5442017ermnpnd5kd8m9 (WHY)
+[2025-11-02T22:25:27.292Z]   Creating edge: DM:cmfho5442017ermnpnd5kd8m9 --commitsTo--> I:cmffzjvgp00fjrmc99ph20tmh
+[2025-11-02T22:25:27.524Z]   Updating DialogueMove.aifRepresentation: DM:cmfho5442017ermnpnd5kd8m9
+[2025-11-02T22:25:27.773Z]   ERROR processing move cmfho5442017ermnpnd5kd8m9: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:27.773Z] 
+Processing move cmfhu9khg040nrmnpplumx7q4 (GROUNDS) at 2025-09-13T05:41:45.076Z
+[2025-11-02T22:25:27.773Z]   Creating DM-node: DM:cmfhu9khg040nrmnpplumx7q4 (GROUNDS)
+[2025-11-02T22:25:28.014Z]   Creating edge: DM:cmfhu9khg040nrmnpplumx7q4 --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:25:28.258Z]   Updating DialogueMove.aifRepresentation: DM:cmfhu9khg040nrmnpplumx7q4
+[2025-11-02T22:25:28.504Z]   ERROR processing move cmfhu9khg040nrmnpplumx7q4: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:28.504Z] 
+Processing move cmfhu9pux0418rmnp3psg0hoz (GROUNDS) at 2025-09-13T05:41:52.041Z
+[2025-11-02T22:25:28.504Z]   Creating DM-node: DM:cmfhu9pux0418rmnp3psg0hoz (GROUNDS)
+[2025-11-02T22:25:28.750Z]   Creating edge: DM:cmfhu9pux0418rmnp3psg0hoz --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:25:29.000Z]   Updating DialogueMove.aifRepresentation: DM:cmfhu9pux0418rmnp3psg0hoz
+[2025-11-02T22:25:29.437Z]   ERROR processing move cmfhu9pux0418rmnp3psg0hoz: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:29.437Z] 
+Processing move cmfhuca8h047brmnpyxhhku1q (GROUNDS) at 2025-09-13T05:43:51.762Z
+[2025-11-02T22:25:29.437Z]   Creating DM-node: DM:cmfhuca8h047brmnpyxhhku1q (GROUNDS)
+[2025-11-02T22:25:29.746Z]   Creating edge: DM:cmfhuca8h047brmnpyxhhku1q --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:25:30.003Z]   Updating DialogueMove.aifRepresentation: DM:cmfhuca8h047brmnpyxhhku1q
+[2025-11-02T22:25:30.258Z]   ERROR processing move cmfhuca8h047brmnpyxhhku1q: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:30.258Z] 
+Processing move cmfhutlxp04o4rmnpfkmf27b7 (GROUNDS) at 2025-09-13T05:57:20.077Z
+[2025-11-02T22:25:30.258Z]   Creating DM-node: DM:cmfhutlxp04o4rmnpfkmf27b7 (GROUNDS)
+[2025-11-02T22:25:30.532Z]   Creating edge: DM:cmfhutlxp04o4rmnpfkmf27b7 --commitsTo--> I:cmffzjvgp00fjrmc99ph20tmh
+[2025-11-02T22:25:30.818Z]   Updating DialogueMove.aifRepresentation: DM:cmfhutlxp04o4rmnpfkmf27b7
+[2025-11-02T22:25:31.079Z]   ERROR processing move cmfhutlxp04o4rmnpfkmf27b7: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:31.079Z] 
+Processing move cmfhuuooz04rermnpo6m47q8l (WHY) at 2025-09-13T05:58:10.308Z
+[2025-11-02T22:25:31.080Z]   Creating DM-node: DM:cmfhuuooz04rermnpo6m47q8l (WHY)
+[2025-11-02T22:25:31.336Z]   Creating edge: DM:cmfhuuooz04rermnpo6m47q8l --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:25:31.596Z]   Updating DialogueMove.aifRepresentation: DM:cmfhuuooz04rermnpo6m47q8l
+[2025-11-02T22:25:31.845Z]   ERROR processing move cmfhuuooz04rermnpo6m47q8l: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:31.845Z] 
+Processing move cmfip667v0026rmwhvraxg2df (CLOSE) at 2025-09-13T20:06:54.715Z
+[2025-11-02T22:25:31.845Z]   Creating DM-node: DM:cmfip667v0026rmwhvraxg2df (CLOSE)
+[2025-11-02T22:25:32.107Z]   Creating edge: DM:cmfip667v0026rmwhvraxg2df --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:25:32.359Z]   Updating DialogueMove.aifRepresentation: DM:cmfip667v0026rmwhvraxg2df
+[2025-11-02T22:25:32.619Z]   ERROR processing move cmfip667v0026rmwhvraxg2df: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:32.619Z] 
+Processing move cmfkl8euw002lrm9l1d59a511 (ASSERT) at 2025-09-15T03:52:13.113Z
+[2025-11-02T22:25:32.619Z]   Creating DM-node: DM:cmfkl8euw002lrm9l1d59a511 (ASSERT)
+[2025-11-02T22:25:32.886Z]   Creating edge: DM:cmfkl8euw002lrm9l1d59a511 --commitsTo--> I:cmfkl8c2m0029rm9l27key0vn
+[2025-11-02T22:25:33.144Z]   Updating DialogueMove.aifRepresentation: DM:cmfkl8euw002lrm9l1d59a511
+[2025-11-02T22:25:33.420Z]   ERROR processing move cmfkl8euw002lrm9l1d59a511: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:33.420Z] 
+Processing move cmfklbn860056rm9l867b3392 (GROUNDS) at 2025-09-15T03:54:43.926Z
+[2025-11-02T22:25:33.420Z]   Creating DM-node: DM:cmfklbn860056rm9l867b3392 (GROUNDS)
+[2025-11-02T22:25:33.682Z]   Creating edge: DM:cmfklbn860056rm9l867b3392 --repliesTo--> RA:cmfdfilmt000zrm2jrpj9ukem
+[2025-11-02T22:25:33.963Z]   Updating DialogueMove.aifRepresentation: DM:cmfklbn860056rm9l867b3392
+[2025-11-02T22:25:34.225Z]   ERROR processing move cmfklbn860056rm9l867b3392: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:34.225Z] 
+Processing move cmfkle060006brm9lhqvj0sa1 (WHY) at 2025-09-15T03:56:34.007Z
+[2025-11-02T22:25:34.225Z]   Creating DM-node: DM:cmfkle060006brm9lhqvj0sa1 (WHY)
+[2025-11-02T22:25:34.498Z]   Creating edge: DM:cmfkle060006brm9lhqvj0sa1 --repliesTo--> RA:cmfdfic180003rm2jo4p0zsd5
+[2025-11-02T22:25:34.756Z]   Updating DialogueMove.aifRepresentation: DM:cmfkle060006brm9lhqvj0sa1
+[2025-11-02T22:25:35.021Z]   ERROR processing move cmfkle060006brm9lhqvj0sa1: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:35.021Z] 
+Processing move cmfn2ju2s006qrmwt3qgvxere (WHY) at 2025-09-16T21:32:31.875Z
+[2025-11-02T22:25:35.021Z]   Creating DM-node: DM:cmfn2ju2s006qrmwt3qgvxere (WHY)
+[2025-11-02T22:25:35.272Z]   Creating edge: DM:cmfn2ju2s006qrmwt3qgvxere --commitsTo--> I:cmfc1muc300smrmp39iivzj3x
+[2025-11-02T22:25:35.535Z]   Updating DialogueMove.aifRepresentation: DM:cmfn2ju2s006qrmwt3qgvxere
+[2025-11-02T22:25:35.783Z]   ERROR processing move cmfn2ju2s006qrmwt3qgvxere: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:35.784Z] 
+Processing move cmfndpo2m00ktrmm37xq85rtv (GROUNDS) at 2025-09-17T02:44:59.806Z
+[2025-11-02T22:25:35.784Z]   Creating DM-node: DM:cmfndpo2m00ktrmm37xq85rtv (GROUNDS)
+[2025-11-02T22:25:36.035Z]   Creating edge: DM:cmfndpo2m00ktrmm37xq85rtv --repliesTo--> RA:cmfdfic180003rm2jo4p0zsd5
+[2025-11-02T22:25:36.279Z]   Updating DialogueMove.aifRepresentation: DM:cmfndpo2m00ktrmm37xq85rtv
+[2025-11-02T22:25:36.525Z]   ERROR processing move cmfndpo2m00ktrmm37xq85rtv: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:36.525Z] 
+Processing move cmfnea6ng00lgrmm3v5zi6cjw (WHY) at 2025-09-17T03:00:57.004Z
+[2025-11-02T22:25:36.526Z]   Creating DM-node: DM:cmfnea6ng00lgrmm3v5zi6cjw (WHY)
+[2025-11-02T22:25:36.779Z]   Creating edge: DM:cmfnea6ng00lgrmm3v5zi6cjw --repliesTo--> RA:cmfhh6j0f000frmnpzv6kpxzc
+[2025-11-02T22:25:37.023Z]   Updating DialogueMove.aifRepresentation: DM:cmfnea6ng00lgrmm3v5zi6cjw
+[2025-11-02T22:25:37.282Z]   ERROR processing move cmfnea6ng00lgrmm3v5zi6cjw: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:37.283Z] 
+Processing move cmfneajqn00mrrmm3e5ot0e18 (GROUNDS) at 2025-09-17T03:01:13.968Z
+[2025-11-02T22:25:37.283Z]   Creating DM-node: DM:cmfneajqn00mrrmm3e5ot0e18 (GROUNDS)
+[2025-11-02T22:25:37.524Z]   Creating edge: DM:cmfneajqn00mrrmm3e5ot0e18 --repliesTo--> RA:cmfhh6j0f000frmnpzv6kpxzc
+[2025-11-02T22:25:37.777Z]   Updating DialogueMove.aifRepresentation: DM:cmfneajqn00mrrmm3e5ot0e18
+[2025-11-02T22:25:38.030Z]   ERROR processing move cmfneajqn00mrrmm3e5ot0e18: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:38.030Z] 
+Processing move cmfngl6bx006krmb3x0wkpc9j (WHY) at 2025-09-17T04:05:29.036Z
+[2025-11-02T22:25:38.030Z]   Creating DM-node: DM:cmfngl6bx006krmb3x0wkpc9j (WHY)
+[2025-11-02T22:25:38.293Z]   Creating edge: DM:cmfngl6bx006krmb3x0wkpc9j --commitsTo--> I:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:25:38.543Z]   Updating DialogueMove.aifRepresentation: DM:cmfngl6bx006krmb3x0wkpc9j
+[2025-11-02T22:25:38.799Z]   ERROR processing move cmfngl6bx006krmb3x0wkpc9j: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:38.800Z] 
+Processing move cmfnivcyn00eormb3z3mchur7 (ASSERT) at 2025-09-17T05:09:23.423Z
+[2025-11-02T22:25:38.800Z]   Creating DM-node: DM:cmfnivcyn00eormb3z3mchur7 (ASSERT)
+[2025-11-02T22:25:39.069Z]   Creating edge: DM:cmfnivcyn00eormb3z3mchur7 --commitsTo--> I:cmfniv1ub00ekrmb3dmow698d
+[2025-11-02T22:25:39.322Z]   Updating DialogueMove.aifRepresentation: DM:cmfnivcyn00eormb3z3mchur7
+[2025-11-02T22:25:39.585Z]   ERROR processing move cmfnivcyn00eormb3z3mchur7: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:39.586Z] 
+Processing move cmfog2us50181rmz6a2f50q8f (ASSERT) at 2025-09-17T20:39:00.438Z
+[2025-11-02T22:25:39.586Z]   Creating DM-node: DM:cmfog2us50181rmz6a2f50q8f (ASSERT)
+[2025-11-02T22:25:39.841Z]   Creating edge: DM:cmfog2us50181rmz6a2f50q8f --commitsTo--> I:cmfog2sac017xrmz62hkesvwu
+[2025-11-02T22:25:40.091Z]   Updating DialogueMove.aifRepresentation: DM:cmfog2us50181rmz6a2f50q8f
+[2025-11-02T22:25:40.348Z]   ERROR processing move cmfog2us50181rmz6a2f50q8f: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:40.348Z] 
+Processing move cmfog7nnf01i0rmz6bakhc6qm (ASSERT) at 2025-09-17T20:42:44.474Z
+[2025-11-02T22:25:40.348Z]   Creating DM-node: DM:cmfog7nnf01i0rmz6bakhc6qm (ASSERT)
+[2025-11-02T22:25:40.786Z]   Creating edge: DM:cmfog7nnf01i0rmz6bakhc6qm --repliesTo--> RA:cmfnc6y4u00h9rmm3ej4bkao5
+[2025-11-02T22:25:41.081Z]   Updating DialogueMove.aifRepresentation: DM:cmfog7nnf01i0rmz6bakhc6qm
+[2025-11-02T22:25:41.332Z]   ERROR processing move cmfog7nnf01i0rmz6bakhc6qm: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:41.332Z] 
+Processing move cmfq2geiz0003rmms1qsk8nlq (ASSERT) at 2025-09-18T23:53:10.213Z
+[2025-11-02T22:25:41.332Z]   Creating DM-node: DM:cmfq2geiz0003rmms1qsk8nlq (ASSERT)
+[2025-11-02T22:25:41.567Z]   Creating edge: DM:cmfq2geiz0003rmms1qsk8nlq --commitsTo--> I:cmfq2ge5s0002rmmsntncqcrn
+[2025-11-02T22:25:41.806Z]   Updating DialogueMove.aifRepresentation: DM:cmfq2geiz0003rmms1qsk8nlq
+[2025-11-02T22:25:42.046Z]   ERROR processing move cmfq2geiz0003rmms1qsk8nlq: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:42.047Z] 
+Processing move cmfq2nc4v0013rmms4xpbqvef (ASSERT) at 2025-09-18T23:58:33.775Z
+[2025-11-02T22:25:42.047Z]   Creating DM-node: DM:cmfq2nc4v0013rmms4xpbqvef (ASSERT)
+[2025-11-02T22:25:42.289Z]   Creating edge: DM:cmfq2nc4v0013rmms4xpbqvef --commitsTo--> I:cmfq2nbup0012rmmsp7e7kskj
+[2025-11-02T22:25:42.526Z]   Updating DialogueMove.aifRepresentation: DM:cmfq2nc4v0013rmms4xpbqvef
+[2025-11-02T22:25:42.765Z]   ERROR processing move cmfq2nc4v0013rmms4xpbqvef: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:42.765Z] 
+Processing move cmfzzz9jw000czqa8nudcnp31 (ASSERT) at 2025-09-25T22:41:33.213Z
+[2025-11-02T22:25:42.765Z]   Creating DM-node: DM:cmfzzz9jw000czqa8nudcnp31 (ASSERT)
+[2025-11-02T22:25:43.025Z]   Creating edge: DM:cmfzzz9jw000czqa8nudcnp31 --repliesTo--> RA:cmfog3f6m01b1rmz6tsz9k7z1
+[2025-11-02T22:25:43.258Z]   Updating DialogueMove.aifRepresentation: DM:cmfzzz9jw000czqa8nudcnp31
+[2025-11-02T22:25:43.498Z]   ERROR processing move cmfzzz9jw000czqa8nudcnp31: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:43.498Z] 
+Processing move cmg000gk9000izqa82gnjv1g9 (WHY) at 2025-09-25T22:42:28.953Z
+[2025-11-02T22:25:43.498Z]   Creating DM-node: DM:cmg000gk9000izqa82gnjv1g9 (WHY)
+[2025-11-02T22:25:43.742Z]   Creating edge: DM:cmg000gk9000izqa82gnjv1g9 --repliesTo--> RA:cmfog3f6m01b1rmz6tsz9k7z1
+[2025-11-02T22:25:43.991Z]   Updating DialogueMove.aifRepresentation: DM:cmg000gk9000izqa82gnjv1g9
+[2025-11-02T22:25:44.240Z]   ERROR processing move cmg000gk9000izqa82gnjv1g9: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:44.240Z] 
+Processing move cmg001pv3001vzqa8m4wgfpkv (GROUNDS) at 2025-09-25T22:43:27.664Z
+[2025-11-02T22:25:44.241Z]   Creating DM-node: DM:cmg001pv3001vzqa8m4wgfpkv (GROUNDS)
+[2025-11-02T22:25:44.485Z]   Creating edge: DM:cmg001pv3001vzqa8m4wgfpkv --repliesTo--> RA:cmfog3f6m01b1rmz6tsz9k7z1
+[2025-11-02T22:25:44.725Z]   Updating DialogueMove.aifRepresentation: DM:cmg001pv3001vzqa8m4wgfpkv
+[2025-11-02T22:25:45.027Z]   ERROR processing move cmg001pv3001vzqa8m4wgfpkv: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:45.027Z] 
+Processing move cmg001zqr003gzqa83lektyxe (GROUNDS) at 2025-09-25T22:43:40.468Z
+[2025-11-02T22:25:45.027Z]   Creating DM-node: DM:cmg001zqr003gzqa83lektyxe (GROUNDS)
+[2025-11-02T22:25:45.272Z]   Creating edge: DM:cmg001zqr003gzqa83lektyxe --repliesTo--> RA:cmfog3f6m01b1rmz6tsz9k7z1
+[2025-11-02T22:25:45.524Z]   Updating DialogueMove.aifRepresentation: DM:cmg001zqr003gzqa83lektyxe
+[2025-11-02T22:25:45.758Z]   ERROR processing move cmg001zqr003gzqa83lektyxe: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:45.758Z] 
+Processing move cmg02yfw1004bzqa8eghml3ri (ASSERT) at 2025-09-26T00:04:53.618Z
+[2025-11-02T22:25:45.758Z]   Creating DM-node: DM:cmg02yfw1004bzqa8eghml3ri (ASSERT)
+[2025-11-02T22:25:46.012Z]   Creating edge: DM:cmg02yfw1004bzqa8eghml3ri --commitsTo--> I:cmg02y9370045zqa8pi6yvv3p
+[2025-11-02T22:25:46.257Z]   Updating DialogueMove.aifRepresentation: DM:cmg02yfw1004bzqa8eghml3ri
+[2025-11-02T22:25:46.493Z]   ERROR processing move cmg02yfw1004bzqa8eghml3ri: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:46.493Z] 
+Processing move cmg055aku0060zqa8xmqjfb35 (ASSERT) at 2025-09-26T01:06:12.558Z
+[2025-11-02T22:25:46.493Z]   Creating DM-node: DM:cmg055aku0060zqa8xmqjfb35 (ASSERT)
+[2025-11-02T22:25:46.727Z]   Creating edge: DM:cmg055aku0060zqa8xmqjfb35 --commitsTo--> I:cmg02y9370045zqa8pi6yvv3p
+[2025-11-02T22:25:46.992Z]   Updating DialogueMove.aifRepresentation: DM:cmg055aku0060zqa8xmqjfb35
+[2025-11-02T22:25:47.231Z]   ERROR processing move cmg055aku0060zqa8xmqjfb35: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:47.231Z] 
+Processing move cmg0aotuy0070zqa8e2uoxubq (GROUNDS) at 2025-09-26T03:41:22.091Z
+[2025-11-02T22:25:47.231Z]   Creating DM-node: DM:cmg0aotuy0070zqa8e2uoxubq (GROUNDS)
+[2025-11-02T22:25:47.472Z]   Creating edge: DM:cmg0aotuy0070zqa8e2uoxubq --repliesTo--> RA:cmg05n2k2006jzqa8h3ld4tum
+[2025-11-02T22:25:47.722Z]   Updating DialogueMove.aifRepresentation: DM:cmg0aotuy0070zqa8e2uoxubq
+[2025-11-02T22:25:47.968Z]   ERROR processing move cmg0aotuy0070zqa8e2uoxubq: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:47.968Z] 
+Processing move cmg1gfxm50002g1b9ymoldz43 (ASSERT) at 2025-09-26T23:10:10.926Z
+[2025-11-02T22:25:47.969Z]   Creating DM-node: DM:cmg1gfxm50002g1b9ymoldz43 (ASSERT)
+[2025-11-02T22:25:48.212Z]   Creating edge: DM:cmg1gfxm50002g1b9ymoldz43 --commitsTo--> I:cmg1gfxbx0001g1b9ul3wpet7
+[2025-11-02T22:25:48.463Z]   Updating DialogueMove.aifRepresentation: DM:cmg1gfxm50002g1b9ymoldz43
+[2025-11-02T22:25:48.699Z]   ERROR processing move cmg1gfxm50002g1b9ymoldz43: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:48.699Z] 
+Processing move cmg1hmhud0011g1b9i1q1kjgd (ASSERT) at 2025-09-26T23:43:16.694Z
+[2025-11-02T22:25:48.699Z]   Creating DM-node: DM:cmg1hmhud0011g1b9i1q1kjgd (ASSERT)
+[2025-11-02T22:25:48.945Z]   Creating edge: DM:cmg1hmhud0011g1b9i1q1kjgd --repliesTo--> RA:cmg1hm2oh000og1b94v2ixleb
+[2025-11-02T22:25:49.184Z]   Updating DialogueMove.aifRepresentation: DM:cmg1hmhud0011g1b9i1q1kjgd
+[2025-11-02T22:25:49.623Z]   ERROR processing move cmg1hmhud0011g1b9i1q1kjgd: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:49.623Z] 
+Processing move cmg1hn2fu001xg1b9pvab2cwy (ASSERT) at 2025-09-26T23:43:43.386Z
+[2025-11-02T22:25:49.623Z]   Creating DM-node: DM:cmg1hn2fu001xg1b9pvab2cwy (ASSERT)
+[2025-11-02T22:25:49.861Z]   Creating edge: DM:cmg1hn2fu001xg1b9pvab2cwy --repliesTo--> RA:cmg1hm39f000qg1b9aynszvg0
+[2025-11-02T22:25:50.094Z]   Updating DialogueMove.aifRepresentation: DM:cmg1hn2fu001xg1b9pvab2cwy
+[2025-11-02T22:25:50.340Z]   ERROR processing move cmg1hn2fu001xg1b9pvab2cwy: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:50.341Z] 
+Batch complete: 50 nodes, 50 edges, 0 moves updated
+[2025-11-02T22:25:50.341Z] 
+================================================================================
+[2025-11-02T22:25:50.341Z] Processing batch 3 (offset 100)
+[2025-11-02T22:25:50.341Z] ================================================================================
+[2025-11-02T22:25:50.637Z] 
+Processing move cmg1hnptl002vg1b9ou4opd1i (ASSERT) at 2025-09-26T23:44:13.690Z
+[2025-11-02T22:25:50.637Z]   Creating DM-node: DM:cmg1hnptl002vg1b9ou4opd1i (ASSERT)
+[2025-11-02T22:25:50.892Z]   Creating edge: DM:cmg1hnptl002vg1b9ou4opd1i --repliesTo--> RA:cmg1hm3u5000sg1b96qegbw6m
+[2025-11-02T22:25:51.144Z]   Updating DialogueMove.aifRepresentation: DM:cmg1hnptl002vg1b9ou4opd1i
+[2025-11-02T22:25:51.398Z]   ERROR processing move cmg1hnptl002vg1b9ou4opd1i: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:51.398Z] 
+Processing move cmg1hob2d003xg1b9uz1vu6fu (ASSERT) at 2025-09-26T23:44:41.222Z
+[2025-11-02T22:25:51.398Z]   Creating DM-node: DM:cmg1hob2d003xg1b9uz1vu6fu (ASSERT)
+[2025-11-02T22:25:51.644Z]   Creating edge: DM:cmg1hob2d003xg1b9uz1vu6fu --repliesTo--> RA:cmg1hm4er000ug1b9dluuq15c
+[2025-11-02T22:25:51.881Z]   Updating DialogueMove.aifRepresentation: DM:cmg1hob2d003xg1b9uz1vu6fu
+[2025-11-02T22:25:52.122Z]   ERROR processing move cmg1hob2d003xg1b9uz1vu6fu: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:52.122Z] 
+Processing move cmg1ij3qk0069g1b9zipjjkbp (ASSERT) at 2025-09-27T00:08:38.061Z
+[2025-11-02T22:25:52.123Z]   Creating DM-node: DM:cmg1ij3qk0069g1b9zipjjkbp (ASSERT)
+[2025-11-02T22:25:52.365Z]   Creating edge: DM:cmg1ij3qk0069g1b9zipjjkbp --commitsTo--> I:cmg1ij3g20068g1b93kefczb9
+[2025-11-02T22:25:52.602Z]   Updating DialogueMove.aifRepresentation: DM:cmg1ij3qk0069g1b9zipjjkbp
+[2025-11-02T22:25:52.837Z]   ERROR processing move cmg1ij3qk0069g1b9zipjjkbp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:52.838Z] 
+Processing move cmg1jc4rn0002g1erowg93uzn (ASSERT) at 2025-09-27T00:31:12.419Z
+[2025-11-02T22:25:52.838Z]   Creating DM-node: DM:cmg1jc4rn0002g1erowg93uzn (ASSERT)
+[2025-11-02T22:25:53.074Z]   Creating edge: DM:cmg1jc4rn0002g1erowg93uzn --repliesTo--> RA:cmg1jbqlt0001g1er9lc3hb05
+[2025-11-02T22:25:53.315Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jc4rn0002g1erowg93uzn
+[2025-11-02T22:25:53.543Z]   ERROR processing move cmg1jc4rn0002g1erowg93uzn: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:53.543Z] 
+Processing move cmg1jcfhd000jg1erztdumtrs (ASSERT) at 2025-09-27T00:31:26.305Z
+[2025-11-02T22:25:53.543Z]   Creating DM-node: DM:cmg1jcfhd000jg1erztdumtrs (ASSERT)
+[2025-11-02T22:25:53.785Z]   Creating edge: DM:cmg1jcfhd000jg1erztdumtrs --repliesTo--> RA:cmg1jbqlt0001g1er9lc3hb05
+[2025-11-02T22:25:54.027Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jcfhd000jg1erztdumtrs
+[2025-11-02T22:25:54.271Z]   ERROR processing move cmg1jcfhd000jg1erztdumtrs: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:54.271Z] 
+Processing move cmg1jdc5r001fg1ert6h5j0hk (ASSERT) at 2025-09-27T00:32:08.655Z
+[2025-11-02T22:25:54.271Z]   Creating DM-node: DM:cmg1jdc5r001fg1ert6h5j0hk (ASSERT)
+[2025-11-02T22:25:54.520Z]   Creating edge: DM:cmg1jdc5r001fg1ert6h5j0hk --repliesTo--> RA:cmg1jcteg0012g1er78k9e57t
+[2025-11-02T22:25:54.761Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jdc5r001fg1ert6h5j0hk
+[2025-11-02T22:25:54.990Z]   ERROR processing move cmg1jdc5r001fg1ert6h5j0hk: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:54.990Z] 
+Processing move cmg1je28k0025g1erpzbluyhd (ASSERT) at 2025-09-27T00:32:42.453Z
+[2025-11-02T22:25:54.990Z]   Creating DM-node: DM:cmg1je28k0025g1erpzbluyhd (ASSERT)
+[2025-11-02T22:25:55.231Z]   Creating edge: DM:cmg1je28k0025g1erpzbluyhd --repliesTo--> RA:cmg1jcu3e0014g1er3osmksjt
+[2025-11-02T22:25:55.480Z]   Updating DialogueMove.aifRepresentation: DM:cmg1je28k0025g1erpzbluyhd
+[2025-11-02T22:25:55.716Z]   ERROR processing move cmg1je28k0025g1erpzbluyhd: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:55.717Z] 
+Processing move cmg1jerd80031g1ernuvuh3df (ASSERT) at 2025-09-27T00:33:15.020Z
+[2025-11-02T22:25:55.717Z]   Creating DM-node: DM:cmg1jerd80031g1ernuvuh3df (ASSERT)
+[2025-11-02T22:25:55.964Z]   Creating edge: DM:cmg1jerd80031g1ernuvuh3df --repliesTo--> RA:cmg1jcury0016g1erejlcl19e
+[2025-11-02T22:25:56.205Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jerd80031g1ernuvuh3df
+[2025-11-02T22:25:56.441Z]   ERROR processing move cmg1jerd80031g1ernuvuh3df: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:56.441Z] 
+Processing move cmg1jfcaw004fg1erol5b27ek (ASSERT) at 2025-09-27T00:33:42.153Z
+[2025-11-02T22:25:56.441Z]   Creating DM-node: DM:cmg1jfcaw004fg1erol5b27ek (ASSERT)
+[2025-11-02T22:25:56.711Z]   Creating edge: DM:cmg1jfcaw004fg1erol5b27ek --repliesTo--> RA:cmg1jcvmh0018g1erimlv38wo
+[2025-11-02T22:25:56.960Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jfcaw004fg1erol5b27ek
+[2025-11-02T22:25:57.202Z]   ERROR processing move cmg1jfcaw004fg1erol5b27ek: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:57.203Z] 
+Processing move cmg1jgiql005rg1erj1i61n08 (ASSERT) at 2025-09-27T00:34:37.149Z
+[2025-11-02T22:25:57.203Z]   Creating DM-node: DM:cmg1jgiql005rg1erj1i61n08 (ASSERT)
+[2025-11-02T22:25:57.441Z]   Creating edge: DM:cmg1jgiql005rg1erj1i61n08 --repliesTo--> RA:cmg1jfnu9005gg1er17puqosx
+[2025-11-02T22:25:57.678Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jgiql005rg1erj1i61n08
+[2025-11-02T22:25:57.918Z]   ERROR processing move cmg1jgiql005rg1erj1i61n08: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:57.918Z] 
+Processing move cmg1jgsqe0065g1er8nktt8x9 (ASSERT) at 2025-09-27T00:34:50.102Z
+[2025-11-02T22:25:57.919Z]   Creating DM-node: DM:cmg1jgsqe0065g1er8nktt8x9 (ASSERT)
+[2025-11-02T22:25:58.159Z]   Creating edge: DM:cmg1jgsqe0065g1er8nktt8x9 --repliesTo--> RA:cmg1jfnu9005gg1er17puqosx
+[2025-11-02T22:25:58.401Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jgsqe0065g1er8nktt8x9
+[2025-11-02T22:25:58.638Z]   ERROR processing move cmg1jgsqe0065g1er8nktt8x9: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:58.639Z] 
+Processing move cmg1jhg8p006zg1er6ryhwmv4 (ASSERT) at 2025-09-27T00:35:20.570Z
+[2025-11-02T22:25:58.639Z]   Creating DM-node: DM:cmg1jhg8p006zg1er6ryhwmv4 (ASSERT)
+[2025-11-02T22:25:58.878Z]   Creating edge: DM:cmg1jhg8p006zg1er6ryhwmv4 --repliesTo--> RA:cmg1jh17u006mg1erwee7g0jv
+[2025-11-02T22:25:59.117Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jhg8p006zg1er6ryhwmv4
+[2025-11-02T22:25:59.350Z]   ERROR processing move cmg1jhg8p006zg1er6ryhwmv4: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:25:59.350Z] 
+Processing move cmg1jidl6007pg1er1usl3exy (ASSERT) at 2025-09-27T00:36:03.786Z
+[2025-11-02T22:25:59.350Z]   Creating DM-node: DM:cmg1jidl6007pg1er1usl3exy (ASSERT)
+[2025-11-02T22:25:59.584Z]   Creating edge: DM:cmg1jidl6007pg1er1usl3exy --repliesTo--> RA:cmg1jh1vf006og1erq8gmahvc
+[2025-11-02T22:25:59.826Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jidl6007pg1er1usl3exy
+[2025-11-02T22:26:00.122Z]   ERROR processing move cmg1jidl6007pg1er1usl3exy: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:00.122Z] 
+Processing move cmg1jj3uu008jg1er097l0cny (ASSERT) at 2025-09-27T00:36:37.831Z
+[2025-11-02T22:26:00.122Z]   Creating DM-node: DM:cmg1jj3uu008jg1er097l0cny (ASSERT)
+[2025-11-02T22:26:00.364Z]   Creating edge: DM:cmg1jj3uu008jg1er097l0cny --repliesTo--> RA:cmg1jh2iq006qg1erd28mw0aj
+[2025-11-02T22:26:00.781Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jj3uu008jg1er097l0cny
+[2025-11-02T22:26:01.370Z]   ERROR processing move cmg1jj3uu008jg1er097l0cny: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:01.370Z] 
+Processing move cmg1jjw6e009hg1erqan5bpay (ASSERT) at 2025-09-27T00:37:14.535Z
+[2025-11-02T22:26:01.370Z]   Creating DM-node: DM:cmg1jjw6e009hg1erqan5bpay (ASSERT)
+[2025-11-02T22:26:01.608Z]   Creating edge: DM:cmg1jjw6e009hg1erqan5bpay --repliesTo--> RA:cmg1jh36p006sg1er42bdygda
+[2025-11-02T22:26:01.842Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jjw6e009hg1erqan5bpay
+[2025-11-02T22:26:02.092Z]   ERROR processing move cmg1jjw6e009hg1erqan5bpay: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:02.092Z] 
+Processing move cmg1jr9i600b0g1er3go3nwdn (ASSERT) at 2025-09-27T00:42:58.399Z
+[2025-11-02T22:26:02.093Z]   Creating DM-node: DM:cmg1jr9i600b0g1er3go3nwdn (ASSERT)
+[2025-11-02T22:26:02.336Z]   Creating edge: DM:cmg1jr9i600b0g1er3go3nwdn --repliesTo--> RA:cmg1jqtn500azg1erms8edn8m
+[2025-11-02T22:26:02.578Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jr9i600b0g1er3go3nwdn
+[2025-11-02T22:26:02.818Z]   ERROR processing move cmg1jr9i600b0g1er3go3nwdn: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:02.818Z] 
+Processing move cmg1jrjom00bhg1erfjv1be9n (ASSERT) at 2025-09-27T00:43:11.590Z
+[2025-11-02T22:26:02.818Z]   Creating DM-node: DM:cmg1jrjom00bhg1erfjv1be9n (ASSERT)
+[2025-11-02T22:26:03.067Z]   Creating edge: DM:cmg1jrjom00bhg1erfjv1be9n --repliesTo--> RA:cmg1jqtn500azg1erms8edn8m
+[2025-11-02T22:26:03.305Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jrjom00bhg1erfjv1be9n
+[2025-11-02T22:26:03.540Z]   ERROR processing move cmg1jrjom00bhg1erfjv1be9n: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:03.540Z] 
+Processing move cmg1js6sc00cdg1ere05w1gkc (ASSERT) at 2025-09-27T00:43:41.532Z
+[2025-11-02T22:26:03.540Z]   Creating DM-node: DM:cmg1js6sc00cdg1ere05w1gkc (ASSERT)
+[2025-11-02T22:26:03.787Z]   Creating edge: DM:cmg1js6sc00cdg1ere05w1gkc --repliesTo--> RA:cmg1jrrmo00c0g1erqpd5c2q6
+[2025-11-02T22:26:04.038Z]   Updating DialogueMove.aifRepresentation: DM:cmg1js6sc00cdg1ere05w1gkc
+[2025-11-02T22:26:04.285Z]   ERROR processing move cmg1js6sc00cdg1ere05w1gkc: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:04.286Z] 
+Processing move cmg1jsqzd00d3g1erzlw71nfd (ASSERT) at 2025-09-27T00:44:07.705Z
+[2025-11-02T22:26:04.286Z]   Creating DM-node: DM:cmg1jsqzd00d3g1erzlw71nfd (ASSERT)
+[2025-11-02T22:26:04.527Z]   Creating edge: DM:cmg1jsqzd00d3g1erzlw71nfd --repliesTo--> RA:cmg1jrsc700c2g1erapbjravw
+[2025-11-02T22:26:04.775Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jsqzd00d3g1erzlw71nfd
+[2025-11-02T22:26:05.027Z]   ERROR processing move cmg1jsqzd00d3g1erzlw71nfd: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:05.027Z] 
+Processing move cmg1jtbp100dxg1ersib7gct1 (ASSERT) at 2025-09-27T00:44:34.549Z
+[2025-11-02T22:26:05.028Z]   Creating DM-node: DM:cmg1jtbp100dxg1ersib7gct1 (ASSERT)
+[2025-11-02T22:26:05.271Z]   Creating edge: DM:cmg1jtbp100dxg1ersib7gct1 --repliesTo--> RA:cmg1jrt1u00c4g1erg1qku3br
+[2025-11-02T22:26:05.521Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jtbp100dxg1ersib7gct1
+[2025-11-02T22:26:05.761Z]   ERROR processing move cmg1jtbp100dxg1ersib7gct1: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:05.761Z] 
+Processing move cmg1jtx6500evg1ermyddqzcl (ASSERT) at 2025-09-27T00:45:02.381Z
+[2025-11-02T22:26:05.761Z]   Creating DM-node: DM:cmg1jtx6500evg1ermyddqzcl (ASSERT)
+[2025-11-02T22:26:06.005Z]   Creating edge: DM:cmg1jtx6500evg1ermyddqzcl --repliesTo--> RA:cmg1jrtpg00c6g1erlaekxjly
+[2025-11-02T22:26:06.250Z]   Updating DialogueMove.aifRepresentation: DM:cmg1jtx6500evg1ermyddqzcl
+[2025-11-02T22:26:06.484Z]   ERROR processing move cmg1jtx6500evg1ermyddqzcl: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:06.484Z] 
+Processing move cmg4hoqhz002vc0dfkqgke0pb (WHY) at 2025-09-29T02:08:19.751Z
+[2025-11-02T22:26:06.484Z]   Creating DM-node: DM:cmg4hoqhz002vc0dfkqgke0pb (WHY)
+[2025-11-02T22:26:06.728Z]   Creating edge: DM:cmg4hoqhz002vc0dfkqgke0pb --repliesTo--> RA:cmfdfilmt000zrm2jrpj9ukem
+[2025-11-02T22:26:06.974Z]   Updating DialogueMove.aifRepresentation: DM:cmg4hoqhz002vc0dfkqgke0pb
+[2025-11-02T22:26:07.227Z]   ERROR processing move cmg4hoqhz002vc0dfkqgke0pb: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:07.227Z] 
+Processing move cmg4izkeu006mc0dful1srsff (RETRACT) at 2025-09-29T02:44:44.695Z
+[2025-11-02T22:26:07.227Z]   Creating DM-node: DM:cmg4izkeu006mc0dful1srsff (RETRACT)
+[2025-11-02T22:26:07.460Z]   Creating edge: DM:cmg4izkeu006mc0dful1srsff --repliesTo--> RA:cmfdfilmt000zrm2jrpj9ukem
+[2025-11-02T22:26:07.702Z]   Updating DialogueMove.aifRepresentation: DM:cmg4izkeu006mc0dful1srsff
+[2025-11-02T22:26:07.942Z]   ERROR processing move cmg4izkeu006mc0dful1srsff: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:07.942Z] 
+Processing move cmg5oo20g0006zq8ccs4kgd52 (RETRACT) at 2025-09-29T22:11:31.505Z
+[2025-11-02T22:26:07.942Z]   Creating DM-node: DM:cmg5oo20g0006zq8ccs4kgd52 (RETRACT)
+[2025-11-02T22:26:08.175Z]   Creating edge: DM:cmg5oo20g0006zq8ccs4kgd52 --commitsTo--> I:cmffzjvgp00fjrmc99ph20tmh
+[2025-11-02T22:26:08.415Z]   Updating DialogueMove.aifRepresentation: DM:cmg5oo20g0006zq8ccs4kgd52
+[2025-11-02T22:26:08.646Z]   ERROR processing move cmg5oo20g0006zq8ccs4kgd52: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:08.647Z] 
+Processing move cmg5oo6f4000vzq8cxpi0zwzx (RETRACT) at 2025-09-29T22:11:37.217Z
+[2025-11-02T22:26:08.647Z]   Creating DM-node: DM:cmg5oo6f4000vzq8cxpi0zwzx (RETRACT)
+[2025-11-02T22:26:08.894Z]   Creating edge: DM:cmg5oo6f4000vzq8cxpi0zwzx --commitsTo--> I:cmffzjvgp00fjrmc99ph20tmh
+[2025-11-02T22:26:09.133Z]   Updating DialogueMove.aifRepresentation: DM:cmg5oo6f4000vzq8cxpi0zwzx
+[2025-11-02T22:26:09.375Z]   ERROR processing move cmg5oo6f4000vzq8cxpi0zwzx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:09.375Z] 
+Processing move cmg62xquh0006zq8uoox9zp5z (ASSERT) at 2025-09-30T04:50:58.218Z
+[2025-11-02T22:26:09.376Z]   Creating DM-node: DM:cmg62xquh0006zq8uoox9zp5z (ASSERT)
+[2025-11-02T22:26:09.617Z]   Creating edge: DM:cmg62xquh0006zq8uoox9zp5z --commitsTo--> I:cmexf5a7j0001rmr1ae7ixffw
+[2025-11-02T22:26:09.854Z]   Updating DialogueMove.aifRepresentation: DM:cmg62xquh0006zq8uoox9zp5z
+[2025-11-02T22:26:10.098Z]   ERROR processing move cmg62xquh0006zq8uoox9zp5z: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:10.099Z] 
+Processing move cmg65ks140004zq7vo9hpahrp (GROUNDS) at 2025-09-30T06:04:52.073Z
+[2025-11-02T22:26:10.099Z]   Creating DM-node: DM:cmg65ks140004zq7vo9hpahrp (GROUNDS)
+[2025-11-02T22:26:10.347Z]   Creating edge: DM:cmg65ks140004zq7vo9hpahrp --commitsTo--> I:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:26:10.822Z]   Updating DialogueMove.aifRepresentation: DM:cmg65ks140004zq7vo9hpahrp
+[2025-11-02T22:26:11.080Z]   ERROR processing move cmg65ks140004zq7vo9hpahrp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:11.080Z] 
+Processing move cmg65rtrl0025zq7vfn64mq6o (RETRACT) at 2025-09-30T06:10:20.914Z
+[2025-11-02T22:26:11.080Z]   Creating DM-node: DM:cmg65rtrl0025zq7vfn64mq6o (RETRACT)
+[2025-11-02T22:26:11.331Z]   Creating edge: DM:cmg65rtrl0025zq7vfn64mq6o --commitsTo--> I:cmexjpyf10007rmcyw0vzvxi2
+[2025-11-02T22:26:11.578Z]   Updating DialogueMove.aifRepresentation: DM:cmg65rtrl0025zq7vfn64mq6o
+[2025-11-02T22:26:11.813Z]   ERROR processing move cmg65rtrl0025zq7vfn64mq6o: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:11.813Z] 
+Processing move cmg65rw450028zq7vtu3eo9kr (RETRACT) at 2025-09-30T06:10:23.957Z
+[2025-11-02T22:26:11.813Z]   Creating DM-node: DM:cmg65rw450028zq7vtu3eo9kr (RETRACT)
+[2025-11-02T22:26:12.058Z]   Creating edge: DM:cmg65rw450028zq7vtu3eo9kr --commitsTo--> I:cmexjpyf10007rmcyw0vzvxi2
+[2025-11-02T22:26:12.295Z]   Updating DialogueMove.aifRepresentation: DM:cmg65rw450028zq7vtu3eo9kr
+[2025-11-02T22:26:12.542Z]   ERROR processing move cmg65rw450028zq7vtu3eo9kr: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:12.542Z] 
+Processing move cmg65s4690033zq7vv647bx3g (RETRACT) at 2025-09-30T06:10:34.401Z
+[2025-11-02T22:26:12.542Z]   Creating DM-node: DM:cmg65s4690033zq7vv647bx3g (RETRACT)
+[2025-11-02T22:26:12.811Z]   Creating edge: DM:cmg65s4690033zq7vv647bx3g --commitsTo--> I:cmexjpyf10007rmcyw0vzvxi2
+[2025-11-02T22:26:13.057Z]   Updating DialogueMove.aifRepresentation: DM:cmg65s4690033zq7vv647bx3g
+[2025-11-02T22:26:13.298Z]   ERROR processing move cmg65s4690033zq7vv647bx3g: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:13.298Z] 
+Processing move cmg65sepu0054zq7vqy1m39pg (RETRACT) at 2025-09-30T06:10:48.067Z
+[2025-11-02T22:26:13.299Z]   Creating DM-node: DM:cmg65sepu0054zq7vqy1m39pg (RETRACT)
+[2025-11-02T22:26:13.538Z]   Creating edge: DM:cmg65sepu0054zq7vqy1m39pg --commitsTo--> I:cmexjpyf10007rmcyw0vzvxi2
+[2025-11-02T22:26:13.783Z]   Updating DialogueMove.aifRepresentation: DM:cmg65sepu0054zq7vqy1m39pg
+[2025-11-02T22:26:14.022Z]   ERROR processing move cmg65sepu0054zq7vqy1m39pg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:14.023Z] 
+Processing move cmg65sntr006rzq7vdelvwgzu (RETRACT) at 2025-09-30T06:10:59.872Z
+[2025-11-02T22:26:14.023Z]   Creating DM-node: DM:cmg65sntr006rzq7vdelvwgzu (RETRACT)
+[2025-11-02T22:26:14.265Z]   Creating edge: DM:cmg65sntr006rzq7vdelvwgzu --commitsTo--> I:cmexjpyf10007rmcyw0vzvxi2
+[2025-11-02T22:26:14.508Z]   Updating DialogueMove.aifRepresentation: DM:cmg65sntr006rzq7vdelvwgzu
+[2025-11-02T22:26:14.748Z]   ERROR processing move cmg65sntr006rzq7vdelvwgzu: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:14.748Z] 
+Processing move cmg65sx6p0086zq7vcawcgfee (RETRACT) at 2025-09-30T06:11:12.001Z
+[2025-11-02T22:26:14.748Z]   Creating DM-node: DM:cmg65sx6p0086zq7vcawcgfee (RETRACT)
+[2025-11-02T22:26:14.996Z]   Creating edge: DM:cmg65sx6p0086zq7vcawcgfee --commitsTo--> I:cmexjpyf10007rmcyw0vzvxi2
+[2025-11-02T22:26:15.286Z]   Updating DialogueMove.aifRepresentation: DM:cmg65sx6p0086zq7vcawcgfee
+[2025-11-02T22:26:15.538Z]   ERROR processing move cmg65sx6p0086zq7vcawcgfee: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:15.538Z] 
+Processing move cmg8noiw3000zc0nwdfp40b58 (CLOSE) at 2025-10-02T00:07:12.292Z
+[2025-11-02T22:26:15.539Z]   Creating DM-node: DM:cmg8noiw3000zc0nwdfp40b58 (CLOSE)
+[2025-11-02T22:26:15.770Z]   Creating edge: DM:cmg8noiw3000zc0nwdfp40b58 --repliesTo--> RA:cmg1jrtpg00c6g1erlaekxjly
+[2025-11-02T22:26:16.018Z]   Updating DialogueMove.aifRepresentation: DM:cmg8noiw3000zc0nwdfp40b58
+[2025-11-02T22:26:16.300Z]   ERROR processing move cmg8noiw3000zc0nwdfp40b58: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:16.300Z] 
+Processing move cmgh8shqy0008zqrz3yon7rep (ASSERT) at 2025-10-08T00:20:18.779Z
+[2025-11-02T22:26:16.300Z]   Creating DM-node: DM:cmgh8shqy0008zqrz3yon7rep (ASSERT)
+[2025-11-02T22:26:16.550Z]   Creating edge: DM:cmgh8shqy0008zqrz3yon7rep --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:26:16.787Z]   Updating DialogueMove.aifRepresentation: DM:cmgh8shqy0008zqrz3yon7rep
+[2025-11-02T22:26:17.023Z]   ERROR processing move cmgh8shqy0008zqrz3yon7rep: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:17.024Z] 
+Processing move cmgh9p2u1000fzq1cdky5rlox (ASSERT) at 2025-10-08T00:45:39.098Z
+[2025-11-02T22:26:17.024Z]   Creating DM-node: DM:cmgh9p2u1000fzq1cdky5rlox (ASSERT)
+[2025-11-02T22:26:17.280Z]   Creating edge: DM:cmgh9p2u1000fzq1cdky5rlox --commitsTo--> I:cmgh9ozyv0001zq1cotbi0bcl
+[2025-11-02T22:26:17.519Z]   Updating DialogueMove.aifRepresentation: DM:cmgh9p2u1000fzq1cdky5rlox
+[2025-11-02T22:26:17.771Z]   ERROR processing move cmgh9p2u1000fzq1cdky5rlox: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:17.771Z] 
+Processing move cmgh9p2u1000gzq1car37b20o (WHY) at 2025-10-08T00:45:39.098Z
+[2025-11-02T22:26:17.771Z]   Creating DM-node: DM:cmgh9p2u1000gzq1car37b20o (WHY)
+[2025-11-02T22:26:18.022Z]   Creating edge: DM:cmgh9p2u1000gzq1car37b20o --repliesTo--> RA:cmgh9p0tx0007zq1c6blwm4ok
+[2025-11-02T22:26:18.269Z]   Updating DialogueMove.aifRepresentation: DM:cmgh9p2u1000gzq1car37b20o
+[2025-11-02T22:26:18.505Z]   ERROR processing move cmgh9p2u1000gzq1car37b20o: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:18.505Z] 
+Processing move cmgmsbrle001eg1grsfg090wd (WHY) at 2025-10-11T21:26:01.586Z
+[2025-11-02T22:26:18.505Z]   Creating DM-node: DM:cmgmsbrle001eg1grsfg090wd (WHY)
+[2025-11-02T22:26:18.741Z]   Creating edge: DM:cmgmsbrle001eg1grsfg090wd --repliesTo--> RA:cmgmsbm0n0019g1grzc5tcusl
+[2025-11-02T22:26:18.981Z]   Updating DialogueMove.aifRepresentation: DM:cmgmsbrle001eg1grsfg090wd
+[2025-11-02T22:26:19.432Z]   ERROR processing move cmgmsbrle001eg1grsfg090wd: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:19.432Z] 
+Processing move cmgr1dlfq000cg1yxx4p8wh5n (WHY) at 2025-10-14T20:50:28.166Z
+[2025-11-02T22:26:19.432Z]   Creating DM-node: DM:cmgr1dlfq000cg1yxx4p8wh5n (WHY)
+[2025-11-02T22:26:19.672Z]   Creating edge: DM:cmgr1dlfq000cg1yxx4p8wh5n --repliesTo--> RA:cmgmsbm0n0019g1grzc5tcusl
+[2025-11-02T22:26:19.914Z]   Updating DialogueMove.aifRepresentation: DM:cmgr1dlfq000cg1yxx4p8wh5n
+[2025-11-02T22:26:20.168Z]   ERROR processing move cmgr1dlfq000cg1yxx4p8wh5n: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:20.168Z] 
+Processing move cmgr2ifpf001jg1yxjz3fy488 (ASSERT) at 2025-10-14T21:22:13.635Z
+[2025-11-02T22:26:20.168Z]   Creating DM-node: DM:cmgr2ifpf001jg1yxjz3fy488 (ASSERT)
+[2025-11-02T22:26:20.423Z]   Creating edge: DM:cmgr2ifpf001jg1yxjz3fy488 --commitsTo--> I:cmew3lw2o0018ra8x95u19myc
+[2025-11-02T22:26:20.665Z]   Updating DialogueMove.aifRepresentation: DM:cmgr2ifpf001jg1yxjz3fy488
+[2025-11-02T22:26:20.907Z]   ERROR processing move cmgr2ifpf001jg1yxjz3fy488: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:20.907Z] 
+Processing move cmgr2lv0d003bg1yxwlngrr77 (ASSERT) at 2025-10-14T21:24:53.438Z
+[2025-11-02T22:26:20.907Z]   Creating DM-node: DM:cmgr2lv0d003bg1yxwlngrr77 (ASSERT)
+[2025-11-02T22:26:21.147Z]   Creating edge: DM:cmgr2lv0d003bg1yxwlngrr77 --commitsTo--> I:cmew3lli1000sra8x7yap6ygh
+[2025-11-02T22:26:21.382Z]   Updating DialogueMove.aifRepresentation: DM:cmgr2lv0d003bg1yxwlngrr77
+[2025-11-02T22:26:21.616Z]   ERROR processing move cmgr2lv0d003bg1yxwlngrr77: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:21.616Z] 
+Processing move cmgrjtlwm00aqg1n0drlffnz5 (ASSERT) at 2025-10-15T05:26:48.358Z
+[2025-11-02T22:26:21.616Z]   Creating DM-node: DM:cmgrjtlwm00aqg1n0drlffnz5 (ASSERT)
+[2025-11-02T22:26:21.846Z]   Creating edge: DM:cmgrjtlwm00aqg1n0drlffnz5 --commitsTo--> I:cmfnosavf00b9rmyko50k40yc
+[2025-11-02T22:26:22.084Z]   Updating DialogueMove.aifRepresentation: DM:cmgrjtlwm00aqg1n0drlffnz5
+[2025-11-02T22:26:22.339Z]   ERROR processing move cmgrjtlwm00aqg1n0drlffnz5: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:22.339Z] 
+Processing move cmgsx4i2e003qg1bif57tvmtp (ASSERT) at 2025-10-16T04:26:57.783Z
+[2025-11-02T22:26:22.339Z]   Creating DM-node: DM:cmgsx4i2e003qg1bif57tvmtp (ASSERT)
+[2025-11-02T22:26:22.599Z]   Creating edge: DM:cmgsx4i2e003qg1bif57tvmtp --repliesTo--> RA:cmgmsbm0n0019g1grzc5tcusl
+[2025-11-02T22:26:22.835Z]   Updating DialogueMove.aifRepresentation: DM:cmgsx4i2e003qg1bif57tvmtp
+[2025-11-02T22:26:23.105Z]   ERROR processing move cmgsx4i2e003qg1bif57tvmtp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:23.106Z] 
+Processing move cmgsx4mf1004lg1bitbqybc3h (GROUNDS) at 2025-10-16T04:27:03.422Z
+[2025-11-02T22:26:23.106Z]   Creating DM-node: DM:cmgsx4mf1004lg1bitbqybc3h (GROUNDS)
+[2025-11-02T22:26:23.352Z]   Creating edge: DM:cmgsx4mf1004lg1bitbqybc3h --repliesTo--> RA:cmgh9p0tx0007zq1c6blwm4ok
+[2025-11-02T22:26:23.590Z]   Updating DialogueMove.aifRepresentation: DM:cmgsx4mf1004lg1bitbqybc3h
+[2025-11-02T22:26:23.826Z]   ERROR processing move cmgsx4mf1004lg1bitbqybc3h: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:23.826Z] 
+Processing move cmgy8q8io0002c0fte2ejs7zl (WHY) at 2025-10-19T21:50:38.496Z
+[2025-11-02T22:26:23.826Z]   Creating DM-node: DM:cmgy8q8io0002c0fte2ejs7zl (WHY)
+[2025-11-02T22:26:24.072Z]   Creating edge: DM:cmgy8q8io0002c0fte2ejs7zl --commitsTo--> I:cmgy6vnw80063c0grn1xp6z11
+[2025-11-02T22:26:24.320Z]   Updating DialogueMove.aifRepresentation: DM:cmgy8q8io0002c0fte2ejs7zl
+[2025-11-02T22:26:24.558Z]   ERROR processing move cmgy8q8io0002c0fte2ejs7zl: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:24.558Z] 
+Processing move cmgzx2b1f000gc0bn1q9y2ihp (WHY) at 2025-10-21T01:59:38.596Z
+[2025-11-02T22:26:24.558Z]   Creating DM-node: DM:cmgzx2b1f000gc0bn1q9y2ihp (WHY)
+[2025-11-02T22:26:24.797Z]   Creating edge: DM:cmgzx2b1f000gc0bn1q9y2ihp --commitsTo--> I:cmgy8ztm80025c0x05hkb6nln
+[2025-11-02T22:26:25.044Z]   Updating DialogueMove.aifRepresentation: DM:cmgzx2b1f000gc0bn1q9y2ihp
+[2025-11-02T22:26:25.282Z]   ERROR processing move cmgzx2b1f000gc0bn1q9y2ihp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:25.282Z] 
+Processing move cmh02dnkc000fc02i4tlmw539 (WHY) at 2025-10-21T04:28:26.124Z
+[2025-11-02T22:26:25.282Z]   Creating DM-node: DM:cmh02dnkc000fc02i4tlmw539 (WHY)
+[2025-11-02T22:26:25.514Z]   Creating edge: DM:cmh02dnkc000fc02i4tlmw539 --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:25.751Z]   Updating DialogueMove.aifRepresentation: DM:cmh02dnkc000fc02i4tlmw539
+[2025-11-02T22:26:26.001Z]   ERROR processing move cmh02dnkc000fc02i4tlmw539: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:26.001Z] 
+Processing move cmh05v7dr000dc05owog3j7ld (GROUNDS) at 2025-10-21T06:06:03.808Z
+[2025-11-02T22:26:26.001Z]   Creating DM-node: DM:cmh05v7dr000dc05owog3j7ld (GROUNDS)
+[2025-11-02T22:26:26.242Z]   Creating edge: DM:cmh05v7dr000dc05owog3j7ld --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:26.483Z]   Updating DialogueMove.aifRepresentation: DM:cmh05v7dr000dc05owog3j7ld
+[2025-11-02T22:26:26.729Z]   ERROR processing move cmh05v7dr000dc05owog3j7ld: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:26.729Z] 
+Processing move cmh05vjh6000gc05oxb2u532l (WHY) at 2025-10-21T06:06:19.482Z
+[2025-11-02T22:26:26.729Z]   Creating DM-node: DM:cmh05vjh6000gc05oxb2u532l (WHY)
+[2025-11-02T22:26:26.980Z]   Creating edge: DM:cmh05vjh6000gc05oxb2u532l --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:27.212Z]   Updating DialogueMove.aifRepresentation: DM:cmh05vjh6000gc05oxb2u532l
+[2025-11-02T22:26:27.450Z]   ERROR processing move cmh05vjh6000gc05oxb2u532l: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:27.450Z] 
+Processing move cmh05vybp000lc05o5qj3ub6m (ASSERT) at 2025-10-21T06:06:38.725Z
+[2025-11-02T22:26:27.450Z]   Creating DM-node: DM:cmh05vybp000lc05o5qj3ub6m (ASSERT)
+[2025-11-02T22:26:27.694Z]   Creating edge: DM:cmh05vybp000lc05o5qj3ub6m --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:27.943Z]   Updating DialogueMove.aifRepresentation: DM:cmh05vybp000lc05o5qj3ub6m
+[2025-11-02T22:26:28.171Z]   ERROR processing move cmh05vybp000lc05o5qj3ub6m: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:28.171Z] 
+Batch complete: 50 nodes, 50 edges, 0 moves updated
+[2025-11-02T22:26:28.171Z] 
+================================================================================
+[2025-11-02T22:26:28.172Z] Processing batch 4 (offset 150)
+[2025-11-02T22:26:28.172Z] ================================================================================
+[2025-11-02T22:26:28.460Z] 
+Processing move cmh05wgmk001qc05ofxqlbdgv (CLOSE) at 2025-10-21T06:07:02.444Z
+[2025-11-02T22:26:28.460Z]   Creating DM-node: DM:cmh05wgmk001qc05ofxqlbdgv (CLOSE)
+[2025-11-02T22:26:28.697Z]   Creating edge: DM:cmh05wgmk001qc05ofxqlbdgv --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:28.931Z]   Updating DialogueMove.aifRepresentation: DM:cmh05wgmk001qc05ofxqlbdgv
+[2025-11-02T22:26:29.166Z]   ERROR processing move cmh05wgmk001qc05ofxqlbdgv: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:29.166Z] 
+Processing move cmh05wsyl002vc05odycls8aq (WHY) at 2025-10-21T06:07:18.429Z
+[2025-11-02T22:26:29.166Z]   Creating DM-node: DM:cmh05wsyl002vc05odycls8aq (WHY)
+[2025-11-02T22:26:29.406Z]   Creating edge: DM:cmh05wsyl002vc05odycls8aq --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:29.643Z]   Updating DialogueMove.aifRepresentation: DM:cmh05wsyl002vc05odycls8aq
+[2025-11-02T22:26:29.881Z]   ERROR processing move cmh05wsyl002vc05odycls8aq: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:29.881Z] 
+Processing move cmh05wulv002xc05ok0qx4wor (WHY) at 2025-10-21T06:07:20.563Z
+[2025-11-02T22:26:29.881Z]   Creating DM-node: DM:cmh05wulv002xc05ok0qx4wor (WHY)
+[2025-11-02T22:26:30.128Z]   Creating edge: DM:cmh05wulv002xc05ok0qx4wor --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:30.407Z]   Updating DialogueMove.aifRepresentation: DM:cmh05wulv002xc05ok0qx4wor
+[2025-11-02T22:26:30.865Z]   ERROR processing move cmh05wulv002xc05ok0qx4wor: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:30.865Z] 
+Processing move cmh08fn7g0081c05ojcwat7wx (RETRACT) at 2025-10-21T07:17:56.668Z
+[2025-11-02T22:26:30.865Z]   Creating DM-node: DM:cmh08fn7g0081c05ojcwat7wx (RETRACT)
+[2025-11-02T22:26:31.107Z]   Creating edge: DM:cmh08fn7g0081c05ojcwat7wx --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:26:31.351Z]   Updating DialogueMove.aifRepresentation: DM:cmh08fn7g0081c05ojcwat7wx
+[2025-11-02T22:26:31.594Z]   ERROR processing move cmh08fn7g0081c05ojcwat7wx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:31.594Z] 
+Processing move cmh18uf5x009yc05oak7apixh (CLOSE) at 2025-10-22T00:17:12.261Z
+[2025-11-02T22:26:31.594Z]   Creating DM-node: DM:cmh18uf5x009yc05oak7apixh (CLOSE)
+[2025-11-02T22:26:31.826Z]   Creating edge: DM:cmh18uf5x009yc05oak7apixh --commitsTo--> I:cmgy8zj0n0001c0x02fbdv1bw
+[2025-11-02T22:26:32.078Z]   Updating DialogueMove.aifRepresentation: DM:cmh18uf5x009yc05oak7apixh
+[2025-11-02T22:26:32.313Z]   ERROR processing move cmh18uf5x009yc05oak7apixh: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:32.314Z] 
+Processing move cmh18vb0200bvc05on2nxfl9v (WHY) at 2025-10-22T00:17:53.450Z
+[2025-11-02T22:26:32.314Z]   Creating DM-node: DM:cmh18vb0200bvc05on2nxfl9v (WHY)
+[2025-11-02T22:26:32.562Z]   Creating edge: DM:cmh18vb0200bvc05on2nxfl9v --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:32.797Z]   Updating DialogueMove.aifRepresentation: DM:cmh18vb0200bvc05on2nxfl9v
+[2025-11-02T22:26:33.055Z]   ERROR processing move cmh18vb0200bvc05on2nxfl9v: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:33.055Z] 
+Processing move cmh18vxmm00c0c05o8837rj6l (RETRACT) at 2025-10-22T00:18:22.846Z
+[2025-11-02T22:26:33.055Z]   Creating DM-node: DM:cmh18vxmm00c0c05o8837rj6l (RETRACT)
+[2025-11-02T22:26:33.294Z]   Creating edge: DM:cmh18vxmm00c0c05o8837rj6l --commitsTo--> I:cmgy8zj0n0001c0x02fbdv1bw
+[2025-11-02T22:26:33.539Z]   Updating DialogueMove.aifRepresentation: DM:cmh18vxmm00c0c05o8837rj6l
+[2025-11-02T22:26:33.780Z]   ERROR processing move cmh18vxmm00c0c05o8837rj6l: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:33.780Z] 
+Processing move cmh193cae00esc05or2cce26n (GROUNDS) at 2025-10-22T00:24:08.438Z
+[2025-11-02T22:26:33.780Z]   Creating DM-node: DM:cmh193cae00esc05or2cce26n (GROUNDS)
+[2025-11-02T22:26:34.024Z]   Creating edge: DM:cmh193cae00esc05or2cce26n --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:34.263Z]   Updating DialogueMove.aifRepresentation: DM:cmh193cae00esc05or2cce26n
+[2025-11-02T22:26:34.506Z]   ERROR processing move cmh193cae00esc05or2cce26n: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:34.506Z] 
+Processing move cmh198fz200f5c05o58pk9a8y (WHY) at 2025-10-22T00:28:06.494Z
+[2025-11-02T22:26:34.506Z]   Creating DM-node: DM:cmh198fz200f5c05o58pk9a8y (WHY)
+[2025-11-02T22:26:34.741Z]   Creating edge: DM:cmh198fz200f5c05o58pk9a8y --repliesTo--> RA:cmh18ycph00e2c05o72vqoxjv
+[2025-11-02T22:26:34.985Z]   Updating DialogueMove.aifRepresentation: DM:cmh198fz200f5c05o58pk9a8y
+[2025-11-02T22:26:35.224Z]   ERROR processing move cmh198fz200f5c05o58pk9a8y: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:35.224Z] 
+Processing move cmh1bgxip000oc0who0rz8qcc (GROUNDS) at 2025-10-22T01:30:41.714Z
+[2025-11-02T22:26:35.224Z]   Creating DM-node: DM:cmh1bgxip000oc0who0rz8qcc (GROUNDS)
+[2025-11-02T22:26:35.460Z]   Creating edge: DM:cmh1bgxip000oc0who0rz8qcc --repliesTo--> RA:cmh18ycph00e2c05o72vqoxjv
+[2025-11-02T22:26:35.708Z]   Updating DialogueMove.aifRepresentation: DM:cmh1bgxip000oc0who0rz8qcc
+[2025-11-02T22:26:35.941Z]   ERROR processing move cmh1bgxip000oc0who0rz8qcc: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:35.941Z] 
+Processing move cmh1blpyf003ec0whzfrk1az8 (WHY) at 2025-10-22T01:34:25.192Z
+[2025-11-02T22:26:35.941Z]   Creating DM-node: DM:cmh1blpyf003ec0whzfrk1az8 (WHY)
+[2025-11-02T22:26:36.177Z]   Creating edge: DM:cmh1blpyf003ec0whzfrk1az8 --repliesTo--> RA:cmh18ycph00e2c05o72vqoxjv
+[2025-11-02T22:26:36.426Z]   Updating DialogueMove.aifRepresentation: DM:cmh1blpyf003ec0whzfrk1az8
+[2025-11-02T22:26:36.665Z]   ERROR processing move cmh1blpyf003ec0whzfrk1az8: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:36.666Z] 
+Processing move cmh1c3bxx004bc0whw9pttwp9 (GROUNDS) at 2025-10-22T01:48:06.838Z
+[2025-11-02T22:26:36.666Z]   Creating DM-node: DM:cmh1c3bxx004bc0whw9pttwp9 (GROUNDS)
+[2025-11-02T22:26:36.914Z]   Creating edge: DM:cmh1c3bxx004bc0whw9pttwp9 --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:37.167Z]   Updating DialogueMove.aifRepresentation: DM:cmh1c3bxx004bc0whw9pttwp9
+[2025-11-02T22:26:37.407Z]   ERROR processing move cmh1c3bxx004bc0whw9pttwp9: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:37.407Z] 
+Processing move cmh1c3vzl004qc0whumzgul5w (GROUNDS) at 2025-10-22T01:48:32.817Z
+[2025-11-02T22:26:37.407Z]   Creating DM-node: DM:cmh1c3vzl004qc0whumzgul5w (GROUNDS)
+[2025-11-02T22:26:37.685Z]   Creating edge: DM:cmh1c3vzl004qc0whumzgul5w --repliesTo--> RA:cmh18ycph00e2c05o72vqoxjv
+[2025-11-02T22:26:37.940Z]   Updating DialogueMove.aifRepresentation: DM:cmh1c3vzl004qc0whumzgul5w
+[2025-11-02T22:26:38.180Z]   ERROR processing move cmh1c3vzl004qc0whumzgul5w: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:38.180Z] 
+Processing move cmh1c43k7004xc0whfy02mo18 (GROUNDS) at 2025-10-22T01:48:42.631Z
+[2025-11-02T22:26:38.180Z]   Creating DM-node: DM:cmh1c43k7004xc0whfy02mo18 (GROUNDS)
+[2025-11-02T22:26:38.424Z]   Creating edge: DM:cmh1c43k7004xc0whfy02mo18 --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:38.659Z]   Updating DialogueMove.aifRepresentation: DM:cmh1c43k7004xc0whfy02mo18
+[2025-11-02T22:26:38.907Z]   ERROR processing move cmh1c43k7004xc0whfy02mo18: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:38.907Z] 
+Processing move cmh1c6gte005kc0whvshuml5c (GROUNDS) at 2025-10-22T01:50:33.122Z
+[2025-11-02T22:26:38.907Z]   Creating DM-node: DM:cmh1c6gte005kc0whvshuml5c (GROUNDS)
+[2025-11-02T22:26:39.142Z]   Creating edge: DM:cmh1c6gte005kc0whvshuml5c --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:39.577Z]   Updating DialogueMove.aifRepresentation: DM:cmh1c6gte005kc0whvshuml5c
+[2025-11-02T22:26:39.815Z]   ERROR processing move cmh1c6gte005kc0whvshuml5c: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:39.816Z] 
+Processing move cmh1dcv7m000gc02ferchmzww (GROUNDS) at 2025-10-22T02:23:31.331Z
+[2025-11-02T22:26:39.816Z]   Creating DM-node: DM:cmh1dcv7m000gc02ferchmzww (GROUNDS)
+[2025-11-02T22:26:40.067Z]   Creating edge: DM:cmh1dcv7m000gc02ferchmzww --repliesTo--> RA:cmh18ycph00e2c05o72vqoxjv
+[2025-11-02T22:26:40.308Z]   Updating DialogueMove.aifRepresentation: DM:cmh1dcv7m000gc02ferchmzww
+[2025-11-02T22:26:40.550Z]   ERROR processing move cmh1dcv7m000gc02ferchmzww: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:40.550Z] 
+Processing move cmh1ddklz002jc02f3h3enp6p (GROUNDS) at 2025-10-22T02:24:04.247Z
+[2025-11-02T22:26:40.550Z]   Creating DM-node: DM:cmh1ddklz002jc02f3h3enp6p (GROUNDS)
+[2025-11-02T22:26:40.790Z]   Creating edge: DM:cmh1ddklz002jc02f3h3enp6p --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:41.030Z]   Updating DialogueMove.aifRepresentation: DM:cmh1ddklz002jc02f3h3enp6p
+[2025-11-02T22:26:41.272Z]   ERROR processing move cmh1ddklz002jc02f3h3enp6p: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:41.273Z] 
+Processing move cmh1dj7aa005pc02f5msnypdb (ASSERT) at 2025-10-22T02:28:26.914Z
+[2025-11-02T22:26:41.273Z]   Creating DM-node: DM:cmh1dj7aa005pc02f5msnypdb (ASSERT)
+[2025-11-02T22:26:41.513Z]   Creating edge: DM:cmh1dj7aa005pc02f5msnypdb --repliesTo--> RA:cmgsx2r1h0017g1bijafdmy53
+[2025-11-02T22:26:41.761Z]   Updating DialogueMove.aifRepresentation: DM:cmh1dj7aa005pc02f5msnypdb
+[2025-11-02T22:26:42.009Z]   ERROR processing move cmh1dj7aa005pc02f5msnypdb: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:42.009Z] 
+Processing move cmh1o7sg8002fc0fyz65e3pwv (WHY) at 2025-10-22T07:27:30.248Z
+[2025-11-02T22:26:42.009Z]   Creating DM-node: DM:cmh1o7sg8002fc0fyz65e3pwv (WHY)
+[2025-11-02T22:26:42.251Z]   Creating edge: DM:cmh1o7sg8002fc0fyz65e3pwv --commitsTo--> I:cmgy8zmwj000tc0x0p3kv21kx
+[2025-11-02T22:26:42.492Z]   Updating DialogueMove.aifRepresentation: DM:cmh1o7sg8002fc0fyz65e3pwv
+[2025-11-02T22:26:42.729Z]   ERROR processing move cmh1o7sg8002fc0fyz65e3pwv: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:42.729Z] 
+Processing move cmh1odl6b003dc0fy52x3mlly (WHY) at 2025-10-22T07:32:00.755Z
+[2025-11-02T22:26:42.729Z]   Creating DM-node: DM:cmh1odl6b003dc0fy52x3mlly (WHY)
+[2025-11-02T22:26:42.969Z]   Creating edge: DM:cmh1odl6b003dc0fy52x3mlly --commitsTo--> I:cmgy8zkev000bc0x0za9tgw2d
+[2025-11-02T22:26:43.203Z]   Updating DialogueMove.aifRepresentation: DM:cmh1odl6b003dc0fy52x3mlly
+[2025-11-02T22:26:43.458Z]   ERROR processing move cmh1odl6b003dc0fy52x3mlly: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:43.458Z] 
+Processing move cmh1ovnho0045c0fyj7j87haw (ASSERT) at 2025-10-22T07:46:03.564Z
+[2025-11-02T22:26:43.458Z]   Creating DM-node: DM:cmh1ovnho0045c0fyj7j87haw (ASSERT)
+[2025-11-02T22:26:43.700Z]   Creating edge: DM:cmh1ovnho0045c0fyj7j87haw --commitsTo--> I:cmgy8zjkw0005c0x0dwsc9c8q
+[2025-11-02T22:26:43.938Z]   Updating DialogueMove.aifRepresentation: DM:cmh1ovnho0045c0fyj7j87haw
+[2025-11-02T22:26:44.213Z]   ERROR processing move cmh1ovnho0045c0fyj7j87haw: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:44.214Z] 
+Processing move cmh1pcjlq0014c0y06gonqcy9 (ASSERT) at 2025-10-22T07:59:11.678Z
+[2025-11-02T22:26:44.214Z]   Creating DM-node: DM:cmh1pcjlq0014c0y06gonqcy9 (ASSERT)
+[2025-11-02T22:26:44.456Z]   Creating edge: DM:cmh1pcjlq0014c0y06gonqcy9 --repliesTo--> RA:cmh18ycph00e2c05o72vqoxjv
+[2025-11-02T22:26:44.692Z]   Updating DialogueMove.aifRepresentation: DM:cmh1pcjlq0014c0y06gonqcy9
+[2025-11-02T22:26:44.933Z]   ERROR processing move cmh1pcjlq0014c0y06gonqcy9: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:44.933Z] 
+Processing move cmh2iuztq0007c0ug7tvd897f (WHY) at 2025-10-22T21:45:21.374Z
+[2025-11-02T22:26:44.934Z]   Creating DM-node: DM:cmh2iuztq0007c0ug7tvd897f (WHY)
+[2025-11-02T22:26:45.166Z]   Creating edge: DM:cmh2iuztq0007c0ug7tvd897f --commitsTo--> I:cmgy8zr4m001nc0x0lmu323r3
+[2025-11-02T22:26:45.404Z]   Updating DialogueMove.aifRepresentation: DM:cmh2iuztq0007c0ug7tvd897f
+[2025-11-02T22:26:45.690Z]   ERROR processing move cmh2iuztq0007c0ug7tvd897f: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:45.691Z] 
+Processing move cmh2ivwet0026c0ug3nmw6xbu (GROUNDS) at 2025-10-22T21:46:03.605Z
+[2025-11-02T22:26:45.691Z]   Creating DM-node: DM:cmh2ivwet0026c0ug3nmw6xbu (GROUNDS)
+[2025-11-02T22:26:45.935Z]   Creating edge: DM:cmh2ivwet0026c0ug3nmw6xbu --commitsTo--> I:cmgy8zr4m001nc0x0lmu323r3
+[2025-11-02T22:26:46.172Z]   Updating DialogueMove.aifRepresentation: DM:cmh2ivwet0026c0ug3nmw6xbu
+[2025-11-02T22:26:46.416Z]   ERROR processing move cmh2ivwet0026c0ug3nmw6xbu: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:46.416Z] 
+Processing move cmh2ix2je0047c0ugckz7h2wz (GROUNDS) at 2025-10-22T21:46:58.202Z
+[2025-11-02T22:26:46.416Z]   Creating DM-node: DM:cmh2ix2je0047c0ugckz7h2wz (GROUNDS)
+[2025-11-02T22:26:46.668Z]   Creating edge: DM:cmh2ix2je0047c0ugckz7h2wz --commitsTo--> I:cmgy8zmwj000tc0x0p3kv21kx
+[2025-11-02T22:26:46.929Z]   Updating DialogueMove.aifRepresentation: DM:cmh2ix2je0047c0ugckz7h2wz
+[2025-11-02T22:26:47.186Z]   ERROR processing move cmh2ix2je0047c0ugckz7h2wz: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:47.186Z] 
+Processing move cmh2j1e4h006ic0ugsvzwj6ot (GROUNDS) at 2025-10-22T21:50:19.842Z
+[2025-11-02T22:26:47.186Z]   Creating DM-node: DM:cmh2j1e4h006ic0ugsvzwj6ot (GROUNDS)
+[2025-11-02T22:26:47.440Z]   Creating edge: DM:cmh2j1e4h006ic0ugsvzwj6ot --commitsTo--> I:cmgy8zkev000bc0x0za9tgw2d
+[2025-11-02T22:26:47.686Z]   Updating DialogueMove.aifRepresentation: DM:cmh2j1e4h006ic0ugsvzwj6ot
+[2025-11-02T22:26:47.933Z]   ERROR processing move cmh2j1e4h006ic0ugsvzwj6ot: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:47.933Z] 
+Processing move cmh2j303a008gc0ugw2itxpph (WHY) at 2025-10-22T21:51:34.966Z
+[2025-11-02T22:26:47.933Z]   Creating DM-node: DM:cmh2j303a008gc0ugw2itxpph (WHY)
+[2025-11-02T22:26:48.182Z]   Creating edge: DM:cmh2j303a008gc0ugw2itxpph --commitsTo--> I:cmgy8zr4m001nc0x0lmu323r3
+[2025-11-02T22:26:48.425Z]   Updating DialogueMove.aifRepresentation: DM:cmh2j303a008gc0ugw2itxpph
+[2025-11-02T22:26:48.665Z]   ERROR processing move cmh2j303a008gc0ugw2itxpph: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:48.665Z] 
+Processing move cmh2j3yft00adc0ugvw0bdjjg (GROUNDS) at 2025-10-22T21:52:19.481Z
+[2025-11-02T22:26:48.665Z]   Creating DM-node: DM:cmh2j3yft00adc0ugvw0bdjjg (GROUNDS)
+[2025-11-02T22:26:48.903Z]   Creating edge: DM:cmh2j3yft00adc0ugvw0bdjjg --commitsTo--> I:cmgy8zr4m001nc0x0lmu323r3
+[2025-11-02T22:26:49.155Z]   Updating DialogueMove.aifRepresentation: DM:cmh2j3yft00adc0ugvw0bdjjg
+[2025-11-02T22:26:49.395Z]   ERROR processing move cmh2j3yft00adc0ugvw0bdjjg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:49.395Z] 
+Processing move cmh2jh7ie00bpc0ugozwf90hp (SUPPOSE) at 2025-10-22T22:02:37.767Z
+[2025-11-02T22:26:49.395Z]   Creating DM-node: DM:cmh2jh7ie00bpc0ugozwf90hp (SUPPOSE)
+[2025-11-02T22:26:49.638Z]   Creating edge: DM:cmh2jh7ie00bpc0ugozwf90hp --commitsTo--> I:cmgy8zjkw0005c0x0dwsc9c8q
+[2025-11-02T22:26:49.883Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jh7ie00bpc0ugozwf90hp
+[2025-11-02T22:26:50.126Z]   ERROR processing move cmh2jh7ie00bpc0ugozwf90hp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:50.126Z] 
+Processing move cmh2ji16y00doc0ug39o6ktwr (DISCHARGE) at 2025-10-22T22:03:16.234Z
+[2025-11-02T22:26:50.126Z]   Creating DM-node: DM:cmh2ji16y00doc0ug39o6ktwr (DISCHARGE)
+[2025-11-02T22:26:50.389Z]   Creating edge: DM:cmh2ji16y00doc0ug39o6ktwr --commitsTo--> I:cmgy8zjkw0005c0x0dwsc9c8q
+[2025-11-02T22:26:51.147Z]   Updating DialogueMove.aifRepresentation: DM:cmh2ji16y00doc0ug39o6ktwr
+[2025-11-02T22:26:51.398Z]   ERROR processing move cmh2ji16y00doc0ug39o6ktwr: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:51.398Z] 
+Processing move cmh2jisy200fnc0ugdolz7wwa (THEREFORE) at 2025-10-22T22:03:52.202Z
+[2025-11-02T22:26:51.398Z]   Creating DM-node: DM:cmh2jisy200fnc0ugdolz7wwa (THEREFORE)
+[2025-11-02T22:26:51.641Z]   Creating edge: DM:cmh2jisy200fnc0ugdolz7wwa --commitsTo--> I:cmgy8zjkw0005c0x0dwsc9c8q
+[2025-11-02T22:26:51.885Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jisy200fnc0ugdolz7wwa
+[2025-11-02T22:26:52.134Z]   ERROR processing move cmh2jisy200fnc0ugdolz7wwa: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:52.134Z] 
+Processing move cmh2jq9hh000lc0z1ayxopp60 (WHY) at 2025-10-22T22:09:40.230Z
+[2025-11-02T22:26:52.134Z]   Creating DM-node: DM:cmh2jq9hh000lc0z1ayxopp60 (WHY)
+[2025-11-02T22:26:52.369Z]   Creating edge: DM:cmh2jq9hh000lc0z1ayxopp60 --repliesTo--> RA:cmh06qp9h003rc05oxfu8zo2y
+[2025-11-02T22:26:52.612Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jq9hh000lc0z1ayxopp60
+[2025-11-02T22:26:52.849Z]   ERROR processing move cmh2jq9hh000lc0z1ayxopp60: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:52.849Z] 
+Processing move cmh2jqml60019c0z1a9y4n0go (WHY) at 2025-10-22T22:09:57.211Z
+[2025-11-02T22:26:52.849Z]   Creating DM-node: DM:cmh2jqml60019c0z1a9y4n0go (WHY)
+[2025-11-02T22:26:53.084Z]   Creating edge: DM:cmh2jqml60019c0z1a9y4n0go --commitsTo--> I:cmh00loc0001gc08et5k3m5na
+[2025-11-02T22:26:53.317Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jqml60019c0z1a9y4n0go
+[2025-11-02T22:26:53.571Z]   ERROR processing move cmh2jqml60019c0z1a9y4n0go: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:53.571Z] 
+Processing move cmh2jsjxr001yc0z1esqchvp4 (GROUNDS) at 2025-10-22T22:11:27.087Z
+[2025-11-02T22:26:53.572Z]   Creating DM-node: DM:cmh2jsjxr001yc0z1esqchvp4 (GROUNDS)
+[2025-11-02T22:26:53.810Z]   Creating edge: DM:cmh2jsjxr001yc0z1esqchvp4 --commitsTo--> I:cmh00loc0001gc08et5k3m5na
+[2025-11-02T22:26:54.051Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jsjxr001yc0z1esqchvp4
+[2025-11-02T22:26:54.288Z]   ERROR processing move cmh2jsjxr001yc0z1esqchvp4: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:54.288Z] 
+Processing move cmh2juks7002sc0z11j122grx (WHY) at 2025-10-22T22:13:01.495Z
+[2025-11-02T22:26:54.288Z]   Creating DM-node: DM:cmh2juks7002sc0z11j122grx (WHY)
+[2025-11-02T22:26:54.539Z]   Creating edge: DM:cmh2juks7002sc0z11j122grx --commitsTo--> I:cmgzytkac0004c0lepxah6ooe
+[2025-11-02T22:26:54.782Z]   Updating DialogueMove.aifRepresentation: DM:cmh2juks7002sc0z11j122grx
+[2025-11-02T22:26:55.027Z]   ERROR processing move cmh2juks7002sc0z11j122grx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:55.027Z] 
+Processing move cmh2jvgcz004nc0z1ik50ghmp (GROUNDS) at 2025-10-22T22:13:42.419Z
+[2025-11-02T22:26:55.027Z]   Creating DM-node: DM:cmh2jvgcz004nc0z1ik50ghmp (GROUNDS)
+[2025-11-02T22:26:55.272Z]   Creating edge: DM:cmh2jvgcz004nc0z1ik50ghmp --commitsTo--> I:cmgzytkac0004c0lepxah6ooe
+[2025-11-02T22:26:55.531Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jvgcz004nc0z1ik50ghmp
+[2025-11-02T22:26:55.772Z]   ERROR processing move cmh2jvgcz004nc0z1ik50ghmp: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:55.773Z] 
+Processing move cmh2jxb8i005fc0z1mscpm88a (WHY) at 2025-10-22T22:15:09.090Z
+[2025-11-02T22:26:55.773Z]   Creating DM-node: DM:cmh2jxb8i005fc0z1mscpm88a (WHY)
+[2025-11-02T22:26:56.011Z]   Creating edge: DM:cmh2jxb8i005fc0z1mscpm88a --commitsTo--> I:cmgy8ztwa0027c0x001i2lwv9
+[2025-11-02T22:26:56.241Z]   Updating DialogueMove.aifRepresentation: DM:cmh2jxb8i005fc0z1mscpm88a
+[2025-11-02T22:26:56.476Z]   ERROR processing move cmh2jxb8i005fc0z1mscpm88a: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:56.476Z] 
+Processing move cmh2lrcfc000ac0g6lincgk8o (SUPPOSE) at 2025-10-22T23:06:29.928Z
+[2025-11-02T22:26:56.476Z]   Creating DM-node: DM:cmh2lrcfc000ac0g6lincgk8o (SUPPOSE)
+[2025-11-02T22:26:56.722Z]   Creating edge: DM:cmh2lrcfc000ac0g6lincgk8o --commitsTo--> I:cmgy8zj0n0001c0x02fbdv1bw
+[2025-11-02T22:26:56.960Z]   Updating DialogueMove.aifRepresentation: DM:cmh2lrcfc000ac0g6lincgk8o
+[2025-11-02T22:26:57.200Z]   ERROR processing move cmh2lrcfc000ac0g6lincgk8o: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:57.200Z] 
+Processing move cmh2lvhlq0029c0g6j0oqat41 (THEREFORE) at 2025-10-22T23:09:43.263Z
+[2025-11-02T22:26:57.200Z]   Creating DM-node: DM:cmh2lvhlq0029c0g6j0oqat41 (THEREFORE)
+[2025-11-02T22:26:57.453Z]   Creating edge: DM:cmh2lvhlq0029c0g6j0oqat41 --commitsTo--> I:cmgy8zj0n0001c0x02fbdv1bw
+[2025-11-02T22:26:57.698Z]   Updating DialogueMove.aifRepresentation: DM:cmh2lvhlq0029c0g6j0oqat41
+[2025-11-02T22:26:57.945Z]   ERROR processing move cmh2lvhlq0029c0g6j0oqat41: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:57.945Z] 
+Processing move cmh2ng4zh000pc0jb97tbn57r (WHY) at 2025-10-22T23:53:46.302Z
+[2025-11-02T22:26:57.945Z]   Creating DM-node: DM:cmh2ng4zh000pc0jb97tbn57r (WHY)
+[2025-11-02T22:26:58.183Z]   Creating edge: DM:cmh2ng4zh000pc0jb97tbn57r --repliesTo--> RA:cmgzvrahj0007c0bnnosbvpyo
+[2025-11-02T22:26:58.430Z]   Updating DialogueMove.aifRepresentation: DM:cmh2ng4zh000pc0jb97tbn57r
+[2025-11-02T22:26:58.685Z]   ERROR processing move cmh2ng4zh000pc0jb97tbn57r: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:58.685Z] 
+Processing move cmh2ohelh0042c0jbb6geyok7 (WHY) at 2025-10-23T00:22:45.029Z
+[2025-11-02T22:26:58.685Z]   Creating DM-node: DM:cmh2ohelh0042c0jbb6geyok7 (WHY)
+[2025-11-02T22:26:58.930Z]   Creating edge: DM:cmh2ohelh0042c0jbb6geyok7 --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:26:59.373Z]   Updating DialogueMove.aifRepresentation: DM:cmh2ohelh0042c0jbb6geyok7
+[2025-11-02T22:26:59.630Z]   ERROR processing move cmh2ohelh0042c0jbb6geyok7: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:26:59.630Z] 
+Processing move cmh2r3caj00jdc0jbvjzobihb (ASSERT) at 2025-10-23T01:35:47.707Z
+[2025-11-02T22:26:59.630Z]   Creating DM-node: DM:cmh2r3caj00jdc0jbvjzobihb (ASSERT)
+[2025-11-02T22:26:59.876Z]   Creating edge: DM:cmh2r3caj00jdc0jbvjzobihb --commitsTo--> I:cmgy8ztm80025c0x05hkb6nln
+[2025-11-02T22:27:00.159Z]   Updating DialogueMove.aifRepresentation: DM:cmh2r3caj00jdc0jbvjzobihb
+[2025-11-02T22:27:00.413Z]   ERROR processing move cmh2r3caj00jdc0jbvjzobihb: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:00.413Z] 
+Processing move cmh2rahu100ltc0jbvme8gygj (SUPPOSE) at 2025-10-23T01:41:21.481Z
+[2025-11-02T22:27:00.413Z]   Creating DM-node: DM:cmh2rahu100ltc0jbvme8gygj (SUPPOSE)
+[2025-11-02T22:27:00.661Z]   Creating edge: DM:cmh2rahu100ltc0jbvme8gygj --commitsTo--> I:cmgy8zjuu0007c0x0u41lr8lw
+[2025-11-02T22:27:00.963Z]   Updating DialogueMove.aifRepresentation: DM:cmh2rahu100ltc0jbvme8gygj
+[2025-11-02T22:27:01.221Z]   ERROR processing move cmh2rahu100ltc0jbvme8gygj: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:01.221Z] 
+Processing move cmh2rbvbm00nmc0jb1dsoqbao (DISCHARGE) at 2025-10-23T01:42:25.618Z
+[2025-11-02T22:27:01.221Z]   Creating DM-node: DM:cmh2rbvbm00nmc0jb1dsoqbao (DISCHARGE)
+[2025-11-02T22:27:01.478Z]   Creating edge: DM:cmh2rbvbm00nmc0jb1dsoqbao --commitsTo--> I:cmgy8zjuu0007c0x0u41lr8lw
+[2025-11-02T22:27:01.715Z]   Updating DialogueMove.aifRepresentation: DM:cmh2rbvbm00nmc0jb1dsoqbao
+[2025-11-02T22:27:01.959Z]   ERROR processing move cmh2rbvbm00nmc0jb1dsoqbao: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:01.959Z] 
+Processing move cmh2rl9kj00qjc0jb1ezf7nma (ASSERT) at 2025-10-23T01:49:43.987Z
+[2025-11-02T22:27:01.959Z]   Creating DM-node: DM:cmh2rl9kj00qjc0jb1ezf7nma (ASSERT)
+[2025-11-02T22:27:02.221Z]   Creating edge: DM:cmh2rl9kj00qjc0jb1ezf7nma --commitsTo--> I:cmgy8ztwa0027c0x001i2lwv9
+[2025-11-02T22:27:02.462Z]   Updating DialogueMove.aifRepresentation: DM:cmh2rl9kj00qjc0jb1ezf7nma
+[2025-11-02T22:27:02.716Z]   ERROR processing move cmh2rl9kj00qjc0jb1ezf7nma: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:02.716Z] 
+Processing move cmh2rnadq00sic0jbjuz6p6pg (WHY) at 2025-10-23T01:51:18.350Z
+[2025-11-02T22:27:02.716Z]   Creating DM-node: DM:cmh2rnadq00sic0jbjuz6p6pg (WHY)
+[2025-11-02T22:27:02.957Z]   Creating edge: DM:cmh2rnadq00sic0jbjuz6p6pg --commitsTo--> I:cmgy8zjuu0007c0x0u41lr8lw
+[2025-11-02T22:27:03.207Z]   Updating DialogueMove.aifRepresentation: DM:cmh2rnadq00sic0jbjuz6p6pg
+[2025-11-02T22:27:03.447Z]   ERROR processing move cmh2rnadq00sic0jbjuz6p6pg: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:03.447Z] 
+Processing move cmh2uv2po00wtc0jbzmsia7f6 (WHY) at 2025-10-23T03:21:20.508Z
+[2025-11-02T22:27:03.447Z]   Creating DM-node: DM:cmh2uv2po00wtc0jbzmsia7f6 (WHY)
+[2025-11-02T22:27:03.681Z]   Creating edge: DM:cmh2uv2po00wtc0jbzmsia7f6 --repliesTo--> RA:cmh00isn70013c08edyvwecbi
+[2025-11-02T22:27:03.927Z]   Updating DialogueMove.aifRepresentation: DM:cmh2uv2po00wtc0jbzmsia7f6
+[2025-11-02T22:27:04.169Z]   ERROR processing move cmh2uv2po00wtc0jbzmsia7f6: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:04.169Z] 
+Processing move cmh56wklo000dc0dx5hdrhy67 (WHY) at 2025-10-24T18:33:58.092Z
+[2025-11-02T22:27:04.169Z]   Creating DM-node: DM:cmh56wklo000dc0dx5hdrhy67 (WHY)
+[2025-11-02T22:27:04.397Z]   Creating edge: DM:cmh56wklo000dc0dx5hdrhy67 --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:27:04.638Z]   Updating DialogueMove.aifRepresentation: DM:cmh56wklo000dc0dx5hdrhy67
+[2025-11-02T22:27:04.875Z]   ERROR processing move cmh56wklo000dc0dx5hdrhy67: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:04.875Z] 
+Processing move cmh56wykb000hc0dxk9n3yzyf (WHY) at 2025-10-24T18:34:16.187Z
+[2025-11-02T22:27:04.875Z]   Creating DM-node: DM:cmh56wykb000hc0dxk9n3yzyf (WHY)
+[2025-11-02T22:27:05.130Z]   Creating edge: DM:cmh56wykb000hc0dxk9n3yzyf --repliesTo--> RA:cmh06rqke0045c05ooq3i5u45
+[2025-11-02T22:27:05.367Z]   Updating DialogueMove.aifRepresentation: DM:cmh56wykb000hc0dxk9n3yzyf
+[2025-11-02T22:27:05.597Z]   ERROR processing move cmh56wykb000hc0dxk9n3yzyf: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:05.597Z] 
+Processing move cmh7bz1sw000lc0jv50nshniz (WHY) at 2025-10-26T06:31:24.128Z
+[2025-11-02T22:27:05.597Z]   Creating DM-node: DM:cmh7bz1sw000lc0jv50nshniz (WHY)
+[2025-11-02T22:27:05.826Z]   Creating edge: DM:cmh7bz1sw000lc0jv50nshniz --commitsTo--> I:cmh6w63pc000qc0j3x8q9c9lh
+[2025-11-02T22:27:06.068Z]   Updating DialogueMove.aifRepresentation: DM:cmh7bz1sw000lc0jv50nshniz
+[2025-11-02T22:27:06.311Z]   ERROR processing move cmh7bz1sw000lc0jv50nshniz: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:06.311Z] 
+Batch complete: 50 nodes, 50 edges, 0 moves updated
+[2025-11-02T22:27:06.311Z] 
+================================================================================
+[2025-11-02T22:27:06.311Z] Processing batch 5 (offset 200)
+[2025-11-02T22:27:06.311Z] ================================================================================
+[2025-11-02T22:27:06.560Z] 
+Processing move cmh82253s0005c0js9qas0ngu (WHY) at 2025-10-26T18:41:38.392Z
+[2025-11-02T22:27:06.560Z]   Creating DM-node: DM:cmh82253s0005c0js9qas0ngu (WHY)
+[2025-11-02T22:27:06.800Z]   Creating edge: DM:cmh82253s0005c0js9qas0ngu --commitsTo--> I:cmh56wxa8000ec0dxavyhdrmp
+[2025-11-02T22:27:07.048Z]   Updating DialogueMove.aifRepresentation: DM:cmh82253s0005c0js9qas0ngu
+[2025-11-02T22:27:07.286Z]   ERROR processing move cmh82253s0005c0js9qas0ngu: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:07.286Z] 
+Processing move cmh8230oa001yc0js7alh7kc5 (GROUNDS) at 2025-10-26T18:42:19.306Z
+[2025-11-02T22:27:07.286Z]   Creating DM-node: DM:cmh8230oa001yc0js7alh7kc5 (GROUNDS)
+[2025-11-02T22:27:07.535Z]   Creating edge: DM:cmh8230oa001yc0js7alh7kc5 --commitsTo--> I:cmh56wxa8000ec0dxavyhdrmp
+[2025-11-02T22:27:07.773Z]   Updating DialogueMove.aifRepresentation: DM:cmh8230oa001yc0js7alh7kc5
+[2025-11-02T22:27:08.032Z]   ERROR processing move cmh8230oa001yc0js7alh7kc5: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:08.033Z] 
+Processing move cmh82qfyb0023c0jswca4xokm (RETRACT) at 2025-10-26T19:00:32.195Z
+[2025-11-02T22:27:08.033Z]   Creating DM-node: DM:cmh82qfyb0023c0jswca4xokm (RETRACT)
+[2025-11-02T22:27:08.285Z]   Creating edge: DM:cmh82qfyb0023c0jswca4xokm --commitsTo--> I:cmh56wxa8000ec0dxavyhdrmp
+[2025-11-02T22:27:08.548Z]   Updating DialogueMove.aifRepresentation: DM:cmh82qfyb0023c0jswca4xokm
+[2025-11-02T22:27:08.792Z]   ERROR processing move cmh82qfyb0023c0jswca4xokm: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:08.792Z] 
+Processing move cmh86i4qa000jc0leide6cen4 (WHY) at 2025-10-26T20:46:02.866Z
+[2025-11-02T22:27:08.792Z]   Creating DM-node: DM:cmh86i4qa000jc0leide6cen4 (WHY)
+[2025-11-02T22:27:09.046Z]   Creating edge: DM:cmh86i4qa000jc0leide6cen4 --commitsTo--> I:cmh58dljb001hc0dxqtsxt5tk
+[2025-11-02T22:27:09.492Z]   Updating DialogueMove.aifRepresentation: DM:cmh86i4qa000jc0leide6cen4
+[2025-11-02T22:27:09.752Z]   ERROR processing move cmh86i4qa000jc0leide6cen4: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:09.752Z] 
+Processing move cmh86rrfh002ac0le7508k2rm (RETRACT) at 2025-10-26T20:53:32.189Z
+[2025-11-02T22:27:09.752Z]   Creating DM-node: DM:cmh86rrfh002ac0le7508k2rm (RETRACT)
+[2025-11-02T22:27:10.022Z]   Creating edge: DM:cmh86rrfh002ac0le7508k2rm --commitsTo--> I:cmh58dljb001hc0dxqtsxt5tk
+[2025-11-02T22:27:10.285Z]   Updating DialogueMove.aifRepresentation: DM:cmh86rrfh002ac0le7508k2rm
+[2025-11-02T22:27:10.551Z]   ERROR processing move cmh86rrfh002ac0le7508k2rm: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:10.551Z] 
+Processing move cmhcfxede00118c78yr9mqqhx (WHY) at 2025-10-29T20:20:56.450Z
+[2025-11-02T22:27:10.551Z]   Creating DM-node: DM:cmhcfxede00118c78yr9mqqhx (WHY)
+[2025-11-02T22:27:10.806Z]   Creating edge: DM:cmhcfxede00118c78yr9mqqhx --commitsTo--> I:cmh2n9cbq0041c0lz8o9lx2q2
+[2025-11-02T22:27:11.070Z]   Updating DialogueMove.aifRepresentation: DM:cmhcfxede00118c78yr9mqqhx
+[2025-11-02T22:27:11.341Z]   ERROR processing move cmhcfxede00118c78yr9mqqhx: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:11.341Z] 
+Processing move cmhh7m22z0006g17q0cp3rl5g (ASSERT) at 2025-11-02T04:27:01.259Z
+[2025-11-02T22:27:11.341Z]   Creating DM-node: DM:cmhh7m22z0006g17q0cp3rl5g (ASSERT)
+[2025-11-02T22:27:11.599Z]   Creating edge: DM:cmhh7m22z0006g17q0cp3rl5g --commitsTo--> I:cmh6w63pc000qc0j3x8q9c9lh
+[2025-11-02T22:27:11.881Z]   Updating DialogueMove.aifRepresentation: DM:cmhh7m22z0006g17q0cp3rl5g
+[2025-11-02T22:27:12.148Z]   ERROR processing move cmhh7m22z0006g17q0cp3rl5g: 
+Invalid `prisma.$executeRaw()` invocation:
+
+
+Raw query failed. Code: `23503`. Message: `insert or update on table "DialogueMove" violates foreign key constraint "DialogueMove_aifRepresentation_fkey"`
+[2025-11-02T22:27:12.148Z] 
+Batch complete: 7 nodes, 7 edges, 0 moves updated
+[2025-11-02T22:27:12.148Z] 
+================================================================================
+[2025-11-02T22:27:12.148Z] Migration Complete!
+[2025-11-02T22:27:12.148Z] ================================================================================
+[2025-11-02T22:27:12.148Z] Total dialogue moves processed: 207
+[2025-11-02T22:27:12.148Z] Total DM-nodes created: 207
+[2025-11-02T22:27:12.148Z] Total edges created: 207
+[2025-11-02T22:27:12.148Z] Total moves updated: 0
+[2025-11-02T22:27:12.148Z] Duration: 164.10s
+[2025-11-02T22:27:12.148Z] Mode: PRODUCTION
+[2025-11-02T22:27:12.149Z] ================================================================================
+[2025-11-02T22:27:12.149Z] 
+✅ Migration complete. AIF nodes and edges created for all dialogue moves.

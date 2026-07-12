@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: embedding-svc
+  namespace: ml
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: embedding-svc
+  template:
+    metadata:
+      labels:
+        app: embedding-svc
+    spec:
+      containers:
+        - name: embedding-svc
+          image: embedding-svc:latest
+          ports:
+            - containerPort: 8000
+            - containerPort: 50051
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10

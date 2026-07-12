@@ -1,0 +1,47 @@
+{
+  "version": "v2",
+  "fixtures": [
+    {
+      "id": "large-real-db",
+      "path": "fixtures/large-real-db.json",
+      "description": "DB-snapshot fixture: real production deliberation (143 args, large tier). Exercises real argument text, real chain inference, real refusal surface, and the `large` size-tier code paths.",
+      "contentHash": "sha256:583d35e01c11304924246942b18233f7eaef465235690d7f5b01e7262f3f2d38"
+    },
+    {
+      "id": "small-coequal-hubs-db",
+      "path": "fixtures/small-coequal-hubs-db.json",
+      "description": "DB-snapshot fixture: small (9 args) deliberation with three co-equal hub arguments converging on the main claim. Tests co-equal-cluster shape + medium hub ambiguity.",
+      "contentHash": "sha256:9fbe28f5cce67f529a93914f0af5770e6b3f86d3befb87dd30a8491338ff6eb1"
+    },
+    {
+      "id": "small-diffuse-hubs-db",
+      "path": "fixtures/small-diffuse-hubs-db.json",
+      "description": "DB-snapshot fixture: small (12 args) deliberation with six co-equal hub arguments. Tests diffuse hub shape + high hub ambiguity.",
+      "contentHash": "sha256:3bfcb6aec762870ff65cee0148570067aea684e7e10575864bc93e8232903e35"
+    },
+    {
+      "id": "small-refusal-rich-db",
+      "path": "fixtures/small-refusal-rich-db.json",
+      "description": "DB-snapshot fixture: small (3 args) deliberation where the only path to the main conclusion is blocked by an unanswered undercut and an unanswered undermine. Tests refusalSurface population.",
+      "contentHash": "sha256:d920641846a7d9324a462071f6ee9acf3b36d056a6f5c3bd4c46a9cf9177ae4c"
+    },
+    {
+      "id": "small-single-hub-db",
+      "path": "fixtures/small-single-hub-db.json",
+      "description": "DB-snapshot fixture: small (4 args) deliberation with one clearly dominant hub, one shared load-bearing premise, and one unanswered CQ.",
+      "contentHash": "sha256:bc46f5157b01d3ad29a10d7a697d632ceacfe218801a53499fbbfd1410d997ce"
+    },
+    {
+      "id": "synthesis-join-db",
+      "path": "fixtures/synthesis-join-db.json",
+      "description": "Phase 2c fixture: small (4 args) deliberation with two designs where one is a superset of the other. Their articulation join is trivially the larger design (closureSteps: 0). Validates happy-path synthesis workflow.",
+      "contentHash": "sha256:synthesis-join-db-content-hash-placeholder-00000000000000000000000"
+    },
+    {
+      "id": "synthesis-delocation-db",
+      "path": "fixtures/synthesis-delocation-db.json",
+      "description": "Phase 2c fixture: small (5 args) deliberation with two designs whose loci differ; their literal-union articulation join surfaces newLoci within a single cone (Phase 2f Reading A, same-cone-join with newLoci.length > 0).",
+      "contentHash": "sha256:synthesis-delocation-db-content-hash-placeholder-0000000000000000"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/* styles/rhetoric.css */
+mark[data-rhetoric] { padding: 0 .15em; border-radius: 2px; }
+mark[data-rhetoric="hedge"] { background: #fef9c3; text-decoration: underline dotted #eab308; }
+mark[data-rhetoric="intensifier"] { background: #fde68a; }
+mark[data-rhetoric="absolute"] { background: #fecaca; }
+mark[data-rhetoric="analogy"] { background: #dbebff; }
+mark[data-rhetoric="metaphor"] { background: #e9d5ff; }
+mark[data-rhetoric="allcaps"] { opacity: .65; }
+mark[data-rhetoric="exclaim"] { background: #ffe4e6; }
+mark[data-rhetoric] { line-height: inherit; }
+
+
+.cy-node.pulse, .pulse { box-shadow: 0 0 0 3px rgba(59,130,246,0.5); }
+

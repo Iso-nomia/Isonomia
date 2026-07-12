@@ -1,0 +1,3 @@
+name: mesh-substrate
+include: . T001 T002 C001 C004 T009 T012 T012Struct T012Aspic T012End2End T015 T015Strat ludics lib
+depend: standard-library

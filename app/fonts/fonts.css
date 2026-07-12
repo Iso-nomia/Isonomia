@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Founders';
+    src: url('/fonts/TestFoundersGroteskText-Regular.otf') format('opentype');
+    font-weight: 400; font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'Bugrino';
+    src:
+      url('/fonts/BugrinoTrials-Regular.woff2') format('woff2'),
+      url('/public/fonts/BugrinoTrials-Regular.otf')   format('opentype');
+    font-weight: 400; font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'New Edge Test';
+    src:
+      url('/fonts/NewEdgeTest-RegularRounded.woff2') format('woff2'),
+      url('/fonts/NewEdgeTest-RegularRounded.otf')   format('opentype');
+    font-weight: 400; font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'Kolonia';
+    src: url('/fonts/Parabole-DisplayRegular.woff2') format('woff2');
+    font-weight: 400; font-style: normal;
+  }
+  

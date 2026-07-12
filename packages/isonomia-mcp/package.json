@@ -1,0 +1,33 @@
+{
+  "name": "@app/isonomia-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Model Context Protocol server exposing Isonomia argument-graph tools for LLM clients (Claude Desktop, Cursor, Cline, etc.)",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "isonomia-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "smoke": "node scripts/smoke.mjs",
+    "smoke:dump": "node scripts/smoke.mjs dump",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@app/isonomia-tools": "*",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "jose": "^6.2.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}

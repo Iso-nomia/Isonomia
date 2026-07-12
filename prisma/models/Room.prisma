@@ -1,0 +1,27 @@
+// prisma/models/Room.prisma — paste into your main `schema.prisma`
+// Then run `pnpm prisma migrate dev -n add_room_model`
+// Uses snake_case table mapping for consistency with your schema.
+model Room {
+  id               String   @id @default(cuid())
+  kind             RoomKind
+  conversation_id  BigInt?
+  realtime_room_id String?
+
+  isSharded   Boolean  @default(false)
+  shardUrl    String?  @db.Text
+  mediaBucket String?
+  kmsKeyArn   String?
+
+  created_at DateTime @default(now()) @db.Timestamptz(6)
+  updated_at DateTime @default(now()) @updatedAt @db.Timestamptz(6)
+
+  @@unique([conversation_id], map: "uniq_room_conversation")
+  @@unique([realtime_room_id], map: "uniq_room_realtime")
+  @@index([isSharded])
+  @@map("rooms")
+}
+
+enum RoomKind {
+  CONVERSATION
+  REALTIME
+}

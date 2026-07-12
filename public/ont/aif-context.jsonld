@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "aif": "http://www.arg.dundee.ac.uk/aif#",
+    "as":  "http://arg.tech/ont/schemes#",
+    "cq":  "http://arg.tech/ont/cq#",
+    "schema": "http://schema.org/",
+    "nodes": "@graph",
+
+    "InformationNode": "aif:InformationNode",
+    "RA": "aif:RA",
+    "CA": "aif:CA",
+    "PA": "aif:PA",
+    "L":  "aif:L",
+
+    "text": "aif:text",
+    "name": "aif:name",
+    "usesScheme": "aif:usesScheme",
+
+    "Premise": "aif:Premise",
+    "Conclusion": "aif:Conclusion",
+    "ConflictingElement": "aif:ConflictingElement",
+    "ConflictedElement": "aif:ConflictedElement",
+    "PreferredElement": "aif:PreferredElement",
+    "DispreferredElement": "aif:DispreferredElement",
+    "illocutes": "aif:illocutes",
+    "replies":   "aif:replies",
+
+    "hasPremise":     "as:hasPremise",
+    "hasConclusion":  "as:hasConclusion",
+    "hasCriticalQuestion": "as:hasCriticalQuestion",
+    "cqKey": "cq:key",
+    "cqStatus": "cq:status"
+  }
+}

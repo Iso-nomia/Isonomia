@@ -1,0 +1,20 @@
+{
+    "bold": "Bold",
+    "italic": "Italic",
+    "link": "Link",
+    "h1": "Heading 1",
+    "h2": "Heading 2",
+    "h3": "Heading 3",
+    "quote": "Quote",
+    "code": "Code",
+    "left": "Left",
+    "center": "Center",
+    "right": "Right",
+    "saveDraft": "Save Draft",
+    "unsavedChanges": "Unsaved Changes…",
+    "suggestionMode": "Suggestion mode",
+    "suggestionOff": "Editing Mode",
+    "checkAccessibility": "Check Accessibility",
+    "wordCount": "Words",
+    "characterCount": "Characters"
+  }

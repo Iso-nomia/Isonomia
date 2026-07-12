@@ -1,0 +1,31 @@
+  {
+    "name": "@app/sheaf-acl",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+  
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+  
+    "sideEffects": false,
+  
+    "scripts": {
+      "build": "tsc -p tsconfig.json",
+      "test": "vitest run",
+  
+      "prepare": "npm run build"
+    },
+  
+    "devDependencies": {
+      "typescript": "^5.5.4",
+      "vitest": "^1.6.0"
+    }
+  }
+  

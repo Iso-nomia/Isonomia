@@ -1,0 +1,7 @@
+.pin {
+    @apply w-5 h-5 rounded-full grid place-items-center text-xs font-semibold
+           bg-amber-400 text-white shadow ring-1 ring-amber-500/30;
+  }
+  .pin--resolved { @apply opacity-40; }
+  .pin:hover     { @apply scale-105 transition-transform; }
+  

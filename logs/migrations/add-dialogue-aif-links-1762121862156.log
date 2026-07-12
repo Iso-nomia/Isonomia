@@ -1,0 +1,262 @@
+[2025-11-02T22:17:42.157Z] ================================================================================
+[2025-11-02T22:17:42.157Z] Starting Dialogue AIF Links Migration
+[2025-11-02T22:17:42.157Z] Mode: DRY RUN (no changes)
+[2025-11-02T22:17:42.157Z] ================================================================================
+[2025-11-02T22:17:43.275Z] 
+Found 207 dialogue moves to process
+[2025-11-02T22:17:43.275Z] 
+================================================================================
+[2025-11-02T22:17:43.275Z] Processing batch 1 (offset 0)
+[2025-11-02T22:17:43.275Z] ================================================================================
+[2025-11-02T22:17:43.657Z] 
+Processing move cmf3d0msw0008rmmeyiivhgzg (WHY) at 2025-09-03T02:30:08.186Z
+[2025-11-02T22:17:43.657Z]   Creating DM-node: DM:cmf3d0msw0008rmmeyiivhgzg (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3d0msw0008rmmeyiivhgzg --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3d0msw0008rmmeyiivhgzg
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3d0n4z0009rmmedmivh0x7 (WHY) at 2025-09-03T02:30:08.676Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3d0n4z0009rmmedmivh0x7 (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3d0n4z0009rmmedmivh0x7 --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3d0n4z0009rmmedmivh0x7
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3deojz000armme4eg17lqk (WHY) at 2025-09-03T02:41:03.696Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3deojz000armme4eg17lqk (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3deojz000armme4eg17lqk --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3deojz000armme4eg17lqk
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3deqfo000brmmevkdqepw5 (WHY) at 2025-09-03T02:41:06.132Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3deqfo000brmmevkdqepw5 (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3deqfo000brmmevkdqepw5 --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3deqfo000brmmevkdqepw5
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3drnhh000crmmeowbl3t5o (GROUNDS) at 2025-09-03T02:51:08.783Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3drnhh000crmmeowbl3t5o (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3drnhh000crmmeowbl3t5o --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drnhh000crmmeowbl3t5o
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3drped000drmmenh6rr8sb (WHY) at 2025-09-03T02:51:11.317Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3drped000drmmenh6rr8sb (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3drped000drmmenh6rr8sb --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drped000drmmenh6rr8sb
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3drpx2000ermme76bx0t0x (GROUNDS) at 2025-09-03T02:51:11.990Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3drpx2000ermme76bx0t0x (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3drpx2000ermme76bx0t0x --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drpx2000ermme76bx0t0x
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3drq73000frmme5uxavgjz (GROUNDS) at 2025-09-03T02:51:12.351Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3drq73000frmme5uxavgjz (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3drq73000frmme5uxavgjz --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drq73000frmme5uxavgjz
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3drt42000grmme9tkxg6iq (GROUNDS) at 2025-09-03T02:51:16.130Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3drt42000grmme9tkxg6iq (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3drt42000grmme9tkxg6iq --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drt42000grmme9tkxg6iq
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3drthm000hrmmelch1n9ng (WHY) at 2025-09-03T02:51:16.618Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3drthm000hrmmelch1n9ng (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3drthm000hrmmelch1n9ng --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3drthm000hrmmelch1n9ng
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3f62g5000irmmehbucny23 (WHY) at 2025-09-03T03:30:20.976Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3f62g5000irmmehbucny23 (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3f62g5000irmmehbucny23 --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3f62g5000irmmehbucny23
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3f63mt000jrmmet84w1rar (WHY) at 2025-09-03T03:30:22.565Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3f63mt000jrmmet84w1rar (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3f63mt000jrmmet84w1rar --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3f63mt000jrmmet84w1rar
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3f6jl4000krmme04usvnnp (ASSERT) at 2025-09-03T03:30:43.189Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3f6jl4000krmme04usvnnp (ASSERT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3f6jl4000krmme04usvnnp --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3f6jl4000krmme04usvnnp
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3fag44000lrmmepqgvpg9w (WHY) at 2025-09-03T03:33:45.300Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3fag44000lrmmepqgvpg9w (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3fag44000lrmmepqgvpg9w --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3fag44000lrmmepqgvpg9w
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3fairc000mrmme5671j0ad (GROUNDS) at 2025-09-03T03:33:48.792Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3fairc000mrmme5671j0ad (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3fairc000mrmme5671j0ad --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3fairc000mrmme5671j0ad
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3faiv3000nrmmeiywrw6vi (WHY) at 2025-09-03T03:33:48.881Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3faiv3000nrmmeiywrw6vi (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3faiv3000nrmmeiywrw6vi --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3faiv3000nrmmeiywrw6vi
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3g657c000ormme7g73op6s (RETRACT) at 2025-09-03T03:58:24.161Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3g657c000ormme7g73op6s (RETRACT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3g657c000ormme7g73op6s --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3g657c000ormme7g73op6s
+[2025-11-02T22:17:43.658Z] 
+Processing move cmf3g6bwv000prmme3d2esdnx (GROUNDS) at 2025-09-03T03:58:32.912Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmf3g6bwv000prmme3d2esdnx (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmf3g6bwv000prmme3d2esdnx --repliesTo--> RA:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmf3g6bwv000prmme3d2esdnx
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfc64tll0002rakphww2kjpt (GROUNDS) at 2025-09-09T06:27:21.945Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfc64tll0002rakphww2kjpt (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfc64tll0002rakphww2kjpt --commitsTo--> I:Offer
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfc64tll0002rakphww2kjpt
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfc64tlk0000rakpywcq088a (ASSERT) at 2025-09-09T06:27:21.945Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfc64tlk0000rakpywcq088a (ASSERT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfc64tlk0000rakpywcq088a --commitsTo--> I:Offer
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfc64tlk0000rakpywcq088a
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfc64tll0001rakp0556khnw (GROUNDS) at 2025-09-09T06:27:21.945Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfc64tll0001rakp0556khnw (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfc64tll0001rakp0556khnw --commitsTo--> I:Offer
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfc64tll0001rakp0556khnw
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd4nkgq0007rmdb2y4hrs60 (GROUNDS) at 2025-09-09T22:33:43.443Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd4nkgq0007rmdb2y4hrs60 (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd4nkgq0007rmdb2y4hrs60 --commitsTo--> I:cmf5xgzc2001frmvmylg02oi8
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd4nkgq0007rmdb2y4hrs60
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6uylw003lrmdbkeaefvbg (GROUNDS) at 2025-09-09T23:35:27.594Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6uylw003lrmdbkeaefvbg (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6uylw003lrmdbkeaefvbg --repliesTo--> RA:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6uylw003lrmdbkeaefvbg
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6v41x003wrmdbgkbe6rqp (GROUNDS) at 2025-09-09T23:35:34.651Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6v41x003wrmdbgkbe6rqp (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6v41x003wrmdbgkbe6rqp --repliesTo--> RA:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6v41x003wrmdbgkbe6rqp
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6xdrz005rrmdb3e0bule8 (GROUNDS) at 2025-09-09T23:37:20.639Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6xdrz005rrmdb3e0bule8 (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6xdrz005rrmdb3e0bule8 --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6xdrz005rrmdb3e0bule8
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6xgor0062rmdbx78tjpav (RETRACT) at 2025-09-09T23:37:24.412Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6xgor0062rmdbx78tjpav (RETRACT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6xgor0062rmdbx78tjpav --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6xgor0062rmdbx78tjpav
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6xh780063rmdbo74hkj19 (GROUNDS) at 2025-09-09T23:37:25.003Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6xh780063rmdbo74hkj19 (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6xh780063rmdbo74hkj19 --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6xh780063rmdbo74hkj19
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6zo0i008yrmdbn533jah2 (GROUNDS) at 2025-09-09T23:39:07.218Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6zo0i008yrmdbn533jah2 (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6zo0i008yrmdbn533jah2 --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zo0i008yrmdbn533jah2
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6zovq0093rmdbrrqogpg6 (GROUNDS) at 2025-09-09T23:39:08.342Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6zovq0093rmdbrrqogpg6 (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6zovq0093rmdbrrqogpg6 --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zovq0093rmdbrrqogpg6
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6zpta0098rmdbjqt5y3bc (GROUNDS) at 2025-09-09T23:39:09.550Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6zpta0098rmdbjqt5y3bc (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6zpta0098rmdbjqt5y3bc --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zpta0098rmdbjqt5y3bc
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd6zuwq0099rmdbbha3iv14 (RETRACT) at 2025-09-09T23:39:16.155Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd6zuwq0099rmdbbha3iv14 (RETRACT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd6zuwq0099rmdbbha3iv14 --repliesTo--> RA:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd6zuwq0099rmdbbha3iv14
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd76upp00d6rmdblurasom9 (RETRACT) at 2025-09-09T23:44:42.493Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd76upp00d6rmdblurasom9 (RETRACT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd76upp00d6rmdblurasom9 --repliesTo--> RA:argument:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd76upp00d6rmdblurasom9
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd77bmu00djrmdb7a1teyhv (WHY) at 2025-09-09T23:45:04.422Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd77bmu00djrmdb7a1teyhv (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd77bmu00djrmdb7a1teyhv --repliesTo--> RA:argument:argument:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd77bmu00djrmdb7a1teyhv
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd7ez5u00kermdbs31llkml (WHY) at 2025-09-09T23:51:01.506Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd7ez5u00kermdbs31llkml (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd7ez5u00kermdbs31llkml --repliesTo--> RA:argument:argument:argument:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd7ez5u00kermdbs31llkml
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfd7f8gl00kzrmdbb3j7y54w (GROUNDS) at 2025-09-09T23:51:13.483Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfd7f8gl00kzrmdbb3j7y54w (GROUNDS)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfd7f8gl00kzrmdbb3j7y54w --repliesTo--> RA:argument:argument:argument:cmf2xi8je0001rmdcvb3b2bu2
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfd7f8gl00kzrmdbb3j7y54w
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfega715004prmr98be6klhg (ASSERT) at 2025-09-10T20:47:01.144Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfega715004prmr98be6klhg (ASSERT)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfega715004prmr98be6klhg --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfega715004prmr98be6klhg
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfega715004qrmr9t23vux6t (WHY) at 2025-09-10T20:47:01.144Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfega715004qrmr9t23vux6t (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfega715004qrmr9t23vux6t --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:17:43.658Z]   Updating DialogueMove.aifRepresentation: DM:cmfega715004qrmr9t23vux6t
+[2025-11-02T22:17:43.658Z] 
+Processing move cmfegl1m800e8rmr9l5g0f0mf (WHY) at 2025-09-10T20:55:27.344Z
+[2025-11-02T22:17:43.658Z]   Creating DM-node: DM:cmfegl1m800e8rmr9l5g0f0mf (WHY)
+[2025-11-02T22:17:43.658Z]   Creating edge: DM:cmfegl1m800e8rmr9l5g0f0mf --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfegl1m800e8rmr9l5g0f0mf
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfegl1m800e7rmr92bpiqtt0 (ASSERT) at 2025-09-10T20:55:27.344Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfegl1m800e7rmr92bpiqtt0 (ASSERT)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfegl1m800e7rmr92bpiqtt0 --commitsTo--> I:cmf5pksic002ormy4cvjpzns4
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfegl1m800e7rmr92bpiqtt0
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfejiy5t00irrmr9bxe91vd8 (ASSERT) at 2025-09-10T22:17:48.401Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfejiy5t00irrmr9bxe91vd8 (ASSERT)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfejiy5t00irrmr9bxe91vd8 --repliesTo--> RA:cmf5pjf7w0005rmy4ptwnmq99
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfejiy5t00irrmr9bxe91vd8
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfeynpm700nvrmr90j88819e (WHY) at 2025-09-11T05:21:24.774Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfeynpm700nvrmr90j88819e (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfeynpm700nvrmr90j88819e --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfeynpm700nvrmr90j88819e
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfeysll600smrmr97f4zbuuw (GROUNDS) at 2025-09-11T05:25:12.831Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfeysll600smrmr97f4zbuuw (GROUNDS)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfeysll600smrmr97f4zbuuw --repliesTo--> RA:cmf4uo8k5000frme9se9vr3ut
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfeysll600smrmr97f4zbuuw
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfeysmyh00srrmr9ijtxvyc5 (RETRACT) at 2025-09-11T05:25:14.607Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfeysmyh00srrmr9ijtxvyc5 (RETRACT)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfeysmyh00srrmr9ijtxvyc5 --repliesTo--> RA:cmf5pjf7w0005rmy4ptwnmq99
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfeysmyh00srrmr9ijtxvyc5
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfeysph100ssrmr98koi33jg (WHY) at 2025-09-11T05:25:17.941Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfeysph100ssrmr98koi33jg (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfeysph100ssrmr98koi33jg --repliesTo--> RA:cmf4sajr10001rme9z2dnubf7
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfeysph100ssrmr98koi33jg
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfeyspsn00svrmr9kobk2g0j (WHY) at 2025-09-11T05:25:18.360Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfeyspsn00svrmr9kobk2g0j (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfeyspsn00svrmr9kobk2g0j --repliesTo--> RA:cmf5pjf7w0005rmy4ptwnmq99
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfeyspsn00svrmr9kobk2g0j
+[2025-11-02T22:17:43.659Z] 
+Processing move cmfez62o700zarmr9fldnefsg (WHY) at 2025-09-11T05:35:41.505Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmfez62o700zarmr9fldnefsg (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmfez62o700zarmr9fldnefsg --repliesTo--> RA:cmew3licv000pra8x6kdy2l8x
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmfez62o700zarmr9fldnefsg
+[2025-11-02T22:17:43.659Z] 
+Processing move cmff2gmy301fgrmr96d9qdhm0 (WHY) at 2025-09-11T07:07:53.153Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmff2gmy301fgrmr96d9qdhm0 (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmff2gmy301fgrmr96d9qdhm0 --repliesTo--> RA:cmexne7xp000rrmgsazhmv6ai
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmff2gmy301fgrmr96d9qdhm0
+[2025-11-02T22:17:43.659Z] 
+Processing move cmff2gnyx01fhrmr9hwqdowc8 (WHY) at 2025-09-11T07:07:54.586Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmff2gnyx01fhrmr9hwqdowc8 (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmff2gnyx01fhrmr9hwqdowc8 --repliesTo--> RA:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmff2gnyx01fhrmr9hwqdowc8
+[2025-11-02T22:17:43.659Z] 
+Processing move cmff2h1cs01gbrmr958aywqf0 (WHY) at 2025-09-11T07:08:11.932Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmff2h1cs01gbrmr958aywqf0 (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmff2h1cs01gbrmr958aywqf0 --repliesTo--> RA:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmff2h1cs01gbrmr958aywqf0
+[2025-11-02T22:17:43.659Z] 
+Processing move cmff2h1cr01garmr9zbvmh98d (WHY) at 2025-09-11T07:08:11.932Z
+[2025-11-02T22:17:43.659Z]   Creating DM-node: DM:cmff2h1cr01garmr9zbvmh98d (WHY)
+[2025-11-02T22:17:43.659Z]   Creating edge: DM:cmff2h1cr01garmr9zbvmh98d --repliesTo--> RA:cmeyvrepi0001rmkhl4h4mt84
+[2025-11-02T22:17:43.659Z]   Updating DialogueMove.aifRepresentation: DM:cmff2h1cr01garmr9zbvmh98d
+[2025-11-02T22:17:43.708Z] 
+Batch complete: 50 nodes, 50 edges, 50 moves updated

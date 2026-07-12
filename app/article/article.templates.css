@@ -1,0 +1,179 @@
+/* app/article.templates.css */
+/* Tailwind layer headers (must appear in this order once per build) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------- Shared custom properties ---------------- */
+@layer components {
+  :root {
+    /* fallback – overridden per template */
+    --measure: 65ch;
+    --leading: 1.65;
+  }
+}
+@layer utilities {
+    .article-body [data-align="center"],  .article-body .ta-center  { text-align: center; }
+    .article-body [data-align="right"],   .article-body .ta-right   { text-align: right; }
+    .article-body [data-align="justify"], .article-body .ta-justify { text-align: justify; }
+  }
+
+/* ========================================================== */
+/*  TEMPLATES (scoped by root class added by <ArticleReader>)  */
+/* ========================================================== */
+
+@layer components {
+
+  /* ---------- STANDARD ----------------------------------- */
+  .standard      { --measure: 65ch; --leading: 1.65; }
+
+  .standard .ProseMirror {
+    @apply mx-auto px-4;
+    max-width: var(--measure);
+    line-height: var(--leading);
+  }
+/* Standard template — reader */
+.standard .article-body {
+  max-width: var(--measure);
+  line-height: var(--leading);
+  margin-inline: auto;
+  padding-inline: 1rem; /* mirrors editor px-4 */
+}
+
+/* Feature template — reader */
+.feature .article-body {
+  max-width: var(--measure);
+  line-height: var(--leading);
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* .section-break,
+.article-body hr[data-section-break] {
+  border: 0;
+  border-top-width: 1px;
+  border-top-style: dashed;
+  border-top-color: rgba(0,0,0,.25);
+  margin: 1rem 0;
+} */
+
+.section-break,
+.article-body hr[data-section-break] {
+  border: 0;
+  border-top: 3px solid rgba(0,0,0,.95);
+  margin: 1rem 0;
+}
+  
+
+  /* subtle drop‑cap on first paragraph (desktop) */
+  @media (min-width: 1024px) {
+    .standard .ProseMirror p:first-of-type::first-letter {
+      @apply float-left text-5xl leading-none mr-2 font-serif;
+    }
+
+    .prose [style*="text-align:center"]  { text-align: center !important; }
+.prose [style*="text-align:right"]   { text-align: right  !important; }
+.prose [style*="text-align:justify"] { 
+  text-align: justify !important; 
+  text-justify: inter-word;
+  }
+}
+
+  /* ---------- FEATURE  ----------------------------------- */
+  .feature       { --measure: 72ch; --leading: 1.8; }
+
+  /* hero / header block */
+  .feature header {
+    @apply grid lg:grid-cols-12 gap-6 mb-10;
+    max-width: var(--measure);
+    margin-inline: auto;
+  }
+
+  .feature .eyebrow {
+    @apply block text-xs tracking-widest uppercase text-gray-500 mb-3;
+  }
+
+  .feature h1 {
+    @apply col-span-12 lg:col-span-8 font-serif text-5xl leading-tight;
+  }
+
+  .feature .byline {
+    @apply col-span-12 lg:col-span-4 text-sm uppercase tracking-wide self-end;
+  }
+
+  /* body */
+  .feature .ProseMirror {
+    @apply mx-auto px-4;
+    max-width: var(--measure);
+    line-height: var(--leading);
+  }
+
+  /* magazine‑style pull quote (use the pullQuote node) */
+  .feature blockquote.pull-quote {
+    @apply font-serif italic text-3xl leading-tight my-12
+           border-l-4 pl-4 border-gray-300;
+  }
+
+  /* drop‑cap similar to NYT */
+  @media (min-width: 1024px) {
+    .feature .ProseMirror p:first-of-type::first-letter {
+      @apply float-left font-serif text-7xl leading-none mr-3;
+    }
+  }
+
+  /* ---------- INTERVIEW ---------------------------------- */
+  .interview     { --measure: 60ch; --leading: 1.7; }
+
+  .interview .ProseMirror {
+    @apply mx-auto px-4;
+    max-width: var(--measure);
+    line-height: var(--leading);
+    font-family: ui-sans-serif, system-ui; /* body stays sans */
+  }
+
+  .interview h1  { @apply font-mono text-4xl mb-6; }
+
+  /* Q & A blocks – you can wrap each Q and A in <p class="q"> … */
+  .interview .q { @apply font-semibold font-mono mb-2; }
+  .interview .a { @apply pl-4 border-l-2 border-neutral-300 mb-4; }
+
+  /* thin rule between question groups on large screens */
+  @media (min-width: 768px) {
+    .interview .ProseMirror p.q:not(:first-child) {
+      @apply pt-6 mt-6 border-t border-dashed border-neutral-300;
+    }
+  }
+}
+
+/* ========================================================== */
+/*  💡 Tiny utilities you may use inside the editor           */
+/* ========================================================== */
+
+@layer utilities {
+  /* one‑class drop cap for Markdown import / Slash‑command */
+  .drop-cap::first-letter { @apply float-left text-6xl leading-none mr-3 font-serif; }
+
+  /* eyebrow kicker */
+  .eyebrow                { @apply block text-xs uppercase tracking-widest text-gray-500; }
+
+/* marker reset for all browsers */
+.article-section > summary::marker { display: none; }
+.article-section > summary::-webkit-details-marker { display: none; }
+
+/* clickable row */
+.article-section > summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 600;
+  color: var(--clr-accent, #333);
+  padding: .25rem 0;
+}
+
+/* caret */
+.article-section[open] > summary::after { content: "▾"; float: right; opacity: .55; }
+.article-section:not([open]) > summary::after { content: "▸"; float: right; opacity: .55; }
+
+/* avoid selection getting in the way of toggling */
+.article-section > summary * { pointer-events: none; }
+}
+

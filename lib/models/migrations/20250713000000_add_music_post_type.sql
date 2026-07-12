@@ -1,0 +1,1 @@
+ALTER TYPE "realtime_post_type" ADD VALUE IF NOT EXISTS 'MUSIC';

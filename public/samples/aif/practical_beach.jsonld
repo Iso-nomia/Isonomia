@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "id": "@id",
+    "type": "@type",
+
+    "aif": "https://example.org/aif#",
+    "as":  "https://example.org/as#",
+    "cq":  "https://example.org/cq#",
+    "schema": "https://example.org/schemes#",
+
+    "label": "aif:label",
+
+    "as:hasPremise":     { "@type": "@id" },
+    "as:hasConclusion":  { "@type": "@id" },
+    "as:hasCriticalQuestion": { "@type": "@id" },
+
+    "as:hasConflictingElement": { "@type": "@id" },
+    "as:hasConflictedElement":  { "@type": "@id" },
+
+    "cq:key": "cq:key",
+    "cq:status": "cq:status",
+    "cq:attackType": "cq:attackType",
+    "cq:targetScope": "cq:targetScope"
+  },
+
+  "@graph": [
+    { "id": "I:i_sunny", "type": "aif:I", "label": "It is sunny today" },
+    { "id": "I:i_value", "type": "aif:I", "label": "I would like to have a tan (value/goal)" },
+    { "id": "I:c_go_beach", "type": "aif:I", "label": "I ought to go to the beach today" },
+
+    {
+      "id": "RA:pr1",
+      "type": ["aif:RA", "schema:practical_reasoning"],
+      "label": "Practical Reasoning",
+      "as:hasPremise": ["I:i_sunny", "I:i_value"],
+      "as:hasConclusion": "I:c_go_beach",
+
+      "as:hasCriticalQuestion": [
+        {
+          "id": "CQ:PR.GOAL_ACCEPTED",
+          "cq:key": "PR.GOAL_ACCEPTED",
+          "cq:status": "answered",
+          "cq:attackType": "UNDERMINES",
+          "cq:targetScope": "premise"
+        },
+        {
+          "id": "CQ:PR.MEANS_EFFECTIVE",
+          "cq:key": "PR.MEANS_EFFECTIVE",
+          "cq:status": "answered",
+          "cq:attackType": "UNDERCUTS",
+          "cq:targetScope": "inference"
+        },
+        {
+          "id": "CQ:PR.ALTERNATIVES",
+          "cq:key": "PR.ALTERNATIVES",
+          "cq:status": "open",
+          "cq:attackType": "REBUTS",
+          "cq:targetScope": "conclusion"
+        }
+      ]
+    },
+
+    { "id": "I:i_danger", "type": "aif:I", "label": "The surf is dangerous today" },
+    { "id": "CA:ca_surf", "type": "aif:CA", "label": "Risk objection (danger)" },
+
+    {
+      "id": "E:conflict1",
+      "type": "aif:Edge",
+      "as:hasConflictingElement": "I:i_danger",   
+      "as:hasConflictedElement":  "I:c_go_beach"
+    }
+  ]
+}

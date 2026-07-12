@@ -1,0 +1,1112 @@
+# AIF/AIF+ Quick Reference Guide
+## For Digital Agora Developers
+
+**Version:** 1.0  
+**Companion to:** AIF_Implementation_Guide_Comprehensive.md
+
+---
+
+## Table of Contents
+
+1. [One-Minute Overview](#one-minute-overview)
+2. [Node Types Cheat Sheet](#node-types-cheat-sheet)
+3. [Edge Types Cheat Sheet](#edge-types-cheat-sheet)
+4. [Decision Trees](#decision-trees)
+5. [Common Patterns](#common-patterns)
+6. [Validation Checklist](#validation-checklist)
+7. [API Quick Reference](#api-quick-reference)
+8. [Troubleshooting](#troubleshooting)
+
+---
+
+## One-Minute Overview
+
+### What is AIF?
+
+**Argument Interchange Format** = Standard way to represent arguments as typed graphs
+
+```
+Arguments = Nodes + Edges
+
+Nodes:
+├── I-nodes: Claims/statements (WHAT is said)
+└── S-nodes: Relations (HOW things connect)
+    ├── RA-nodes: Inferences (supports)
+    ├── CA-nodes: Conflicts (attacks)
+    └── PA-nodes: Preferences (stronger than)
+
+Edges: Typed connections showing roles (premise, conclusion, etc.)
+```
+
+### What is AIF+?
+
+**Extension for dialogue**: Adds L-nodes (speech acts) and TA-nodes (dialogue moves)
+
+```
+L-node = "Alice asserts: P"
+TA-node = "After question, legal to answer"
+```
+
+### Why This Matters
+
+- **Semantic richness**: Arguments aren't just text, they're formal structures
+- **Computational reasoning**: Can evaluate argument strength automatically
+- **Interoperability**: Exchange arguments with academic tools
+- **Quality assurance**: Enforce logical consistency
+
+---
+
+## Node Types Cheat Sheet
+
+### I-Nodes (Information Nodes)
+
+**What**: Propositional content - claims, statements, data
+
+**When to use**: 
+- User makes a claim
+- Extracting statement from text
+- Premise or conclusion of an argument
+
+**Properties**:
+```typescript
+{
+  nodeType: 'I',
+  claimText: string,
+  // Cannot connect to other I-nodes directly!
+}
+```
+
+**Examples**:
+- "Carbon tax reduces emissions"
+- "Dr. Smith is an expert in climate science"
+- "Studies show X correlation"
+
+**Visual**: Blue rectangles
+
+---
+
+### RA-Nodes (Rule Application / Inference Nodes)
+
+**What**: Inference relation - one or more premises support a conclusion
+
+**When to use**:
+- User provides reasons for a claim
+- Applying an argumentation scheme
+- Showing logical connection
+
+**Properties**:
+```typescript
+{
+  nodeType: 'RA',
+  schemeType: 'deductive' | 'defeasible' | 'presumptive',
+  inferenceType: 'modus_ponens' | 'expert_opinion' | 'cause_effect' | ...,
+  schemeId?: string  // Links to scheme library
+}
+```
+
+**Examples**:
+- Modus ponens: "If P then Q; P; therefore Q"
+- Expert opinion: "Expert says X; therefore X (probably)"
+- Cause-effect: "A causes B; A happened; therefore B will happen"
+
+**Visual**: Green circles
+
+**Graph pattern**:
+```
+[I: P] ----premise----> [RA] ----conclusion----> [I: Q]
+[I: P→Q] --premise----> [RA]
+```
+
+---
+
+### CA-Nodes (Conflict Application Nodes)
+
+**What**: Attack relation - one statement conflicts with another
+
+**When to use**:
+- User rebuts a claim
+- User challenges reasoning
+- User questions a premise
+
+**Properties**:
+```typescript
+{
+  nodeType: 'CA',
+  conflictType: 'rebut' | 'undercut' | 'undermine'
+}
+```
+
+**Conflict types**:
+- **Rebut**: Attack conclusion ("No, Q is false")
+- **Undercut**: Attack inference ("That reasoning doesn't work")
+- **Undermine**: Attack premise ("P is false")
+
+**Examples**:
+- Rebut: "Carbon tax does NOT reduce emissions"
+- Undercut: "Expert testimony is unreliable in this case"
+- Undermine: "That study was retracted"
+
+**Visual**: Red circles
+
+**Graph pattern**:
+```
+[I: ¬Q] ----conflicting----> [CA] ----conflicted----> [I: Q]
+[I: Expert unreliable] ----conflicting----> [CA] ----conflicted----> [RA: Expert Opinion]
+```
+
+---
+
+### PA-Nodes (Preference Application Nodes)
+
+**What**: Preference relation - one element is stronger/better than another
+
+**When to use**:
+- Resolving conflicts between arguments
+- Expressing source reliability
+- Voting/consensus mechanisms
+- Breaking ties
+
+**Properties**:
+```typescript
+{
+  nodeType: 'PA',
+  preferenceType: 'argument' | 'rule' | 'premise' | 'source',
+  justification?: string
+}
+```
+
+**Examples**:
+- "Expert opinion > General knowledge"
+- "Recent study > Old study"
+- "Peer-reviewed source > Blog post"
+
+**Visual**: Orange circles
+
+**Graph pattern**:
+```
+[I/RA: Better] ----preferred----> [PA] ----dispreferred----> [I/RA: Worse]
+```
+
+---
+
+### L-Nodes (Locution Nodes)
+
+**What**: Speech act in dialogue - who said what when
+
+**When to use** (AIF+ only):
+- Structured dialogues
+- Protocol-governed debates
+- Tracking commitments
+- Multi-party deliberation
+
+**Properties**:
+```typescript
+{
+  nodeType: 'L',
+  speakerId: string,
+  ilocutionType: 'assert' | 'question' | 'challenge' | 'concede' | 'retract',
+  propositionalContent?: string,  // The claim being made
+  targetMoveId?: string  // Reply to which move
+}
+```
+
+**Examples**:
+- "Alice asserts: Carbon tax is necessary"
+- "Bob asks: Why is that so?"
+- "Alice challenges: Can you prove it?"
+
+**Visual**: Blue rectangles with speaker icon
+
+**Key insight**: L-node's propositional content can be extracted as I-node for monological reasoning
+
+---
+
+### TA-Nodes (Transition Application Nodes)
+
+**What**: Legal dialogue move according to protocol
+
+**When to use** (AIF+ only):
+- Enforcing dialogue rules
+- Computing legal replies
+- Validating move sequences
+
+**Properties**:
+```typescript
+{
+  nodeType: 'TA',
+  protocolRuleId: string,
+  inferenceType: string
+}
+```
+
+**Examples**:
+- "Question → Answer transition"
+- "Assertion → Challenge transition"
+- "Challenge → Justification transition"
+
+**Visual**: Green circles with protocol icon
+
+**Graph pattern**:
+```
+[L: Question] ----start----> [TA] ----end----> [L: Answer]
+```
+
+---
+
+## Edge Types Cheat Sheet
+
+| Edge Type | From | To | Meaning |
+|-----------|------|----|---------| |
+| `premise` | I, RA | RA, TA | This is a premise/input |
+| `conclusion` | RA, TA | I | This is the conclusion/output |
+| `presumption` | I | RA, TA | This is an implicit assumption |
+| `conflicting` | I, PA | CA | This attacks... |
+| `conflicted` | CA | I, RA, PA | ...this target |
+| `preferred` | I, RA, PA | PA | This is preferred... |
+| `dispreferred` | PA | I, RA, PA | ...to this |
+| `start` | L | TA | Dialogue move starts here |
+| `end` | TA | L | Dialogue move ends here |
+
+### Validation Rules
+
+```typescript
+// Edge validation matrix
+const VALID_CONNECTIONS = {
+  premise:      { from: ['I', 'RA', 'PA'], to: ['RA', 'TA'] },
+  conclusion:   { from: ['RA', 'TA'], to: ['I', 'PA'] },
+  presumption:  { from: ['I'], to: ['RA', 'TA'] },
+  conflicting:  { from: ['I', 'PA'], to: ['CA'] },
+  conflicted:   { from: ['CA'], to: ['I', 'RA', 'PA'] },
+  preferred:    { from: ['I', 'RA', 'PA'], to: ['PA'] },
+  dispreferred: { from: ['PA'], to: ['I', 'RA', 'PA'] },
+  start:        { from: ['L'], to: ['TA'] },
+  end:          { from: ['TA'], to: ['L'] }
+};
+```
+
+---
+
+## Decision Trees
+
+### "What node type should I create?"
+
+```
+Is this propositional content (a claim/statement)?
+├─ YES: Create I-node
+│   └─ Is this part of a dialogue with speaker tracking?
+│       ├─ YES: Create L-node (subclass of I-node)
+│       └─ NO: Create I-node
+│
+└─ NO: This must be a relation
+    └─ What kind of relation?
+        ├─ Inference/Support: Create RA-node
+        │   └─ Is this a dialogue transition?
+        │       ├─ YES: Create TA-node (subclass of RA-node)
+        │       └─ NO: Create RA-node
+        │
+        ├─ Conflict/Attack: Create CA-node
+        │
+        └─ Preference: Create PA-node
+```
+
+### "How should I model this user action?"
+
+```
+User action: "I support this claim because..."
+├─ Step 1: Create I-node for "this claim" (if not exists)
+├─ Step 2: Create I-nodes for each "because" reason
+├─ Step 3: Create RA-node for the inference
+├─ Step 4: Create premise edges from reasons to RA-node
+└─ Step 5: Create conclusion edge from RA-node to claim
+
+User action: "I disagree with this claim"
+├─ Step 1: Create I-node for counterargument
+├─ Step 2: Create CA-node
+├─ Step 3: Create conflicting edge from counter to CA-node
+└─ Step 4: Create conflicted edge from CA-node to original claim
+
+User action: "This source is more reliable"
+├─ Step 1: Identify the two arguments/sources
+├─ Step 2: Create PA-node
+├─ Step 3: Create preferred edge from better to PA-node
+└─ Step 4: Create dispreferred edge from PA-node to worse
+
+User action: "Alice says: I think P"
+├─ Step 1: Create L-node with speaker=Alice, illocution=assert
+├─ Step 2: Set propositionalContent = "P"
+├─ Step 3: Extract I-node with content="P" for reasoning
+└─ Step 4: Update Alice's commitment store
+```
+
+### "Is my graph valid?"
+
+```
+For each node:
+├─ Is it an I-node?
+│   ├─ Does it have claimText? ✓
+│   ├─ Does it connect to another I-node without S-node? ✗
+│   └─ Is it an initial node (no predecessors)? ✓ (OK but check if should be premise)
+│
+├─ Is it an S-node (RA/CA/PA/TA)?
+│   ├─ Does it have at least one predecessor? ✗ (ORPHAN)
+│   ├─ Does it have at least one successor? ✗ (ORPHAN)
+│   ├─ RA-node: exactly one conclusion edge? ✗
+│   ├─ CA-node: exactly one conflicting & one conflicted? ✗
+│   └─ PA-node: exactly one preferred & one dispreferred? ✗
+│
+└─ Is it an L-node?
+    ├─ Does it have speaker? ✗
+    ├─ Does it have ilocutionType? ✗
+    └─ If part of protocol, does move follow rules? ✗
+
+For each edge:
+├─ Does edge type match source/target node types? ✗
+├─ Are there duplicate edges (same source, target, type)? ✗ (should be unique)
+└─ Does edge create a cycle? ⚠️ (warning, not always error)
+```
+
+---
+
+## Common Patterns
+
+### Pattern 1: Simple Support
+
+**Use case**: User provides reason for claim
+
+```
+[I: Premise] ----premise----> [RA: Inference] ----conclusion----> [I: Conclusion]
+```
+
+**Code**:
+```typescript
+async function addSupport(conclusionId: string, premiseText: string) {
+  const premise = await createNode({
+    nodeType: 'I',
+    claimText: premiseText
+  });
+  
+  const ra = await createNode({
+    nodeType: 'RA',
+    inferenceType: 'generic'
+  });
+  
+  await createEdge({
+    sourceId: premise.id,
+    targetId: ra.id,
+    edgeType: 'premise'
+  });
+  
+  await createEdge({
+    sourceId: ra.id,
+    targetId: conclusionId,
+    edgeType: 'conclusion'
+  });
+}
+```
+
+---
+
+### Pattern 2: Argument from Expert Opinion
+
+**Use case**: User cites expert
+
+```
+[I: E is expert] ----premise----> 
+[I: E says P]    ----premise----> [RA: Expert Opinion] ----conclusion----> [I: P]
+[I: P in domain] ----premise---->
+```
+
+**Code**:
+```typescript
+async function addExpertOpinion(
+  expertName: string,
+  domain: string,
+  claim: string
+) {
+  const premise1 = await createNode({
+    nodeType: 'I',
+    claimText: `${expertName} is an expert in ${domain}`
+  });
+  
+  const premise2 = await createNode({
+    nodeType: 'I',
+    claimText: `${expertName} says ${claim}`
+  });
+  
+  const premise3 = await createNode({
+    nodeType: 'I',
+    claimText: `${claim} is within ${domain}`
+  });
+  
+  const conclusion = await createNode({
+    nodeType: 'I',
+    claimText: claim
+  });
+  
+  const ra = await createNode({
+    nodeType: 'RA',
+    schemeId: 'expert_opinion',
+    schemeType: 'presumptive',
+    inferenceType: 'expert_opinion'
+  });
+  
+  // Connect premises
+  for (const premise of [premise1, premise2, premise3]) {
+    await createEdge({
+      sourceId: premise.id,
+      targetId: ra.id,
+      edgeType: 'premise'
+    });
+  }
+  
+  // Connect conclusion
+  await createEdge({
+    sourceId: ra.id,
+    targetId: conclusion.id,
+    edgeType: 'conclusion'
+  });
+}
+```
+
+---
+
+### Pattern 3: Rebut Attack
+
+**Use case**: User directly contradicts claim
+
+```
+[I: ¬P] ----conflicting----> [CA: Rebut] ----conflicted----> [I: P]
+```
+
+**Code**:
+```typescript
+async function rebutClaim(originalClaimId: string, rebuttalText: string) {
+  const rebuttal = await createNode({
+    nodeType: 'I',
+    claimText: rebuttalText
+  });
+  
+  const ca = await createNode({
+    nodeType: 'CA',
+    conflictType: 'rebut'
+  });
+  
+  await createEdge({
+    sourceId: rebuttal.id,
+    targetId: ca.id,
+    edgeType: 'conflicting'
+  });
+  
+  await createEdge({
+    sourceId: ca.id,
+    targetId: originalClaimId,
+    edgeType: 'conflicted'
+  });
+}
+```
+
+---
+
+### Pattern 4: Undercut Attack
+
+**Use case**: User challenges reasoning, not conclusion
+
+```
+[I: Rule unreliable] ----conflicting----> [CA: Undercut] ----conflicted----> [RA: Inference]
+```
+
+**Code**:
+```typescript
+async function undercutInference(raNodeId: string, undercutText: string) {
+  const undercut = await createNode({
+    nodeType: 'I',
+    claimText: undercutText
+  });
+  
+  const ca = await createNode({
+    nodeType: 'CA',
+    conflictType: 'undercut'
+  });
+  
+  await createEdge({
+    sourceId: undercut.id,
+    targetId: ca.id,
+    edgeType: 'conflicting'
+  });
+  
+  await createEdge({
+    sourceId: ca.id,
+    targetId: raNodeId,  // Target the RA-node!
+    edgeType: 'conflicted'
+  });
+}
+```
+
+---
+
+### Pattern 5: Multi-Premise Argument
+
+**Use case**: Argument requires multiple reasons
+
+```
+[I: P1] ----premise----> 
+[I: P2] ----premise----> [RA] ----conclusion----> [I: C]
+[I: P3] ----premise---->
+```
+
+**Code**:
+```typescript
+async function createMultiPremiseArgument(
+  premises: string[],
+  conclusion: string,
+  schemeId?: string
+) {
+  const conclusionNode = await createNode({
+    nodeType: 'I',
+    claimText: conclusion
+  });
+  
+  const ra = await createNode({
+    nodeType: 'RA',
+    schemeId,
+    schemeType: schemeId ? 'presumptive' : 'defeasible',
+    inferenceType: schemeId || 'generic'
+  });
+  
+  for (const premiseText of premises) {
+    const premise = await createNode({
+      nodeType: 'I',
+      claimText: premiseText
+    });
+    
+    await createEdge({
+      sourceId: premise.id,
+      targetId: ra.id,
+      edgeType: 'premise'
+    });
+  }
+  
+  await createEdge({
+    sourceId: ra.id,
+    targetId: conclusionNode.id,
+    edgeType: 'conclusion'
+  });
+  
+  return { conclusion: conclusionNode, inference: ra };
+}
+```
+
+---
+
+### Pattern 6: Chained Arguments
+
+**Use case**: Conclusion of one argument is premise of another
+
+```
+[I: P] ----premise----> [RA1] ----conclusion----> [I: Q] ----premise----> [RA2] ----conclusion----> [I: R]
+```
+
+**Code**:
+```typescript
+async function chainArguments(
+  initialPremise: string,
+  intermediateConclusion: string,
+  finalConclusion: string
+) {
+  // First argument
+  const p = await createNode({ nodeType: 'I', claimText: initialPremise });
+  const q = await createNode({ nodeType: 'I', claimText: intermediateConclusion });
+  const ra1 = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+  
+  await createEdge({ sourceId: p.id, targetId: ra1.id, edgeType: 'premise' });
+  await createEdge({ sourceId: ra1.id, targetId: q.id, edgeType: 'conclusion' });
+  
+  // Second argument
+  const r = await createNode({ nodeType: 'I', claimText: finalConclusion });
+  const ra2 = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+  
+  await createEdge({ sourceId: q.id, targetId: ra2.id, edgeType: 'premise' });
+  await createEdge({ sourceId: ra2.id, targetId: r.id, edgeType: 'conclusion' });
+}
+```
+
+---
+
+### Pattern 7: Dialogue Move
+
+**Use case**: User makes statement in protocol-governed dialogue
+
+```
+[L: Alice asserts P] ----start----> [TA: Assert→Challenge] ----end----> [L: Bob challenges P]
+```
+
+**Code**:
+```typescript
+async function makeDialogueMove(
+  debateId: string,
+  speakerId: string,
+  ilocutionType: IlocutionType,
+  content: string,
+  targetMoveId?: string
+) {
+  // Create L-node
+  const lNode = await createNode({
+    nodeType: 'L',
+    speakerId,
+    ilocutionType,
+    content,
+    propositionalContent: extractProposition(content),
+    targetMoveId
+  });
+  
+  // Extract propositional content as I-node for reasoning
+  if (lNode.propositionalContent) {
+    const iNode = await createNode({
+      nodeType: 'I',
+      claimText: lNode.propositionalContent
+    });
+    
+    // Link for extraction (optional, depends on design)
+    await createEdge({
+      sourceId: lNode.id,
+      targetId: iNode.id,
+      edgeType: 'conclusion'  // L-node "produces" I-node
+    });
+  }
+  
+  // Update commitment store
+  await updateCommitmentStore(debateId, speakerId, lNode);
+  
+  // Compute legal replies
+  const legalReplies = await computeLegalMoves(debateId, lNode.id);
+  
+  return { lNode, legalReplies };
+}
+```
+
+---
+
+## Validation Checklist
+
+### Pre-Submission Checklist
+
+Before creating a node/edge, verify:
+
+- [ ] Node type is valid: I, L, RA, CA, PA, or TA
+- [ ] Required fields are present:
+  - [ ] I-node: `claimText`
+  - [ ] L-node: `speakerId`, `ilocutionType`
+  - [ ] RA/TA-node: `inferenceType`
+  - [ ] CA-node: `conflictType`
+  - [ ] PA-node: `preferenceType`
+- [ ] Edge type is valid for source/target pair
+- [ ] Edge doesn't create I-node → I-node connection
+- [ ] S-node will have predecessors and successors
+
+### Post-Creation Checklist
+
+After creating nodes/edges, verify:
+
+- [ ] No orphan S-nodes (run validation query)
+- [ ] RA-nodes have exactly 1 conclusion edge
+- [ ] CA-nodes have exactly 1 conflicting + 1 conflicted edge
+- [ ] PA-nodes have exactly 1 preferred + 1 dispreferred edge
+- [ ] No duplicate edges (same source, target, type)
+- [ ] Graph is connected (unless intentionally building separate arguments)
+
+### SQL Validation Queries
+
+```sql
+-- Find orphan S-nodes
+SELECT n.id, n.node_type, n.content
+FROM nodes n
+WHERE n.node_type IN ('RA', 'CA', 'PA', 'TA')
+  AND (
+    NOT EXISTS (SELECT 1 FROM edges WHERE target_id = n.id)
+    OR NOT EXISTS (SELECT 1 FROM edges WHERE source_id = n.id)
+  );
+
+-- Find RA-nodes with wrong number of conclusions
+SELECT n.id, COUNT(e.id) AS conclusion_count
+FROM nodes n
+LEFT JOIN edges e ON e.source_id = n.id AND e.edge_type = 'conclusion'
+WHERE n.node_type = 'RA'
+GROUP BY n.id
+HAVING COUNT(e.id) != 1;
+
+-- Find I-to-I connections
+SELECT e.id, e.source_id, e.target_id
+FROM edges e
+JOIN nodes n1 ON e.source_id = n1.id
+JOIN nodes n2 ON e.target_id = n2.id
+WHERE n1.node_type = 'I' AND n2.node_type = 'I';
+
+-- Find circular dependencies
+WITH RECURSIVE graph_traversal AS (
+  SELECT source_id AS node, target_id AS next_node, 
+         ARRAY[source_id] AS path, 1 AS depth
+  FROM edges
+  UNION ALL
+  SELECT gt.node, e.target_id, 
+         gt.path || e.target_id, gt.depth + 1
+  FROM graph_traversal gt
+  JOIN edges e ON gt.next_node = e.source_id
+  WHERE NOT (e.target_id = ANY(gt.path))
+    AND gt.depth < 100
+)
+SELECT DISTINCT node, next_node, path
+FROM graph_traversal
+WHERE next_node = node;
+```
+
+---
+
+## API Quick Reference
+
+### Node Operations
+
+```typescript
+// Create node
+POST /api/debates/:debateId/nodes
+Body: {
+  nodeType: NodeType,
+  content: string,
+  claimText?: string,
+  speakerId?: string,
+  // ... type-specific fields
+}
+Response: { node: Node }
+
+// Get node
+GET /api/debates/:debateId/nodes/:nodeId
+Response: { node: Node }
+
+// Update node
+PATCH /api/debates/:debateId/nodes/:nodeId
+Body: { content?: string, metadata?: object }
+Response: { node: Node }
+
+// Delete node
+DELETE /api/debates/:debateId/nodes/:nodeId
+Response: { success: boolean }
+
+// List nodes
+GET /api/debates/:debateId/nodes?type=I,RA&creator=userId
+Response: { nodes: Node[], total: number }
+```
+
+### Edge Operations
+
+```typescript
+// Create edge
+POST /api/debates/:debateId/edges
+Body: {
+  sourceId: string,
+  targetId: string,
+  edgeType: EdgeType
+}
+Response: { edge: Edge, validationErrors?: string[] }
+
+// Delete edge
+DELETE /api/debates/:debateId/edges/:edgeId
+Response: { success: boolean }
+
+// List edges
+GET /api/debates/:debateId/edges?source=nodeId&type=premise
+Response: { edges: Edge[] }
+```
+
+### Graph Operations
+
+```typescript
+// Get full graph
+GET /api/debates/:debateId/graph?maxDepth=10&format=aif
+Response: { graph: AIFGraph, stats: GraphStats }
+
+// Get subgraph
+GET /api/debates/:debateId/nodes/:nodeId/subgraph?direction=forward
+Response: { graph: AIFGraph }
+
+// Validate graph
+POST /api/debates/:debateId/graph/validate
+Response: { valid: boolean, errors: Error[], warnings: Warning[] }
+```
+
+### Argument Operations
+
+```typescript
+// Create argument
+POST /api/debates/:debateId/arguments
+Body: {
+  premiseIds: string[],
+  conclusionText: string,
+  schemeId?: string
+}
+Response: {
+  conclusionNode: INode,
+  raNode: RANode,
+  edges: Edge[]
+}
+
+// Add support
+POST /api/debates/:debateId/claims/:claimId/support
+Body: {
+  premiseTexts: string[],
+  schemeId?: string
+}
+Response: { /* same as create argument */ }
+
+// Attack claim
+POST /api/debates/:debateId/claims/:claimId/attack
+Body: {
+  attackType: 'rebut' | 'undercut' | 'undermine',
+  attackText: string,
+  targetScope?: 'premise' | 'inference' | 'conclusion',
+  targetNodeId?: string
+}
+Response: {
+  attackNode: INode,
+  caNode: CANode,
+  edges: Edge[]
+}
+
+// Get argument status
+GET /api/debates/:debateId/arguments/:argumentId/status?semantics=grounded
+Response: {
+  status: 'justified' | 'overruled' | 'defensible' | 'undecided',
+  inExtensions: string[],
+  attackedBy: string[],
+  defends: string[],
+  reasoning: string
+}
+
+// Compute extensions
+GET /api/debates/:debateId/extensions?semantics=preferred
+Response: {
+  extensions: Array<{
+    id: string,
+    arguments: string[],
+    justifiedClaims: string[]
+  }>
+}
+```
+
+### Dialogue Operations
+
+```typescript
+// Make move
+POST /api/debates/:debateId/moves
+Body: {
+  ilocutionType: IlocutionType,
+  content: string,
+  propositionalContent?: string,
+  targetMoveId?: string
+}
+Response: {
+  move: LNode,
+  legalReplies: LegalMove[],
+  commitmentUpdates: { added: string[], removed: string[] }
+}
+
+// Get legal moves
+GET /api/debates/:debateId/moves/legal?afterMove=moveId
+Response: { legalMoves: LegalMove[] }
+
+// Get commitments
+GET /api/debates/:debateId/commitments/:participantId
+Response: {
+  commitments: Commitment[],
+  history: CommitmentEvent[]
+}
+```
+
+### Scheme Operations
+
+```typescript
+// List schemes
+GET /api/schemes?category=presumptive&search=expert
+Response: { schemes: Scheme[] }
+
+// Get scheme
+GET /api/schemes/:schemeId
+Response: {
+  scheme: Scheme,
+  criticalQuestions: CriticalQuestion[]
+}
+
+// Suggest scheme
+POST /api/schemes/suggest
+Body: {
+  premises: string[],
+  conclusion: string
+}
+Response: {
+  suggestions: Array<{
+    scheme: Scheme,
+    confidence: number,
+    mapping: Array<{ premiseIndex: number, premiseTemplateId: string }>
+  }>
+}
+```
+
+---
+
+## Troubleshooting
+
+### Problem: "I-nodes cannot connect directly"
+
+**Cause**: Trying to create edge directly between two I-nodes
+
+**Solution**: Insert an RA-node between them
+```typescript
+// ❌ Wrong
+createEdge({ sourceId: i1.id, targetId: i2.id, edgeType: 'premise' });
+
+// ✅ Correct
+const ra = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+await createEdge({ sourceId: i1.id, targetId: ra.id, edgeType: 'premise' });
+await createEdge({ sourceId: ra.id, targetId: i2.id, edgeType: 'conclusion' });
+```
+
+---
+
+### Problem: "Orphan S-node detected"
+
+**Cause**: S-node has no predecessors or successors
+
+**Solution**: Ensure S-nodes are always sandwiched between I-nodes
+```typescript
+// ❌ Wrong
+const ra = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+// No edges created!
+
+// ✅ Correct
+const premise = await createNode({ nodeType: 'I', claimText: 'P' });
+const conclusion = await createNode({ nodeType: 'I', claimText: 'Q' });
+const ra = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+
+await createEdge({ sourceId: premise.id, targetId: ra.id, edgeType: 'premise' });
+await createEdge({ sourceId: ra.id, targetId: conclusion.id, edgeType: 'conclusion' });
+```
+
+---
+
+### Problem: "RA-node has multiple conclusions"
+
+**Cause**: Created more than one conclusion edge from an RA-node
+
+**Solution**: RA-nodes must have exactly one conclusion
+```typescript
+// ❌ Wrong
+await createEdge({ sourceId: ra.id, targetId: q1.id, edgeType: 'conclusion' });
+await createEdge({ sourceId: ra.id, targetId: q2.id, edgeType: 'conclusion' });
+
+// ✅ Correct: If you need to derive both, create separate RA-nodes
+const ra1 = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+await createEdge({ sourceId: p.id, targetId: ra1.id, edgeType: 'premise' });
+await createEdge({ sourceId: ra1.id, targetId: q1.id, edgeType: 'conclusion' });
+
+const ra2 = await createNode({ nodeType: 'RA', inferenceType: 'generic' });
+await createEdge({ sourceId: p.id, targetId: ra2.id, edgeType: 'premise' });
+await createEdge({ sourceId: ra2.id, targetId: q2.id, edgeType: 'conclusion' });
+```
+
+---
+
+### Problem: "Circular dependency detected"
+
+**Cause**: Argument graph contains a cycle
+
+**Context**: This is a warning, not always an error. Circular reasoning is problematic, but might be intentional (e.g., in dialogue where participants go back and forth)
+
+**Solution**: 
+- If unintentional: Review argument structure and break the cycle
+- If intentional: Document why and ensure semantics engine handles it correctly
+
+---
+
+### Problem: "Attack doesn't result in defeat"
+
+**Cause**: Preferences favor the attacked argument
+
+**Solution**: 
+1. Check PA-nodes to see what preferences are set
+2. Consider adding preference arguments to strengthen attacker
+3. Use appropriate semantics (grounded vs. preferred) based on use case
+
+---
+
+### Problem: "Extension computation times out"
+
+**Cause**: Too many arguments or complex attack graph
+
+**Solutions**:
+1. **Optimize database queries** (add indices on source_id, target_id)
+2. **Limit graph depth** when constructing arguments
+3. **Use grounded semantics** (faster than preferred)
+4. **Cache results** for frequently-queried debates
+5. **Paginate** extension computation (compute subset at a time)
+
+---
+
+### Problem: "User can't make illegal dialogue move"
+
+**Cause**: Protocol enforcement is working correctly!
+
+**Solution**: Show user legal moves and explain why their move isn't allowed
+```typescript
+const legalMoves = await getLegalMoves(debateId, afterMoveId);
+
+if (!legalMoves.some(m => m.ilocutionType === attemptedType)) {
+  throw new Error(
+    `Move type "${attemptedType}" is not legal at this point. ` +
+    `Legal moves are: ${legalMoves.map(m => m.ilocutionType).join(', ')}`
+  );
+}
+```
+
+---
+
+### Problem: "Graph export is too large"
+
+**Cause**: Debate has thousands of nodes
+
+**Solutions**:
+1. **Export subgraphs** instead of entire debate
+2. **Compress output** (gzip JSON/RDF)
+3. **Paginate export** (multiple files)
+4. **Filter by date range** or participant
+5. **Exclude orphan nodes** and metadata
+
+---
+
+## Key Reminders
+
+1. **I-nodes never connect directly** - always use S-nodes
+2. **S-nodes always have predecessors and successors** - no orphans
+3. **RA-nodes have exactly one conclusion** - not zero, not many
+4. **Validate early, validate often** - run validation after each operation
+5. **Think in terms of graph patterns** - not individual nodes
+6. **Preferences matter** - they determine which attacks succeed
+7. **Schemes provide structure** - use them for better arguments
+8. **Dialogue requires protocols** - don't skip protocol setup
+9. **Export for interoperability** - JSON-LD and RDF are your friends
+10. **Test with real data** - synthetic examples miss edge cases
+
+---
+
+## Further Reading
+
+- **Full Implementation Guide**: AIF_Implementation_Guide_Comprehensive.md
+- **Research Papers**:
+  - Reed et al. (2008) - AIF+: Dialogue in the Argument Interchange Format
+  - Bex et al. - On Logical Specifications of the Argument Interchange Format
+- **External Resources**:
+  - AIFdb: http://www.arg.dundee.ac.uk/AIFdb/
+  - OVA: http://www.arg.dundee.ac.uk/ova/
+  - AIF Ontology: http://www.arg.dundee.ac.uk/aif/
+
+---
+
+**Quick Reference Version**: 1.0  
+**Last Updated**: October 9, 2025

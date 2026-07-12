@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:aif="http://www.arg.dundee.ac.uk/aif#"
+  xmlns:mesh="http://mesh-platform.io/ontology/aif#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+
+  <aif:Scheme rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">practical_reasoning</rdfs:label>
+    <aif:schemeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Practical Reasoning (Goal→Means→Ought)</aif:schemeName>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    <mesh:clusterTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">practical_reasoning_family</mesh:clusterTag>
+    <mesh:inheritCQs rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</mesh:inheritCQs>
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY" />
+    <aif:hasQuestion rdf:resource="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY" />
+  </aif:Scheme>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Are there better alternatives to A?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNDERCUTS</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is A feasible?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNDERCUTS</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Does A have significant negative consequences?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNDERCUTS</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is the goal/value G explicit and acceptable?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNDERMINES</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Will doing A actually achieve G in the present context?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNDERCUTS</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is there a better alternative than A to achieve G?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REBUTS</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Do negative consequences of A outweigh achieving G?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REBUTS</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is A feasible for the agent (ability, resources, time)?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UNDERMINES</mesh:attackKind>
+  </aif:Question>
+
+  <aif:Question rdf:about="http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY">
+    <aif:questionText rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is doing A permissible/appropriate given norms or constraints?</aif:questionText>
+    <mesh:attackKind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">REBUTS</mesh:attackKind>
+  </aif:Question>
+
+</rdf:RDF>

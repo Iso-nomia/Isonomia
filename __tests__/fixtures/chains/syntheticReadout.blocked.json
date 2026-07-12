@@ -1,0 +1,15 @@
+{
+  "deliberationId": "delib_blocked_fixture",
+  "contentHash": "fixture-blocked-conclusion-v1",
+  "refusalSurface": {
+    "cannotConcludeBecause": [
+      {
+        "claimId": "claim_blocked_thesis",
+        "reason": "Unanswered relocation-of-risk objection (node_blocked_objection).",
+        "blockingArgumentIds": ["arg_blocked_objection"]
+      }
+    ],
+    "mustNotAssert": ["claim_blocked_thesis"],
+    "shouldHedge": []
+  }
+}

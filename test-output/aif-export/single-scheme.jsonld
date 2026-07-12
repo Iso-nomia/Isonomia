@@ -1,0 +1,193 @@
+{
+  "@context": {
+    "aif": "http://www.arg.dundee.ac.uk/aif#",
+    "mesh": "http://mesh-platform.io/ontology/aif#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Scheme"
+      },
+      "rdfs:label": {
+        "@value": "practical_reasoning",
+        "@type": "xsd:string"
+      },
+      "aif:schemeName": {
+        "@value": "Practical Reasoning (Goal→Means→Ought)",
+        "@type": "xsd:string"
+      },
+      "rdfs:comment": {
+        "@value": "",
+        "@type": "xsd:string"
+      },
+      "mesh:clusterTag": {
+        "@value": "practical_reasoning_family",
+        "@type": "xsd:string"
+      },
+      "mesh:inheritCQs": {
+        "@value": "true",
+        "@type": "xsd:boolean"
+      },
+      "aif:hasQuestion": [
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY"
+        },
+        {
+          "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY"
+        }
+      ]
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Are there better alternatives to A?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "UNDERCUTS",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Is A feasible?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "UNDERCUTS",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Does A have significant negative consequences?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "UNDERCUTS",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Is the goal/value G explicit and acceptable?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "UNDERMINES",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Will doing A actually achieve G in the present context?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "UNDERCUTS",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Is there a better alternative than A to achieve G?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "REBUTS",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Do negative consequences of A outweigh achieving G?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "REBUTS",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Is A feasible for the agent (ability, resources, time)?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "UNDERMINES",
+        "@type": "xsd:string"
+      }
+    },
+    {
+      "@id": "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY",
+      "rdf:type": {
+        "@id": "http://www.arg.dundee.ac.uk/aif#Question"
+      },
+      "aif:questionText": {
+        "@value": "Is doing A permissible/appropriate given norms or constraints?",
+        "@type": "xsd:string"
+      },
+      "mesh:attackKind": {
+        "@value": "REBUTS",
+        "@type": "xsd:string"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+      "outDir": "dist",
+      "module": "ESNext",
+      "target": "ES2022",
+      "moduleResolution": "Bundler",
+      "declaration": true,
+      "emitDeclarationOnly": false,
+      "strict": true,
+      "skipLibCheck": true,
+      "verbatimModuleSyntax": true,
+  
+      "types": []
+    },
+    "include": ["src/**/*"],
+    "exclude": ["test", "**/*.test.*", "**/*.spec.*", "**/__tests__/**"]
+  }
+  

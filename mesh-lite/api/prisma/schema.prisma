@@ -1,0 +1,11 @@
+// mesh-lite/api/prisma/schema.prisma
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// No models necessary; we'll use $queryRaw/$executeRaw against room_* schemas.

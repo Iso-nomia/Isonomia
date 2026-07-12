@@ -1,0 +1,101 @@
+@prefix aif: <http://www.arg.dundee.ac.uk/aif#>.
+@prefix mesh: <http://mesh-platform.io/ontology/aif#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://mesh-platform.io/aif/schemes/slippery_slope> a aif:Scheme;
+    rdfs:label "slippery_slope";
+    aif:schemeName "Slippery Slope";
+    rdfs:comment "Doing A will (likely) lead down a chain to unacceptable C; therefore avoid A.";
+    aif:isSubtypeOf <http://mesh-platform.io/aif/schemes/negative_consequences>;
+    mesh:hasAncestor <http://mesh-platform.io/aif/schemes/negative_consequences>, <http://mesh-platform.io/aif/schemes/practical_reasoning>;
+    mesh:clusterTag "practical_reasoning_family";
+    mesh:inheritCQs true.
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.CHAIN_PLAUSIBLE> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.CHAIN_PLAUSIBLE>.
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.CHAIN_PLAUSIBLE> aif:questionText "Is the causal/probabilistic chain from A to C plausible?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.STOPPING_POINTS> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.STOPPING_POINTS>.
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.STOPPING_POINTS> aif:questionText "Are there realistic stopping points or safeguards?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.PROBABILITY> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.PROBABILITY>.
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.PROBABILITY> aif:questionText "How probable/typical is the slide under normal governance?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.ENDPOINT_BAD> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.ENDPOINT_BAD>.
+<http://mesh-platform.io/aif/schemes/Slippery Slope/questions/SS.ENDPOINT_BAD> aif:questionText "Is the endpoint C truly unacceptable (all things considered)?";
+    mesh:attackKind "REBUTS".
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/mitigate> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/mitigate>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/mitigate> aif:questionText "Can A’s harms be mitigated?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/exaggerated> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/exaggerated>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/exaggerated> aif:questionText "Are the harms exaggerated or unlikely?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.LIKELIHOOD> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.LIKELIHOOD>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.LIKELIHOOD> aif:questionText "Are the stated bad consequences likely to occur?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.MITIGATION> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.MITIGATION>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.MITIGATION> aif:questionText "Can the bad effects be mitigated so they are acceptable?";
+    mesh:attackKind "REBUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.TRADEOFFS> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.TRADEOFFS>.
+<http://mesh-platform.io/aif/schemes/Argument from Negative Consequences/questions/NC.TRADEOFFS> aif:questionText "Are there benefits that outweigh the bad effects?";
+    mesh:attackKind "REBUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Argument from Negative Consequences>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/alternatives> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/alternatives>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/alternatives> aif:questionText "Are there better alternatives to A?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/feasible> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/feasible>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/feasible> aif:questionText "Is A feasible?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/side_effects> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/side_effects>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/side_effects> aif:questionText "Does A have significant negative consequences?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.GOAL_ACCEPTED> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.GOAL_ACCEPTED>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.GOAL_ACCEPTED> aif:questionText "Is the goal/value G explicit and acceptable?";
+    mesh:attackKind "UNDERMINES";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.MEANS_EFFECTIVE> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.MEANS_EFFECTIVE>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.MEANS_EFFECTIVE> aif:questionText "Will doing A actually achieve G in the present context?";
+    mesh:attackKind "UNDERCUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.ALTERNATIVES> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.ALTERNATIVES>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.ALTERNATIVES> aif:questionText "Is there a better alternative than A to achieve G?";
+    mesh:attackKind "REBUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.SIDE_EFFECTS> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.SIDE_EFFECTS>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.SIDE_EFFECTS> aif:questionText "Do negative consequences of A outweigh achieving G?";
+    mesh:attackKind "REBUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.FEASIBILITY> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.FEASIBILITY>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.FEASIBILITY> aif:questionText "Is A feasible for the agent (ability, resources, time)?";
+    mesh:attackKind "UNDERMINES";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.PERMISSIBILITY> a aif:Question.
+<http://mesh-platform.io/aif/schemes/slippery_slope> aif:hasQuestion <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.PERMISSIBILITY>.
+<http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)/questions/PR.PERMISSIBILITY> aif:questionText "Is doing A permissible/appropriate given norms or constraints?";
+    mesh:attackKind "REBUTS";
+    mesh:inheritedFrom <http://mesh-platform.io/aif/schemes/Practical Reasoning (Goal→Means→Ought)>.

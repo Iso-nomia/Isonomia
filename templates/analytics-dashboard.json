@@ -1,0 +1,23 @@
+{
+  "name": "Analytics Dashboard",
+  "description": "Aggregates metrics and emails a weekly report",
+  "graph": {
+    "nodes": [
+      { "id": "fetchShopify", "type": "trigger", "action": "analytics:fetchShopify" },
+      { "id": "fetchInstagram", "type": "action", "action": "analytics:fetchInstagram" },
+      { "id": "fetchTikTok", "type": "action", "action": "analytics:fetchTikTok" },
+      { "id": "aggregate", "type": "action", "action": "analytics:aggregateData" },
+      { "id": "report", "type": "action", "action": "analytics:generateReport" },
+      { "id": "email", "type": "action", "action": "gmail:sendEmail" },
+      { "id": "slack", "type": "action", "action": "slack:sendMessage" }
+    ],
+    "edges": [
+      { "id": "e1", "source": "fetchShopify", "target": "fetchInstagram" },
+      { "id": "e2", "source": "fetchInstagram", "target": "fetchTikTok" },
+      { "id": "e3", "source": "fetchTikTok", "target": "aggregate" },
+      { "id": "e4", "source": "aggregate", "target": "report" },
+      { "id": "e5", "source": "report", "target": "email" },
+      { "id": "e6", "source": "report", "target": "slack" }
+    ]
+  }
+}

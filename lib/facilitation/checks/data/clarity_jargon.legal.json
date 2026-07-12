@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "version": 1,
+    "language": "en",
+    "scope": "legal",
+    "note": "Placeholder for legal-domain jargon; partner team to populate."
+  },
+  "loadedAdjectives": [
+    "reasonable",
+    "unreasonable",
+    "frivolous",
+    "meritorious"
+  ],
+  "jargon": [
+    "deliverables",
+    "actionable",
+    "bandwidth"
+  ]
+}

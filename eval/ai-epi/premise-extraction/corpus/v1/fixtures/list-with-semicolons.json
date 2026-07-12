@@ -1,0 +1,9 @@
+{
+  "id": "list-with-semicolons",
+  "claimText": "The project is on schedule; the budget is intact; the team is morale-positive.",
+  "expectedAtoms": [
+    { "text": "The project is on schedule" },
+    { "text": "the budget is intact" },
+    { "text": "the team is morale-positive" }
+  ]
+}

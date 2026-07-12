@@ -1,0 +1,30 @@
+{
+  "version": "v1",
+  "fixtures": [
+    {
+      "id": "single-atom",
+      "path": "fixtures/single-atom.json",
+      "description": "Bare atomic claim — extractor must NOT over-split."
+    },
+    {
+      "id": "and-conjunction",
+      "path": "fixtures/and-conjunction.json",
+      "description": "Simple two-atom conjunction joined by ' and '."
+    },
+    {
+      "id": "because-link",
+      "path": "fixtures/because-link.json",
+      "description": "Causal link: assertion + ' because ' + ground."
+    },
+    {
+      "id": "list-with-semicolons",
+      "path": "fixtures/list-with-semicolons.json",
+      "description": "Three-atom enumeration using semicolons."
+    },
+    {
+      "id": "mixed-sentence-and-and",
+      "path": "fixtures/mixed-sentence-and-and.json",
+      "description": "Sentence boundary plus a conjunction inside one sentence."
+    }
+  ]
+}

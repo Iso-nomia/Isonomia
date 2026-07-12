@@ -1,0 +1,273 @@
+{
+  "id": "synthesis-join-db",
+  "description": "Phase 2c fixture: small (4 args) deliberation with two designs where one is a superset of the other. Their articulation join is trivially the larger design (closureSteps: 0, newLoci: []). Used to validate the happy-path synthesis workflow and articulationRecall.",
+  "adversarialGates": [],
+  "manifestFields": {
+    "openExposurePoints": 0,
+    "coverageRatio": 1.0,
+    "fossilCount": 0,
+    "incarnationSet": {
+      "incarnations": [
+        {
+          "designId": "fixture-synthesis-join-bottom",
+          "loci": [
+            "⊢A.0",
+            "⊢A.1"
+          ],
+          "moveCount": 2,
+          "rank": 0
+        }
+      ],
+      "totalIncarnations": 1
+    }
+  },
+  "readout": {
+    "deliberationId": "fix-synthesis-join-db",
+    "contentHash": "sha256:synthesis-join-db-content-hash-placeholder-00000000000000000000000",
+    "fingerprint": {
+      "deliberationId": "fix-synthesis-join-db",
+      "contentHash": "sha256:__nested_redacted__",
+      "argumentCount": 4,
+      "claimCount": 5,
+      "edgeCount": {
+        "support": 3,
+        "attack": 0,
+        "ca": 0
+      },
+      "schemeDistribution": {
+        "<unschemed>": 4
+      },
+      "authorCount": {
+        "human": 4,
+        "ai": 0,
+        "hybrid": 0
+      },
+      "participantCount": 1,
+      "standingDistribution": {
+        "untested-default": 0,
+        "untested-supported": 4,
+        "tested-attacked": 0,
+        "tested-undermined": 0,
+        "tested-survived": 0
+      },
+      "depthDistribution": {
+        "thin": 4,
+        "moderate": 0,
+        "dense": 0
+      },
+      "medianChallengerCount": 0,
+      "meanChallengerCount": 0,
+      "challengerCoverage": 0,
+      "medianChallengerCountAmongChallenged": 0,
+      "cqCoverage": {
+        "answered": 0,
+        "partial": 0,
+        "unanswered": 0,
+        "total": 0
+      },
+      "evidenceCoverage": {
+        "withProvenance": 0,
+        "withoutProvenance": 0
+      },
+      "chainCount": 0,
+      "extraction": {
+        "aiSeededCount": 0,
+        "aiSeededRatio": 0,
+        "humanEngagementRateOnAiSeeds": null,
+        "articulationOnly": false
+      },
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "frontier": {
+      "deliberationId": "fix-synthesis-join-db",
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "unansweredCqs": [],
+      "terminalLeaves": [
+        {
+          "argumentId": "syn-join-arg-1",
+          "chainDepth": 0,
+          "onMainConclusionPath": true
+        },
+        {
+          "argumentId": "syn-join-arg-2",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "syn-join-arg-3",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "syn-join-arg-4",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        }
+      ],
+      "loadBearingnessRanking": [
+        "syn-join-arg-1",
+        "syn-join-arg-2",
+        "syn-join-arg-3",
+        "syn-join-arg-4"
+      ],
+      "contestednessRanking": [],
+      "loadBearingnessScores": {
+        "syn-join-arg-1": 3,
+        "syn-join-arg-2": 0,
+        "syn-join-arg-3": 0,
+        "syn-join-arg-4": 0
+      }
+    },
+    "missingMoves": {
+      "deliberationId": "fix-synthesis-join-db",
+      "perArgument": {
+        "syn-join-arg-1": {
+          "argumentId": "syn-join-arg-1",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-join-arg-2": {
+          "argumentId": "syn-join-arg-2",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-join-arg-3": {
+          "argumentId": "syn-join-arg-3",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-join-arg-4": {
+          "argumentId": "syn-join-arg-4",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        }
+      },
+      "perDeliberation": {
+        "schemesUnused": [],
+        "metaArgumentsAbsent": true,
+        "crossSchemeMediatorsAbsent": true
+      }
+    },
+    "chains": {
+      "deliberationId": "fix-synthesis-join-db",
+      "chains": [],
+      "uncoveredClaims": []
+    },
+    "cross": {
+      "deliberationId": "fix-synthesis-join-db",
+      "canonicalFamilies": [],
+      "plexusEdgesIn": {
+        "incomingImports": 0,
+        "outgoingImports": 0
+      },
+      "argumentImports": {
+        "incomingByDeliberationId": {},
+        "outgoingByDeliberationId": {}
+      },
+      "schemeReuseAcrossRooms": {},
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "topology": {
+      "hubs": {
+        "set": [
+          {
+            "argumentId": "syn-join-arg-1",
+            "score": 3
+          }
+        ],
+        "topScore": 3,
+        "coequalThreshold": 1,
+        "shape": "single-dominant"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": {
+        "hubAmbiguity": "none",
+        "premiseConcentration": "low",
+        "cautions": []
+      },
+      "sizeTier": {
+        "argumentCount": 4,
+        "tier": "small",
+        "hierarchicalMode": false,
+        "disclosure": null
+      }
+    },
+    "refusalSurface": {
+      "cannotConcludeBecause": [
+        {
+          "attemptedConclusion": "<deliberation-scope>",
+          "conclusionClaimId": "",
+          "blockedBy": "depth-thin",
+          "blockerIds": [],
+          "blockerSummaries": []
+        }
+      ]
+    },
+    "topArguments": [
+      {
+        "id": "syn-join-arg-1",
+        "rankIndex": 0,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "syn-join-claim-main",
+        "conclusionText": "A synthesised position can be articulated.",
+        "argumentText": "The two designs share a root locus, making a trivial join possible.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 1
+      }
+    ],
+    "mostContested": [],
+    "honestyLine": "This deliberation has 4 argument(s); 0% have at least one challenger (median 0 distinct challenger(s) when challenged, 0.00 mean across all). 0% catalog-CQ coverage. 0 chain(s) on file; 1 potential conclusion(s) are not licensed by the current graph.",
+    "writingConstraints": {
+      "mustInclude": {
+        "honestyLine": "This deliberation has 4 argument(s); 0% have at least one challenger (median 0 distinct challenger(s) when challenged, 0.00 mean across all). 0% catalog-CQ coverage. 0 chain(s) on file; 1 potential conclusion(s) are not licensed by the current graph.",
+        "refusalNotice": "The deliberation is at thin depth across the board — no conclusion has been tested enough to license closure.",
+        "structuralCautions": [],
+        "sizeDisclosure": null
+      },
+      "mustNotAssert": [],
+      "shouldHedge": [
+        {
+          "target": {
+            "kind": "argument",
+            "id": "syn-join-arg-1"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth) — frame as articulated, not tested"
+        }
+      ],
+      "framing": {
+        "stage": "articulation",
+        "advisoryNote": "depthDistribution.thin dominant — frame as articulation-stage."
+      }
+    }
+  }
+}

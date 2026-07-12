@@ -1,0 +1,18 @@
+{
+  "FAV_ARTIST_OVERLAP": {
+    "en": "You and this creator both like %{artist}.",
+    "es": "Tú y este creador compartís gusto por %{artist}."
+  },
+  "RECENT_SWIPE_RIGHT": {
+    "en": "You recently swiped right on similar videos.",
+    "es": "Recientemente deslizaste a la derecha en videos parecidos."
+  },
+  "OTHER": {
+    "en": "Personalized for you",
+    "es": "Personalizado para ti"
+  },
+  "TREND": {
+    "en": "Trending near you",
+    "es": "Tendencia cerca de ti"
+  }
+}

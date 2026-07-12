@@ -1,0 +1,190 @@
+{
+  "runAt": "2026-05-18T04:25:46.310Z",
+  "client": "openai:gpt-4o-mini",
+  "corpusVersion": "v1",
+  "aggregate": {
+    "precision": 0.9166666666666666,
+    "recall": 1,
+    "f1": 0.9565217391304348,
+    "fixtureCount": 5
+  },
+  "reports": [
+    {
+      "fixtureId": "single-atom",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 1,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "Carbon pricing reduces emissions",
+            "provenanceSpan": [
+              0,
+              30
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "and-conjunction",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 2,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The proposal is fiscally sound",
+            "provenanceSpan": [
+              0,
+              30
+            ]
+          },
+          {
+            "text": "The proposal is politically popular",
+            "provenanceSpan": [
+              31,
+              55
+            ]
+          }
+        ]
+      },
+      "warnings": [
+        "atom[1]: provenance-text-mismatch"
+      ],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "because-link",
+      "precision": 0.6666666666666666,
+      "recall": 1,
+      "f1": 0.8,
+      "truePositives": 2,
+      "falsePositives": 1,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The bill should pass",
+            "provenanceSpan": [
+              0,
+              20
+            ]
+          },
+          {
+            "text": "It closes a tax loophole",
+            "provenanceSpan": [
+              25,
+              48
+            ]
+          },
+          {
+            "text": "It closes a tax loophole",
+            "provenanceSpan": [
+              25,
+              48
+            ]
+          }
+        ]
+      },
+      "warnings": [
+        "atom[1]: provenance-text-mismatch",
+        "atom[2]: provenance-text-mismatch"
+      ],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": [
+        {
+          "index": 2,
+          "text": "It closes a tax loophole"
+        }
+      ]
+    },
+    {
+      "fixtureId": "list-with-semicolons",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 3,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The project is on schedule",
+            "provenanceSpan": [
+              0,
+              27
+            ]
+          },
+          {
+            "text": "The budget is intact",
+            "provenanceSpan": [
+              29,
+              50
+            ]
+          },
+          {
+            "text": "The team is morale-positive",
+            "provenanceSpan": [
+              52,
+              78
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "mixed-sentence-and-and",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 3,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The reform raises revenue",
+            "provenanceSpan": [
+              4,
+              27
+            ]
+          },
+          {
+            "text": "The reform protects low-income filers",
+            "provenanceSpan": [
+              28,
+              56
+            ]
+          },
+          {
+            "text": "The reform closes a long-standing audit loophole",
+            "provenanceSpan": [
+              58,
+              92
+            ]
+          }
+        ]
+      },
+      "warnings": [
+        "atom[1]: provenance-text-mismatch",
+        "atom[2]: provenance-text-mismatch"
+      ],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "chain_blocked_fixture",
+  "deliberationId": "delib_blocked_fixture",
+  "name": "Blocked Conclusion: AI moratorium claim",
+  "description": "A simple chain whose conclusion is blocked by an unanswered objection in the deliberation's refusal surface.",
+  "purpose": "Whether a 6-month moratorium on frontier-model training is warranted, given an unanswered relocation-of-risk objection.",
+  "chainType": "SERIAL",
+  "rootNodeId": "node_blocked_thesis",
+  "createdBy": "1001",
+  "isPublic": true,
+  "isEditable": false,
+  "createdAt": "2026-05-10T09:00:00.000Z",
+  "updatedAt": "2026-05-10T09:30:00.000Z",
+  "creator": { "id": "1001", "name": "Test Author", "image": null },
+  "deliberation": {
+    "id": "delib_blocked_fixture",
+    "title": "Should we impose a 6-month AI training moratorium?"
+  },
+  "scopes": [],
+  "nodes": [
+    {
+      "id": "node_blocked_thesis",
+      "chainId": "chain_blocked_fixture",
+      "argumentId": "arg_blocked_thesis",
+      "nodeOrder": 0,
+      "role": "CONCLUSION",
+      "epistemicStatus": "QUESTIONED",
+      "scopeId": null,
+      "dialecticalRole": "THESIS",
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": 0,
+      "positionY": 0,
+      "addedBy": "1001",
+      "addedAt": "2026-05-10T09:00:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_blocked_thesis",
+        "text": "A 6-month moratorium on frontier-model training is warranted.",
+        "authorId": "1001",
+        "createdAt": "2026-05-10T09:00:00.000Z",
+        "conclusion": {
+          "id": "claim_blocked_thesis",
+          "text": "A 6-month moratorium on frontier-model training is warranted."
+        },
+        "premises": [
+          {
+            "claim": {
+              "id": "claim_premise_blocked_1",
+              "text": "Capability gains are outpacing alignment research."
+            }
+          }
+        ],
+        "implicitWarrant": null,
+        "argumentSchemes": [
+          {
+            "scheme": {
+              "id": "scheme_negative_consequences",
+              "key": "argument_from_negative_consequences",
+              "name": "Argument from Negative Consequences",
+              "description": "Action A leads to harmful outcome H; therefore avoid A.",
+              "summary": null,
+              "cq": ["Are the consequences likely?", "Can they be mitigated?"],
+              "premises": [],
+              "conclusion": null,
+              "purpose": null,
+              "source": null,
+              "materialRelation": null,
+              "reasoningType": null,
+              "ruleForm": null,
+              "conclusionType": null,
+              "whenToUse": null,
+              "tags": []
+            }
+          }
+        ],
+        "schemeNet": null
+      }
+    },
+    {
+      "id": "node_blocked_support",
+      "chainId": "chain_blocked_fixture",
+      "argumentId": "arg_blocked_support",
+      "nodeOrder": 1,
+      "role": "EVIDENCE",
+      "epistemicStatus": "ASSERTED",
+      "scopeId": null,
+      "dialecticalRole": null,
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": -150,
+      "positionY": 150,
+      "addedBy": "1001",
+      "addedAt": "2026-05-10T09:10:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_blocked_support",
+        "text": "Benchmark capability scores have doubled in 12 months.",
+        "authorId": "1001",
+        "createdAt": "2026-05-10T09:10:00.000Z",
+        "conclusion": {
+          "id": "claim_blocked_support",
+          "text": "Frontier-model benchmark scores have doubled year-over-year."
+        },
+        "premises": [],
+        "implicitWarrant": null,
+        "argumentSchemes": [],
+        "schemeNet": null
+      }
+    },
+    {
+      "id": "node_blocked_objection",
+      "chainId": "chain_blocked_fixture",
+      "argumentId": "arg_blocked_objection",
+      "nodeOrder": 2,
+      "role": "OBJECTION",
+      "epistemicStatus": "ASSERTED",
+      "scopeId": null,
+      "dialecticalRole": "ANTITHESIS",
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": 150,
+      "positionY": 150,
+      "addedBy": "1001",
+      "addedAt": "2026-05-10T09:20:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_blocked_objection",
+        "text": "A unilateral moratorium would cede capability leadership to actors with weaker safety norms, increasing rather than decreasing risk.",
+        "authorId": "1001",
+        "createdAt": "2026-05-10T09:20:00.000Z",
+        "conclusion": {
+          "id": "claim_blocked_objection",
+          "text": "A unilateral moratorium would shift frontier development to less safety-conscious actors."
+        },
+        "premises": [],
+        "implicitWarrant": null,
+        "argumentSchemes": [],
+        "schemeNet": null
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_blocked_support",
+      "chainId": "chain_blocked_fixture",
+      "sourceNodeId": "node_blocked_support",
+      "targetNodeId": "node_blocked_thesis",
+      "edgeType": "SUPPORTS",
+      "strength": 0.7,
+      "description": null,
+      "slotMapping": null,
+      "createdAt": "2026-05-10T09:11:00.000Z",
+      "sourceNode": {
+        "id": "node_blocked_support",
+        "argument": {
+          "id": "arg_blocked_support",
+          "text": "Benchmark capability scores have doubled in 12 months.",
+          "conclusion": {
+            "id": "claim_blocked_support",
+            "text": "Frontier-model benchmark scores have doubled year-over-year."
+          }
+        }
+      },
+      "targetNode": {
+        "id": "node_blocked_thesis",
+        "argument": {
+          "id": "arg_blocked_thesis",
+          "text": "A 6-month moratorium on frontier-model training is warranted.",
+          "conclusion": {
+            "id": "claim_blocked_thesis",
+            "text": "A 6-month moratorium on frontier-model training is warranted."
+          }
+        }
+      }
+    },
+    {
+      "id": "edge_blocked_rebut",
+      "chainId": "chain_blocked_fixture",
+      "sourceNodeId": "node_blocked_objection",
+      "targetNodeId": "node_blocked_thesis",
+      "edgeType": "REBUTS",
+      "strength": 0.8,
+      "description": "Unanswered relocation-of-risk objection.",
+      "slotMapping": null,
+      "createdAt": "2026-05-10T09:21:00.000Z",
+      "sourceNode": {
+        "id": "node_blocked_objection",
+        "argument": {
+          "id": "arg_blocked_objection",
+          "text": "A unilateral moratorium would cede capability leadership to actors with weaker safety norms.",
+          "conclusion": {
+            "id": "claim_blocked_objection",
+            "text": "A unilateral moratorium would shift frontier development to less safety-conscious actors."
+          }
+        }
+      },
+      "targetNode": {
+        "id": "node_blocked_thesis",
+        "argument": {
+          "id": "arg_blocked_thesis",
+          "text": "A 6-month moratorium on frontier-model training is warranted.",
+          "conclusion": {
+            "id": "claim_blocked_thesis",
+            "text": "A 6-month moratorium on frontier-model training is warranted."
+          }
+        }
+      }
+    }
+  ]
+}

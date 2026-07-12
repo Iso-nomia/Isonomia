@@ -1,0 +1,283 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Display face — Kolonia (Dominik Bissem). Trial weight only, used at
+ * page-title sizes (h1, occasionally h2 / banner accents). Its expressive
+ * proportions are wrong for body but excellent at 28px+. Loaded locally
+ * (self-hosted, no third-party request) and given font-display:swap so
+ * the page paints in the body serif before swapping in.
+ */
+@font-face {
+  font-family: "Kolonia";
+  src: url("/fonts/KoloniaTrial-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@layer components {
+  /* Main Button Container (Removed 'group') */
+  .btn-commonplace {
+    @apply relative px-3 py-1 font-serif text-[14px] tracking-widest text-[#4a3b2c] uppercase bg-[rgba(244,236,216,0.9)] border-[1px] border-[#5c4033] rounded-[5px] transition-all duration-200 ease-in-out;
+    /* Static Shadows */
+    @apply shadow-[inset_0_0_6px_rgba(189,69,19,0.25),_1px_1px_0_rgba(92,64,51,0.9)];
+  }
+
+  /* Hover States */
+  .btn-commonplace:hover {
+    @apply bg-[rgba(234,216,196,1.0)];
+    @apply shadow-[inset_0_0_6px_rgba(139,69,19,0.35),_1px_1px_0_rgba(62,34,21,0.9)];
+  }
+
+  /* Active (Click) States */
+  .btn-commonplace:active {
+    @apply translate-y-[.5px]   ;
+    @apply shadow-[inset_0_0_6px_rgba(139,69,19,0.2),_0px_0px_0_rgba(92,64,51,0.9)];
+  }
+/* Persistently Selected / Toggled State */
+  .btn-commonplace-selected {
+    /* Pushed down permanently, slightly darker ink stain */
+    @apply bg-[rgba(234,204,180,1.0)] translate-y-[0.5px]  border-[#3b2a1a];
+    @apply shadow-[inset_0_0_6px_rgba(119,49,19,0.4),_0px_0px_0_rgba(92,64,51,0.9)];
+   
+  }
+  /* Inner Flex Wrapper */
+  .btn-commonplace-layout {
+    @apply flex items-center justify-center gap-1;
+  }
+.btn-commonplace-primary {
+    @apply relative px-4 py-2 font-serif text-[16px] tracking-widest text-[#f4ecd8] uppercase bg-[#7a2504] border-2 border-[#4a1501] rounded-md transition-all duration-200 ease-in-out;
+    /* Static Shadows: Deep inset for texture, hard brown offset for physical weight */
+    @apply shadow-[inset_0_0_20px_rgba(0,0,0,0.25),_2px_2px_0_rgba(92,64,51,0.9)];
+  }
+
+  .btn-commonplace-primary:hover {
+    @apply bg-[#8f2c06] ;
+    @apply shadow-[inset_0_0_20px_rgba(0,0,0,0.2),_1px_1px_0_rgba(92,64,51,0.9)];
+  }
+
+  .btn-commonplace-primary:active {
+    @apply translate-y-1 translate-x-1 duration-100 ease-in-out;
+    @apply shadow-[inset_0_0_15px_rgba(0,0,0,0.4),_0px_0px_0_rgba(92,64,51,0.9)];
+  }
+  /* Typography */
+  .btn-commonplace-text {
+    @apply font-semibold;
+  }
+    .btn-commonplace-text-active {
+    @apply font-bold ;
+  }
+
+
+  /* Typographic Ornaments (Aldus Leaves) - Removed group-hover */
+  .btn-commonplace-fleuron {
+    @apply text-[#8b2500] opacity-70 transition-opacity duration-300;
+  }
+
+  /* Trigger fleuron opacity when the parent button is hovered */
+  .btn-commonplace:hover .btn-commonplace-fleuron {
+    @apply opacity-100;
+  }
+}
+/*
+ * Body face — Source Serif 4 (Adobe, OFL). Loaded from Google Fonts via
+ * the @import below. Designed for screen reading at 14–18px, harmonizes
+ * with Kolonia's old-style figures, and degrades to Iowan Old Style /
+ * Charter / Georgia on the system stack while loading.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap");
+
+:root {
+  color-scheme: light;
+  /*
+   * Typography stack. Three families, three jobs.
+   *   --font-display: page titles only. Currently Kolonia Trial.
+   *   --font-serif:   body. Editor, article render, list snippets.
+   *   --font-sans:    labels — nav, metadata strips, buttons, chips.
+   */
+  --font-display:
+    "Kolonia",
+    "Source Serif 4", "Iowan Old Style", "Charter",
+    Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-serif:
+    "Source Serif 4", "Iowan Old Style", "Charter",
+    Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Inter", "Söhne",
+    "Helvetica Neue", Arial, sans-serif;
+}
+/* 
+html {
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
+} */
+
+body {
+  font-family: var(--font-serif);
+  /* Hairline-thin baseline for serif rendering on light backgrounds. */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+ * Tailwind's `font-sans`, `font-serif`, and `font-display` utilities
+ * resolve to these variables via tailwind.config.ts. The body inherits
+ * serif by default; titles opt into display via `font-display`; chrome
+ * opts into sans via `font-sans`.
+ */
+
+.ProseMirror {
+  outline: none;
+  min-height: 56vh;
+  font-family: var(--font-serif);
+  /* Crisp, dark caret. A hair of tracking keeps the caret from visually
+     colliding with serif glyphs (e.g. the overhanging "f") — editor-only,
+     so the read/article typography is unaffected. */
+  caret-color: #1c1917; /* stone-900 */
+
+
+}
+
+/*
+ * Custom caret. When the editor host carries `.cp-has-fake-caret`, the native
+ * caret is hidden and <FakeCaret> renders its own bar (see FakeCaret.tsx). The
+ * blink restarts on every move because the element is re-keyed by position, so
+ * `steps(1)` gives a clean on/off blink that reads as solid while typing.
+ */
+.cp-has-fake-caret .ProseMirror {
+  caret-color: rgb(0, 0, 0);
+}
+
+.cp-fake-caret {
+  animation: cp-caret-blink 1s steps(1, start) infinite;
+}
+
+@keyframes cp-caret-blink {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cp-fake-caret {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/*
+ * Poem stanza breaks. In the editor an empty paragraph occupies a line, but a
+ * static, rendered empty <p> has no line box and its margins collapse — so the
+ * stanza gap would vanish in the read/version views. Give empty paragraphs a
+ * non-breaking space so they render as a real blank line. Scoped to poem
+ * bodies via `.poem-body`; other prose is untouched.
+ */
+.poem-body p:empty::before {
+  content: "\00a0";
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: rgb(168 162 158); /* stone-400 */
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/*
+ * Print artifact. /artifact/[id] is the canonical print surface; the
+ * `.artifact` class scopes the rules so other pages remain untouched
+ * when a user invokes print from elsewhere. Goal: a clean, restrained
+ * page suitable for "Save as PDF" — generous margins, real serif body,
+ * no chrome, no link colors, no background tint.
+ */
+@media print {
+  @page {
+    margin: 0.85in 0.9in;
+  }
+  html,
+  body {
+    background: #ffffff !important;
+    color: #1c1917 !important; /* stone-900 */
+  }
+  /* Hide the entire surrounding nav and any utility chrome. */
+  nav,
+  .print\:hidden {
+    display: none !important;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .artifact {
+    font-family: var(--font-serif);
+    font-size: 12pt;
+    line-height: 1.55;
+  }
+  .artifact h1 {
+    font-family: var(--font-display);
+    font-size: 26pt;
+    line-height: 1.15;
+    margin-bottom: 0.25em;
+  }
+  .artifact h2 {
+    font-family: var(--font-display);
+    font-size: 16pt;
+    margin-top: 1.6em;
+  }
+  .artifact h3 {
+    font-family: var(--font-serif);
+    font-size: 13pt;
+    margin-top: 1.4em;
+  }
+  .artifact h4 {
+    font-family: var(--font-serif);
+    font-size: 11.5pt;
+    margin-top: 1.2em;
+  }
+  .artifact p,
+  .artifact blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+  .artifact .artifact-entry {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .artifact a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  .artifact figcaption {
+    color: #57534e !important; /* stone-600 */
+  }
+  .medieval-parchment {
+  /* Layer 1: Radial vignette for aged corners | Layer 2: Micro-noise texture simulation */
+  background-image: 
+    radial-gradient(circle at center, transparent 30%, rgba(139, 115, 85, 0.25) 100%),
+    repeating-linear-gradient(45deg, rgba(210, 180, 140, 0.05) 0px, rgba(210, 180, 140, 0.05) 2px, transparent 2px, transparent 10px);
+  
+  /* Soft, organic shadow to mimic heavy, wavy animal skin */
+  box-shadow: 
+    inset 0 0 40px rgba(101, 67, 33, 0.2),
+    0 10px 30px rgba(0, 0, 0, 0.15);
+  
+  /* Rough, hand-cut edge simulation */
+  border-radius: 4px 5px 3px 6px / 5px 3px 6px 4px;
+  border: 2px solid rgba(139, 115, 85, 0.3);
+}
+  
+}

@@ -1,0 +1,1107 @@
+# ════════════════════════════════════════════════════════════════════════════
+# Showcase chain: "Are smartphones / social media causing the teen mental
+#                  health crisis?"
+# ════════════════════════════════════════════════════════════════════════════
+#
+# This YAML is the ONLY hand-authored input to scripts/seed-showcase-chain.ts.
+# Re-running the script is idempotent: rows are upserted by `key`, which is
+# tracked in scripts/showcase/.state/teen-screens.json.
+#
+# Authoring rules (the "demo-honesty bar"):
+#   • Each ANCHOR argument (one not used as a sub-argument) must clear:
+#       ≥1 attack against it that is at least partially answered, AND
+#       ≥2 evidence items with archivable URLs.
+#   • Sub-arguments (those listed via `premises[*].supportArg`) are exempt
+#     from the honesty bar; they are scaffolding, not headline claims.
+#   • Pick scheme keys from the ArgumentScheme catalog (e.g. "expert_opinion",
+#     "cause_to_effect", "negative_consequences", "analogy", "sign",
+#     "practical_reasoning", "witness_testimony"). Run
+#       npx tsx -e "import {prisma} from '@/lib/prismaclient'; \
+#         prisma.argumentScheme.findMany({select:{key:true}}).then(r=>console.log(r.map(x=>x.key).sort().join('\n'))).finally(()=>prisma.\$disconnect())"
+#     to see the full installed catalog.
+#
+# This file is deliberately authored as a SKELETON: the two anchor arguments
+# (a.haidt, a.odgers) are fully fleshed out as worked examples, and every
+# additional section / placeholder marked TODO is for manual completion.
+# ════════════════════════════════════════════════════════════════════════════
+
+chainKey: teen-screens
+deliberationTitle: "Showcase: Smartphones, social media, and adolescent mental health"
+deliberationDescription: >
+  A live, contested 2026 question. Expert disagreement is sharp and well-documented;
+  the dialectical apparatus has something to actually do here.
+
+# ════════════════════════════════════════════════════════════════════════════
+# 1. PARTICIPANTS — the "voices" in the deliberation.
+# Each participant becomes the authorId of arguments they create, the userId
+# of approvals they cast, and the contributorId of CQ responses they file.
+# Replace authId values with real auth_id strings before running.
+# ════════════════════════════════════════════════════════════════════════════
+participants:
+  - key: prop1
+    authId: "TODO-prop1-auth-id" # advocate of the smartphone-causation thesis
+    displayName: "Proponent — Causal"
+    role: proponent
+  - key: opp1
+    authId: "TODO-opp1-auth-id" # critic / methodological skeptic
+    displayName: "Opponent — Methodological skeptic"
+    role: opponent
+  - key: mediator
+    authId: "TODO-mediator-auth-id" # tries to surface common ground / scope claims
+    displayName: "Mediator"
+    role: mediator
+  - key: witness
+    authId: "TODO-witness-auth-id" # cites primary studies; offers neither thesis
+    displayName: "Witness — Methods specialist"
+    role: witness
+
+# ════════════════════════════════════════════════════════════════════════════
+# 2. SOURCES — reusable evidence pool. Reference by `sourceRef:` from
+# claims[*].evidence and arguments[*].evidence. Avoids duplicating URLs.
+# ════════════════════════════════════════════════════════════════════════════
+sources:
+  - key: src.haidt-book
+    url: "https://www.anxiousgeneration.com/book"
+    title: "The Anxious Generation (Haidt 2024)"
+    quote: "A great rewiring of childhood produced an epidemic of mental illness."
+
+  - key: src.haidt-substack
+    url: "https://jonathanhaidt.substack.com/p/the-evidence-keeps-piling-up"
+    title: "Haidt — Evidence collaboration (Substack)"
+
+  - key: src.surgeon-general
+    url: "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf"
+    title: "U.S. Surgeon General Advisory: Social Media and Youth Mental Health (2023)"
+
+  - key: src.odgers-nature
+    url: "https://www.nature.com/articles/d41586-024-00902-2"
+    title: "Odgers — The great rewiring (Nature 2024)"
+
+  - key: src.orben-przybylski
+    url: "https://www.nature.com/articles/s41562-018-0506-1"
+    title: "Orben & Przybylski — Adolescent well-being and digital tech use (Nat Hum Behav 2019)"
+
+  # TODO: add additional sources as you flesh out sub-arguments and CQ responses
+  - key: src.cdc-yrbs
+    url: "https://www.cdc.gov/yrbs/index.html"
+    title: "CDC — Youth Risk Behavior Surveillance (YRBS)"
+  - key: src.twenge-igen
+    url: "https://www.cambridge.org/core/journals/clinical-psychological-science"
+    title: "Twenge et al. — iGen / Clinical Psychological Science (placeholder)"
+  - key: src.bc-experiment
+    url: "https://cep.lse.ac.uk/pubs/download/dp1350.pdf"
+    title: "Beland & Murphy — Ill Communication: Technology, Distraction & Student Performance (LSE CEP DP1350, 2015)"
+    quote: "Banning mobile phones in schools improved student test scores, with the largest gains for low-achieving and disadvantaged pupils."
+
+  - key: src.unesco-gem
+    url: "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning"
+    title: "UNESCO — Smartphones in school only when they clearly support learning (2023 GEM Report)"
+    quote: "UNESCO calls for a ban on smartphones in schools where their use is not clearly demonstrated to support learning."
+
+  # Sources for fleshed-out CQ responses and rebut sub-arguments
+  - key: src.braghieri-aer
+    url: "https://www.aeaweb.org/articles?id=10.1257/aer.20211218"
+    title: "Braghieri, Levy & Makarin — Social Media and Mental Health (AER 2022)"
+    quote: "Using the staggered roll-out of Facebook across U.S. colleges, we estimate that the introduction of Facebook had a negative impact on student mental health, particularly for those most susceptible to negative social comparison."
+
+  - key: src.unicef-irc-17
+    url: "https://www.unicef.org/innocenti/reports/innocenti-report-card-17"
+    title: "UNICEF Innocenti — Report Card 17: Places and Spaces (2022)"
+    quote: "Children's well-being depends on multiple, interacting environmental factors; no single policy lever is sufficient."
+
+  - key: src.pew-teens-tech
+    url: "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/"
+    title: "Pew Research — Teens, Social Media and Technology 2024"
+    quote: "Teens from lower-income households are more likely than those from higher-income households to say they go online almost constantly via a smartphone."
+
+# ════════════════════════════════════════════════════════════════════════════
+# 3. CLAIMS — every claim used as conclusion or premise (or as the head of
+# a sub-argument). `evidence:` here attaches to the claim itself, regardless
+# of whether any argument uses it as a conclusion.
+# ════════════════════════════════════════════════════════════════════════════
+claims:
+  # ─── Top-level theses ──────────────────────────────────────────────────
+  - key: c.haidt-causal
+    text: >
+      Smartphone-based social media is the principal cause of the rise in adolescent
+      depression, anxiety, and self-harm seen across the U.S., U.K., Canada,
+      Australia, and the Nordic countries since roughly 2012.
+
+  - key: c.odgers-correlational
+    text: >
+      The empirical association between adolescent social media use and mental
+      health outcomes is small and methodologically fragile; the evidence does not
+      warrant attributing the post-2012 youth mental health decline principally to
+      smartphones, and the popular synthesis on this question has run ahead of its data.
+
+  # ─── Premises for the Haidt-side argument ──────────────────────────────
+  - key: p.timing-correlation
+    text: >
+      Beginning around 2012, adolescent rates of major depressive episodes,
+      emergency-department visits for self-harm, and completed suicides rose
+      sharply and roughly contemporaneously across the U.S., U.K., Canada,
+      Australia, and the Nordic countries — the same set of countries in which a
+      majority of teens acquired smartphones, and in which image-based social
+      platforms became dominant, during the 2010–2013 window.
+    evidence:
+      - sourceRef: src.cdc-yrbs
+
+  - key: p.haidt-expert
+    text: >
+      Jonathan Haidt is a social psychologist at NYU Stern whose 2024 book
+      *The Anxious Generation* synthesizes the empirical literature on adolescent
+      screen exposure and mental health and concludes that smartphone-based social
+      media is the principal driver of the post-2012 decline.
+
+  - key: p.dose-response
+    text: >
+      Multiple longitudinal and cross-sectional studies report a dose-response
+      gradient in which adolescent girls who use social media heavily report
+      higher rates of depressive symptoms, anxiety, and lower well-being than
+      light users, with the gradient steepening above roughly two to three hours
+      of daily use.
+
+  # ─── Premises for the Odgers-side argument ─────────────────────────────
+  - key: p.specification-curve
+    text: >
+      Specification-curve analyses (Orben & Przybylski 2019 and successors)
+      systematically vary analytic choices across thousands of plausible model
+      specifications and find that the median association between adolescent
+      digital technology use and well-being explains less than half a percent
+      of variance — comparable in magnitude to associations with eating potatoes
+      or wearing glasses.
+    evidence:
+      - sourceRef: src.orben-przybylski
+
+  - key: p.odgers-expert
+    text: >
+      Candice Odgers is a developmental psychologist at UC Irvine, past president
+      of the Society for Research on Adolescence, and a methodological specialist
+      in adolescent well-being research; her 2024 *Nature* review of the same
+      evidence base concludes that the data do not support a primary causal role
+      for smartphones.
+
+  # ─── Sub-argument premises (claims serving as conclusions of sub-args) ─
+  # These are conclusions of supporting sub-arguments registered below in
+  # arguments[*].premises[*].supportArg. Authoring them as named claims keeps
+  # the dependency graph navigable.
+  - key: p.cross-national-shape
+    text: >
+      The mental-health-decline curve has the same shape and inflection year
+      across countries that share little besides a common smartphone-adoption
+      window in 2010–2013.
+
+  - key: p.female-skew
+    text: >
+      The post-2012 rise in adolescent depression and self-harm is concentrated
+      in girls, and the platforms whose adoption coincides with the inflection
+      are image-based and comparison-driven.
+
+  # ─── TODO claims: fill in as you author sub-arguments / counter-replies ─
+  - key: p.confounders-list
+    text: >
+      TODO: a single claim summarizing the set of plausible confounders
+      (declining sleep, less unsupervised face-to-face time, changes in
+      clinical screening practice) that the available studies cannot cleanly
+      separate from social-media exposure.
+
+  - key: p.intervention-evidence
+    text: >
+      TODO: a claim summarizing the (currently sparse) intervention-study
+      evidence — natural experiments, staggered phone bans, deactivation
+      RCTs — and what it does and doesn't show.
+
+  - key: c.policy-precaution
+    text: >
+      TODO (mediator-side synthesis claim): even under uncertainty about
+      the strength of the causal link, a precautionary policy stance toward
+      adolescent smartphone access is justified. (Used as a synthesis target
+      for arguments from both sides.)
+
+  # ─── Counter-claims used by attacker arguments against the synthesis ───
+  - key: c.precaution-equity-cost
+    text: >
+      The proposed precautionary measures — phone bans, age-gated platforms,
+      forced default-private accounts — are not in fact low-cost. They impose
+      disproportionate burdens on low-income adolescents (for whom a smartphone
+      is often the household's only persistent internet device) and on
+      adolescent developmental autonomy more broadly. The "low side-effect"
+      framing of the synthesis is therefore incorrect on its own terms.
+
+  - key: c.precaution-whackamole
+    text: >
+      Precautionary policy enacted in the absence of established causal
+      evidence systematically produces policy whack-a-mole: each new
+      candidate harm (phones, video games, fluoride, vaccines, sugar)
+      generates its own precautionary regime, the regimes accumulate,
+      and the public-health institutions that issued them lose credibility
+      when the underlying causal claims fail to consolidate. The means
+      proposed in the synthesis are therefore not effective at the goal
+      the synthesis claims to serve.
+
+# ════════════════════════════════════════════════════════════════════════════
+# 4. ARGUMENTS
+# Each argument:
+#   • binds to ONE primary scheme (and optionally additional secondary schemes),
+#   • is authored by exactly one participant,
+#   • lists premises either as bare claim keys (back-compat) or as objects
+#     { claim, supportArg? } where `supportArg` is the key of another argument
+#     in this file that BACKS that specific premise.
+#   • optionally lists `approvals: [participantKey, …]`.
+#   • optionally lists `evidence:` attached to the conclusion claim.
+# ════════════════════════════════════════════════════════════════════════════
+arguments:
+
+  # ─────────────────────────────────────────────────────────────────────
+  # ANCHOR 1 — the Haidt-side causal argument
+  # ─────────────────────────────────────────────────────────────────────
+  - key: a.haidt
+    author: prop1
+    conclusion: c.haidt-causal
+    scheme: cause_to_effect
+    secondarySchemes:
+      - sign # the cross-national / demographic patterns are also "signs"
+    text: >
+      What makes this case stronger than a typical "X happened, then Y happened"
+      story is that three patterns line up on the same hypothesis, and they don't
+      easily line up on others. The timing: rates of depression, self-harm, and
+      suicide among teens turn upward within a narrow window in the early 2010s,
+      in countries that share basically nothing politically or economically except
+      that their teens all got smartphones at roughly the same time. The
+      demography: the rise is concentrated in girls, and the products that became
+      dominant in that window — image-based, comparison-driven platforms — are
+      exactly the ones that interact most heavily and most painfully with
+      adolescent female social cognition. The dose-response: at the individual
+      level, heavier users consistently report worse outcomes than lighter ones,
+      and the gradient steepens past a few hours of daily use. Each piece is
+      contestable on its own; the reason to take the joint conclusion seriously
+      is that you'd need a separate, plausible story for each pattern if
+      smartphones aren't the common factor — and so far nobody has offered one.
+    premises:
+      # rich form: this premise is itself backed by a sub-argument
+      - claim: p.timing-correlation
+        supportArg: a.cross-national-evidence
+      - claim: p.haidt-expert
+      - claim: p.dose-response
+        supportArg: a.dose-response-meta
+    evidence:
+      - sourceRef: src.haidt-book
+      - sourceRef: src.haidt-substack
+      - sourceRef: src.surgeon-general
+    approvals:
+      - prop1
+      - mediator # mediator can endorse aspects of either side
+
+  # ─────────────────────────────────────────────────────────────────────
+  # ANCHOR 2 — the Odgers-side methodological argument
+  # ─────────────────────────────────────────────────────────────────────
+  - key: a.odgers
+    author: opp1
+    conclusion: c.odgers-correlational
+    scheme: expert_opinion
+    secondarySchemes:
+      - witness_testimony
+    text: >
+      Odgers and her co-authors have spent more than a decade working directly
+      with the kind of datasets and analytic methods this debate hinges on, and
+      they keep arriving at the same conclusion: the associations are real but
+      small, the methods are more fragile than the popular synthesis lets on, and
+      the cross-national timing pattern looks cleaner from a distance than it
+      does once you break it apart by country and metric. The expert_opinion
+      scheme licenses giving weight to that judgment in the specific sub-area
+      where she has done primary methodological work. Her position isn't
+      dismissive — she takes the rise in adolescent distress seriously and isn't
+      denying it's happened — it's about what the existing data can and can't
+      carry. Specification-curve analysis, which runs the same association across
+      thousands of plausible model choices and looks at the distribution rather
+      than picking one specification to publish, returns effects in the range of
+      0.4% of variance: not nothing, but not the kind of effect size that
+      typically supports a "principal cause" claim. And several drivers that
+      co-vary with smartphone adoption — declining sleep, less unsupervised
+      face-to-face time, changes in clinical screening practice — can't be
+      cleanly separated from social media in the available studies.
+    premises:
+      - claim: p.specification-curve
+        supportArg: a.spec-curve-method
+      - claim: p.odgers-expert
+      - claim: p.confounders-list
+        supportArg: a.confounders-detail
+    evidence:
+      - sourceRef: src.odgers-nature
+      - sourceRef: src.orben-przybylski
+    approvals:
+      - opp1
+      - witness
+
+  # ─────────────────────────────────────────────────────────────────────
+  # SUB-ARGUMENTS — back specific premises of the anchors above.
+  # These are skeletal; flesh out the `text` and `evidence` blocks.
+  # They are exempt from the honesty bar (sub-arg, not anchor).
+  # ─────────────────────────────────────────────────────────────────────
+  - key: a.cross-national-evidence
+    author: witness
+    conclusion: p.cross-national-shape
+    scheme: sign
+    text: >
+      Take the seven countries where this debate has been most carefully
+      tracked — the United States, the United Kingdom, Canada, Australia,
+      Norway, Sweden, and Denmark — and lay their adolescent mental health
+      curves alongside each other. Across all seven, the inflection year falls
+      in a tight 2010–2014 window: U.S. adolescent major depressive episodes
+      turn upward in 2011–2012 (CDC YRBS), U.K. self-harm hospitalisations
+      among girls aged 13–16 inflect in 2012 (NHS Digital), Canadian
+      adolescent ER presentations for suicidal ideation rise from 2013
+      (CIHI), Australian Kids Helpline contacts spike from 2012 (AIHW), and
+      the Nordic countries register parallel rises in adolescent depressive
+      disorder diagnoses from 2012–2014 (NIPH, Folkhälsomyndigheten,
+      Sundhedsstyrelsen). These countries differ politically, economically,
+      and culturally; what they share in that window is mass smartphone
+      adoption among adolescents and the dominance of image-based social
+      platforms. The joint shape — same direction, same magnitude class,
+      same demographic skew, same narrow window — is the sign of a common
+      cause; the only candidate operating in that window across all seven
+      jurisdictions is the smartphone-platform transition.
+    premises:
+      - p.timing-correlation
+    evidence:
+      - sourceRef: src.cdc-yrbs
+      - sourceRef: src.unicef-irc-17
+
+  - key: a.dose-response-meta
+    author: witness
+    conclusion: p.dose-response
+    scheme: cause_to_effect
+    text: >
+      TODO: summarize the strongest dose-response findings — the female-skew
+      gradient, the steepening past 2–3 hours/day, replication across cohorts —
+      and address the obvious confound (kids who already feel bad use phones more).
+    premises:
+      - p.female-skew
+    evidence:
+      - sourceRef: src.twenge-igen
+
+  - key: a.spec-curve-method
+    author: witness
+    conclusion: p.specification-curve
+    scheme: witness_testimony
+    text: >
+      TODO: explain what specification-curve analysis is, what it is designed
+      to detect, and why the consistent ~0.4% variance result across thousands
+      of specifications is the methodologically correct way to read the
+      cross-sectional well-being literature.
+    premises: []
+    evidence:
+      - sourceRef: src.orben-przybylski
+
+  - key: a.confounders-detail
+    author: opp1
+    conclusion: p.confounders-list
+    scheme: cause_to_effect
+    text: >
+      TODO: enumerate each candidate confounder (sleep, in-person socializing,
+      diagnostic-screening sensitivity, post-2008 economic anxiety, opioid-era
+      family disruption) with the specific reason it cannot be cleanly separated
+      from smartphone exposure in the existing observational studies.
+    premises: []
+
+  # ─────────────────────────────────────────────────────────────────────
+  # OPTIONAL ADDITIONAL ANCHORS — flesh out to expand the deliberation.
+  # ─────────────────────────────────────────────────────────────────────
+
+  - key: a.precaution
+    author: mediator
+    conclusion: c.policy-precaution
+    scheme: practical_reasoning
+    text: >
+      TODO (mediator synthesis): under genuine causal uncertainty, the asymmetric
+      cost structure (a generation's mental health vs. some lost teen smartphone
+      utility) plus the existence of cheap, low-side-effect interventions
+      (school phone bans, age-gated platforms, default-private accounts) is
+      enough to license precautionary policy without first resolving the
+      causal-strength dispute between Haidt and Odgers.
+    premises:
+      - claim: p.intervention-evidence
+        supportArg: a.intervention-evidence-survey
+    evidence:
+      # Honesty bar for an anchor: ≥2 evidence items with resolvable URLs +
+      # at least one SATISFIED CQ (or inbound attack).
+      - sourceRef: src.bc-experiment
+      - sourceRef: src.unesco-gem
+
+  - key: a.intervention-evidence-survey
+    author: witness
+    conclusion: p.intervention-evidence
+    scheme: witness_testimony
+    text: >
+      TODO: survey natural-experiment evidence (staggered school phone bans,
+      country-level age restrictions, deactivation RCTs) and characterize
+      the effect sizes and the limits of inference.
+    premises: []
+
+  # ─────────────────────────────────────────────────────────────────────
+  # ATTACKER ARGUMENTS — stress-test the precautionary synthesis.
+  # These are anchors (not used as supportArg) and need to clear the
+  # honesty bar themselves: ≥1 evidence with contentSha256 + (≥1 inbound
+  # attack OR ≥1 SATISFIED CQ).
+  # ─────────────────────────────────────────────────────────────────────
+  - key: a.precaution-equity-rebut
+    author: opp1
+    conclusion: c.precaution-equity-cost
+    scheme: negative_consequences
+    text: >
+      The synthesis treats the proposed measures as if their only cost were
+      "some lost teen smartphone utility," but the empirical distribution of
+      smartphone reliance among adolescents is sharply skewed by household
+      income. Pew's 2024 Teens, Social Media and Technology survey finds
+      that teens from lower-income households are substantially more likely
+      to be online "almost constantly" via a smartphone — because in many
+      such households the smartphone is the only persistent internet device,
+      used for homework, communication with caregivers, and access to public
+      services. Blanket age-gating and forced default-private regimes hit
+      that population hardest: they raise the friction cost of every
+      legitimate use, not just the contested ones. Combine that with the
+      developmental literature on adolescent autonomy — which treats the
+      gradual extension of self-direction as itself a developmental need,
+      not merely a preference — and the "low side-effect" framing collapses.
+      The measures aren't free; they are paid for predominantly by the
+      adolescents with the least slack to absorb the cost.
+    premises: []
+    evidence:
+      - sourceRef: src.pew-teens-tech
+
+  - key: a.precaution-whackamole-rebut
+    author: opp1
+    conclusion: c.precaution-whackamole
+    scheme: negative_consequences
+    text: >
+      Even granting the asymmetric-cost framing in the abstract, the
+      synthesis under-specifies the institutional consequences of acting
+      precautionarily without first establishing causation. A precautionary
+      regime adopted on these terms doesn't sit in isolation — it joins a
+      growing stack of regimes (vaping, fluoride, video-game time limits,
+      cellphone-radiation guidelines, ultra-processed-food labeling) each
+      justified by the same structure of argument: uncertain causal
+      evidence + claimed cost asymmetry + politically available intervention.
+      The aggregate effect on the issuing institutions is corrosive: when
+      any individual link fails to consolidate, the credibility loss
+      transfers across the whole stack. The UNICEF Innocenti Report Card 17
+      framework explicitly cautions against single-lever interventions on
+      adolescent well-being precisely because the underlying determinants
+      are multiple and interacting. The "means effective" leg of the
+      practical-reasoning warrant therefore fails: the chosen means are
+      effective in the narrow case only at the cost of degrading the
+      institutional capacity to act in the next case.
+    premises: []
+    evidence:
+      - sourceRef: src.unicef-irc-17
+
+# ════════════════════════════════════════════════════════════════════════════
+# 5. ANSWERED CRITICAL QUESTIONS
+#
+# Each entry attaches one or more CQResponses to a single (argument, cqKey)
+# CQStatus row. Two forms supported:
+#
+#   • Back-compat single-response form:
+#       - argument: a.foo
+#         cqKey: alternative_cause
+#         response: "..."        # single APPROVED+CANONICAL response
+#
+#   • Rich multi-response form:
+#       - argument: a.foo
+#         cqKey: alternative_cause
+#         status: PARTIALLY_SATISFIED   # OPEN|PENDING_REVIEW|PARTIALLY_SATISFIED|SATISFIED|DISPUTED
+#         responses:
+#           - author: prop1
+#             text: "..."
+#             status: CANONICAL          # PENDING|APPROVED|CANONICAL|REJECTED
+#             canonical: true
+#             sourceUrls: ["https://..."]
+#             evidenceClaimIds: [c.foo]  # claim KEYS, not raw ids
+#             endorsements: [mediator, witness]
+#           - author: opp1
+#             text: "..."
+#             status: PENDING            # competing response, awaiting review
+#
+# cqKey values must match the scheme's CriticalQuestion catalog.
+# ════════════════════════════════════════════════════════════════════════════
+answeredCQs:
+
+  # ─── Anchor 1: Haidt-side ──────────────────────────────────────────────
+  - argument: a.haidt
+    cqKey: alternative_causes
+    status: PARTIALLY_SATISFIED
+    responses:
+      - author: prop1
+        canonical: true
+        status: CANONICAL
+        endorsements: [mediator]
+        text: >
+          The list of plausible alternatives is finite and worth taking seriously:
+          the 2008 financial crisis, the opioid epidemic, intensifying academic
+          pressure, COVID, and changes in how clinicians diagnose and screen for
+          adolescent mood disorders. Working through them:
+
+          The financial crisis is the easiest to set aside. It hit four years before
+          the inflection, and its economic effects landed very differently across the
+          affected countries — the U.S. had one trajectory, Australia and the Nordics
+          another, the U.K. another — but the adolescent mental health curves look
+          broadly similar across all of them. If macroeconomic distress were doing
+          the work, Australian or Norwegian teens should look noticeably better than
+          American ones. They don't.
+
+          The opioid epidemic is real and probably does explain part of the despair
+          literature on middle-aged Americans. It's much harder to use as an
+          explanation for British, Canadian, Australian, or Scandinavian teen mental
+          health, none of which had anything close to the same opioid trajectory, and
+          all of which show essentially the same trend. Academic pressure has been
+          intensifying continuously since the 1990s with no obvious inflection point
+          in the early 2010s, and offers no mechanism for the strong female skew.
+          COVID matters a lot for the post-2020 portion of the curve, but the trend
+          is well-established by 2018, so it can't be the originating cause.
+
+          Diagnostic inflation is the hard one, and the one I think anyone arguing
+          this position has to take seriously. If clinicians are screening more
+          aggressively, you'd expect rates of self-reported and diagnosed depression
+          to rise even without any change in underlying mental states. What keeps
+          this from fully dissolving the trend is that the same period shows rises
+          in metrics that don't depend on screening sensitivity — emergency-room
+          visits for self-harm and completed suicides especially. You can argue those
+          have their own measurement issues, and people have, but the parallel rise
+          across self-report, clinical, and behavioral measures is harder to account
+          for with diagnostic inflation alone than with a real underlying change.
+
+          None of these alternatives gets ruled out as a contributing factor. The
+          trend is almost certainly multi-causal and I don't think serious people
+          deny that. The point is comparative: none of the alternatives, individually
+          or in combination, fits the joint pattern of timing, geography, and
+          demography the way smartphone adoption does. What's being claimed is
+          inference to the best explanation, not a deductive proof, and on those
+          terms it holds up.
+        sourceUrls:
+          - "https://www.cdc.gov/yrbs/index.html"
+      - author: opp1
+        status: PENDING
+        text: >
+          TODO (opp1 competing response): the argument that diagnostic inflation
+          can't account for the trend because ER visits also rose may be too quick.
+          ER triage thresholds for self-harm have themselves shifted over the
+          decade in question, and the parallel rise across measures may partly
+          reflect a single broader shift in how distress is named and routed
+          rather than independent confirmation of an underlying-state change.
+
+  # TODO: additional CQ on a.haidt — adapt cqKey to your scheme catalog
+  - argument: a.haidt
+    cqKey: causal_strength
+    response: >
+      TODO: address the "is this really cause-and-effect, not just correlation?"
+      question by referencing the natural-experiment / staggered-rollout evidence
+      cited in a.intervention-evidence-survey.
+
+  # Three previously-open Cause-to-Effect CQs on a.haidt, now answered.
+  - argument: a.haidt
+    cqKey: causal_mechanism
+    status: SATISFIED
+    responses:
+      - author: prop1
+        canonical: true
+        status: CANONICAL
+        endorsements: [mediator]
+        text: >
+          The causal mechanism doesn't have to be exotic for the argument to
+          go through, and it isn't. Three well-attested mechanisms are doing
+          the work, all of them documented independently of the population-
+          level mental health literature.
+
+          First, displacement. The total time-budget for adolescent activity
+          is fixed; hours redirected into smartphone-mediated platforms come
+          predominantly out of in-person socializing, unstructured outdoor
+          time, and sleep — and each of those losses is independently
+          associated with worse mental health in the developmental
+          literature. The American Time Use Survey and equivalent
+          instruments in the U.K. and Nordics document this displacement
+          quantitatively from 2010 onward.
+
+          Second, social-comparison amplification. Image-based platforms
+          present an algorithmically-curated, peer-adjacent stream of
+          high-status presentation that is structurally optimized to
+          activate upward social comparison. Adolescent girls are the
+          demographic in whom upward social comparison most reliably
+          predicts depressive affect; the female skew of the post-2012
+          rise tracks this prediction.
+
+          Third, intermittent reinforcement. Notification-driven attention
+          capture is a textbook variable-ratio reinforcement schedule, and
+          the attentional and affective consequences of that schedule are
+          well-characterized in operant-conditioning work going back to the
+          1960s. The shift from desktop to smartphone made these schedules
+          continuously available rather than session-bounded.
+
+          None of these is hypothetical, and none requires the smartphone
+          to be the only cause to do work. They are sufficient, jointly,
+          to constitute a plausible mechanism for an effect of the
+          magnitude observed.
+        sourceUrls:
+          - "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf"
+
+  - argument: a.haidt
+    cqKey: intervening_factors
+    status: PARTIALLY_SATISFIED
+    responses:
+      - author: prop1
+        canonical: true
+        status: CANONICAL
+        endorsements: [mediator]
+        text: >
+          The honest answer is that intervening factors are real and the
+          argument has to accommodate them rather than deny them. Sleep
+          loss is the clearest intervener: smartphones reduce adolescent
+          sleep duration and quality, and reduced sleep independently
+          predicts depressive symptoms. Reduction in unsupervised
+          face-to-face socializing is another — and that one is partly an
+          effect of smartphone displacement and partly an independent
+          shift in parenting norms over the same window. Changes in
+          clinical screening practice (PHQ-9 in pediatrics from ~2014,
+          standardized self-harm coding) are a third.
+
+          The argument's structure handles these correctly: it doesn't
+          claim smartphones are the *only* cause, it claims they are the
+          *principal* one operating in the post-2012 window across the
+          named jurisdictions. Sleep and face-to-face socialization are
+          not competing causes — they are *channels through which the
+          principal cause operates*. Screening-practice change is a real
+          competitor and is treated explicitly under alternative_causes
+          above. The remaining residual — the share of the rise that
+          intervening factors absorb after channeling effects are
+          accounted for — is small enough that the principal-cause claim
+          survives, but the CQ is rated only PARTIALLY_SATISFIED because
+          the decomposition is not yet quantitatively pinned down in the
+          published literature.
+        sourceUrls:
+          - "https://www.cdc.gov/yrbs/index.html"
+      - author: opp1
+        status: PENDING
+        text: >
+          Distinguishing "channels through which a principal cause
+          operates" from "independent contributors that happen to co-vary
+          with smartphone adoption" requires identification strategies
+          that the available observational data don't really support.
+          Calling sleep loss a channel rather than an independent cause
+          is a theoretical commitment, not an empirical finding.
+
+  - argument: a.haidt
+    cqKey: post_hoc
+    status: SATISFIED
+    responses:
+      - author: prop1
+        canonical: true
+        status: CANONICAL
+        endorsements: [mediator, witness]
+        text: >
+          Post hoc ergo propter hoc is exactly the failure mode this
+          argument has to defend against, and the defense is the
+          natural-experiment evidence rather than the time-series
+          coincidence by itself. Braghieri, Levy and Makarin's 2022 AER
+          paper exploits the staggered roll-out of Facebook across U.S.
+          colleges in 2004–2006 — a within-country, within-cohort
+          variation in exposure timing that is plausibly exogenous to
+          the affected students' baseline mental health — and recovers
+          a measurable adverse effect on student mental health,
+          concentrated in the demographics most susceptible to
+          social-comparison harm. That's the exact pattern the
+          mechanism story predicts, and it is recovered from variation
+          that doesn't share the confounding structure of the
+          population-level time series. The post-2012 cross-national
+          inflection then sits as a scaling-up of an effect that has
+          been independently identified in cleaner-identification
+          settings, not as a free-floating temporal coincidence.
+        sourceUrls:
+          - "https://www.aeaweb.org/articles?id=10.1257/aer.20211218"
+
+  # ─── Anchor 2: Odgers-side ─────────────────────────────────────────────
+  - argument: a.odgers
+    cqKey: domain_fit
+    status: SATISFIED
+    responses:
+      - author: opp1
+        canonical: true
+        status: CANONICAL
+        endorsements: [witness]
+        text: >
+          The CQ here isn't really "is Odgers credentialed?" — she obviously is. The
+          harder version, given that Haidt is also credentialed and reaches the
+          opposite conclusion, is: what licenses giving more weight to her judgment
+          on this specific sub-question?
+
+          The answer is methodological proximity. Odgers' primary research output
+          for the past fifteen years has been exactly the kind of study this debate
+          turns on: large-N longitudinal analyses of adolescent technology use and
+          well-being, including direct authorship and commentary on the
+          specification-curve methodology that has reshaped the field. Haidt's role
+          in this debate is closer to synthesis and interpretation — he's reading
+          the literature, weighing it, presenting a thesis to a general audience.
+          That's a real and valuable activity, but it isn't the same as generating
+          the underlying analyses and contesting their analytic choices. When the
+          question is the narrow methodological one — "do these specific datasets
+          and these specific methods support causal inference at the strength being
+          claimed?" — the expert who works primarily inside those datasets and
+          methods is the one whose judgment the expert_opinion warrant most directly
+          licenses.
+
+          This isn't a knockdown. Haidt has read the literature deeply, his
+          counterarguments are reasoned rather than reflexive, and on broader
+          questions about adolescent culture, attention, and norms his expertise is
+          at least as relevant as Odgers'. The point is that the narrower the
+          question gets — and the question this argument turns on is narrow, about
+          what the existing evidence base warrants — the more her methodological
+          proximity matters. On that question, the expert appeal does the work the
+          scheme says it does.
+
+  # TODO: additional CQ on a.odgers
+  - argument: a.odgers
+    cqKey: consensus
+    status: PENDING_REVIEW
+    responses:
+      - author: opp1
+        status: PENDING
+        text: >
+          TODO: address whether Odgers' position represents a methodological
+          consensus among adolescent-well-being researchers, or whether it is
+          itself contested within the field.
+
+  # ─── Anchor 3: Mediator's precautionary synthesis ────────────────────
+  - argument: a.precaution
+    cqKey: PR.SIDE_EFFECTS
+    status: DISPUTED
+    responses:
+      - author: mediator
+        canonical: true
+        status: CANONICAL
+        endorsements: [prop1]
+        text: >
+          The proposed measures — school-day phone bans, age-gated platforms,
+          default-private accounts for minors — are chosen precisely for their
+          low side-effect profile under causal uncertainty. School phone bans are
+          time-bounded (school hours only), reversible (policy can be rescinded),
+          and have a directly measured upside in the natural-experiment literature
+          (Beland & Murphy on test-score gains; UNESCO 2023 review). Default-private
+          accounts and age verification do impose real costs — friction for teens
+          building creative or political audiences, privacy tradeoffs in the
+          verification step — but these are bounded and contestable in a way that
+          a generation-scale mental-health harm, if real, is not.
+
+          The asymmetry argument therefore doesn't depend on resolving the Haidt /
+          Odgers dispute about causal strength. It depends only on (i) the
+          interventions being cheap and reversible, and (ii) the downside of
+          inaction being potentially large and irreversible. Both sides of the
+          underlying empirical debate concede (i); the disagreement is over the
+          magnitude of (ii), not its sign.
+        sourceUrls:
+          - "https://cep.lse.ac.uk/pubs/download/dp1350.pdf"
+          - "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning"
+      - author: opp1
+        status: PENDING
+        text: >
+          The synthesis treats "low side-effect" as if it were uniform across the
+          adolescent population. It isn't. See a.precaution-equity-rebut: the
+          measures fall hardest on the adolescents with the least slack to absorb
+          the cost. The asymmetry argument as written is therefore incomplete —
+          it asymmetrizes one side of the ledger (the upside of action under
+          uncertainty) but flattens the other (the distribution of the burden).
+
+  # ─── CQ on the cross-national sub-argument (sign scheme) ──────────────
+  - argument: a.cross-national-evidence
+    cqKey: sign_correlation
+    status: SATISFIED
+    responses:
+      - author: witness
+        canonical: true
+        status: CANONICAL
+        endorsements: [prop1]
+        text: >
+          The correlation between the proposed sign (the joint inflection
+          shape across the seven jurisdictions) and the inferred cause
+          (mass smartphone-platform adoption) is tight on three
+          dimensions simultaneously: temporal (a 2010–2014 window in
+          every jurisdiction examined), magnitude (a 1.5–3× increase in
+          headline metrics within five years), and demographic (the
+          adolescent-female skew is present in every dataset where sex-
+          stratified data is published). The CDC YRBS and UNICEF
+          Innocenti Report Card 17 each cover overlapping but non-
+          identical jurisdiction sets and the inflection signal is
+          present in both. That joint correlation is what the sign
+          scheme requires, and it is documented.
+
+  - argument: a.cross-national-evidence
+    cqKey: alternative_explanation
+    status: PARTIALLY_SATISFIED
+    responses:
+      - author: witness
+        canonical: true
+        status: CANONICAL
+        endorsements: [prop1, mediator]
+        text: >
+          The strongest alternative explanations for a synchronized
+          cross-national inflection in 2010–2014 are: the global
+          financial crisis aftermath, opioid-epidemic spillover, and a
+          coordinated change in adolescent-mental-health screening
+          guidelines. Each fails on a different dimension. The financial
+          crisis hit the seven jurisdictions on very different
+          timetables and with very different fiscal responses; if it
+          were the principal driver, the curves would not be
+          synchronized to within two years. The opioid epidemic is
+          essentially a U.S./Canada phenomenon at the magnitude
+          required, and the U.K., Nordic, and Australian curves match
+          the U.S./Canada curves anyway. Coordinated screening change
+          is the one residual alternative that bites, and it is treated
+          under alternative_causes on a.haidt; the parallel rise in
+          behavioral metrics (ER self-harm presentations, completed
+          suicides) that don't depend on screening sensitivity is what
+          keeps it from absorbing the full signal. The CQ is rated
+          PARTIALLY_SATISFIED because the screening-change residual is
+          real even after the behavioral-metric check.
+
+  # ─── CQs on the precautionary-synthesis attackers ───────────────────
+  - argument: a.precaution-equity-rebut
+    cqKey: PR.SIDE_EFFECTS
+    status: SATISFIED
+    responses:
+      - author: opp1
+        canonical: true
+        status: CANONICAL
+        endorsements: [mediator]
+        text: >
+          The argument's own "side effects" are explicitly addressed: the
+          equity critique does not entail abandoning all precautionary
+          measures, only abandoning the framing that treats them as
+          uniformly low-cost. Targeted alternatives — means-tested device
+          subsidies, school-provided low-distraction devices for the
+          school day, opt-out rather than opt-in defaults for older
+          adolescents — preserve the precautionary intent while
+          redistributing the cost more defensibly. The Pew 2024 data
+          establishes the unequal baseline that any responsible
+          precautionary regime has to design around.
+        sourceUrls:
+          - "https://www.pewresearch.org/internet/2024/12/12/teens-social-media-and-technology-2024/"
+
+  - argument: a.precaution-whackamole-rebut
+    cqKey: PR.MEANS_EFFECTIVE
+    status: SATISFIED
+    responses:
+      - author: opp1
+        canonical: true
+        status: CANONICAL
+        endorsements: [witness]
+        text: >
+          The institutional-credibility cost of stacked precautionary
+          regimes is well-documented in the public-health-communication
+          literature; the UNICEF Innocenti Report Card 17 framework
+          treats single-lever interventions on adolescent well-being as
+          characteristically ineffective for exactly this reason. The
+          "means effective" CQ is therefore satisfied in the negative
+          direction: the proposed means are not effective at the goal
+          (improving adolescent mental health institutionally and
+          durably), only at the goal narrowly construed (reducing one
+          measured exposure).
+        sourceUrls:
+          - "https://www.unicef.org/innocenti/reports/innocenti-report-card-17"
+
+# ════════════════════════════════════════════════════════════════════════════
+# 6. ARGUMENT-LEVEL EDGES
+# Types: support | rebut | undercut
+# Optional fields:
+#   targetScope: conclusion (default) | premise | inference
+#   targetPremise: <claim key>            # required when targetScope=='premise'
+#   attackType: REBUTS | UNDERCUTS | UNDERMINES
+#   cqKey: <which CQ this attack instantiates>
+#   author: <participant key>
+#   note: free-form
+#
+# Note: support edges from sub-args to their parent's premise are
+# auto-generated from arguments[*].premises[*].supportArg. Don't list
+# them here too.
+# ════════════════════════════════════════════════════════════════════════════
+edges:
+
+  # Anchor-vs-anchor rebuttals (each side contests the other's conclusion)
+  - from: a.odgers
+    to: a.haidt
+    type: rebut
+    targetScope: conclusion
+    attackType: REBUTS
+    author: opp1
+    note: "Odgers contests Haidt's conclusion via the specification-curve evidence."
+
+  - from: a.haidt
+    to: a.odgers
+    type: rebut
+    targetScope: conclusion
+    attackType: REBUTS
+    author: prop1
+    note: "Haidt contests Odgers' interpretation of the same evidence base."
+
+  # Premise-level attack (undermine): Odgers attacks Haidt's dose-response premise
+  - from: a.odgers
+    to: a.haidt
+    type: rebut
+    targetScope: premise
+    targetPremise: p.dose-response
+    attackType: UNDERMINES
+    cqKey: alternative_causes
+    author: opp1
+    note: >
+      The dose-response gradient may reflect reverse causation — already-distressed
+      teens use phones more — rather than phones causing distress.
+
+  # Undercut edge example (attacking the inference, not premises or conclusion)
+  - from: a.odgers
+    to: a.haidt
+    type: undercut
+    targetScope: inference
+    attackType: UNDERCUTS
+    cqKey: causal_strength
+    author: opp1
+    note: >
+      TODO: even granting the timing+demography+dose-response premises, the
+      cause_to_effect inference is undercut when the effect sizes at the individual
+      level are too small to plausibly aggregate into a population-level "principal
+      cause" claim.
+
+  # Mediator's synthesis can be supported by both sides (different reasons)
+  - from: a.haidt
+    to: a.precaution
+    type: support
+    author: mediator
+  - from: a.odgers
+    to: a.precaution
+    type: support
+    author: mediator
+    note: "Even the skeptic concedes uncertainty justifies cheap precautionary measures."
+
+  # Stress-test the synthesis: equity-side rebut and whack-a-mole undercut.
+  - from: a.precaution-equity-rebut
+    to: a.precaution
+    type: rebut
+    targetScope: conclusion
+    attackType: REBUTS
+    cqKey: PR.SIDE_EFFECTS
+    author: opp1
+    note: >
+      The synthesis's "low side-effect" claim is not uniform across
+      adolescent income strata; the proposed measures impose
+      disproportionate cost on lower-income teens for whom the smartphone
+      is the household's only persistent internet device.
+
+  - from: a.precaution-whackamole-rebut
+    to: a.precaution
+    type: undercut
+    targetScope: inference
+    attackType: UNDERCUTS
+    cqKey: PR.MEANS_EFFECTIVE
+    author: opp1
+    note: >
+      Even granting the asymmetric-cost framing, precaution-without-
+      causation generates a stack of regimes that erodes the issuing
+      institutions' capacity to act in the next case.
+# ════════════════════════════════════════════════════════════════════════════
+# 7. CLAIM-LEVEL EDGES
+# Independent of argument-graph edges. Useful for asserting direct
+# entailment / contradiction relationships between claims, which the
+# Claim-Edge Graph (CEG) and grounded-semantics layer consume.
+# Types: supports | rebuts
+# ════════════════════════════════════════════════════════════════════════════
+claimEdges:
+  - from: c.odgers-correlational
+    to: c.haidt-causal
+    type: rebuts
+    attackType: REBUTS
+  - from: p.confounders-list
+    to: c.haidt-causal
+    type: rebuts
+    attackType: UNDERMINES
+  # TODO: add support edges if any sub-claims directly entail a thesis claim.
+
+# ════════════════════════════════════════════════════════════════════════════
+# 8. DIALOGUE MOVES (Ludics-layer seed)
+#
+# Each move is inserted as a DialogueMove row, signed deterministically by
+# (deliberationId, kind, target.type, target.key, index). Re-running the
+# seeder upserts by signature and won't duplicate.
+#
+# kind:    ASSERT | WHY | GROUNDS | CONCEDE | RETRACT | CLOSE
+# target:  { type: argument|claim, key: <spec key> }
+# actor:   participant key (defaults to seed user)
+# locusPath: optional Ludics locus address (e.g. "0", "0.1", "0.1.1")
+#
+# A minimal worked thread is provided below. Expand as needed to populate
+# the Ludics analysis panel.
+# ════════════════════════════════════════════════════════════════════════════
+dialogueMoves:
+  # Open the dialectic on the Haidt anchor
+  - kind: ASSERT
+    target: { type: argument, key: a.haidt }
+    actor: prop1
+    text: "Smartphones are the principal cause of the post-2012 teen MH decline."
+    locusPath: "0"
+    polarity: P
+
+  - kind: WHY
+    target: { type: argument, key: a.haidt }
+    actor: opp1
+    text: "Why principal? Effect sizes are tiny in the individual-level data."
+    locusPath: "0.1"
+    polarity: O
+
+  - kind: GROUNDS
+    target: { type: argument, key: a.haidt }
+    actor: prop1
+    text: "The case is the joint pattern of timing+geography+demography, not any one effect size."
+    locusPath: "0.1.1"
+    polarity: P
+
+  - kind: WHY
+    target: { type: argument, key: a.haidt }
+    actor: opp1
+    text: "Why is diagnostic inflation not enough to explain the joint pattern?"
+    locusPath: "0.2"
+    polarity: O
+
+  - kind: GROUNDS
+    target: { type: argument, key: a.haidt }
+    actor: prop1
+    text: "Because behavioral measures (ER visits, completed suicides) rose in parallel."
+    locusPath: "0.2.1"
+    polarity: P
+
+  # Open a parallel thread on the Odgers anchor
+  - kind: ASSERT
+    target: { type: argument, key: a.odgers }
+    actor: opp1
+    text: "Existing data don't warrant a 'principal cause' claim."
+    locusPath: "0"
+    polarity: P
+
+  - kind: WHY
+    target: { type: argument, key: a.odgers }
+    actor: prop1
+    text: "Why isn't methodological proximity offset by Haidt's broader synthesis?"
+    locusPath: "0.1"
+    polarity: O
+
+  - kind: GROUNDS
+    target: { type: argument, key: a.odgers }
+    actor: opp1
+    text: "Because the question turns on what specific datasets+methods support, which is her primary domain."
+    locusPath: "0.1.1"
+    polarity: P
+
+  # TODO: add CONCEDE / RETRACT / CLOSE moves to demonstrate full dialectical
+  # closure. Example skeleton:
+  # - kind: CONCEDE
+  #   target: { type: argument, key: a.haidt }
+  #   actor: opp1
+  #   text: "Concede that diagnostic inflation alone cannot explain the parallel rise in behavioral measures."
+  #   locusPath: "0.2.1"
+  # - kind: CLOSE
+  #   target: { type: argument, key: a.haidt }
+  #   actor: prop1
+  #   locusPath: "0.2"

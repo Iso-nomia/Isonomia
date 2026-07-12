@@ -1,0 +1,40 @@
+  /* auth-bg.css */
+  .auth-bg {
+    position: relative;
+    overflow: hidden;   /* keeps the blur fringe off‑screen */
+  }
+  
+  /* 1⃣  The only animated layer lives on ::before */
+  .auth-bg::before {
+    content: "";
+    position: fixed;        /* sticks to viewport even if the form scrolls */
+    inset: -10%;            /* slightly bigger so edges never show */
+    /* background:
+       radial-gradient(circle at 0% 0%, #e0d6e2  0%, #ffd8d8 30%, #dce9f9 70%); */
+       background: linear-gradient(to right,#E4E4E7, #C1CDFE, #FECDD3);
+
+    filter: blur(80px);     /* soft, elegant look */
+    transform: translate3d(0,0,0);      /* promotes to its own GPU layer */
+    /* animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);  */
+
+    animation: drift 10s linear infinite;
+    will-change: transform; /* hint for the compositor */
+  }
+  
+  /* 2⃣  Slow, subtle motion using only transform + scale */
+  @keyframes drift {
+    0%   { transform: translate3d(0%, 0%, -20%) scale(.5); }
+    15%   { transform: translate3d(25%, 25%, -10%) scale(1); }
+    50%  { transform: translate3d( -25%,  25%, 0) scale(1.5); }
+    85%  { transform: translate3d( 25%,  -25%, 0) scale(1); }
+
+    /* 75%  { transform: translate3d( 40%,  45%, -20) scale(.75); } */
+    100% { transform: translate3d(0%, 0%, -20%) scale(.5); }
+  }
+  
+  
+  /* 3⃣  Accessibility – shuts off the motion automatically */
+  @media (prefers-reduced-motion: reduce) {
+    .auth-bg::before { animation: none; }
+    
+  }

@@ -1,0 +1,1 @@
+export default function ModalOutletDefault() { return null }

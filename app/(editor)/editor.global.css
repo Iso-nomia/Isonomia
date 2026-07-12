@@ -1,0 +1,72 @@
+/* styles/prosemirror.css  ➜ imported once in _app.tsx or the editor layout */
+
+.ProseMirror {
+    @apply  px-2 py-3 min-h-[1000px] h-full  rounded-xl bg-white border-none outline-none  shadow-md
+            leading-relaxed text-slate-900;
+  }
+  .ProseMirror:focus
+  {
+    border: none;
+  }
+  .ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply float-left h-0 text-slate-400 pointer-events-none;
+  }
+  
+  /* optional pilcrow hover */
+  .editor-shell .ProseMirror h1:hover::before,
+  .editor-shell .ProseMirror h2:hover::before,
+  .editor-shell .ProseMirror h3:hover::before,
+  .editor-shell .ProseMirror p:hover::before {
+    content: '¶';
+    position: absolute;
+    left: -1.5rem;
+    opacity: .30;
+  }
+  .lockbutton {
+    background-color: transparent;
+    padding: 2px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+  
+  }
+  .lockbutton:hover{
+  
+    box-shadow: .5px .5px .25px .25px rgba(0,0,0,0.25);
+  
+  }
+
+.savebutton {
+  background-color: transparent;
+  padding: 2px;
+  outline: transparent;
+  outline-style: solid;
+  outline-width: .25px;
+  border-radius: 4px;
+  box-shadow:   1px 1px 3px rgb(222, 199, 204, .3),
+  -1px 2px 3px rgba(70, 69, 69, 0.25);
+
+  
+}
+.savebutton:hover{
+  box-shadow:  inset 1px 1px 3px rgb(222, 199, 204, .3),
+  inset -1px 2px 3px rgba(70, 69, 69, 0.25);
+
+}
+.sheaf-button {
+  background-color: transparent;
+  padding: 2px;
+  outline: transparent;
+  outline-style: solid;
+  outline-width: .25px;
+  border-radius: 4px;
+  box-shadow:   1px 1px 3px rgb(200, 199, 232, .3),
+  -1px 2px 3px rgba(70, 69, 100, 0.25);
+
+  
+}
+.sheaf-button:hover{
+  box-shadow:  inset 1px 1px 3px rgb(200, 199, 232, .3),
+  inset -1px 2px 3px rgba(70, 69, 100, 0.25);
+
+}

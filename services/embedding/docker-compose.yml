@@ -1,0 +1,12 @@
+version: '3'
+services:
+  embedding:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - FASTTEXT_MODEL_PATH=/models/cc.en.300.bin

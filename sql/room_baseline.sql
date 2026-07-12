@@ -1,0 +1,5 @@
+-- sql/room_baseline.sql
+-- Placeholder: generate a baseline from your current schema.
+-- Recommended: use scripts/generate-room-baseline.ts to pull a schema-only dump
+-- filtered to room-scoped tables, with search_path set before execution.
+-- Example content (CREATE TABLE ... in-room) should go here.

@@ -1,0 +1,43 @@
+{
+  "id": "large-hierarchical",
+  "description": "Very-large (300 args) deliberation triggering hierarchicalMode.",
+  "adversarialGates": ["hierarchical-disclosure-surfaced"],
+  "readout": {
+    "deliberationId": "fix-large-hier",
+    "contentHash": "fix-hash-large-hier-v1",
+    "fingerprint": {
+      "argumentCount": 300
+    },
+    "frontier": {
+      "unansweredCqs": [],
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "terminalLeaves": [],
+      "loadBearingnessRanking": ["a1", "a2"],
+      "loadBearingnessScores": { "a1": 12, "a2": 4 },
+      "contestednessRanking": []
+    },
+    "topology": {
+      "hubs": {
+        "set": [{ "argumentId": "a1", "score": 12 }],
+        "topScore": 12,
+        "coequalThreshold": 3,
+        "shape": "single-dominant"
+      },
+      "loadBearingPremises": [
+        { "claimId": "pH1", "claimText": "Major shared premise", "usingArgumentCount": 12, "cascadeScore": 45, "usingArgumentIds": ["a1", "a2", "a3"] }
+      ],
+      "ambiguity": { "hubAmbiguity": "none", "premiseConcentration": "low", "cautions": [] },
+      "sizeTier": {
+        "argumentCount": 300,
+        "tier": "very-large",
+        "hierarchicalMode": true,
+        "disclosure": "This deliberation has 300 arguments. The briefing hydrates only the top-25 load-bearing and top-25 contested arguments; sub-region detail is omitted. Use \"get_argument\" for specific ids, or request a region-scoped briefing."
+      }
+    },
+    "refusalSurface": { "cannotConcludeBecause": [] },
+    "chains": { "deliberationId": "fix-large-hier", "chains": [], "uncoveredClaims": [] },
+    "topArguments": [],
+    "mostContested": []
+  }
+}

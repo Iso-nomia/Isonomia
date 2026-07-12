@@ -1,0 +1,134 @@
+[
+  {
+    "_topic": "teen-screens",
+    "query": "smartphones causing the teen mental health crisis",
+    "expectedIds": [
+      "cmokxndx1000g8c31do1ocpvt",
+      "cmokxnro2000n8c314nrq7gam",
+      "cmonf7c0j001h8clbyr66zome",
+      "cmonf7481001c8clbddc8uv1e"
+    ]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "the evidence linking social media to adolescent depression is weak and methodologically fragile",
+    "expectedIds": [
+      "cmokxnro2000n8c314nrq7gam",
+      "cmonf7fev001m8clbjell7062",
+      "cmonf7nun001r8clbm5h5wj22",
+      "cmonfxo9d00238c3fema3l9cu"
+    ]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "specification curve analysis Orben Przybylski",
+    "expectedIds": ["cmonf7fev001m8clbjell7062"]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "dose-response gradient heavy social media use teenage girls",
+    "expectedIds": ["cmonf7c0j001h8clbyr66zome", "cmokxndx1000g8c31do1ocpvt"]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "international cross-country mental health curve same shape",
+    "expectedIds": ["cmonf7481001c8clbddc8uv1e"]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "confounders sleep deprivation unsupervised play declining",
+    "expectedIds": ["cmonf7nun001r8clbm5h5wj22"]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "natural experiments staggered rollout intervention studies",
+    "expectedIds": ["cmonf7s9200208clb55b61rqb"]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "ban phones in schools age-gated platforms default private",
+    "expectedIds": ["cmonfwxdc001y8c3f5bkjfvah"]
+  },
+  {
+    "_topic": "teen-screens",
+    "query": "precautionary principle policy under causal uncertainty",
+    "expectedIds": [
+      "cmonf7pd3001v8clbko8ejhlu",
+      "cmonfxo9d00238c3fema3l9cu",
+      "cmonfwxdc001y8c3f5bkjfvah"
+    ]
+  },
+
+  {
+    "_topic": "carbon-tax",
+    "query": "carbon pricing is the most economically efficient way to cut emissions",
+    "expectedIds": ["cmj216h450005g1xvmaejuof1", "cmj213h6e000lg1rs5sqmtc99"]
+  },
+  {
+    "_topic": "carbon-tax",
+    "query": "how much would a $50 per ton carbon tax reduce US emissions by 2030",
+    "expectedIds": ["cmj216m7s000dg1xvwyzzttfu", "cmj213ory0019g1rs2piabbq8"]
+  },
+  {
+    "_topic": "carbon-tax",
+    "query": "carbon tax revenue dividend rebate to households",
+    "expectedIds": ["cmj216otp000hg1xv8zk3iays", "cmj213sjy001lg1rsbt71kwhu"]
+  },
+  {
+    "_topic": "carbon-tax",
+    "query": "clean energy jobs created versus fossil fuel jobs lost",
+    "expectedIds": ["cmj216rf8000lg1xvgtr4t27g", "cmj213wba001xg1rssjdp3127"]
+  },
+  {
+    "_topic": "carbon-tax",
+    "query": "carbon tax hurts low-income households and competitiveness",
+    "expectedIds": ["cmj216jnw0009g1xvhcwrv2kt", "cmj213kzk000xg1rsfj2g7esq"]
+  },
+  {
+    "_topic": "carbon-tax",
+    "query": "decade of delay locked in trillions of high-carbon infrastructure",
+    "expectedIds": ["cmj216wj8000tg1xvf9861dz0", "cmj2143vi002lg1rsn0d3qs7s"]
+  },
+  {
+    "_topic": "carbon-tax",
+    "query": "political backlash from visible price increases at the pump",
+    "expectedIds": ["cmj2171pt0011g1xv3un66lez", "cmj214bfs0039g1rsm5r2ukpx"]
+  },
+
+  {
+    "_topic": "ai-safety",
+    "query": "leading AI researchers warn about existential risk from advanced systems",
+    "expectedIds": [
+      "cmiy5xc040005g184fnhkvxpm",
+      "cmiy5vqi70005g14cfpswy5t4",
+      "cmiy5x9fw0001g184mtd41h27",
+      "cmiy5vnys0001g14cyyxey8ez"
+    ]
+  },
+  {
+    "_topic": "ai-safety",
+    "query": "regulation by analogy to nuclear technology oversight",
+    "expectedIds": ["cmiy5xeks0009g184quft1r4v", "cmiy5vt1g0009g14cpb8nsgcp"]
+  },
+  {
+    "_topic": "ai-safety",
+    "query": "premature regulation will stifle innovation and cede leadership",
+    "expectedIds": ["cmiy5xjrl000hg184mrlm8w6b", "cmiy5vy86000hg14csedqda2y"]
+  },
+  {
+    "_topic": "ai-safety",
+    "query": "mandatory pre-deployment safety testing and certification for frontier models",
+    "expectedIds": [
+      "cmiy5xh59000dg1846tr2q1fc",
+      "cmiy5vvkj000dg14c0r9n4tzc",
+      "cmiy5xowm000pg184yxc3zr6j",
+      "cmiy5w3ao000pg14c2sqwyat2",
+      "cmiy5uyno000pg1087pg3ngw2"
+    ]
+  },
+  {
+    "_topic": "ai-safety",
+    "query": "well-designed AI rules promote rather than block innovation",
+    "expectedIds": ["cmiy5xmc8000lg184ta0gjndc", "cmiy5w0r8000lg14ci99z1o32"]
+  }
+]

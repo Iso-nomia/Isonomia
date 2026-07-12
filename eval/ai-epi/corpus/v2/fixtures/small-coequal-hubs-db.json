@@ -1,0 +1,667 @@
+{
+  "id": "small-coequal-hubs-db",
+  "description": "DB-snapshot fixture: small (9 args) deliberation with three co-equal hub arguments converging on the main claim. Tests co-equal-cluster shape + medium hub ambiguity.",
+  "adversarialGates": [
+    "co-equal-hubs-not-collapsed"
+  ],
+  "manifestFields": {
+    "openExposurePoints": 5,
+    "coverageRatio": 0.44,
+    "fossilCount": 1,
+    "incarnationSet": {
+      "incarnations": [
+        {
+          "designId": "fixture-small-coequal-hubs-bottom-a",
+          "loci": [
+            "⊢A.0",
+            "⊢A.1",
+            "⊢A.2"
+          ],
+          "moveCount": 3,
+          "rank": 0
+        },
+        {
+          "designId": "fixture-small-coequal-hubs-bottom-b",
+          "loci": [
+            "⊢A.3",
+            "⊢A.4",
+            "⊢A.5"
+          ],
+          "moveCount": 3,
+          "rank": 0
+        }
+      ],
+      "totalIncarnations": 2
+    }
+  },
+  "readout": {
+    "deliberationId": "fix-small-coequal-hubs-db",
+    "contentHash": "sha256:9fbe28f5cce67f529a93914f0af5770e6b3f86d3befb87dd30a8491338ff6eb1",
+    "fingerprint": {
+      "deliberationId": "fix-small-coequal-hubs-db",
+      "contentHash": "sha256:__nested_redacted__",
+      "argumentCount": 9,
+      "claimCount": 10,
+      "edgeCount": {
+        "support": 6,
+        "attack": 0,
+        "ca": 0
+      },
+      "schemeDistribution": {
+        "expert-opinion": 1,
+        "<unschemed>": 8
+      },
+      "authorCount": {
+        "human": 9,
+        "ai": 0,
+        "hybrid": 0
+      },
+      "participantCount": 1,
+      "standingDistribution": {
+        "untested-default": 2,
+        "untested-supported": 7,
+        "tested-attacked": 0,
+        "tested-undermined": 0,
+        "tested-survived": 0
+      },
+      "depthDistribution": {
+        "thin": 9,
+        "moderate": 0,
+        "dense": 0
+      },
+      "medianChallengerCount": 0,
+      "meanChallengerCount": 0,
+      "challengerCoverage": 0,
+      "medianChallengerCountAmongChallenged": 0,
+      "cqCoverage": {
+        "answered": 1,
+        "partial": 0,
+        "unanswered": 1,
+        "total": 2
+      },
+      "evidenceCoverage": {
+        "withProvenance": 0,
+        "withoutProvenance": 0
+      },
+      "chainCount": 0,
+      "extraction": {
+        "aiSeededCount": 0,
+        "aiSeededRatio": 0,
+        "humanEngagementRateOnAiSeeds": null,
+        "articulationOnly": false
+      },
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "frontier": {
+      "deliberationId": "fix-small-coequal-hubs-db",
+      "unansweredUndercuts": [
+        {
+          "targetArgumentId": "arg-a-hub-1",
+          "inferenceLocator": null,
+          "challengerArgumentId": null,
+          "schemeTypical": true,
+          "undercutTypeKey": "expertise-mismatch",
+          "severity": "scheme-required"
+        },
+        {
+          "targetArgumentId": "arg-a-hub-1",
+          "inferenceLocator": null,
+          "challengerArgumentId": null,
+          "schemeTypical": true,
+          "undercutTypeKey": "expert-disagreement",
+          "severity": "scheme-recommended"
+        },
+        {
+          "targetArgumentId": "arg-a-hub-1",
+          "inferenceLocator": null,
+          "challengerArgumentId": null,
+          "schemeTypical": true,
+          "undercutTypeKey": "ad-hominem-bypass",
+          "severity": "scheme-recommended"
+        }
+      ],
+      "unansweredUndermines": [],
+      "unansweredCqs": [
+        {
+          "targetArgumentId": "arg-a-hub-1",
+          "schemeKey": "expert-opinion",
+          "cqKey": "EO1",
+          "cqPrompt": "Is the source actually an expert in the domain?",
+          "severity": "scheme-required"
+        }
+      ],
+      "terminalLeaves": [
+        {
+          "argumentId": "arg-a-hub-1",
+          "chainDepth": 0,
+          "onMainConclusionPath": true
+        },
+        {
+          "argumentId": "arg-a-hub-2",
+          "chainDepth": 0,
+          "onMainConclusionPath": true
+        },
+        {
+          "argumentId": "arg-a-hub-3",
+          "chainDepth": 0,
+          "onMainConclusionPath": true
+        },
+        {
+          "argumentId": "arg-a-l1a",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "arg-a-l1b",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "arg-a-l2a",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "arg-a-l2b",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "arg-a-l3a",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "arg-a-l3b",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        }
+      ],
+      "loadBearingnessRanking": [
+        "arg-a-hub-1",
+        "arg-a-hub-2",
+        "arg-a-hub-3",
+        "arg-a-l1a",
+        "arg-a-l1b",
+        "arg-a-l2a",
+        "arg-a-l2b",
+        "arg-a-l3a",
+        "arg-a-l3b"
+      ],
+      "contestednessRanking": [],
+      "loadBearingnessScores": {
+        "arg-a-hub-1": 4,
+        "arg-a-hub-2": 4,
+        "arg-a-hub-3": 4,
+        "arg-a-l1a": 0,
+        "arg-a-l1b": 0,
+        "arg-a-l2a": 0,
+        "arg-a-l2b": 0,
+        "arg-a-l3a": 0,
+        "arg-a-l3b": 0
+      }
+    },
+    "missingMoves": {
+      "deliberationId": "fix-small-coequal-hubs-db",
+      "perArgument": {
+        "arg-a-hub-1": {
+          "argumentId": "arg-a-hub-1",
+          "schemeKey": "expert-opinion",
+          "expectedCqs": [
+            "EO1",
+            "EO2"
+          ],
+          "presentCqs": [
+            "EO1",
+            "EO2"
+          ],
+          "missingCqs": [],
+          "expectedUndercutTypes": [
+            {
+              "key": "expertise-mismatch",
+              "label": "Expertise outside the relevant field",
+              "severity": "scheme-required"
+            },
+            {
+              "key": "expert-disagreement",
+              "label": "Disagreement among experts",
+              "severity": "scheme-recommended"
+            },
+            {
+              "key": "ad-hominem-bypass",
+              "label": "Source bias not addressed",
+              "severity": "scheme-recommended"
+            }
+          ],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": [
+            {
+              "key": "expertise-mismatch",
+              "label": "Expertise outside the relevant field",
+              "severity": "scheme-required"
+            },
+            {
+              "key": "expert-disagreement",
+              "label": "Disagreement among experts",
+              "severity": "scheme-recommended"
+            },
+            {
+              "key": "ad-hominem-bypass",
+              "label": "Source bias not addressed",
+              "severity": "scheme-recommended"
+            }
+          ]
+        },
+        "arg-a-hub-2": {
+          "argumentId": "arg-a-hub-2",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-hub-3": {
+          "argumentId": "arg-a-hub-3",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-l1a": {
+          "argumentId": "arg-a-l1a",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-l1b": {
+          "argumentId": "arg-a-l1b",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-l2a": {
+          "argumentId": "arg-a-l2a",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-l2b": {
+          "argumentId": "arg-a-l2b",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-l3a": {
+          "argumentId": "arg-a-l3a",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-l3b": {
+          "argumentId": "arg-a-l3b",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        }
+      },
+      "perDeliberation": {
+        "schemesUnused": [
+          "cause-to-effect"
+        ],
+        "metaArgumentsAbsent": true,
+        "crossSchemeMediatorsAbsent": true
+      }
+    },
+    "chains": {
+      "deliberationId": "fix-small-coequal-hubs-db",
+      "chains": [],
+      "uncoveredClaims": [
+        "claim-c-main"
+      ]
+    },
+    "cross": {
+      "deliberationId": "fix-small-coequal-hubs-db",
+      "canonicalFamilies": [],
+      "plexusEdgesIn": {
+        "incomingImports": 0,
+        "outgoingImports": 0
+      },
+      "argumentImports": {
+        "incomingByDeliberationId": {},
+        "outgoingByDeliberationId": {}
+      },
+      "schemeReuseAcrossRooms": {},
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "topology": {
+      "hubs": {
+        "set": [
+          {
+            "argumentId": "arg-a-hub-1",
+            "score": 4
+          },
+          {
+            "argumentId": "arg-a-hub-2",
+            "score": 4
+          },
+          {
+            "argumentId": "arg-a-hub-3",
+            "score": 4
+          }
+        ],
+        "topScore": 4,
+        "coequalThreshold": 1,
+        "shape": "co-equal-cluster"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": {
+        "hubAmbiguity": "medium",
+        "premiseConcentration": "none",
+        "cautions": [
+          "3 arguments share the top load-bearingness tier (scores within 1 of the top score 4). Do not name a single \"hub\" — the briefing contains multiple co-equal candidates."
+        ]
+      },
+      "sizeTier": {
+        "argumentCount": 9,
+        "tier": "small",
+        "hierarchicalMode": false,
+        "disclosure": null
+      }
+    },
+    "refusalSurface": {
+      "cannotConcludeBecause": [
+        {
+          "attemptedConclusion": "<deliberation-scope>",
+          "conclusionClaimId": "",
+          "blockedBy": "depth-thin",
+          "blockerIds": [],
+          "blockerSummaries": []
+        }
+      ]
+    },
+    "topArguments": [
+      {
+        "id": "arg-a-hub-1",
+        "rankIndex": 0,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "claim-c-main",
+        "conclusionText": "We should adopt the proposal.",
+        "argumentText": "Adopt the proposal because the cost analysis is favorable (expert).",
+        "primarySchemeKey": "expert-opinion",
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 1,
+        "cqRequired": 2,
+        "fitness": 1
+      },
+      {
+        "id": "arg-a-hub-2",
+        "rankIndex": 1,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "claim-c-main",
+        "conclusionText": "We should adopt the proposal.",
+        "argumentText": "Adopt the proposal because the timeline is achievable.",
+        "primarySchemeKey": null,
+        "standing": "untested-default",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0
+      },
+      {
+        "id": "arg-a-hub-3",
+        "rankIndex": 2,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "claim-c-main",
+        "conclusionText": "We should adopt the proposal.",
+        "argumentText": "Adopt the proposal because the risk profile is acceptable.",
+        "primarySchemeKey": null,
+        "standing": "untested-default",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0
+      },
+      {
+        "id": "arg-a-l1a",
+        "rankIndex": 3,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "Leaf 1a.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 1,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0.5
+      },
+      {
+        "id": "arg-a-l1b",
+        "rankIndex": 4,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "Leaf 1b.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 1,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0.5
+      },
+      {
+        "id": "arg-a-l2a",
+        "rankIndex": 5,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "Leaf 2a.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 1,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0.5
+      },
+      {
+        "id": "arg-a-l2b",
+        "rankIndex": 6,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "Leaf 2b.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 1,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0.5
+      },
+      {
+        "id": "arg-a-l3a",
+        "rankIndex": 7,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "Leaf 3a.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 1,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0.5
+      },
+      {
+        "id": "arg-a-l3b",
+        "rankIndex": 8,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "Leaf 3b.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 1,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0.5
+      }
+    ],
+    "mostContested": [],
+    "honestyLine": "This deliberation has 9 argument(s); 0% have at least one challenger (median 0 distinct challenger(s) when challenged, 0.00 mean across all). 50% catalog-CQ coverage. 0 chain(s) on file; 1 potential conclusion(s) are not licensed by the current graph.",
+    "writingConstraints": {
+      "mustInclude": {
+        "honestyLine": "This deliberation has 9 argument(s); 0% have at least one challenger (median 0 distinct challenger(s) when challenged, 0.00 mean across all). 50% catalog-CQ coverage. 0 chain(s) on file; 1 potential conclusion(s) are not licensed by the current graph.",
+        "refusalNotice": "The deliberation is at thin depth across the board — no conclusion has been tested enough to license closure.",
+        "structuralCautions": [
+          "3 arguments share the top load-bearingness tier (scores within 1 of the top score 4). Do not name a single \"hub\" — the briefing contains multiple co-equal candidates."
+        ],
+        "sizeDisclosure": null
+      },
+      "mustNotAssert": [],
+      "shouldHedge": [
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-hub-1"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-hub-2"
+          },
+          "standing": "untested-default",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-hub-3"
+          },
+          "standing": "untested-default",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-l1a"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-l1b"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-l2a"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-l2b"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-l3a"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-l3b"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        }
+      ],
+      "framing": {
+        "stage": "articulation",
+        "advisoryNote": "depthDistribution.thin dominant — frame as articulation-stage, not deliberation-stage. Standing labels are about which arguments have been registered, not which have been tested."
+      }
+    }
+  }
+}

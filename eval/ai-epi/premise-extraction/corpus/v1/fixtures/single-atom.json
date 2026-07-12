@@ -1,0 +1,7 @@
+{
+  "id": "single-atom",
+  "claimText": "Carbon pricing reduces emissions.",
+  "expectedAtoms": [
+    { "text": "Carbon pricing reduces emissions" }
+  ]
+}

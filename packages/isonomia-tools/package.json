@@ -1,0 +1,21 @@
+{
+  "name": "@app/isonomia-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Transport-agnostic Isonomia tool registry: zod schemas, descriptions, and handlers shared by the stdio MCP server (@app/isonomia-mcp) and the WebMCP page adapter. Handlers receive an injected fetcher (ToolsRuntime); this package holds no auth, env, or transport code.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Isonomia — Structured Arguments Everywhere",
+  "version": "1.0.0",
+  "description": "Create evidence-backed arguments from any webpage and see rich previews for Isonomia links on Reddit, Twitter/X, and Hacker News.",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://isonomia.app/*",
+    "*://localhost:3000/*"
+  ],
+  "background": {
+    "service_worker": "dist/background/service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.reddit.com/*",
+        "*://old.reddit.com/*",
+        "*://twitter.com/*",
+        "*://x.com/*",
+        "*://news.ycombinator.com/*"
+      ],
+      "js": ["dist/content/content-bundle.js"],
+      "css": [],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "id": "chain_hinge1_fixture",
+  "deliberationId": "delib_polarization1_fixture",
+  "name": "Hinge #1: Feeling-thermometer measurement validity",
+  "description": "A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.",
+  "purpose": "Whether feeling-thermometer scales are a valid instrument for measuring affective polarization.",
+  "chainType": "GRAPH",
+  "rootNodeId": "node_thesis",
+  "createdBy": "1001",
+  "isPublic": true,
+  "isEditable": false,
+  "createdAt": "2026-05-09T12:00:00.000Z",
+  "updatedAt": "2026-05-10T18:30:00.000Z",
+  "creator": {
+    "id": "1001",
+    "name": "Test Author",
+    "image": null
+  },
+  "deliberation": {
+    "id": "delib_polarization1_fixture",
+    "title": "Polarization-1: Has affective polarization risen?"
+  },
+  "scopes": [],
+  "nodes": [
+    {
+      "id": "node_thesis",
+      "chainId": "chain_hinge1_fixture",
+      "argumentId": "arg_thesis",
+      "nodeOrder": 0,
+      "role": "CONCLUSION",
+      "epistemicStatus": "ASSERTED",
+      "scopeId": null,
+      "dialecticalRole": "THESIS",
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": 0,
+      "positionY": 0,
+      "addedBy": "1001",
+      "addedAt": "2026-05-09T12:00:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_thesis",
+        "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.",
+        "authorId": "1001",
+        "createdAt": "2026-05-09T12:00:00.000Z",
+        "conclusion": {
+          "id": "claim_thesis",
+          "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+        },
+        "premises": [
+          {
+            "claim": {
+              "id": "claim_premise_thesis_1",
+              "text": "Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves."
+            }
+          },
+          {
+            "claim": {
+              "id": "claim_premise_thesis_2",
+              "text": "The scale exhibits high test-retest reliability within respondents."
+            }
+          }
+        ],
+        "implicitWarrant": null,
+        "argumentSchemes": [
+          {
+            "scheme": {
+              "id": "scheme_expert_opinion",
+              "key": "expert_opinion",
+              "name": "Argument from Expert Opinion",
+              "description": "An expert E in domain D asserts that A; therefore A.",
+              "summary": "Defers to credentialed expertise.",
+              "cq": [
+                "Is the source a genuine expert in the relevant field?",
+                "Is the assertion within the expert's domain of expertise?",
+                "Are there other experts who disagree?"
+              ],
+              "premises": [],
+              "conclusion": null,
+              "purpose": null,
+              "source": null,
+              "materialRelation": null,
+              "reasoningType": null,
+              "ruleForm": null,
+              "conclusionType": null,
+              "whenToUse": null,
+              "tags": []
+            }
+          }
+        ],
+        "schemeNet": null
+      }
+    },
+    {
+      "id": "node_support",
+      "chainId": "chain_hinge1_fixture",
+      "argumentId": "arg_support",
+      "nodeOrder": 1,
+      "role": "EVIDENCE",
+      "epistemicStatus": "ASSERTED",
+      "scopeId": null,
+      "dialecticalRole": null,
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": -200,
+      "positionY": 150,
+      "addedBy": "1001",
+      "addedAt": "2026-05-09T12:05:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_support",
+        "text": "Cross-wave ANES panel data show stable thermometer differentials between in-party and out-party targets.",
+        "authorId": "1001",
+        "createdAt": "2026-05-09T12:05:00.000Z",
+        "conclusion": {
+          "id": "claim_support",
+          "text": "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves."
+        },
+        "premises": [
+          {
+            "claim": {
+              "id": "claim_premise_support_1",
+              "text": "Differentials are robust to respondent-fixed-effects specifications."
+            }
+          }
+        ],
+        "implicitWarrant": null,
+        "argumentSchemes": [
+          {
+            "scheme": {
+              "id": "scheme_evidence",
+              "key": "argument_from_evidence",
+              "name": "Argument from Evidence",
+              "description": "Empirical data E supports claim C.",
+              "summary": null,
+              "cq": ["Is the data correctly measured?", "Is the sample representative?"],
+              "premises": [],
+              "conclusion": null,
+              "purpose": null,
+              "source": null,
+              "materialRelation": null,
+              "reasoningType": null,
+              "ruleForm": null,
+              "conclusionType": null,
+              "whenToUse": null,
+              "tags": []
+            }
+          }
+        ],
+        "schemeNet": null
+      }
+    },
+    {
+      "id": "node_antithesis",
+      "chainId": "chain_hinge1_fixture",
+      "argumentId": "arg_antithesis",
+      "nodeOrder": 2,
+      "role": "OBJECTION",
+      "epistemicStatus": "QUESTIONED",
+      "scopeId": null,
+      "dialecticalRole": "ANTITHESIS",
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": 200,
+      "positionY": 150,
+      "addedBy": "1001",
+      "addedAt": "2026-05-09T12:10:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_antithesis",
+        "text": "Druckman and colleagues argue that feeling thermometers conflate ideological disagreement with personal animus, so high thermometer gaps may not isolate affective polarization.",
+        "authorId": "1001",
+        "createdAt": "2026-05-09T12:10:00.000Z",
+        "conclusion": {
+          "id": "claim_antithesis",
+          "text": "Feeling-thermometer gaps conflate ideological disagreement with personal animus."
+        },
+        "premises": [
+          {
+            "claim": {
+              "id": "claim_premise_antithesis_1",
+              "text": "Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming."
+            }
+          }
+        ],
+        "implicitWarrant": null,
+        "argumentSchemes": [
+          {
+            "scheme": {
+              "id": "scheme_expert_opinion_b",
+              "key": "expert_opinion",
+              "name": "Argument from Expert Opinion",
+              "description": "An expert E in domain D asserts that A; therefore A.",
+              "summary": null,
+              "cq": [
+                "Is the source a genuine expert in the relevant field?",
+                "Are there other experts who disagree?"
+              ],
+              "premises": [],
+              "conclusion": null,
+              "purpose": null,
+              "source": null,
+              "materialRelation": null,
+              "reasoningType": null,
+              "ruleForm": null,
+              "conclusionType": null,
+              "whenToUse": null,
+              "tags": []
+            }
+          }
+        ],
+        "schemeNet": null
+      }
+    },
+    {
+      "id": "node_response",
+      "chainId": "chain_hinge1_fixture",
+      "argumentId": "arg_response",
+      "nodeOrder": 3,
+      "role": "REBUTTAL",
+      "epistemicStatus": "ASSERTED",
+      "scopeId": null,
+      "dialecticalRole": "RESPONSE",
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": 400,
+      "positionY": 300,
+      "addedBy": "1001",
+      "addedAt": "2026-05-09T12:15:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_response",
+        "text": "Iyengar et al. distinguish ideological from affective components using paired thermometer + trait batteries, showing the affective component remains after partialling out ideology.",
+        "authorId": "1001",
+        "createdAt": "2026-05-09T12:15:00.000Z",
+        "conclusion": {
+          "id": "claim_response",
+          "text": "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+        },
+        "premises": [
+          {
+            "claim": {
+              "id": "claim_premise_response_1",
+              "text": "Trait-rating supplements reduce shared variance with ideology to under 30%."
+            }
+          }
+        ],
+        "implicitWarrant": null,
+        "argumentSchemes": [
+          {
+            "scheme": {
+              "id": "scheme_evidence_b",
+              "key": "argument_from_evidence",
+              "name": "Argument from Evidence",
+              "description": "Empirical data E supports claim C.",
+              "summary": null,
+              "cq": ["Is the data correctly measured?"],
+              "premises": [],
+              "conclusion": null,
+              "purpose": null,
+              "source": null,
+              "materialRelation": null,
+              "reasoningType": null,
+              "ruleForm": null,
+              "conclusionType": null,
+              "whenToUse": null,
+              "tags": []
+            }
+          }
+        ],
+        "schemeNet": null
+      }
+    },
+    {
+      "id": "node_synthesis",
+      "chainId": "chain_hinge1_fixture",
+      "argumentId": "arg_synthesis",
+      "nodeOrder": 4,
+      "role": "QUALIFIER",
+      "epistemicStatus": "QUESTIONED",
+      "scopeId": null,
+      "dialecticalRole": "SYNTHESIS",
+      "targetType": "NODE",
+      "targetEdgeId": null,
+      "positionX": 0,
+      "positionY": 400,
+      "addedBy": "1001",
+      "addedAt": "2026-05-09T12:20:00.000Z",
+      "contributor": { "id": "1001", "name": "Test Author", "image": null },
+      "scope": null,
+      "argument": {
+        "id": "arg_synthesis",
+        "text": "A mixed measurement strategy (thermometers paired with trait batteries) improves construct validity, though a residual band of contested cases remains where ideology and affect cannot be cleanly separated.",
+        "authorId": "1001",
+        "createdAt": "2026-05-09T12:20:00.000Z",
+        "conclusion": {
+          "id": "claim_synthesis",
+          "text": "A mixed-measurement strategy improves validity; a residual contested band persists."
+        },
+        "premises": [
+          {
+            "claim": {
+              "id": "claim_premise_synthesis_1",
+              "text": "No single instrument disambiguates ideology from affect in highly co-partisan respondents."
+            }
+          }
+        ],
+        "implicitWarrant": null,
+        "argumentSchemes": [
+          {
+            "scheme": {
+              "id": "scheme_practical",
+              "key": "practical_reasoning",
+              "name": "Practical Reasoning",
+              "description": "If goal G and action A achieves G, then do A.",
+              "summary": null,
+              "cq": ["Are there alternative means to G?"],
+              "premises": [],
+              "conclusion": null,
+              "purpose": null,
+              "source": null,
+              "materialRelation": null,
+              "reasoningType": null,
+              "ruleForm": null,
+              "conclusionType": null,
+              "whenToUse": null,
+              "tags": []
+            }
+          }
+        ],
+        "schemeNet": null
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_support_to_thesis",
+      "chainId": "chain_hinge1_fixture",
+      "sourceNodeId": "node_support",
+      "targetNodeId": "node_thesis",
+      "edgeType": "SUPPORTS",
+      "strength": 0.85,
+      "description": "ANES panel evidence directly supports the validity claim.",
+      "slotMapping": null,
+      "createdAt": "2026-05-09T12:06:00.000Z",
+      "sourceNode": {
+        "id": "node_support",
+        "argument": {
+          "id": "arg_support",
+          "text": "Cross-wave ANES panel data show stable thermometer differentials between in-party and out-party targets.",
+          "conclusion": {
+            "id": "claim_support",
+            "text": "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves."
+          }
+        }
+      },
+      "targetNode": {
+        "id": "node_thesis",
+        "argument": {
+          "id": "arg_thesis",
+          "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.",
+          "conclusion": {
+            "id": "claim_thesis",
+            "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+          }
+        }
+      }
+    },
+    {
+      "id": "edge_antithesis_rebuts_thesis",
+      "chainId": "chain_hinge1_fixture",
+      "sourceNodeId": "node_antithesis",
+      "targetNodeId": "node_thesis",
+      "edgeType": "REBUTS",
+      "strength": 0.7,
+      "description": "Druckman's measurement critique directly attacks the validity claim.",
+      "slotMapping": null,
+      "createdAt": "2026-05-09T12:11:00.000Z",
+      "sourceNode": {
+        "id": "node_antithesis",
+        "argument": {
+          "id": "arg_antithesis",
+          "text": "Druckman and colleagues argue that feeling thermometers conflate ideological disagreement with personal animus.",
+          "conclusion": {
+            "id": "claim_antithesis",
+            "text": "Feeling-thermometer gaps conflate ideological disagreement with personal animus."
+          }
+        }
+      },
+      "targetNode": {
+        "id": "node_thesis",
+        "argument": {
+          "id": "arg_thesis",
+          "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.",
+          "conclusion": {
+            "id": "claim_thesis",
+            "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+          }
+        }
+      }
+    },
+    {
+      "id": "edge_response_undercuts_antithesis",
+      "chainId": "chain_hinge1_fixture",
+      "sourceNodeId": "node_response",
+      "targetNodeId": "node_antithesis",
+      "edgeType": "UNDERCUTS",
+      "strength": 0.75,
+      "description": "Iyengar's paired-instrument design undercuts the conflation premise.",
+      "slotMapping": null,
+      "createdAt": "2026-05-09T12:16:00.000Z",
+      "sourceNode": {
+        "id": "node_response",
+        "argument": {
+          "id": "arg_response",
+          "text": "Iyengar et al. distinguish ideological from affective components using paired thermometer + trait batteries.",
+          "conclusion": {
+            "id": "claim_response",
+            "text": "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+          }
+        }
+      },
+      "targetNode": {
+        "id": "node_antithesis",
+        "argument": {
+          "id": "arg_antithesis",
+          "text": "Druckman and colleagues argue that feeling thermometers conflate ideological disagreement with personal animus.",
+          "conclusion": {
+            "id": "claim_antithesis",
+            "text": "Feeling-thermometer gaps conflate ideological disagreement with personal animus."
+          }
+        }
+      }
+    },
+    {
+      "id": "edge_synthesis_qualifies_thesis",
+      "chainId": "chain_hinge1_fixture",
+      "sourceNodeId": "node_synthesis",
+      "targetNodeId": "node_thesis",
+      "edgeType": "QUALIFIES",
+      "strength": 0.6,
+      "description": "Mixed-measurement qualifier narrows the scope of the validity claim.",
+      "slotMapping": null,
+      "createdAt": "2026-05-09T12:21:00.000Z",
+      "sourceNode": {
+        "id": "node_synthesis",
+        "argument": {
+          "id": "arg_synthesis",
+          "text": "A mixed measurement strategy improves construct validity, though a residual band of contested cases remains.",
+          "conclusion": {
+            "id": "claim_synthesis",
+            "text": "A mixed-measurement strategy improves validity; a residual contested band persists."
+          }
+        }
+      },
+      "targetNode": {
+        "id": "node_thesis",
+        "argument": {
+          "id": "arg_thesis",
+          "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.",
+          "conclusion": {
+            "id": "claim_thesis",
+            "text": "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+          }
+        }
+      }
+    }
+  ]
+}

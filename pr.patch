@@ -1,0 +1,233 @@
+diff --git a/.gitignore b/.gitignore
+index 05562428176b771f0d82a9dc59bcabbf5db60908..c5082b167ccc8fc2d95a84ad7d8b4ba8a60f6f75 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -14,25 +14,27 @@
+ /out/
+ 
+ # production
+ /build
+ 
+ # misc
+ .DS_Store
+ *.pem
+ 
+ # debug
+ npm-debug.log*
+ yarn-debug.log*
+ yarn-error.log*
+ 
+ # local env files
+ .env*.local
+ 
+ # vercel
+ .vercel
+ 
+ # typescript
+ *.tsbuildinfo
+ next-env.d.ts
+ package-lock.json
+ .env
++services/feature-store/data/registry.db
++__pycache__/
+diff --git a/Makefile b/Makefile
+new file mode 100644
+index 0000000000000000000000000000000000000000..d42049605574616ca6eb4e843a9ee08f3ae53b61
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,2 @@
++feature-store-local-up:
++	docker-compose up feature-store redis
+diff --git a/docker-compose.yml b/docker-compose.yml
+new file mode 100644
+index 0000000000000000000000000000000000000000..5785f34ded11850ed6507efa1ef109d8088a7d1d
+--- /dev/null
++++ b/docker-compose.yml
+@@ -0,0 +1,14 @@
++version: '3.9'
++services:
++  redis:
++    image: redis:7
++    ports:
++      - "6379:6379"
++  feature-store:
++    build: ./services/feature-store
++    ports:
++      - "8888:8888"
++    depends_on:
++      - redis
++    environment:
++      - FEAST_USAGE=False
+diff --git a/services/feature-store/Dockerfile b/services/feature-store/Dockerfile
+new file mode 100644
+index 0000000000000000000000000000000000000000..be30a4b8adc5c3862b5117a77893d85f3dabb7ff
+--- /dev/null
++++ b/services/feature-store/Dockerfile
+@@ -0,0 +1,6 @@
++FROM python:3.11-slim
++WORKDIR /app
++COPY requirements.txt ./
++RUN pip install --no-cache-dir -r requirements.txt
++COPY . .
++CMD ["feast", "serve", "--host", "0.0.0.0", "--port", "8888"]
+diff --git a/services/feature-store/data/user_stats.parquet b/services/feature-store/data/user_stats.parquet
+new file mode 100644
+index 0000000000000000000000000000000000000000..ccde6ae554c7211794c4d29df3a31e3e487fa247
+GIT binary patch
+literal 3264
+zcmc&%&2Ji45MMjQp;o0@Q5S*a16{SKl^mB3<AlhS^1ud`U=ouAmW?8`U%<ldvSk<6
+z5c$|!Pd)b7f1>>pdaQDa`Umt-_0awYop}p{FDL1t?Gy0k&CHwm&Bq&w$E2EI18kK2
+zv<w?_n_>1&withHPj{AKZ?mBTkngcO?9P5TIFp2fGu;sL`35c+_#lePfvv3@+p*VM
+z`)nYRW_I=>;afvT8#Hy5-3|ppKW~M8*@_io!GB^qf`}M)n}MG_*cfIt5Fh^+4_b76
+z@?brXnMOD`)4@R2xxiTr<oCcnyE_deEREVtM{^v#Z#7j<GYmK>&AW?{{dyzz{SAn1
+z-S9Q;-W}WCH`_OV{Ocn8({KL19@|V34$gGZ**bS6wjY9Tiu92-(k!>>>Zaznl4&m#
+z>$_XASJ(>c_O9`=DWpg_&4hOxrK6b=y94$6Y<u1q47&@bYqRSsuL3l_y}f@zvm6RU
+z_9G|%ddtQBhgOLFcO?qF4uk@+VCc`l#|#rW2=CaErAkit)y<cjZmHU3Q|TK+({i}`
+z(dRF@9`JzT29nj*xPvHXNu~x2YiJm7f*u;UaEw#BZv&a6q=sbT>IEEpdrfLwo0?s=
+z($Y0UZ7%bCSWS0qqdRVB=}KSq5e!XxJQwukuBNz%%+y>-m0StbUvioS>blj&yU(8H
+z@7&|A7Qif{;HHBMjVwV~6s+LUE%*3{=3@!XoV@@BQ+0I!n5F@8*NvBT|8LV=0n{@3
+z(nd%Ng13QMnG5S!HYlt>faGg9Sk}`rlN=vCx11L!Uxh*&WuQrJe?aSJ=<+}sjIn(7
+zSQ-ra9^M*h102f8P24?<AI3RIEH{O*AWR;n4inrJ6aJ7?tB>mU{dpArWA{s3Ui*v?
+zasgjl4+%LU**3`&(k8h!<z=%=au1nsXC`l-`e*p1R;ZjO#3OJIb~JL@#tqJdRQMcF
+zcX`toiiO&dkgSa4V$GGUbN!K?m9=qcAl1`7zT0o}R;eSKs=@1Cn>W)Px&91whHCxN
+zDd&i;q^cdox&R*Wrst88<B$1M-r;kliCU<6Xy;r=s3>nFGmctM427icTNLI#hmCr|
+zKwa6YIdTsDiMCk3><P&YehYcPo}UP*YFa5ECZenLv<>!q;uGo{FeW^$mWgXZmfGdb
+zj4qkAu9~BAR}`upun})O0lY;=7whS+oUGcisZe{hTD4Gq+SXeu*p)Hp=UvF(3>Wwo
+zDu!ZYY|*!EO7)r}<}>q{c&j!Mg;GnZU+6SX8}LKU<CU&2ha9*{(P*hf!-IH^A(ysn
+zT_h`;uouz^xp0{&=dh-4Ff|0x5>kLGRk7t{x+NA>1N2%-vep$QYR|9fYL1~s?{m+}
+zLSI1b6N~v39XXkQTMVXL$aK`xM%?$EFw{c6*MK_A>t2jISPR+AyVJN0)vOKGd?qeI
+ze_+4K0--q+O#|Yow%$iq*^qCnJ@kN$J&iTlkaNTa7!6l^+KAVa>51U?)^hJm^DjKX
+zo~?|<dOj|vczh>Nk4w7&Z%DCvw5On^K$k}9nD$^2dSW8gGei2;x@W0!mkiHyC8#C5
+ztvP1VP%NzB5w&ryA5F^LGra|G9p(ff#c3_@+2glFhrm6c{P)gxVaVX|>>&;s0<Rwy
+zB`HNvmfe(R;*D@Vf!NF4!%>Bb<dWW^Lx#>1dL#|p-qkyxQowlxxM8O&hah3t!JKN4
+ztVhm~3*ct+FiSdA4<q&Cp+{20ZT{})eGfweK2=3=c4h?Vub6PumIhxBHTRBU+jr;?
+ak4}el)F0oGlYNHqKg`K4!#sxnE`I|OBz#x^
+
+literal 0
+HcmV?d00001
+
+diff --git a/services/feature-store/feature_repo.py b/services/feature-store/feature_repo.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..e5be7ab5646c1839d33ccaf9840fb7b17b152e69
+--- /dev/null
++++ b/services/feature-store/feature_repo.py
+@@ -0,0 +1,22 @@
++from datetime import timedelta
++import pandas as pd
++from feast import Entity, Field, FeatureView, FileSource
++from feast.types import Float32, Int64
++
++user = Entity(name="user_id", join_keys=["user_id"])
++
++user_stats_source = FileSource(
++    path="data/user_stats.parquet",
++    timestamp_field="event_timestamp",
++)
++
++user_features = FeatureView(
++    name="user_features",
++    entities=[user],
++    ttl=timedelta(days=7),
++    schema=[
++        Field(name="avg_session_dwell_sec_7d", dtype=Float32),
++    ],
++    online=True,
++    source=user_stats_source,
++)
+diff --git a/services/feature-store/feature_store.yaml b/services/feature-store/feature_store.yaml
+new file mode 100644
+index 0000000000000000000000000000000000000000..7be6ef28d0b7566226be31ea613de9f37c5ff25a
+--- /dev/null
++++ b/services/feature-store/feature_store.yaml
+@@ -0,0 +1,7 @@
++project: social_discovery
++registry: data/registry.db
++provider: local
++online_store:
++  type: redis
++  connection_string: "localhost:6379"
++entity_key_serialization_version: 2
+diff --git a/services/feature-store/k8s-deployment.yaml b/services/feature-store/k8s-deployment.yaml
+new file mode 100644
+index 0000000000000000000000000000000000000000..f10a837511c803f19c3783bd3ac7c4ba744f0936
+--- /dev/null
++++ b/services/feature-store/k8s-deployment.yaml
+@@ -0,0 +1,25 @@
++apiVersion: apps/v1
++kind: Deployment
++metadata:
++  name: feature-store
++spec:
++  replicas: 1
++  selector:
++    matchLabels:
++      app: feature-store
++  template:
++    metadata:
++      labels:
++        app: feature-store
++    spec:
++      containers:
++        - name: feature-store
++          image: feature-store:latest
++          ports:
++            - containerPort: 8888
++          readinessProbe:
++            httpGet:
++              path: /
++              port: 8888
++            initialDelaySeconds: 10
++            periodSeconds: 10
+diff --git a/services/feature-store/requirements.txt b/services/feature-store/requirements.txt
+new file mode 100644
+index 0000000000000000000000000000000000000000..0c4ff586b5ead40fd4d77fe68f7838f7620c98f4
+--- /dev/null
++++ b/services/feature-store/requirements.txt
+@@ -0,0 +1,3 @@
++feast[redis]==0.50.0
++pandas
++pyarrow
+diff --git a/services/feature-store/tests/test_ingest_retrieve.py b/services/feature-store/tests/test_ingest_retrieve.py
+new file mode 100644
+index 0000000000000000000000000000000000000000..ea26f13be9919f920e9b48b17d28bce8218bbb5e
+--- /dev/null
++++ b/services/feature-store/tests/test_ingest_retrieve.py
+@@ -0,0 +1,38 @@
++import os
++import subprocess
++import time
++from datetime import datetime
++
++import pandas as pd
++import pytest
++from feast import FeatureStore
++
++
++@pytest.fixture(scope="module")
++def redis_server():
++    proc = subprocess.Popen(["redis-server", "--port", "6379", "--save", ""], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
++    time.sleep(0.5)
++    yield proc
++    proc.terminate()
++    proc.wait()
++
++
++def test_ingest_and_retrieve(redis_server):
++    repo_path = os.path.join(os.path.dirname(__file__), "..")
++    registry_path = os.path.join(repo_path, "data", "registry.db")
++    if not os.path.exists(registry_path):
++        os.makedirs(os.path.dirname(registry_path), exist_ok=True)
++        open(registry_path, "wb").close()
++    store = FeatureStore(repo_path=repo_path)
++    import importlib.util
++    spec = importlib.util.spec_from_file_location("feature_repo", os.path.join(repo_path, "feature_repo.py"))
++    module = importlib.util.module_from_spec(spec)
++    spec.loader.exec_module(module)
++    store.apply([module.user, module.user_features])
++    store.materialize_incremental(end_date=datetime.utcnow())
++
++    resp = store.get_online_features(
++        features=["user_features:avg_session_dwell_sec_7d"],
++        entity_rows=[{"user_id": 1}],
++    ).to_dict()
++    assert resp["avg_session_dwell_sec_7d"][0] == 12.5

@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-05-31T22:09:15.050Z",
+  "programme": "ludics-harmonization",
+  "sprint": "H0",
+  "totalFiles": 20,
+  "totalCases": 286,
+  "files": [
+    {
+      "file": "__tests__/invariants/aif-from-arguments.test.ts",
+      "caseCount": 4,
+      "describes": [
+        "aif-from-arguments invariants"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/h1-creation-seam.test.ts",
+      "caseCount": 10,
+      "describes": [
+        "H1 — createDialogueMove seam (I-Seam, I-AIF-min, idempotency)"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/h2-no-legacy-read.test.ts",
+      "caseCount": 1,
+      "describes": [
+        "H2 — I-No-Legacy-Read invariant"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/h2-reconstruct-chronicle-parity.test.ts",
+      "caseCount": 3,
+      "describes": [
+        "H2 — reconstructChronicle parity"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1b-bind-seam.test.ts",
+      "caseCount": 15,
+      "describes": [
+        "S1 — existingLocus",
+        "S2 — existingStructure",
+        "S3 — canonPipelineGated",
+        "S4 — schemeTyped",
+        "happy path",
+        "BindError"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1c-witnessing-reads.test.ts",
+      "caseCount": 15,
+      "describes": [
+        "getWitnessesForMove",
+        "getUnwitnessedExposure",
+        "getInstantiation"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1d-stratum-verify-on-read.test.ts",
+      "caseCount": 7,
+      "describes": [
+        "getStratumLabel — verify-on-read (B2)"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1d-structural-reads.test.ts",
+      "caseCount": 19,
+      "describes": [
+        "getDeliberationSchema",
+        "getBehaviourAtLocus",
+        "computeExposureMap"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1e-articulation-lattice.test.ts",
+      "caseCount": 26,
+      "describes": [
+        "getArticulationLattice",
+        "findMinimalIncarnations",
+        "findEquivalentArticulations",
+        "findSubstitutePremises",
+        "compressArticulation",
+        "computeArticulationJoin"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1f-fingerprint-components.test.ts",
+      "caseCount": 17,
+      "describes": [
+        "computeComponentHashes (B5)",
+        "component scope (B5 disjointness)",
+        "diffComponents (B5)",
+        "contentHash ↔ components consistency (B5)",
+        "evaluateStalenessRules component fast-path (B5)"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1f-fossil-fingerprint.test.ts",
+      "caseCount": 26,
+      "describes": [
+        "getFossilRecord",
+        "computeBriefingFingerprint",
+        "checkBriefingFingerprint",
+        "evaluateStalenessRules"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1f-r1r5-coverage.test.ts",
+      "caseCount": 7,
+      "describes": [
+        "R1–R5 end-to-end invalidation coverage (A8.4)",
+        "R1 — hubSet changed",
+        "R2 — new refusal-surface conclusion",
+        "R3 — top-5 load-bearing ranking shift",
+        "R4 — new hub-targeting CQ in top-15",
+        "R5 — openExposurePoints +≥10",
+        "no-change control",
+        "priority order — R1 wins over later rules when multiple fire"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase1g-scorecard-manifest.test.ts",
+      "caseCount": 23,
+      "describes": [
+        "manifestGenerator — Phase 1g manifest fields",
+        "scorePhase1 — coverageExposure score (Phase 1g)",
+        "scorePhase1 — coverage-exposure-zero confidentMisstatement (Phase 1g)",
+        "v2 corpus fixture validation (Phase 1g)",
+        "fixture: ${fixture.id}",
+        "v2 corpus: mock client passes Phase 1g scorecard"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase2b-incarnation-manifest.test.ts",
+      "caseCount": 24,
+      "describes": [
+        "IncarnationSetManifest shape (antichain)",
+        "manifestGenerator: incarnationSet field",
+        "scorecard: articulationRecall computation (per-cone)",
+        "detectConfidentMisstatements: incarnation-undercount + miscount-across-cones",
+        "MockBriefingClient: per-cone claims",
+        "Per-fixture happy path: articulationRecall.meanRecall === 1"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase2c-synthesis-workflow.test.ts",
+      "caseCount": 21,
+      "describes": [
+        "computeArticulationJoin result shape",
+        "SynthesisProposalResult shape (discriminated)",
+        "SynthesisProposalInput I3: canonicalText must not be blank",
+        "SyntheticReadout.bottomIncarnation field shape",
+        "Phase 2c corpus fixtures",
+        "propose_synthesis MCP input schema"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase2d-fossil-lifecycle.test.ts",
+      "caseCount": 21,
+      "describes": [
+        "T1: fossilize() correctness",
+        "T2: fossilize() idempotency at the DB layer (A11.4)",
+        "T3: fossilizeByArgument() fossilizes all active witnesses for argumentId",
+        "T4: fossilizeByArgument() with no matches returns fossilizedCount: 0",
+        "T5: getFossilRecord returns totalFossils === 0 when no fossils exist",
+        "T6: getFossilRecord returns fossil with correct retractLayer",
+        "T7: getFossilRecord with includeActive returns both active and fossilized",
+        "T8: getFossilRecord with ludicMoveId filter returns only fossils for that move",
+        "T9: argument delete hook fossilizes with argument_superseded",
+        "Manual retract endpoint",
+        "T14: RetractLayer covers all four event types",
+        "T15: argumentId column is included in Prisma query where clause",
+        "T16: fossilizeByArgument returns fossilizedCount: 3 when 3 witnesses exist",
+        "T17: bindParticipantToDesign passes argumentId to ludicMove.update",
+        "T18: getFossilRecord with deliberationId filters to correct deliberation"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase2f-production-readiness.test.ts",
+      "caseCount": 17,
+      "describes": [
+        "T1–T4 · Fingerprint cache integration",
+        "T5–T10 · Compound rate-limit integration",
+        "T11–T14 · Scoped JWT route-level integration",
+        "T16 · Cache warming",
+        "T17 · OQ-5b deterministic rule ordering"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase2f-ws3-scoped-jwt.test.ts",
+      "caseCount": 9,
+      "describes": [
+        "WS-3 T11 — issue + verify happy path",
+        "WS-3 T12 — scope mismatch",
+        "WS-3 T13 — expired token",
+        "WS-3 T14 — legacy MCP_API_TOKEN bearer path removed (v2.5 cutover)",
+        "WS-3 — session cookie fallback"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/phase2g-announcement-bus.test.ts",
+      "caseCount": 12,
+      "describes": [
+        "T1–T3 · AnnouncementEnvelope schema",
+        "T4–T7 · publishAnnouncement",
+        "T8–T9 · Dispatcher",
+        "T11–T13 · A4 retract route announcement emit"
+      ]
+    },
+    {
+      "file": "__tests__/invariants/t4-non-attribution.test.ts",
+      "caseCount": 9,
+      "describes": [
+        "findByLudicMoveId — T4 non-attribution invariant",
+        "create — T4 non-attribution invariant",
+        "fossilize — T4 non-attribution invariant",
+        "T4 — dialectical-layer tool registry"
+      ]
+    }
+  ]
+}

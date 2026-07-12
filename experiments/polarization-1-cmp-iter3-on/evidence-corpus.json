@@ -1,0 +1,214 @@
+{
+  "stackName": "Polarization 1 — evidence corpus (cmp iter3 on)",
+  "stackVisibility": "public_open",
+  "_note": "22 sources spanning (a) studies implicating algorithmic curation, (b) null/contrary findings (esp. the 2023 Science series from the US 2020 Facebook & Instagram Election Study), (c) baseline polarization trend studies, (d) mechanism studies (engagement/animosity dynamics, exposure mapping). Tags align with the orchestrator's coverage signals: experimental, observational, metaAnalysis, skeptical, crossNational, plus topical tokens. DOIs were composed from memory — spot-check before running `npm run orchestrator -- setup`.",
+  "items": [
+    {
+      "itemKind": "doi",
+      "doi": "10.1126/science.aaa1160",
+      "title": "Exposure to ideologically diverse news and opinion on Facebook",
+      "authors": ["Bakshy, Eytan", "Messing, Solomon", "Adamic, Lada A."],
+      "publishedAt": "2015-05-07T00:00:00Z",
+      "abstract": "Large-scale measurement of how Facebook's news-feed ranking algorithm shapes ideological exposure for ~10.1M US users. Finds that algorithmic ranking and individual choice both reduce cross-cutting exposure, but that user choice is the larger filter. Foundational empirical study often cited for and against the algorithmic-polarization claim.",
+      "tags": ["facebook", "newsfeed", "observational", "filter-bubble", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1257/aer.20190658",
+      "title": "The welfare effects of social media",
+      "authors": ["Allcott, Hunt", "Braghieri, Luca", "Eichmeyer, Sarah", "Gentzkow, Matthew"],
+      "publishedAt": "2020-03-01T00:00:00Z",
+      "abstract": "Randomized experiment paying 2,743 Facebook users to deactivate accounts for four weeks before the 2018 US midterm. Deactivation reduced factual news knowledge and political polarization on issues, increased subjective wellbeing, and reduced post-experiment Facebook use. Causal evidence implicating Facebook in issue polarization.",
+      "tags": ["facebook", "experimental", "deactivation", "us-2018", "wellbeing"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1257/aer.20191777",
+      "title": "Social media, news consumption, and polarization: Evidence from a field experiment",
+      "authors": ["Levy, Ro'ee"],
+      "publishedAt": "2021-03-01T00:00:00Z",
+      "abstract": "Field experiment offering 1,840 US Facebook users subscriptions to liberal or conservative news outlets. Subscriptions to counter-attitudinal outlets reduced negative attitudes toward the opposing party but did not affect issue positions. Provides causal evidence that algorithmic exposure mix matters for affective polarization.",
+      "tags": ["facebook", "experimental", "affective-polarization", "us", "news-exposure"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1073/pnas.1804840115",
+      "title": "Exposure to opposing views on social media can increase political polarization",
+      "authors": ["Bail, Christopher A.", "Argyle, Lisa P.", "Brown, Taylor W.", "Bumpus, John P.", "Chen, Haohan", "Hunzaker, M. B. Fallin", "Lee, Jaemin", "Mann, Marcus", "Merhout, Friedolin", "Volfovsky, Alexander"],
+      "publishedAt": "2018-09-11T00:00:00Z",
+      "abstract": "Randomized field experiment paying 1,652 US Twitter users to follow a counter-attitudinal bot for one month. Republicans became substantially more conservative; Democrats became slightly more liberal. Implies that mere exposure to other views via the platform is not depolarizing — and may backfire — independent of algorithmic curation.",
+      "tags": ["twitter", "experimental", "exposure-effects", "backfire", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1111/ajps.12152",
+      "title": "Fear and loathing across party lines: New evidence on group polarization",
+      "authors": ["Iyengar, Shanto", "Westwood, Sean J."],
+      "publishedAt": "2015-07-01T00:00:00Z",
+      "abstract": "Experimental and observational evidence that affective polarization between US partisans now exceeds racial and other social cleavages on standard implicit and behavioral measures. Establishes the dependent variable that algorithmic-amplification claims invoke.",
+      "tags": ["affective-polarization", "experimental", "observational", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1093/poq/nfs038",
+      "title": "Affect, not ideology: A social identity perspective on polarization",
+      "authors": ["Iyengar, Shanto", "Sood, Gaurav", "Lelkes, Yphtach"],
+      "publishedAt": "2012-09-01T00:00:00Z",
+      "abstract": "Documents that elite ideological polarization in the US has been accompanied by mass affective polarization since the 1980s, well before social-media saturation. Important baseline for any causal claim assigning post-2012 polarization to platform algorithms.",
+      "tags": ["affective-polarization", "observational", "us", "baseline"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1073/pnas.1706588114",
+      "title": "Greater Internet use is not associated with faster growth in political polarization among US demographic groups",
+      "authors": ["Boxell, Levi", "Gentzkow, Matthew", "Shapiro, Jesse M."],
+      "publishedAt": "2017-10-03T00:00:00Z",
+      "abstract": "Polarization in the US grew most among demographic groups least likely to use the internet and social media (notably the elderly) between 1996 and 2012. Direct challenge to monocausal social-media accounts of US polarization.",
+      "tags": ["observational", "skeptical", "us", "demographics", "filter-bubble"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1162/rest_a_01160",
+      "title": "Cross-country trends in affective polarization",
+      "authors": ["Boxell, Levi", "Gentzkow, Matthew", "Shapiro, Jesse M."],
+      "publishedAt": "2024-03-01T00:00:00Z",
+      "abstract": "Affective polarization has risen sharply in the US since the 1980s but has fallen in many other developed democracies with similar internet/social-media diffusion. Tension with claims that platform-level algorithms are a primary driver of US polarization.",
+      "tags": ["observational", "skeptical", "crossNational", "affective-polarization"]
+    },
+    {
+      "itemKind": "url",
+      "url": "https://hewlett.org/library/social-media-political-polarization-political-disinformation-review-scientific-literature/",
+      "title": "Social media, political polarization, and political disinformation: A review of the scientific literature",
+      "authors": ["Tucker, Joshua A.", "Guess, Andrew", "Barberá, Pablo", "Vaccari, Cristian", "Siegel, Alexandra", "Sanovich, Sergey", "Stukal, Denis", "Nyhan, Brendan"],
+      "publishedAt": "2018-03-19T00:00:00Z",
+      "abstract": "Hewlett Foundation review synthesizing the empirical literature through early 2018. Concludes that social media exposure correlates with several polarization-related outcomes but that causal evidence linking algorithmic curation specifically to mass polarization is mixed and limited.",
+      "tags": ["metaAnalysis", "skeptical", "us", "review"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1073/pnas.1618923114",
+      "title": "Emotion shapes the diffusion of moralized content in social networks",
+      "authors": ["Brady, William J.", "Wills, Julian A.", "Jost, John T.", "Tucker, Joshua A.", "Van Bavel, Jay J."],
+      "publishedAt": "2017-07-11T00:00:00Z",
+      "abstract": "Analysis of 563k Twitter messages on gun control, same-sex marriage, and climate change. Each moral-emotional word added to a tweet increased its diffusion by ~20%, and diffusion stayed primarily within ideological in-groups. Mechanism evidence for engagement-driven algorithmic amplification of polarizing content.",
+      "tags": ["twitter", "observational", "engagement", "moral-emotion", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1073/pnas.2025334119",
+      "title": "Algorithmic amplification of politics on Twitter",
+      "authors": ["Huszár, Ferenc", "Ktena, Sofia Ira", "O'Brien, Conor", "Belli, Luca", "Schlaikjer, Andrew", "Hardt, Moritz"],
+      "publishedAt": "2022-01-04T00:00:00Z",
+      "abstract": "Twitter-internal field experiment comparing chronological vs. algorithmic timelines for millions of users across seven countries. Algorithmic ranking amplified mainstream right-wing political content more than left-wing content in 6 of 7 countries (incl. the US), but did not amplify far-right or far-left fringe content.",
+      "tags": ["twitter", "experimental", "amplification", "us", "crossNational"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1073/pnas.2024292118",
+      "title": "Out-group animosity drives engagement on social media",
+      "authors": ["Rathje, Steve", "Van Bavel, Jay J.", "van der Linden, Sander"],
+      "publishedAt": "2021-06-29T00:00:00Z",
+      "abstract": "Across 2.7M Facebook and Twitter posts, posts about the political out-group received 2x the engagement (shares, reactions) as posts about the in-group, and out-group language was the strongest predictor of engagement. Mechanism evidence for engagement-optimization producing polarizing exposure.",
+      "tags": ["facebook", "twitter", "observational", "engagement", "out-group", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1073/pnas.2101967118",
+      "title": "Examining the consumption of radical content on YouTube",
+      "authors": ["Hosseinmardi, Homa", "Ghasemian, Amir", "Clauset, Aaron", "Mobius, Markus", "Rothschild, David M.", "Watts, Duncan J."],
+      "publishedAt": "2021-08-10T00:00:00Z",
+      "abstract": "Browser-trace analysis of YouTube consumption among 300k US users 2016–2019. Finds that consumption of far-right content is concentrated among users who already hold those views and arrive via off-platform referrals; recommendations rarely move ordinary users toward extreme content. Pushback on rabbit-hole accounts of YouTube radicalization.",
+      "tags": ["youtube", "observational", "skeptical", "us", "radicalization"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1145/3351095.3372879",
+      "title": "Auditing radicalization pathways on YouTube",
+      "authors": ["Ribeiro, Manoel Horta", "Ottoni, Raphael", "West, Robert", "Almeida, Virgílio A. F.", "Meira, Wagner"],
+      "publishedAt": "2020-01-27T00:00:00Z",
+      "abstract": "Audit of 330k YouTube videos and 72M comments across Intellectual Dark Web, Alt-lite, and Alt-right channels. Finds substantial user migration over time from milder to more extreme channels, and that recommendation paths from Alt-lite reach Alt-right content. Often cited as evidence of algorithmic radicalization.",
+      "tags": ["youtube", "observational", "amplification", "radicalization"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1038/s41467-021-25738-6",
+      "title": "Neutral bots probe political bias on social media",
+      "authors": ["Chen, Wen", "Pacheco, Diogo", "Yang, Kai-Cheng", "Menczer, Filippo"],
+      "publishedAt": "2021-09-21T00:00:00Z",
+      "abstract": "Deploys 15 neutrally-initialized 'drifter' bots on Twitter to probe how the platform's recommendations shape exposure. Finds the algorithm pushes accounts toward right-leaning information regardless of starting condition. Audit-style causal evidence on US-platform amplification.",
+      "tags": ["twitter", "experimental", "amplification", "audit", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1038/s41562-020-0833-x",
+      "title": "Exposure to untrustworthy websites in the 2016 US election",
+      "authors": ["Guess, Andrew M.", "Nyhan, Brendan", "Reifler, Jason"],
+      "publishedAt": "2020-03-02T00:00:00Z",
+      "abstract": "Web-trace + survey panel of 2,170 US adults. Untrustworthy news exposure was concentrated in a small minority (~6%) of consumers, who were predominantly conservative and reached fake news via Facebook referrals. Bounds the size of any algorithmic-misinformation channel for polarization.",
+      "tags": ["facebook", "observational", "fake-news", "us-2016"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1177/2158244019832705",
+      "title": "How many people live in political bubbles on social media? Evidence from linked survey and Twitter data",
+      "authors": ["Eady, Gregory", "Nagler, Jonathan", "Guess, Andrew M.", "Zilinsky, Jan", "Tucker, Joshua A."],
+      "publishedAt": "2019-02-26T00:00:00Z",
+      "abstract": "Links a representative US survey to 1,496 respondents' Twitter feeds. Finds most users are exposed to substantial cross-cutting political content; only a small minority live in tight echo chambers. Tension with strong filter-bubble accounts of US polarization.",
+      "tags": ["twitter", "observational", "skeptical", "us", "filter-bubble"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1093/pan/mpu011",
+      "title": "Birds of the same feather tweet together: Bayesian ideal point estimation using Twitter data",
+      "authors": ["Barberá, Pablo"],
+      "publishedAt": "2015-01-01T00:00:00Z",
+      "abstract": "Recovers ideological positions of US Twitter users from their following networks. Documents strong ideological clustering, providing the network-segregation baseline against which any algorithmic-amplification effect must be measured.",
+      "tags": ["twitter", "observational", "ideology-estimation", "us"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1126/science.abp9364",
+      "title": "How do social media feed algorithms affect attitudes and behavior in an election campaign?",
+      "authors": ["Guess, Andrew M.", "Malhotra, Neil", "Pan, Jennifer", "Barberá, Pablo", "Allcott, Hunt", "Brown, Taylor", "Crespo-Tenorio, Adriana", "Dimmery, Drew", "Freelon, Deen", "Gentzkow, Matthew", "González-Bailón, Sandra", "Kennedy, Edward", "Kim, Young Mie", "Lazer, David", "Moehler, Devra", "Nyhan, Brendan", "Rivera, Carlos Velasco", "Settle, Jaime", "Thomas, Daniel Robert", "Thorson, Emily", "Tromble, Rebekah", "Wilkins, Arjun", "Wojcieszak, Magdalena", "Xiong, Beixin", "de Jonge, Chad Kiewiet", "Franco, Annie", "Mason, Winter", "Stroud, Natalie Jomini", "Tucker, Joshua A."],
+      "publishedAt": "2023-07-27T00:00:00Z",
+      "abstract": "Randomized experiment with consenting US Facebook and Instagram users (~23k) during the 2020 election: replacing the algorithmic feed with a reverse-chronological feed for three months substantially changed exposure (less from like-minded sources, more political content) but did NOT detectably change polarization, knowledge, or other downstream attitudes. Strong null result against direct algorithmic causation of polarization.",
+      "tags": ["facebook", "instagram", "experimental", "skeptical", "us-2020", "amplification"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1038/s41586-023-06297-w",
+      "title": "Like-minded sources on Facebook are prevalent but not polarizing",
+      "authors": ["Nyhan, Brendan", "Settle, Jaime", "Thorson, Emily", "Wojcieszak, Magdalena", "Barberá, Pablo", "Chen, Annie Y.", "Allcott, Hunt", "Brown, Taylor", "Crespo-Tenorio, Adriana", "Dimmery, Drew", "Freelon, Deen", "Gentzkow, Matthew", "González-Bailón, Sandra", "Guess, Andrew M.", "Kennedy, Edward", "Kim, Young Mie", "Lazer, David", "Malhotra, Neil", "Moehler, Devra", "Pan, Jennifer", "Rivera, Carlos Velasco", "Thomas, Daniel Robert", "Tromble, Rebekah", "Wilkins, Arjun",  "Franco, Annie", "Mason, Winter", "Xiong, Beixin", "de Jonge, Chad Kiewiet", "Stroud, Natalie Jomini", "Tucker, Joshua A."],
+      "publishedAt": "2023-07-27T00:00:00Z",
+      "abstract": "Companion study to Guess et al. 2023: experimentally reducing exposure to like-minded sources on Facebook for three months during the 2020 US election did NOT reduce affective polarization, ideological extremity, or candidate evaluations. Direct challenge to the echo-chamber-causes-polarization mechanism.",
+      "tags": ["facebook", "experimental", "skeptical", "echo-chamber", "us-2020"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1126/science.ade7138",
+      "title": "Asymmetric ideological segregation in exposure to political news on Facebook",
+      "authors": ["González-Bailón, Sandra", "Lazer, David", "Barberá, Pablo", "Zhang, Meiqing", "Allcott, Hunt", "Brown, Taylor", "Crespo-Tenorio, Adriana", "Freelon, Deen", "Gentzkow, Matthew", "Guess, Andrew M.", "Iyengar, Shanto", "Kim, Young Mie", "Malhotra, Neil", "Moehler, Devra", "Nyhan, Brendan", "Pan, Jennifer", "Rivera, Carlos Velasco", "Settle, Jaime", "Thorson, Emily", "Tromble, Rebekah", "Wilkins, Arjun", "Wojcieszak, Magdalena", "Xiong, Beixin", "de Jonge, Chad Kiewiet", "Stroud, Natalie Jomini", "Tucker, Joshua A."],
+      "publishedAt": "2023-07-27T00:00:00Z",
+      "abstract": "Observational analysis of 208M US Facebook users during the 2020 election. Documents marked ideological segregation in news exposure on Facebook, with substantially more conservative-only news ecosystems than liberal-only ones, driven jointly by user behavior, audience composition, and ranking. Establishes asymmetry in the descriptive exposure pattern.",
+      "tags": ["facebook", "observational", "asymmetry", "us-2020", "news-exposure"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1126/science.add8424",
+      "title": "Reshares on social media amplify political news but do not detectably affect beliefs or opinions",
+      "authors": ["Guess, Andrew M.", "Malhotra, Neil", "Pan, Jennifer", "Barberá, Pablo", "Allcott, Hunt", "Brown, Taylor", "Crespo-Tenorio, Adriana", "Dimmery, Drew", "Freelon, Deen", "Gentzkow, Matthew", "González-Bailón, Sandra", "Kennedy, Edward", "Kim, Young Mie", "Lazer, David", "Moehler, Devra", "Nyhan, Brendan", "Rivera, Carlos Velasco", "Settle, Jaime", "Thomas, Daniel Robert", "Thorson, Emily", "Tromble, Rebekah", "Wilkins, Arjun", "Wojcieszak, Magdalena", "Xiong, Beixin", "de Jonge, Chad Kiewiet", "Stroud, Natalie Jomini", "Tucker, Joshua A."],
+      "publishedAt": "2023-07-27T00:00:00Z",
+      "abstract": "Experimentally removing reshared content from Facebook feeds during the 2020 US election substantially reduced political-news exposure (especially from untrustworthy sources) but did NOT detectably affect political polarization or other downstream attitudes. Evidence that the resharing channel — the feature most associated with virality — is not a measurable polarization driver in this window.",
+      "tags": ["facebook", "experimental", "skeptical", "reshares", "us-2020"]
+    },
+    {
+      "itemKind": "doi",
+      "doi": "10.1038/s41467-022-35576-9",
+      "title": "Exposure to the Russian Internet Research Agency foreign influence campaign on Twitter in the 2016 US election and its relationship to attitudes and voting behavior",
+      "authors": ["Eady, Gregory", "Paskhalis, Tom", "Zilinsky, Jan", "Bonneau, Richard", "Nagler, Jonathan", "Tucker, Joshua A."],
+      "publishedAt": "2023-01-09T00:00:00Z",
+      "abstract": "Links 1,496 US survey respondents to their Twitter feeds during the 2016 election. Exposure to IRA foreign-influence accounts was concentrated in a small minority of users with strong existing partisan views, and was not associated with changes in political attitudes or voting behavior. Bounds one popular causal-mechanism story.",
+      "tags": ["twitter", "observational", "skeptical", "foreign-influence", "us-2016"]
+    }
+  ]
+}

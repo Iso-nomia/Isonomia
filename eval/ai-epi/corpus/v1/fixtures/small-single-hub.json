@@ -1,0 +1,38 @@
+{
+  "id": "small-single-hub",
+  "description": "Small (5 args) deliberation with one clearly dominant hub.",
+  "adversarialGates": [],
+  "readout": {
+    "deliberationId": "fix-small-single-hub",
+    "contentHash": "fix-hash-small-single-hub-v1",
+    "fingerprint": {
+      "argumentCount": 5
+    },
+    "frontier": {
+      "unansweredCqs": [
+        { "targetArgumentId": "a1", "schemeKey": "cause-to-effect", "cqKey": "CE1", "cqPrompt": "Is the cause sufficient?", "severity": "scheme-required" }
+      ],
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "terminalLeaves": [],
+      "loadBearingnessRanking": ["a1", "a2", "a3", "a4", "a5"],
+      "loadBearingnessScores": { "a1": 8, "a2": 2, "a3": 1, "a4": 0, "a5": 0 },
+      "contestednessRanking": []
+    },
+    "topology": {
+      "hubs": {
+        "set": [{ "argumentId": "a1", "score": 8 }],
+        "topScore": 8,
+        "coequalThreshold": 2,
+        "shape": "single-dominant"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": { "hubAmbiguity": "none", "premiseConcentration": "none", "cautions": [] },
+      "sizeTier": { "argumentCount": 5, "tier": "small", "hierarchicalMode": false, "disclosure": null }
+    },
+    "refusalSurface": { "cannotConcludeBecause": [] },
+    "chains": { "deliberationId": "fix-small-single-hub", "chains": [], "uncoveredClaims": [] },
+    "topArguments": [],
+    "mostContested": []
+  }
+}

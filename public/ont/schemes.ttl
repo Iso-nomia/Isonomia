@@ -1,0 +1,15 @@
+@prefix as:  <http://arg.tech/ont/schemes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+as:Scheme a rdfs:Class .
+as:PracticalReasoning a rdfs:Class ; rdfs:subClassOf as:Scheme .
+as:ValueBasedPracticalReasoning a rdfs:Class ; rdfs:subClassOf as:Scheme .
+as:ArgFromPosConsequences a rdfs:Class ; rdfs:subClassOf as:Scheme .
+as:ArgFromNegConsequences a rdfs:Class ; rdfs:subClassOf as:Scheme .
+as:SlipperySlope a rdfs:Class ; rdfs:subClassOf as:Scheme .
+
+# Facets (informal, or assert as properties you’ll OWL-ify later)
+as:purpose a rdfs:Property .
+as:source a rdfs:Property .
+as:materialRelation a rdfs:Property .
+as:reasoningType a rdfs:Property .

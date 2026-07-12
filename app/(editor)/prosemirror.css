@@ -1,0 +1,23 @@
+/* styles/prosemirror.css  ➜ imported once in _app.tsx or the editor layout */
+
+.ProseMirror {
+    @apply  p-2 rounded-xl bg-white
+            leading-relaxed text-slate-900;
+  }
+  
+  .ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    @apply float-left h-0 text-slate-400 pointer-events-none;
+  }
+  
+  /* optional pilcrow hover */
+  .editor-shell .ProseMirror h1:hover::before,
+  .editor-shell .ProseMirror h2:hover::before,
+  .editor-shell .ProseMirror h3:hover::before,
+  .editor-shell .ProseMirror p:hover::before {
+    content: '¶';
+    position: absolute;
+    left: -1.5rem;
+    opacity: .30;
+  }
+  

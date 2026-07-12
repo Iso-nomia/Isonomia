@@ -1,0 +1,48 @@
+# mesh-lite/docker-compose.yml
+version: "3.8"
+
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mesh
+      POSTGRES_PASSWORD: mesh
+      POSTGRES_DB: mesh
+    ports:
+      - "5433:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  minio:
+    image: minio/minio:latest
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: mesh
+      MINIO_ROOT_PASSWORD: meshmesh
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - minio:/data
+
+  api:
+    build:
+      context: ./mesh-lite/api
+      dockerfile: Dockerfile
+    environment:
+      PORT: 8787
+      DATABASE_URL: postgresql://mesh:mesh@db:5432/mesh
+      MINIO_ENDPOINT: http://minio:9000
+      MINIO_ACCESS_KEY: mesh
+      MINIO_SECRET_KEY: meshmesh
+      MINIO_BUCKET: room-media
+    ports:
+      - "8787:8787"
+    depends_on:
+      - db
+      - minio
+
+volumes:
+  db: {}
+  minio: {}

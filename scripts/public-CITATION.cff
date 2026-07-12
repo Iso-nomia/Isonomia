@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: Isonomia
+abstract: >-
+  Open-source epistemic infrastructure that unifies a general-purpose social
+  platform with a formal deliberation engine under a single data model, so any
+  conversation can be upgraded to a tracked deliberation and every claim,
+  argument, and deliberation is addressable, citable, challengeable, and durable.
+type: software
+authors:
+  - family-names: Mathur
+    given-names: Rohan
+    email: rohan@isonomia.app
+license: MIT
+repository-code: "https://github.com/Iso-nomia/Isonomia"
+url: "https://isonomia.app"
+keywords:
+  - argumentation
+  - deliberation
+  - ASPIC+
+  - ludics
+  - argument-interchange-format
+  - knowledge-graph
+  - model-context-protocol
+  - epistemics

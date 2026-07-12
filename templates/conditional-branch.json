@@ -1,0 +1,15 @@
+{
+  "name": "Conditional Branch",
+  "description": "Shows how to route execution based on a boolean flag.",
+  "graph": {
+    "nodes": [
+      { "id": "start", "type": "start" },
+      { "id": "pathTrue", "type": "true" },
+      { "id": "pathFalse", "type": "false" }
+    ],
+    "edges": [
+      { "id": "e1", "source": "start", "target": "pathTrue", "condition": "flag" },
+      { "id": "e2", "source": "start", "target": "pathFalse", "condition": "!flag" }
+    ]
+  }
+}

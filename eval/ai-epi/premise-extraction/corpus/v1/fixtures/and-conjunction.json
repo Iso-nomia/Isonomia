@@ -1,0 +1,11 @@
+{
+  "id": "and-conjunction",
+  "claimText": "The proposal is fiscally sound and politically popular.",
+  "expectedAtoms": [
+    { "text": "The proposal is fiscally sound" },
+    {
+      "text": "politically popular",
+      "aliases": ["The proposal is politically popular"]
+    }
+  ]
+}

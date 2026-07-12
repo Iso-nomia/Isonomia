@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "version": 1,
+    "language": "en",
+    "scope": "medical",
+    "note": "Placeholder for medical-domain jargon; partner team to populate."
+  },
+  "loadedAdjectives": [
+    "reasonable",
+    "unnecessary",
+    "wasteful",
+    "prudent"
+  ],
+  "jargon": [
+    "deliverables",
+    "actionable",
+    "bandwidth"
+  ]
+}

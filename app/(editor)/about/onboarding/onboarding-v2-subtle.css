@@ -1,0 +1,486 @@
+/* app/onboarding/onboarding-v2-subtle.css */
+
+/* ======================== SUBTLE GLASS SYSTEM v2 ======================== */
+
+:root {
+  /* Minimal color palette - matching your existing design */
+  --glass-white: 255, 255, 255;
+  --glass-slate: 248, 250, 252;
+  --glass-indigo: 238, 242, 255;
+  
+  /* Very subtle borders */
+  --border-subtle: rgba(165, 178, 239, 0.8);  /* slate-200 */
+  --border-medium: rgba(203, 213, 225, 0.9);  /* slate-300 */
+  
+  /* Whisper-soft shadows */
+  --shadow-xs: 0 1px 2px rgba(215, 190, 190, 0.04);
+  --shadow-sm: 0 2px 4px rgba(144, 143, 195, 0.04), 0 1px 2px rgba(210, 189, 189, 0.02);
+  --shadow-md: 0 4px 8px rgba(203, 187, 239, 0.04), 0 2px 4px rgba(200, 164, 164, 0.02);
+  --shadow-lg: 0 8px 16px rgba(248, 224, 224, 0.04), 0 4px 8px rgba(149, 168, 236, 0.02);
+  
+  /* Smooth transitions */
+  --transition-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ======================== BASE GLASS ELEMENTS ======================== */
+
+.subtle-glass {
+  background: rgba(var(--glass-indigo), 0.8);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(2px) ;
+  transition: all 0.3s var(--transition-smooth);
+}
+
+.subtle-glass:hover {
+  background: rgba(var(--glass-indigo), 0.85);
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+}
+
+/* ======================== BUTTONS ======================== */
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  color: white;
+  background: linear-gradient(180deg, #334155 0%, #1e293b 100%);  /* slate-700 to slate-800 */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    var(--shadow-sm);
+  cursor: pointer;
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.primary-button:hover {
+  background: linear-gradient(180deg, #475569 0%, #334155 100%);  /* slate-600 to slate-700 */
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.primary-button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  color: #475569;  /* slate-600 */
+  background: rgba(var(--glass-white), 0.8);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px) saturate(1.1);
+  cursor: pointer;
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.secondary-button:hover {
+  background: rgba(var(--glass-white), 0.95);
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.secondary-button:active {
+  transform: translateY(0);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* ======================== SIDEBAR ======================== */
+
+.sidebar-glass {
+  background: linear-gradient(
+    180deg,
+    rgba(var(--glass-white), 0.9) 0%,
+    rgba(var(--glass-indigo), 0.7) 100%
+  );
+  border-right: 1px solid var(--border-subtle);
+  box-shadow: 
+    inset -1px 0 0 rgba(var(--glass-white), 0.8),
+    4px 0 16px rgba(99, 102, 241, 0.04);  /* indigo-500 */
+  backdrop-filter: blur(12px) saturate(1.1);
+}
+
+/* Mobile top bar */
+.mobile-topbar-glass {
+  background: rgba(var(--glass-white), 0.95);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(16px) saturate(1.1);
+}
+
+/* ======================== STEP INDICATORS ======================== */
+
+.step-inactive {
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.step-inactive:hover {
+  background: rgba(var(--glass-slate), 0.5);
+  border-color: var(--border-subtle);
+}
+
+.step-active {
+  background: rgba(var(--glass-indigo), 0.5);
+  border: 1px solid rgba(99, 102, 241, 0.2);  /* indigo-500 */
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    var(--shadow-sm);
+}
+
+.step-completed {
+  background: rgba(167, 243, 208, 0.2);  /* emerald-200 */
+  border: 1px solid rgba(167, 243, 208, 0.3);
+}
+
+/* Step badges */
+.step-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: all 0.3s var(--transition-smooth);
+}
+
+.badge-inactive {
+  background: linear-gradient(135deg, 
+    rgba(226, 232, 240, 0.8) 0%, 
+    rgba(203, 213, 225, 0.6) 100%);  /* slate-200 to slate-300 */
+  color: #64748b;  /* slate-500 */
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.badge-active {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);  /* indigo-500 to indigo-600 */
+  color: white;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 6px rgba(99, 102, 241, 0.3);
+}
+
+.badge-completed {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);  /* emerald-500 to emerald-600 */
+  color: white;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 6px rgba(16, 185, 129, 0.3);
+}
+
+/* ======================== MAIN CONTENT CARDS ======================== */
+
+.main-card {
+  background: rgba(var(--glass-white), 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(12px) saturate(1.1);
+  transition: all 0.4s var(--transition-smooth);
+}
+
+.main-card:hover {
+  background: rgba(var(--glass-white), 0.9);
+  border-color: var(--border-medium);
+  box-shadow: 
+    0 12px 24px rgba(0, 0, 0, 0.05),
+    0 6px 12px rgba(0, 0, 0, 0.03);
+  transform: translateY(-2px);
+}
+
+/* Step number badge */
+.step-number-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 12px rgba(99, 102, 241, 0.25);
+  flex-shrink: 0;
+}
+
+/* Icon badge */
+.icon-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: rgba(var(--glass-slate), 0.6);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+/* ======================== KEY POINTS ======================== */
+
+.key-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.875rem;
+  border-radius: 0.75rem;
+  background: rgba(var(--glass-white), 0.6);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.key-point-item:hover {
+  background: rgba(var(--glass-white), 0.8);
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ======================== DEMO CONTAINER ======================== */
+
+.demo-container {
+  position: relative;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: rgba(var(--glass-slate), 0.4);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(8px) saturate(1.05);
+  overflow: hidden;
+}
+
+.demo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(167, 243, 208, 0.3);  /* emerald-200 */
+  border: 1px solid rgba(167, 243, 208, 0.5);
+  color: #065f46;  /* emerald-800 */
+  box-shadow: var(--shadow-xs);
+}
+
+/* ======================== ANNOTATIONS ======================== */
+
+.annotation-marker {
+  cursor: pointer;
+  transition: transform 0.2s var(--transition-smooth);
+}
+
+.annotation-marker:hover {
+  transform: scale(1.1);
+}
+
+.annotation-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: rgba(var(--glass-white), 0.95);
+  border: 2px solid rgba(99, 102, 241, 0.3);  /* indigo-500 */
+  color: #4f46e5;  /* indigo-600 */
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.annotation-badge.active {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  border-color: rgba(99, 102, 241, 0.6);
+  color: white;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 4px 12px rgba(99, 102, 241, 0.4),
+    0 0 0 4px rgba(99, 102, 241, 0.1);
+}
+
+.annotation-panel {
+  background: rgba(var(--glass-indigo), 0.5);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(12px) saturate(1.1);
+}
+
+.annotation-panel-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 2px 6px rgba(99, 102, 241, 0.3);
+  flex-shrink: 0;
+}
+
+/* ======================== SCHEMA PANEL ======================== */
+
+.schema-panel {
+  background: rgba(var(--glass-white), 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.schema-field {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  font-family: 'Monaco', 'Courier New', monospace;
+  background: rgba(var(--glass-white), 0.8);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  box-shadow: var(--shadow-xs);
+  transition: all 0.2s var(--transition-smooth);
+}
+
+.schema-field:hover {
+  background: rgba(var(--glass-white), 0.95);
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ======================== UTILITY CLASSES ======================== */
+
+.shadow-subtle {
+  box-shadow: var(--shadow-lg);
+}
+
+/* ======================== RESPONSIVE ADJUSTMENTS ======================== */
+
+@media (max-width: 1024px) {
+  .main-card {
+    padding: 1.5rem;
+    border-radius: 1.25rem;
+  }
+  
+  .primary-button,
+  .secondary-button {
+    padding: 0.625rem 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .main-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+  
+  .step-number-badge {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.125rem;
+  }
+  
+  .icon-badge {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/* ======================== DARK MODE SUPPORT ======================== */
+/* 
+/* ======================== ACCESSIBILITY ======================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus visible for keyboard navigation */
+.primary-button:focus-visible,
+.secondary-button:focus-visible,
+.step-inactive:focus-visible,
+.annotation-marker:focus-visible {
+  outline: 2px solid rgba(99, 102, 241, 0.5);
+  outline-offset: 2px;
+}
+
+/* ======================== PRINT STYLES ======================== */
+
+@media print {
+  .sidebar-glass,
+  .mobile-topbar-glass,
+  .annotation-marker,
+  .demo-badge {
+    display: none;
+  }
+  
+  .main-card {
+    border: 1px solid #e2e8f0;
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
+
+/* ======================== BACKDROP FILTER FALLBACKS ======================== */
+
+@supports not ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) {
+  .subtle-glass,
+  .sidebar-glass,
+  .mobile-topbar-glass,
+  .main-card,
+  .demo-container,
+  .annotation-panel {
+    backdrop-filter: none;
+    background: rgba(var(--glass-white), 0.95);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .subtle-glass,
+  .sidebar-glass,
+  .mobile-topbar-glass,
+  .main-card,
+  .demo-container,
+  .annotation-panel {
+    backdrop-filter: none;
+    background: rgba(var(--glass-white), 0.98);
+  }
+}

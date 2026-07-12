@@ -1,0 +1,290 @@
+{
+  "id": "synthesis-delocation-db",
+  "description": "Phase 2c fixture: small (5 args) deliberation with two designs whose loci differ; their literal-union articulation join surfaces newLoci within a single cone (Phase 2f Reading A, closureSteps: 0). Used to validate the same-cone-join codepath's newLoci propagation and the manifest's per-cone incarnation count.",
+  "adversarialGates": [],
+  "manifestFields": {
+    "openExposurePoints": 1,
+    "coverageRatio": 0.8,
+    "fossilCount": 0,
+    "incarnationSet": {
+      "incarnations": [
+        {
+          "designId": "fixture-synthesis-delocation-bottom",
+          "loci": [
+            "⊢A.0",
+            "⊢A.1"
+          ],
+          "moveCount": 2,
+          "rank": 0
+        }
+      ],
+      "totalIncarnations": 1
+    }
+  },
+  "readout": {
+    "deliberationId": "fix-synthesis-delocation-db",
+    "contentHash": "sha256:synthesis-delocation-db-content-hash-placeholder-0000000000000000",
+    "fingerprint": {
+      "deliberationId": "fix-synthesis-delocation-db",
+      "contentHash": "sha256:__nested_redacted__",
+      "argumentCount": 5,
+      "claimCount": 6,
+      "edgeCount": {
+        "support": 4,
+        "attack": 0,
+        "ca": 0
+      },
+      "schemeDistribution": {
+        "<unschemed>": 5
+      },
+      "authorCount": {
+        "human": 5,
+        "ai": 0,
+        "hybrid": 0
+      },
+      "participantCount": 1,
+      "standingDistribution": {
+        "untested-default": 0,
+        "untested-supported": 5,
+        "tested-attacked": 0,
+        "tested-undermined": 0,
+        "tested-survived": 0
+      },
+      "depthDistribution": {
+        "thin": 5,
+        "moderate": 0,
+        "dense": 0
+      },
+      "medianChallengerCount": 0,
+      "meanChallengerCount": 0,
+      "challengerCoverage": 0,
+      "medianChallengerCountAmongChallenged": 0,
+      "cqCoverage": {
+        "answered": 0,
+        "partial": 0,
+        "unanswered": 0,
+        "total": 0
+      },
+      "evidenceCoverage": {
+        "withProvenance": 0,
+        "withoutProvenance": 0
+      },
+      "chainCount": 0,
+      "extraction": {
+        "aiSeededCount": 0,
+        "aiSeededRatio": 0,
+        "humanEngagementRateOnAiSeeds": null,
+        "articulationOnly": false
+      },
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "frontier": {
+      "deliberationId": "fix-synthesis-delocation-db",
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "unansweredCqs": [],
+      "terminalLeaves": [
+        {
+          "argumentId": "syn-deloc-arg-1",
+          "chainDepth": 0,
+          "onMainConclusionPath": true
+        },
+        {
+          "argumentId": "syn-deloc-arg-2",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "syn-deloc-arg-3",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "syn-deloc-arg-4",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "syn-deloc-arg-5",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        }
+      ],
+      "loadBearingnessRanking": [
+        "syn-deloc-arg-1",
+        "syn-deloc-arg-2",
+        "syn-deloc-arg-3",
+        "syn-deloc-arg-4",
+        "syn-deloc-arg-5"
+      ],
+      "contestednessRanking": [],
+      "loadBearingnessScores": {
+        "syn-deloc-arg-1": 4,
+        "syn-deloc-arg-2": 0,
+        "syn-deloc-arg-3": 0,
+        "syn-deloc-arg-4": 0,
+        "syn-deloc-arg-5": 0
+      }
+    },
+    "missingMoves": {
+      "deliberationId": "fix-synthesis-delocation-db",
+      "perArgument": {
+        "syn-deloc-arg-1": {
+          "argumentId": "syn-deloc-arg-1",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-deloc-arg-2": {
+          "argumentId": "syn-deloc-arg-2",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-deloc-arg-3": {
+          "argumentId": "syn-deloc-arg-3",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-deloc-arg-4": {
+          "argumentId": "syn-deloc-arg-4",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "syn-deloc-arg-5": {
+          "argumentId": "syn-deloc-arg-5",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        }
+      },
+      "perDeliberation": {
+        "schemesUnused": [],
+        "metaArgumentsAbsent": true,
+        "crossSchemeMediatorsAbsent": true
+      }
+    },
+    "chains": {
+      "deliberationId": "fix-synthesis-delocation-db",
+      "chains": [],
+      "uncoveredClaims": []
+    },
+    "cross": {
+      "deliberationId": "fix-synthesis-delocation-db",
+      "canonicalFamilies": [],
+      "plexusEdgesIn": {
+        "incomingImports": 0,
+        "outgoingImports": 0
+      },
+      "argumentImports": {
+        "incomingByDeliberationId": {},
+        "outgoingByDeliberationId": {}
+      },
+      "schemeReuseAcrossRooms": {},
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "topology": {
+      "hubs": {
+        "set": [
+          {
+            "argumentId": "syn-deloc-arg-1",
+            "score": 4
+          }
+        ],
+        "topScore": 4,
+        "coequalThreshold": 1,
+        "shape": "single-dominant"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": {
+        "hubAmbiguity": "none",
+        "premiseConcentration": "low",
+        "cautions": []
+      },
+      "sizeTier": {
+        "argumentCount": 5,
+        "tier": "small",
+        "hierarchicalMode": false,
+        "disclosure": null
+      }
+    },
+    "refusalSurface": {
+      "cannotConcludeBecause": [
+        {
+          "attemptedConclusion": "<deliberation-scope>",
+          "conclusionClaimId": "",
+          "blockedBy": "depth-thin",
+          "blockerIds": [],
+          "blockerSummaries": []
+        }
+      ]
+    },
+    "topArguments": [
+      {
+        "id": "syn-deloc-arg-1",
+        "rankIndex": 0,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "syn-deloc-claim-main",
+        "conclusionText": "Synthesis requires new locus articulation.",
+        "argumentText": "The two designs occupy disjoint loci — joining them requires a new locus in D_P before a WitnessRecord can be committed.",
+        "primarySchemeKey": null,
+        "standing": "untested-supported",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 1
+      }
+    ],
+    "mostContested": [],
+    "honestyLine": "This deliberation has 5 argument(s); 0% have at least one challenger (median 0 distinct challenger(s) when challenged, 0.00 mean across all). 0% catalog-CQ coverage. 0 chain(s) on file; 1 potential conclusion(s) are not licensed by the current graph.",
+    "writingConstraints": {
+      "mustInclude": {
+        "honestyLine": "This deliberation has 5 argument(s); 0% have at least one challenger (median 0 distinct challenger(s) when challenged, 0.00 mean across all). 0% catalog-CQ coverage. 0 chain(s) on file; 1 potential conclusion(s) are not licensed by the current graph.",
+        "refusalNotice": "The deliberation is at thin depth across the board — no conclusion has been tested enough to license closure.",
+        "structuralCautions": [],
+        "sizeDisclosure": null
+      },
+      "mustNotAssert": [],
+      "shouldHedge": [
+        {
+          "target": {
+            "kind": "argument",
+            "id": "syn-deloc-arg-1"
+          },
+          "standing": "untested-supported",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has supports but has not been challenged (thin depth) — frame as articulated, not tested"
+        }
+      ],
+      "framing": {
+        "stage": "articulation",
+        "advisoryNote": "depthDistribution.thin dominant — frame as articulation-stage."
+      }
+    }
+  }
+}

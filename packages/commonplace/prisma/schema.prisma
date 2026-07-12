@@ -1,0 +1,174 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("COMMONPLACE_DATABASE_URL")
+  directUrl = env("COMMONPLACE_DIRECT_URL")
+}
+
+// ─── Entry System ───────────────────────────────────────
+
+enum EntryGenre {
+  EXCERPT
+  OBSERVATION
+  MEDITATION
+  DIALOGUE
+  LETTER
+  LIST
+  FRAGMENT
+  POEM
+}
+
+model Entry {
+  id        String     @id @default(cuid())
+  genre     EntryGenre @default(FRAGMENT)
+  body      Json
+  plainText String     @map("plain_text")
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  authorId String @map("author_id")
+  author   Author @relation(fields: [authorId], references: [id])
+
+  threadId String?  @map("thread_id")
+  thread   Thread?  @relation(fields: [threadId], references: [id])
+
+  versions EntryVersion[]
+
+  sourceId String? @map("source_id")
+  source   Source? @relation(fields: [sourceId], references: [id])
+  // For excerpts: page / chapter / section pointer within the source.
+  // Free-form ("p. 47", "§12.3", "prologue", "l. 1145"). Per-entry, not
+  // per-source: the same book is referenced by many excerpts at different
+  // locations.
+  locator  String?
+
+  outgoingLinks EntryLink[] @relation("from")
+  incomingLinks EntryLink[] @relation("to")
+
+  @@index([authorId, createdAt])
+  @@index([genre, createdAt])
+  @@index([threadId, createdAt])
+  @@map("entries")
+}
+
+// ─── Revision History ───────────────────────────────────
+
+enum VersionChangeType {
+  CREATED
+  REVISED
+  REFINED
+  CORRECTED
+  RECLASSIFIED
+}
+
+model EntryVersion {
+  id            String            @id @default(cuid())
+  entryId       String            @map("entry_id")
+  entry         Entry             @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  versionNumber Int               @map("version_number")
+  body          Json
+  plainText     String            @map("plain_text")
+  genre         EntryGenre
+  changeType    VersionChangeType @default(CREATED)
+  changeNote    String?           @map("change_note")
+  previousId    String?           @unique @map("previous_id")
+  previous      EntryVersion?     @relation("chain", fields: [previousId], references: [id])
+  next          EntryVersion?     @relation("chain")
+  createdAt     DateTime          @default(now()) @map("created_at")
+
+  @@unique([entryId, versionNumber])
+  @@index([entryId, createdAt])
+  @@map("entry_versions")
+}
+
+// ─── Threads (Meditation Themes) ────────────────────────
+
+model Thread {
+  id          String    @id @default(cuid())
+  name        String?
+  description String?
+  authorId    String    @map("author_id")
+  author      Author    @relation(fields: [authorId], references: [id])
+  entries     Entry[]
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  archivedAt  DateTime? @map("archived_at")
+
+  @@index([authorId, updatedAt])
+  @@map("threads")
+}
+
+// ─── Sources (for Excerpts) ─────────────────────────────
+
+model Source {
+  id        String   @id @default(cuid())
+  title     String
+  author    String?
+  url       String?
+  isbn      String?
+  publisher String?
+  year      Int?
+  entries   Entry[]
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("sources")
+}
+
+// ─── Cross-References ───────────────────────────────────
+
+enum LinkType {
+  REFERENCE
+  DEVELOPS
+  RESPONDS_TO
+  CONTRADICTS
+  SHARED_SOURCE
+}
+
+model EntryLink {
+  id        String   @id @default(cuid())
+  fromId    String   @map("from_id")
+  from      Entry    @relation("from", fields: [fromId], references: [id], onDelete: Cascade)
+  toId      String   @map("to_id")
+  to        Entry    @relation("to", fields: [toId], references: [id], onDelete: Cascade)
+  type      LinkType @default(REFERENCE)
+  note      String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@unique([fromId, toId, type])
+  @@map("entry_links")
+}
+
+// ─── Artifacts (Composed Documents) ─────────────────────
+
+model Artifact {
+  id          String    @id @default(cuid())
+  title       String    @default("Untitled")
+  subtitle    String?
+  body        Json      // { blocks: ArtifactBlock[] } — see lib/artifact-types.ts
+  authorId    String    @map("author_id")
+  author      Author    @relation(fields: [authorId], references: [id])
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+  publishedAt DateTime? @map("published_at")
+
+  @@index([authorId, updatedAt])
+  @@map("artifacts")
+}
+
+// ─── Author ─────────────────────────────────────────────
+
+model Author {
+  id        String     @id @default(cuid())
+  email     String     @unique
+  name      String?
+  entries   Entry[]
+  threads   Thread[]
+  artifacts Artifact[]
+  createdAt DateTime   @default(now()) @map("created_at")
+
+  @@map("authors")
+}

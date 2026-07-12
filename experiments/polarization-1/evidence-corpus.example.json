@@ -1,0 +1,16 @@
+{
+  "stackName": "Polarization 1 — evidence corpus",
+  "stackVisibility": "private",
+  "_comment": "Replace this file with your real evidence corpus before running setup. Each item in `items` becomes a Source on the platform via POST /api/stacks/[id]/items. The orchestrator's preflight requires sourceCount >= 15 before phase 2 (and phase 1 reads them for the EVIDENCE_CORPUS_OVERVIEW prompt section). itemKind must be 'url' or 'doi'; everything else is optional but `title`, `authors`, `publishedAt`, `abstract`, and `tags` materially improve the overview the claim-analyst sees.",
+  "items": [
+    {
+      "itemKind": "url",
+      "url": "https://example.com/paper-1",
+      "title": "Example: Filter bubbles and political polarization",
+      "authors": ["Doe, J.", "Roe, R."],
+      "publishedAt": "2018-04-15T00:00:00Z",
+      "abstract": "Replace with a real abstract. Used by the orchestrator to generate the evidence overview the claim-analyst sees.",
+      "tags": ["filter-bubble", "experimental", "us-2016"]
+    }
+  ]
+}

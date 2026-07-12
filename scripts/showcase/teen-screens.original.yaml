@@ -1,0 +1,249 @@
+# Showcase chain: "Are smartphones / social media causing the teen mental health crisis?"
+# ---------------------------------------------------------------
+# This YAML is the ONLY hand-authored input to scripts/seed-showcase-chain.ts.
+# Re-running the script is idempotent: rows are upserted by `key`, which is
+# tracked in scripts/showcase/.state/<chainKey>.json.
+#
+# Authoring rules:
+#   • Each anchor argument should clear the demo's own honesty bar:
+#       ≥1 attack against it that is at least partially answered
+#       ≥2 evidence items with archivable URLs
+#   • Pick scheme keys from the Isonomia scheme catalog (e.g. "expert_opinion",
+#     "cause_to_effect", "negative_consequences", "analogy", "sign").
+
+chainKey: teen-screens
+deliberationTitle: "Showcase: Smartphones, social media, and adolescent mental health"
+deliberationDescription: >
+  A live, contested 2026 question. Expert disagreement is sharp and well-documented;
+  the dialectical apparatus has something to actually do here.
+
+# ============================================================
+# CLAIMS — every claim used as conclusion or premise
+# ============================================================
+claims:
+  - key: c.haidt-causal
+    text: >
+      Smartphone-based social media is the principal cause of the rise in adolescent
+      depression, anxiety, and self-harm seen across the U.S., U.K., Canada,
+      Australia, and the Nordic countries since roughly 2012.
+
+  - key: c.odgers-correlational
+    text: >
+      The empirical association between adolescent social media use and mental
+      health outcomes is small and methodologically fragile; the evidence does not
+      warrant attributing the post-2012 youth mental health decline principally to
+      smartphones, and the popular synthesis on this question has run ahead of its data.
+
+  # Premises for the Haidt-side argument
+  - key: p.timing-correlation
+    text: >
+      Beginning around 2012, adolescent rates of major depressive episodes,
+      emergency-department visits for self-harm, and completed suicides rose
+      sharply and roughly contemporaneously across the U.S., U.K., Canada,
+      Australia, and the Nordic countries — the same set of countries in which a
+      majority of teens acquired smartphones, and in which image-based social
+      platforms became dominant, during the 2010–2013 window.
+
+  - key: p.haidt-expert
+    text: >
+      Jonathan Haidt is a social psychologist at NYU Stern whose 2024 book
+      *The Anxious Generation* synthesizes the empirical literature on adolescent
+      screen exposure and mental health and concludes that smartphone-based social
+      media is the principal driver of the post-2012 decline.
+
+  - key: p.dose-response
+    text: >
+      Multiple longitudinal and cross-sectional studies report a dose-response
+      gradient in which adolescent girls who use social media heavily report
+      higher rates of depressive symptoms, anxiety, and lower well-being than
+      light users, with the gradient steepening above roughly two to three hours
+      of daily use.
+
+  # Premises for the Odgers-side argument
+  - key: p.specification-curve
+    text: >
+      Specification-curve analyses (Orben & Przybylski 2019 and successors)
+      systematically vary analytic choices across thousands of plausible model
+      specifications and find that the median association between adolescent
+      digital technology use and well-being explains less than half a percent
+      of variance — comparable in magnitude to associations with eating potatoes
+      or wearing glasses.
+
+  - key: p.odgers-expert
+    text: >
+      Candice Odgers is a developmental psychologist at UC Irvine, past president
+      of the Society for Research on Adolescence, and a methodological specialist
+      in adolescent well-being research; her 2024 *Nature* review of the same
+      evidence base concludes that the data do not support a primary causal role
+      for smartphones.
+
+# ============================================================
+# ARGUMENTS — each binds to ONE primary scheme. Premises and
+# evidence attach to the conclusion claim.
+# ============================================================
+arguments:
+
+  - key: a.haidt
+    conclusion: c.haidt-causal
+    scheme: cause_to_effect
+    text: >
+      What makes this case stronger than a typical "X happened, then Y happened"
+      story is that three patterns line up on the same hypothesis, and they don't
+      easily line up on others. The timing: rates of depression, self-harm, and
+      suicide among teens turn upward within a narrow window in the early 2010s,
+      in countries that share basically nothing politically or economically except
+      that their teens all got smartphones at roughly the same time. The
+      demography: the rise is concentrated in girls, and the products that became
+      dominant in that window — image-based, comparison-driven platforms — are
+      exactly the ones that interact most heavily and most painfully with
+      adolescent female social cognition. The dose-response: at the individual
+      level, heavier users consistently report worse outcomes than lighter ones,
+      and the gradient steepens past a few hours of daily use. Each piece is
+      contestable on its own; the reason to take the joint conclusion seriously
+      is that you'd need a separate, plausible story for each pattern if
+      smartphones aren't the common factor — and so far nobody has offered one.
+    premises:
+      - p.timing-correlation
+      - p.haidt-expert
+      - p.dose-response
+    evidence:
+      - url: "https://www.anxiousgeneration.com/book"
+        title: "The Anxious Generation (Haidt 2024)"
+        quote: "A great rewiring of childhood produced an epidemic of mental illness."
+      - url: "https://jonathanhaidt.substack.com/p/the-evidence-keeps-piling-up"
+        title: "Haidt — Evidence collaboration"
+      - url: "https://www.hhs.gov/sites/default/files/sg-youth-mental-health-social-media-advisory.pdf"
+        title: "U.S. Surgeon General Advisory: Social Media and Youth Mental Health (2023)"
+
+  - key: a.odgers
+    conclusion: c.odgers-correlational
+    scheme: expert_opinion
+    text: >
+      Odgers and her co-authors have spent more than a decade working directly
+      with the kind of datasets and analytic methods this debate hinges on, and
+      they keep arriving at the same conclusion: the associations are real but
+      small, the methods are more fragile than the popular synthesis lets on, and
+      the cross-national timing pattern looks cleaner from a distance than it
+      does once you break it apart by country and metric. The expert_opinion
+      scheme licenses giving weight to that judgment in the specific sub-area
+      where she has done primary methodological work. Her position isn't
+      dismissive — she takes the rise in adolescent distress seriously and isn't
+      denying it's happened — it's about what the existing data can and can't
+      carry. Specification-curve analysis, which runs the same association across
+      thousands of plausible model choices and looks at the distribution rather
+      than picking one specification to publish, returns effects in the range of
+      0.4% of variance: not nothing, but not the kind of effect size that
+      typically supports a "principal cause" claim. And several drivers that
+      co-vary with smartphone adoption — declining sleep, less unsupervised
+      face-to-face time, changes in clinical screening practice — can't be
+      cleanly separated from social media in the available studies.
+    premises:
+      - p.specification-curve
+      - p.odgers-expert
+    evidence:
+      - url: "https://www.nature.com/articles/d41586-024-00902-2"
+        title: "Odgers — The great rewiring: is social media really behind an epidemic of teenage mental illness? (Nature 2024)"
+      - url: "https://www.nature.com/articles/s41562-018-0506-1"
+        title: "Orben & Przybylski — The association between adolescent well-being and digital technology use (Nature Human Behaviour 2019)"
+
+# ============================================================
+# ANSWERED CRITICAL QUESTIONS
+# Each answeredCQ marks one CQ on one argument as SATISFIED with a
+# substantive response. The cqKey must be a valid key in the scheme's
+# CriticalQuestion catalog (see lib/scheme-cqs/* or the seeded schemes).
+# ============================================================
+answeredCQs:
+
+  # Haidt-side: address the "alternative cause" CQ for cause_to_effect
+  - argument: a.haidt
+    cqKey: alternative_cause
+    response: >
+      The list of plausible alternatives is finite and worth taking seriously:
+      the 2008 financial crisis, the opioid epidemic, intensifying academic
+      pressure, COVID, and changes in how clinicians diagnose and screen for
+      adolescent mood disorders. Working through them:
+
+      The financial crisis is the easiest to set aside. It hit four years before
+      the inflection, and its economic effects landed very differently across the
+      affected countries — the U.S. had one trajectory, Australia and the Nordics
+      another, the U.K. another — but the adolescent mental health curves look
+      broadly similar across all of them. If macroeconomic distress were doing
+      the work, Australian or Norwegian teens should look noticeably better than
+      American ones. They don't.
+
+      The opioid epidemic is real and probably does explain part of the despair
+      literature on middle-aged Americans. It's much harder to use as an
+      explanation for British, Canadian, Australian, or Scandinavian teen mental
+      health, none of which had anything close to the same opioid trajectory, and
+      all of which show essentially the same trend. Academic pressure has been
+      intensifying continuously since the 1990s with no obvious inflection point
+      in the early 2010s, and offers no mechanism for the strong female skew.
+      COVID matters a lot for the post-2020 portion of the curve, but the trend
+      is well-established by 2018, so it can't be the originating cause.
+
+      Diagnostic inflation is the hard one, and the one I think anyone arguing
+      this position has to take seriously. If clinicians are screening more
+      aggressively, you'd expect rates of self-reported and diagnosed depression
+      to rise even without any change in underlying mental states. What keeps
+      this from fully dissolving the trend is that the same period shows rises
+      in metrics that don't depend on screening sensitivity — emergency-room
+      visits for self-harm and completed suicides especially. You can argue those
+      have their own measurement issues, and people have, but the parallel rise
+      across self-report, clinical, and behavioral measures is harder to account
+      for with diagnostic inflation alone than with a real underlying change.
+
+      None of these alternatives gets ruled out as a contributing factor. The
+      trend is almost certainly multi-causal and I don't think serious people
+      deny that. The point is comparative: none of the alternatives, individually
+      or in combination, fits the joint pattern of timing, geography, and
+      demography the way smartphone adoption does. What's being claimed is
+      inference to the best explanation, not a deductive proof, and on those
+      terms it holds up.
+
+  # Odgers-side: address the "expert disagreement" CQ for expert_opinion
+  - argument: a.odgers
+    cqKey: expertise
+    response: >
+      The CQ here isn't really "is Odgers credentialed?" — she obviously is. The
+      harder version, given that Haidt is also credentialed and reaches the
+      opposite conclusion, is: what licenses giving more weight to her judgment
+      on this specific sub-question?
+
+      The answer is methodological proximity. Odgers' primary research output
+      for the past fifteen years has been exactly the kind of study this debate
+      turns on: large-N longitudinal analyses of adolescent technology use and
+      well-being, including direct authorship and commentary on the
+      specification-curve methodology that has reshaped the field. Haidt's role
+      in this debate is closer to synthesis and interpretation — he's reading
+      the literature, weighing it, presenting a thesis to a general audience.
+      That's a real and valuable activity, but it isn't the same as generating
+      the underlying analyses and contesting their analytic choices. When the
+      question is the narrow methodological one — "do these specific datasets
+      and these specific methods support causal inference at the strength being
+      claimed?" — the expert who works primarily inside those datasets and
+      methods is the one whose judgment the expert_opinion warrant most directly
+      licenses.
+
+      This isn't a knockdown. Haidt has read the literature deeply, his
+      counterarguments are reasoned rather than reflexive, and on broader
+      questions about adolescent culture, attention, and norms his expertise is
+      at least as relevant as Odgers'. The point is that the narrower the
+      question gets — and the question this argument turns on is narrow, about
+      what the existing evidence base warrants — the more her methodological
+      proximity matters. On that question, the expert appeal does the work the
+      scheme says it does.
+
+# ============================================================
+# DIALECTICAL EDGES — the attacks and supports between arguments
+# Types: support | rebut | undercut
+# ============================================================
+edges:
+  - from: a.odgers
+    to: a.haidt
+    type: rebut
+    note: "Odgers contests the Haidt argument's conclusion via the specification-curve evidence."
+
+  - from: a.haidt
+    to: a.odgers
+    type: rebut
+    note: "Haidt contests the Odgers argument's interpretation of the same evidence base."

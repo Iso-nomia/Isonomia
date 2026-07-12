@@ -1,0 +1,5 @@
+{
+    "exec": "tsx -r dotenv/config workers/index.ts",
+    "watch": ["workers", "lib"],
+    "ext": "ts,tsx"
+}

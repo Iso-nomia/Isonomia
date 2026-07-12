@@ -1,0 +1,120 @@
+/* meta-bg.css */
+.meta-bg {
+    --accent-hue: 168;
+    --tint-hue: calc(var(--accent-hue) + 120);
+    position: fixed;
+    
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .postcard {
+    border-radius: 40px;
+    /*background: linear-gradient(145deg, #c5c9d8, #eaefff);*/
+    background: transparent;
+    box-shadow: inset 17px 17px 49px rgba(244,244,245,.35),
+      inset -17px -17px 49px #fecdd3;
+    border: 0.045rem solid #D1C6E7;
+  }
+.blob, .blobtwo { 
+  background: transparent;
+
+  transform-origin: 50% 50%;
+  box-shadow: inset 17px 17px 49px rgba(244,244,245,.35),
+      inset -17px -17px 49px #fecdd3;
+  transform-box: fill-box;        /* important for SVG */
+  will-change: transform;       
+} 
+
+  /* —— ACCENT BLOBS ———————————————————————— */
+  .blob {
+   /* // fill: hsl(var(--accent-hue) 80% 55% ); */
+    fill: rgba(230,230,255,.05);
+    /* box-shadow: 30px 30px 40px rgba(255, 255, 255, 0.95); */
+    box-shadow: inset 17px 17px 49px rgba(244,244,245,.75),
+      inset -17px -17px 49px #fecdd3;
+    transform-origin: 50% 50%;
+    animation: float 30s alternate-reverse infinite;
+
+  }
+  .blobtwo {
+    /* // fill: hsl(var(--accent-hue) 80% 55% ); */
+     fill: rgba(202, 180, 228, 0.5);
+    
+     transform-origin: 50% 50%;
+     animation: float 30s alternate-reverse infinite;
+   }
+  
+/* vary timing so movement feels alive */
+.blob.core { animation-delay: -1s;  animation-duration: 28s; }
+.blob.n1   { animation-delay: -3s;  animation-duration: 32s; }
+.blob.n2   { animation-delay: -5s;  animation-duration: 26s; }
+.blob.n3   { animation-delay: -7s;  animation-duration: 34s; }
+.blob.s1   { animation-delay: -11s; animation-duration: 38s; }
+.blob.s2   { animation-delay: -9s;  animation-duration: 30s; }
+.blob.s3   { animation-delay: -13s; animation-duration: 36s; }
+/* vary timing so movement feels alive */
+.blobtwo.core { animation-delay: -1s;  animation-duration: 28s; }
+.blobtwo.n1   { animation-delay: -3s;  animation-duration: 32s; }
+.blobtwo.n2   { animation-delay: -5s;  animation-duration: 26s; }
+.blobtwo.n3   { animation-delay: -7s;  animation-duration: 34s; }
+.blobtwo.s1   { animation-delay: -11s; animation-duration: 38s; }
+.blobtwo.s2   { animation-delay: -9s;  animation-duration: 30s; }
+.blobtwo.s3   { animation-delay: -13s; animation-duration: 36s; }
+
+/* responsive density: hide two orbiters on small screens */
+@media (max-width: 768px) {
+  .hide-sm { display: none; }
+}
+
+
+  @keyframes float {
+    0%   { transform: translate(  0px,   -70px)  scaleX(1.00) scaleY(1.5) rotate(360deg); }
+    25%  { transform: translate(-140px, -260px) scaleX(1.58) scaleY(1.7) rotate(270deg); }
+    50%  { transform: translate(400px,  150px) scaleX(.8) scaleY(1.15) rotate(180deg); }
+    75%  { transform: translate(-80px,  320px) scaleY(.42) scaleX (.7) rotate(120deg); }
+    100% { transform: translate(  0px,   0px)  scaleX(1.00) scaleY(1.4) rotate(40deg); }
+  }
+  
+  /* —— HALO RING ———————————————————————— */
+  .tint .halo {
+    /* fill: hsl(var(--tint-hue) 90% 65%); */
+    fill: rgba(230,230,255,.5);
+
+    transform-origin: 50% 50%;
+    animation: orbit 30s linear infinite;
+  }
+  
+  @keyframes orbit {
+    to { transform: rotate(0deg) translateX(50%) translateY(0px) rotate(180deg); }
+  }
+  
+  /* phase‑shift each of the 12 halo blobs */
+  @for $i from 0 through 11 { /* SCSS or compile‑time */
+    .halo.h0  { animation-delay: 0s;  }
+.halo.h1  { animation-delay: -5s; }
+.halo.h2  { animation-delay: -10s; }
+.halo.h3  { animation-delay: -15s; }
+.halo.h4  { animation-delay: -20s; }
+.halo.h5  { animation-delay: -25s; }
+.halo.h6  { animation-delay: -30s; }
+.halo.h7  { animation-delay: -35s; }
+.halo.h8  { animation-delay: -40s; }
+.halo.h9  { animation-delay: -45s; }
+.halo.h10  { animation-delay: -50s; }
+
+.halo.h11 { animation-delay: -55s; }
+
+  }
+  
+  /* —— ACCESSIBILITY ——————————————————— */
+  @media (prefers-reduced-motion: reduce) {
+    .blob,
+    .halo { animation: none; }
+  }
+  
+  /* —— DARK MODE COLOUR SHIFT —————————— */
+  @media (prefers-color-scheme: dark) {
+    .meta-bg { --accent-hue: 210; }          /* cooler blue */
+  }
+  

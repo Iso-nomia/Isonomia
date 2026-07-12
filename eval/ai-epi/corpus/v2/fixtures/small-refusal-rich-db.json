@@ -1,0 +1,384 @@
+{
+  "id": "small-refusal-rich-db",
+  "description": "DB-snapshot fixture: small (3 args) deliberation where the only path to the main conclusion is blocked by an unanswered undercut and an unanswered undermine. Tests refusalSurface population.",
+  "adversarialGates": [
+    "refusal-not-overridden"
+  ],
+  "manifestFields": {
+    "openExposurePoints": 3,
+    "coverageRatio": 0.0,
+    "fossilCount": 2,
+    "incarnationSet": {
+      "incarnations": [
+        {
+          "designId": "fixture-small-refusal-rich-bottom",
+          "loci": [
+            "⊢A.0",
+            "⊢A.1"
+          ],
+          "moveCount": 2,
+          "rank": 0
+        }
+      ],
+      "totalIncarnations": 1
+    }
+  },
+  "readout": {
+    "deliberationId": "fix-small-refusal-rich-db",
+    "contentHash": "sha256:d920641846a7d9324a462071f6ee9acf3b36d056a6f5c3bd4c46a9cf9177ae4c",
+    "fingerprint": {
+      "deliberationId": "fix-small-refusal-rich-db",
+      "contentHash": "sha256:__nested_redacted__",
+      "argumentCount": 3,
+      "claimCount": 4,
+      "edgeCount": {
+        "support": 0,
+        "attack": 2,
+        "ca": 0
+      },
+      "schemeDistribution": {
+        "<unschemed>": 3
+      },
+      "authorCount": {
+        "human": 3,
+        "ai": 0,
+        "hybrid": 0
+      },
+      "participantCount": 1,
+      "standingDistribution": {
+        "untested-default": 2,
+        "untested-supported": 0,
+        "tested-attacked": 0,
+        "tested-undermined": 1,
+        "tested-survived": 0
+      },
+      "depthDistribution": {
+        "thin": 3,
+        "moderate": 0,
+        "dense": 0
+      },
+      "medianChallengerCount": 0,
+      "meanChallengerCount": 0.333,
+      "challengerCoverage": 0.333,
+      "medianChallengerCountAmongChallenged": 1,
+      "cqCoverage": {
+        "answered": 0,
+        "partial": 0,
+        "unanswered": 0,
+        "total": 0
+      },
+      "evidenceCoverage": {
+        "withProvenance": 0,
+        "withoutProvenance": 0
+      },
+      "chainCount": 0,
+      "extraction": {
+        "aiSeededCount": 0,
+        "aiSeededRatio": 0,
+        "humanEngagementRateOnAiSeeds": null,
+        "articulationOnly": false
+      },
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "frontier": {
+      "deliberationId": "fix-small-refusal-rich-db",
+      "unansweredUndercuts": [
+        {
+          "targetArgumentId": "arg-a-target",
+          "inferenceLocator": null,
+          "challengerArgumentId": "arg-a-undercut",
+          "schemeTypical": false,
+          "undercutTypeKey": null,
+          "severity": "actively-raised"
+        }
+      ],
+      "unansweredUndermines": [
+        {
+          "targetArgumentId": "arg-a-target",
+          "targetPremiseId": "claim-p-shared",
+          "challengerArgumentId": "arg-a-undermine"
+        }
+      ],
+      "unansweredCqs": [],
+      "terminalLeaves": [
+        {
+          "argumentId": "arg-a-undercut",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        },
+        {
+          "argumentId": "arg-a-undermine",
+          "chainDepth": 1,
+          "onMainConclusionPath": false
+        }
+      ],
+      "loadBearingnessRanking": [
+        "arg-a-target",
+        "arg-a-undercut",
+        "arg-a-undermine"
+      ],
+      "contestednessRanking": [
+        {
+          "argumentId": "arg-a-target",
+          "unansweredAttackCount": 2
+        }
+      ],
+      "loadBearingnessScores": {
+        "arg-a-target": 0,
+        "arg-a-undercut": 0,
+        "arg-a-undermine": 0
+      }
+    },
+    "missingMoves": {
+      "deliberationId": "fix-small-refusal-rich-db",
+      "perArgument": {
+        "arg-a-target": {
+          "argumentId": "arg-a-target",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-undercut": {
+          "argumentId": "arg-a-undercut",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        },
+        "arg-a-undermine": {
+          "argumentId": "arg-a-undermine",
+          "schemeKey": null,
+          "expectedCqs": [],
+          "presentCqs": [],
+          "missingCqs": [],
+          "expectedUndercutTypes": [],
+          "presentUndercutTypes": [],
+          "missingUndercutTypes": []
+        }
+      },
+      "perDeliberation": {
+        "schemesUnused": [],
+        "metaArgumentsAbsent": true,
+        "crossSchemeMediatorsAbsent": true
+      }
+    },
+    "chains": {
+      "deliberationId": "fix-small-refusal-rich-db",
+      "chains": [],
+      "uncoveredClaims": [
+        "claim-c-main"
+      ]
+    },
+    "cross": {
+      "deliberationId": "fix-small-refusal-rich-db",
+      "canonicalFamilies": [],
+      "plexusEdgesIn": {
+        "incomingImports": 0,
+        "outgoingImports": 0
+      },
+      "argumentImports": {
+        "incomingByDeliberationId": {},
+        "outgoingByDeliberationId": {}
+      },
+      "schemeReuseAcrossRooms": {},
+      "computedAt": "1970-01-01T00:00:00.000Z"
+    },
+    "topology": {
+      "hubs": {
+        "set": [],
+        "topScore": 0,
+        "coequalThreshold": 0,
+        "shape": "empty"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": {
+        "hubAmbiguity": "none",
+        "premiseConcentration": "none",
+        "cautions": [
+          "No load-bearing structure detected. Treat all arguments as equally peripheral; do not synthesise a thesis from this graph."
+        ]
+      },
+      "sizeTier": {
+        "argumentCount": 3,
+        "tier": "small",
+        "hierarchicalMode": false,
+        "disclosure": null
+      }
+    },
+    "refusalSurface": {
+      "cannotConcludeBecause": [
+        {
+          "attemptedConclusion": "We should green-light the launch.",
+          "conclusionClaimId": "claim-c-main",
+          "blockedBy": "unanswered-undercut",
+          "blockerIds": [
+            "arg-a-undercut"
+          ],
+          "blockerSummaries": [
+            "The reviewer was conflicted, so the inference doesn't go through."
+          ]
+        },
+        {
+          "attemptedConclusion": "We should green-light the launch.",
+          "conclusionClaimId": "claim-c-main",
+          "blockedBy": "unanswered-undermine",
+          "blockerIds": [
+            "arg-a-undermine"
+          ],
+          "blockerSummaries": [
+            "The readiness review used outdated criteria, so its passing finding is unreliable."
+          ]
+        },
+        {
+          "attemptedConclusion": "<deliberation-scope>",
+          "conclusionClaimId": "",
+          "blockedBy": "depth-thin",
+          "blockerIds": [],
+          "blockerSummaries": []
+        }
+      ]
+    },
+    "topArguments": [
+      {
+        "id": "arg-a-target",
+        "rankIndex": 0,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "claim-c-main",
+        "conclusionText": "We should green-light the launch.",
+        "argumentText": "Green-light the launch because the readiness review passed.",
+        "primarySchemeKey": null,
+        "standing": "tested-undermined",
+        "standingDepth": "thin",
+        "challengerCount": 1,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": -1.4
+      },
+      {
+        "id": "arg-a-undercut",
+        "rankIndex": 1,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "The reviewer was conflicted, so the inference doesn't go through.",
+        "primarySchemeKey": null,
+        "standing": "untested-default",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0
+      },
+      {
+        "id": "arg-a-undermine",
+        "rankIndex": 2,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": null,
+        "conclusionText": null,
+        "argumentText": "The readiness review used outdated criteria, so its passing finding is unreliable.",
+        "primarySchemeKey": null,
+        "standing": "untested-default",
+        "standingDepth": "thin",
+        "challengerCount": 0,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": 0
+      }
+    ],
+    "mostContested": [
+      {
+        "id": "arg-a-target",
+        "rankIndex": 0,
+        "authorId": "ai-epi-snapshot-author",
+        "authorKind": "HUMAN",
+        "conclusionClaimId": "claim-c-main",
+        "conclusionText": "We should green-light the launch.",
+        "argumentText": "Green-light the launch because the readiness review passed.",
+        "primarySchemeKey": null,
+        "standing": "tested-undermined",
+        "standingDepth": "thin",
+        "challengerCount": 1,
+        "reviewerCount": 0,
+        "cqAnswered": 0,
+        "cqRequired": 0,
+        "fitness": -1.4,
+        "unansweredAttackCount": 2
+      }
+    ],
+    "honestyLine": "This deliberation has 3 argument(s); 33% have at least one challenger (median 1 distinct challenger(s) when challenged, 0.33 mean across all). 0% catalog-CQ coverage. 0 chain(s) on file; 3 potential conclusion(s) are not licensed by the current graph.",
+    "writingConstraints": {
+      "mustInclude": {
+        "honestyLine": "This deliberation has 3 argument(s); 33% have at least one challenger (median 1 distinct challenger(s) when challenged, 0.33 mean across all). 0% catalog-CQ coverage. 0 chain(s) on file; 3 potential conclusion(s) are not licensed by the current graph.",
+        "refusalNotice": "This deliberation has 2 blocked conclusions that the graph cannot currently license. The deliberation is at thin depth across the board — no conclusion has been tested enough to license closure.",
+        "structuralCautions": [
+          "No load-bearing structure detected. Treat all arguments as equally peripheral; do not synthesise a thesis from this graph."
+        ],
+        "sizeDisclosure": null
+      },
+      "mustNotAssert": [
+        {
+          "claimMoid": "claim-c-main",
+          "claimTextPreview": "We should green-light the launch.",
+          "reason": "Blocked by 1 unanswered undercut on supporting argument(s). First blocker: \"The reviewer was conflicted, so the inference doesn't go through.\"",
+          "blockerIds": [
+            "arg-a-undercut"
+          ]
+        },
+        {
+          "claimMoid": "claim-c-main",
+          "claimTextPreview": "We should green-light the launch.",
+          "reason": "Blocked by 1 unanswered undermine against supporting premise(s). First blocker: \"The readiness review used outdated criteria, so its passing finding is unreliable.\"",
+          "blockerIds": [
+            "arg-a-undermine"
+          ]
+        }
+      ],
+      "shouldHedge": [
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-target"
+          },
+          "standing": "tested-undermined",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument is currently undermined by 2 unanswered objections (thin depth — only one challenger has engaged) — do not cite as evidence for its conclusion"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-undercut"
+          },
+          "standing": "untested-default",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        },
+        {
+          "target": {
+            "kind": "argument",
+            "id": "arg-a-undermine"
+          },
+          "standing": "untested-default",
+          "depthTier": "thin",
+          "suggestedFraming": "this argument has not been challenged (thin depth — only one challenger has engaged) — frame as articulated, not tested"
+        }
+      ],
+      "framing": {
+        "stage": "articulation",
+        "advisoryNote": "depthDistribution.thin dominant — frame as articulation-stage, not deliberation-stage. Standing labels are about which arguments have been registered, not which have been tested."
+      }
+    }
+  }
+}

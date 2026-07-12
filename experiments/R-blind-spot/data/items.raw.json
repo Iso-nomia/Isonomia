@@ -1,0 +1,1952 @@
+[
+  {
+    "id": "clean_correct-000",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Cognitive Behavioral Therapy is associated with reduced anxiety symptoms in adolescents.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Cognitive Behavioral Therapy for Adolescents with Anxiety",
+      "authors": [
+        "Doe J.",
+        "Smith A."
+      ],
+      "publishedAt": "2021-03-01",
+      "abstract": "This study evaluates the effectiveness of cognitive behavioral therapy (CBT) on reducing symptoms of anxiety in adolescents over a 12-week period. A sample of 200 adolescents participated. Results indicate significant reduction in anxiety levels post-intervention.",
+      "keyFindings": [
+        "CBT significantly reduced anxiety symptoms in adolescents over 12 weeks.",
+        "Participants showed improved emotional regulation after therapy."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-000"
+  },
+  {
+    "id": "plausible_correlated-000",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Cognitive Behavioral Therapy is associated with reduced anxiety symptoms in adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Cognitive Behavioral Therapy for Adolescents with Anxiety",
+      "authors": [
+        "Doe J.",
+        "Smith A."
+      ],
+      "publishedAt": "2021-03-01",
+      "abstract": "This study evaluates the effectiveness of cognitive behavioral therapy (CBT) on reducing symptoms of anxiety in adolescents over a 12-week period. A sample of 200 adolescents participated. Results indicate significant reduction in anxiety levels post-intervention.",
+      "keyFindings": [
+        "CBT significantly reduced anxiety symptoms in adolescents over 12 weeks.",
+        "Participants showed improved emotional regulation after therapy."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-000",
+    "overclaimDimension": "a"
+  },
+  {
+    "id": "clean_correct-001",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Following a Mediterranean diet is associated with improved cardiovascular health.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Dietary Patterns and Heart Health: A Longitudinal Study",
+      "authors": [
+        "Nguyen L.",
+        "Patel M."
+      ],
+      "publishedAt": "2018-06-01",
+      "abstract": "A 10-year cohort study examined the relationship between dietary patterns and heart health in 5,000 participants. Data suggests a strong association between a Mediterranean diet and improved cardiovascular markers.",
+      "keyFindings": [
+        "Mediterranean diet is associated with improved cardiovascular markers.",
+        "Participants following the diet showed lower incidences of hypertension."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-001"
+  },
+  {
+    "id": "plausible_correlated-001",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Following a Mediterranean diet directly improves cardiovascular health.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Dietary Patterns and Heart Health: A Longitudinal Study",
+      "authors": [
+        "Nguyen L.",
+        "Patel M."
+      ],
+      "publishedAt": "2018-06-01",
+      "abstract": "A 10-year cohort study examined the relationship between dietary patterns and heart health in 5,000 participants. Data suggests a strong association between a Mediterranean diet and improved cardiovascular markers.",
+      "keyFindings": [
+        "Mediterranean diet is associated with improved cardiovascular markers.",
+        "Participants following the diet showed lower incidences of hypertension."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-001",
+    "overclaimDimension": "b"
+  },
+  {
+    "id": "clean_correct-002",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Improved sleep quality is associated with higher academic performance among university students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Sleep Quality on Academic Performance",
+      "authors": [
+        "Li X.",
+        "Garcia M."
+      ],
+      "publishedAt": "2020-09-01",
+      "abstract": "This study examined the association between sleep quality and academic performance in a sample of 600 university students over an academic semester. Findings suggest that better sleep quality correlates with higher GPA.",
+      "keyFindings": [
+        "Better sleep quality is correlated with higher GPA.",
+        "Students with poor sleep reported higher stress levels."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-002"
+  },
+  {
+    "id": "plausible_correlated-002",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Improved sleep quality leads to higher grades among university students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Sleep Quality on Academic Performance",
+      "authors": [
+        "Li X.",
+        "Garcia M."
+      ],
+      "publishedAt": "2020-09-01",
+      "abstract": "This study examined the association between sleep quality and academic performance in a sample of 600 university students over an academic semester. Findings suggest that better sleep quality correlates with higher GPA.",
+      "keyFindings": [
+        "Better sleep quality is correlated with higher GPA.",
+        "Students with poor sleep reported higher stress levels."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-002",
+    "overclaimDimension": "c"
+  },
+  {
+    "id": "clean_correct-003",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Short-term physical exercise is associated with moderate improvements in mood.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Impact of Short-Term Physical Exercise on Mental Health",
+      "authors": [
+        "Brown K.",
+        "Lee T."
+      ],
+      "publishedAt": "2019-02-01",
+      "abstract": "An 8-week randomized controlled trial investigated the effects of physical exercise on mental health in a group of 150 adults. Results indicate moderate improvements in mood and reduction in depression and anxiety symptoms.",
+      "keyFindings": [
+        "Exercise led to moderate improvements in mood over 8 weeks.",
+        "Participants noted reduced symptoms of depression and anxiety."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-003"
+  },
+  {
+    "id": "plausible_correlated-003",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Short-term physical exercise is associated with long-term improvements in mood.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Impact of Short-Term Physical Exercise on Mental Health",
+      "authors": [
+        "Brown K.",
+        "Lee T."
+      ],
+      "publishedAt": "2019-02-01",
+      "abstract": "An 8-week randomized controlled trial investigated the effects of physical exercise on mental health in a group of 150 adults. Results indicate moderate improvements in mood and reduction in depression and anxiety symptoms.",
+      "keyFindings": [
+        "Exercise led to moderate improvements in mood over 8 weeks.",
+        "Participants noted reduced symptoms of depression and anxiety."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-003",
+    "overclaimDimension": "d"
+  },
+  {
+    "id": "clean_correct-004",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Interactive online classes are associated with higher student engagement in high school environments.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Effect of Online Learning on Student Engagement",
+      "authors": [
+        "Johnson P.",
+        "Kumar S."
+      ],
+      "publishedAt": "2023-04-01",
+      "abstract": "A study involving 800 high school students evaluated the effect of online learning environments on student engagement. Over the course of a semester, students in interactive online classes reported higher engagement levels than those in traditional settings.",
+      "keyFindings": [
+        "Interactive online classes increased student engagement.",
+        "Greater engagement observed compared to traditional classroom settings."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-004"
+  },
+  {
+    "id": "plausible_correlated-004",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Interactive online classes are associated with higher student engagement universally.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Effect of Online Learning on Student Engagement",
+      "authors": [
+        "Johnson P.",
+        "Kumar S."
+      ],
+      "publishedAt": "2023-04-01",
+      "abstract": "A study involving 800 high school students evaluated the effect of online learning environments on student engagement. Over the course of a semester, students in interactive online classes reported higher engagement levels than those in traditional settings.",
+      "keyFindings": [
+        "Interactive online classes increased student engagement.",
+        "Greater engagement observed compared to traditional classroom settings."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-004",
+    "overclaimDimension": "e"
+  },
+  {
+    "id": "clean_correct-005",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Regular meditation is associated with lower blood pressure in adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Longitudinal Effects of Meditation on Blood Pressure",
+      "authors": [
+        "Watanabe H.",
+        "Cheng R."
+      ],
+      "publishedAt": "2017-11-01",
+      "abstract": "A 7-year longitudinal study examined the impact of regular meditation on blood pressure levels in a cohort of 1,200 adults. Findings indicate a sustained association between regular meditation practice and lower blood pressure.",
+      "keyFindings": [
+        "Regular meditation is associated with lower blood pressure.",
+        "Participants practicing meditation showed sustained benefits over 7 years."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-005"
+  },
+  {
+    "id": "plausible_correlated-005",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Regular meditation is associated with lower blood pressure in adolescents.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Longitudinal Effects of Meditation on Blood Pressure",
+      "authors": [
+        "Watanabe H.",
+        "Cheng R."
+      ],
+      "publishedAt": "2017-11-01",
+      "abstract": "A 7-year longitudinal study examined the impact of regular meditation on blood pressure levels in a cohort of 1,200 adults. Findings indicate a sustained association between regular meditation practice and lower blood pressure.",
+      "keyFindings": [
+        "Regular meditation is associated with lower blood pressure.",
+        "Participants practicing meditation showed sustained benefits over 7 years."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-005",
+    "overclaimDimension": "a"
+  },
+  {
+    "id": "clean_correct-006",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Increased social media usage is associated with higher levels of anxiety in teenagers.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Social Media Use and Its Effects on Teen Mental Health",
+      "authors": [
+        "Ruiz D.",
+        "Martinez J."
+      ],
+      "publishedAt": "2019-10-01",
+      "abstract": "Over a 6-month period, this study assessed the relationship between social media use and mental health in 900 teenagers. Results indicate a significant association between increased social media usage and higher levels of reported anxiety and depression.",
+      "keyFindings": [
+        "Increased social media use is associated with higher anxiety and depression.",
+        "Teenagers reported varied experiences based on social media practices."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-006"
+  },
+  {
+    "id": "plausible_correlated-006",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Increased social media usage causes higher levels of anxiety in teenagers.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Social Media Use and Its Effects on Teen Mental Health",
+      "authors": [
+        "Ruiz D.",
+        "Martinez J."
+      ],
+      "publishedAt": "2019-10-01",
+      "abstract": "Over a 6-month period, this study assessed the relationship between social media use and mental health in 900 teenagers. Results indicate a significant association between increased social media usage and higher levels of reported anxiety and depression.",
+      "keyFindings": [
+        "Increased social media use is associated with higher anxiety and depression.",
+        "Teenagers reported varied experiences based on social media practices."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-006",
+    "overclaimDimension": "b"
+  },
+  {
+    "id": "clean_correct-007",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Proximity to green spaces is associated with better mental health among urban residents.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Green Spaces and Mental Wellbeing in Urban Areas",
+      "authors": [
+        "Anderson L.",
+        "Kim Y."
+      ],
+      "publishedAt": "2015-05-01",
+      "abstract": "A cross-sectional study involving 1,500 urban residents explored the link between proximity to green spaces and mental wellbeing. Data showed that residents living near green spaces reported better mental health scores.",
+      "keyFindings": [
+        "Proximity to green spaces is linked with better mental health scores.",
+        "Residents near green areas reported enhanced sense of community."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-007"
+  },
+  {
+    "id": "plausible_correlated-007",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Proximity to green spaces improves mental health among urban residents.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Green Spaces and Mental Wellbeing in Urban Areas",
+      "authors": [
+        "Anderson L.",
+        "Kim Y."
+      ],
+      "publishedAt": "2015-05-01",
+      "abstract": "A cross-sectional study involving 1,500 urban residents explored the link between proximity to green spaces and mental wellbeing. Data showed that residents living near green spaces reported better mental health scores.",
+      "keyFindings": [
+        "Proximity to green spaces is linked with better mental health scores.",
+        "Residents near green areas reported enhanced sense of community."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-007",
+    "overclaimDimension": "c"
+  },
+  {
+    "id": "clean_correct-008",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Using a dietary tracking app is associated with small improvements in dietary habits over three months.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Impact of Mobile Applications on Dietary Habits",
+      "authors": [
+        "Clark H.",
+        "Davis P."
+      ],
+      "publishedAt": "2022-01-01",
+      "abstract": "This 3-month intervention study involved 250 participants using a dietary tracking app. Results showed small but significant changes in dietary habits, including increased fruit and vegetable consumption.",
+      "keyFindings": [
+        "Dietary tracking apps lead to small improvements in dietary habits.",
+        "Users increased fruit and vegetable intake over the study period."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-008"
+  },
+  {
+    "id": "plausible_correlated-008",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Using a dietary tracking app is associated with significant long-term improvements in dietary habits.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Impact of Mobile Applications on Dietary Habits",
+      "authors": [
+        "Clark H.",
+        "Davis P."
+      ],
+      "publishedAt": "2022-01-01",
+      "abstract": "This 3-month intervention study involved 250 participants using a dietary tracking app. Results showed small but significant changes in dietary habits, including increased fruit and vegetable consumption.",
+      "keyFindings": [
+        "Dietary tracking apps lead to small improvements in dietary habits.",
+        "Users increased fruit and vegetable intake over the study period."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-008",
+    "overclaimDimension": "d"
+  },
+  {
+    "id": "clean_correct-009",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "AI implementation is associated with increased productivity in tech-related fields.",
+    "citationToken": "S1",
+    "source": {
+      "title": "AI and Its Effects on Workforce Productivity",
+      "authors": [
+        "Zhang T.",
+        "Nash R."
+      ],
+      "publishedAt": "2020-07-01",
+      "abstract": "This research examined the introduction of AI technologies across various industries over a five-year period. Findings suggested that AI implementation led to increased productivity in tech-related fields.",
+      "keyFindings": [
+        "AI implementation increased productivity in tech-related fields.",
+        "Notable improvements in data processing efficiency observed."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-009"
+  },
+  {
+    "id": "plausible_correlated-009",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "AI implementation is associated with increased productivity across all industries.",
+    "citationToken": "S1",
+    "source": {
+      "title": "AI and Its Effects on Workforce Productivity",
+      "authors": [
+        "Zhang T.",
+        "Nash R."
+      ],
+      "publishedAt": "2020-07-01",
+      "abstract": "This research examined the introduction of AI technologies across various industries over a five-year period. Findings suggested that AI implementation led to increased productivity in tech-related fields.",
+      "keyFindings": [
+        "AI implementation increased productivity in tech-related fields.",
+        "Notable improvements in data processing efficiency observed."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-009",
+    "overclaimDimension": "e"
+  },
+  {
+    "id": "clean_correct-010",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Resistance exercise is associated with improved bone density in postmenopausal women.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Exercise Regimens and Their Effects on Bone Density",
+      "authors": [
+        "Harris M.",
+        "Chen L."
+      ],
+      "publishedAt": "2018-08-01",
+      "abstract": "A two-year study was conducted to evaluate the effects of resistance exercise on bone density in postmenopausal women. Findings indicate significant improvements in bone density following a structured exercise regimen.",
+      "keyFindings": [
+        "Resistance exercise improved bone density in postmenopausal women.",
+        "Structured exercise regimens led to significant bone health benefits."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-010"
+  },
+  {
+    "id": "plausible_correlated-010",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Resistance exercise is associated with improved bone density in young adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Exercise Regimens and Their Effects on Bone Density",
+      "authors": [
+        "Harris M.",
+        "Chen L."
+      ],
+      "publishedAt": "2018-08-01",
+      "abstract": "A two-year study was conducted to evaluate the effects of resistance exercise on bone density in postmenopausal women. Findings indicate significant improvements in bone density following a structured exercise regimen.",
+      "keyFindings": [
+        "Resistance exercise improved bone density in postmenopausal women.",
+        "Structured exercise regimens led to significant bone health benefits."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-010",
+    "overclaimDimension": "a"
+  },
+  {
+    "id": "clean_correct-011",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Using digital learning tools is associated with improved standardized test scores.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Digital Learning Tools and Academic Achievement",
+      "authors": [
+        "Owen J.",
+        "Priya A."
+      ],
+      "publishedAt": "2021-12-01",
+      "abstract": "A one-year study with a cohort of 500 students explored the relationship between digital learning tools and academic achievement. Results show a positive correlation between tool usage and improvements in standardized test scores.",
+      "keyFindings": [
+        "Digital tools correlated with improvements in test scores.",
+        "Students using tools showed greater engagement with material."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-011"
+  },
+  {
+    "id": "plausible_correlated-011",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Using digital learning tools improves standardized test scores.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Digital Learning Tools and Academic Achievement",
+      "authors": [
+        "Owen J.",
+        "Priya A."
+      ],
+      "publishedAt": "2021-12-01",
+      "abstract": "A one-year study with a cohort of 500 students explored the relationship between digital learning tools and academic achievement. Results show a positive correlation between tool usage and improvements in standardized test scores.",
+      "keyFindings": [
+        "Digital tools correlated with improvements in test scores.",
+        "Students using tools showed greater engagement with material."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-011",
+    "overclaimDimension": "b"
+  },
+  {
+    "id": "clean_correct-012",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Listening to classical music is associated with improved task accuracy in college students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Influence of Music on Cognitive Performance",
+      "authors": [
+        "Khan S.",
+        "Mehta N."
+      ],
+      "publishedAt": "2022-10-01",
+      "abstract": "In a controlled experiment, 200 college students were assessed to determine the impact of classical music listening on task performance over a two-week period. Results indicate a positive correlation with improved task accuracy.",
+      "keyFindings": [
+        "Classical music listening correlated with improved task accuracy.",
+        "Short-term music exposure enhanced focus in college students."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-012"
+  },
+  {
+    "id": "plausible_correlated-012",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Listening to classical music enhances cognitive performance in college students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Influence of Music on Cognitive Performance",
+      "authors": [
+        "Khan S.",
+        "Mehta N."
+      ],
+      "publishedAt": "2022-10-01",
+      "abstract": "In a controlled experiment, 200 college students were assessed to determine the impact of classical music listening on task performance over a two-week period. Results indicate a positive correlation with improved task accuracy.",
+      "keyFindings": [
+        "Classical music listening correlated with improved task accuracy.",
+        "Short-term music exposure enhanced focus in college students."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-012",
+    "overclaimDimension": "c"
+  },
+  {
+    "id": "clean_correct-013",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Short-term intermittent fasting is associated with modest improvements in metabolic health indicators.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Short-Term Fasting on Metabolic Health",
+      "authors": [
+        "Green R.",
+        "Hill W."
+      ],
+      "publishedAt": "2016-04-01",
+      "abstract": "An 8-week trial assessed the effects of intermittent fasting on metabolic health indicators in 320 adults. Findings revealed modest improvements in insulin sensitivity and cholesterol levels.",
+      "keyFindings": [
+        "Intermittent fasting improved insulin sensitivity modestly.",
+        "Participants showed moderate changes in cholesterol levels."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-013"
+  },
+  {
+    "id": "plausible_correlated-013",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Short-term intermittent fasting is associated with substantial improvements in metabolic health indicators.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Short-Term Fasting on Metabolic Health",
+      "authors": [
+        "Green R.",
+        "Hill W."
+      ],
+      "publishedAt": "2016-04-01",
+      "abstract": "An 8-week trial assessed the effects of intermittent fasting on metabolic health indicators in 320 adults. Findings revealed modest improvements in insulin sensitivity and cholesterol levels.",
+      "keyFindings": [
+        "Intermittent fasting improved insulin sensitivity modestly.",
+        "Participants showed moderate changes in cholesterol levels."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-013",
+    "overclaimDimension": "d"
+  },
+  {
+    "id": "clean_correct-014",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Online collaboration tools are associated with enhanced team communication in the tech industry.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Online Collaboration Tools and Workplace Efficiency",
+      "authors": [
+        "Murphy J.",
+        "Choi S."
+      ],
+      "publishedAt": "2019-07-01",
+      "abstract": "This research evaluated the use of online collaboration tools across 50 companies within the tech industry over a year-long period. Results suggest that these tools enhance team communication and collaboration efficiency.",
+      "keyFindings": [
+        "Online collaboration tools enhanced team communication.",
+        "Notable improvements in workflow efficiency within the tech industry."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-014"
+  },
+  {
+    "id": "plausible_correlated-014",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Online collaboration tools are associated with enhanced team communication in all industries.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Online Collaboration Tools and Workplace Efficiency",
+      "authors": [
+        "Murphy J.",
+        "Choi S."
+      ],
+      "publishedAt": "2019-07-01",
+      "abstract": "This research evaluated the use of online collaboration tools across 50 companies within the tech industry over a year-long period. Results suggest that these tools enhance team communication and collaboration efficiency.",
+      "keyFindings": [
+        "Online collaboration tools enhanced team communication.",
+        "Notable improvements in workflow efficiency within the tech industry."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-014",
+    "overclaimDimension": "e"
+  },
+  {
+    "id": "clean_correct-015",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Omega-3 supplements are associated with reduced cognitive decline in older adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Nutritional Supplements and Cognitive Decline",
+      "authors": [
+        "Jones P.",
+        "Ahmed K."
+      ],
+      "publishedAt": "2023-05-01",
+      "abstract": "A two-year double-blind trial examined the effects of omega-3 supplements on cognitive function in older adults. Results indicate a correlation between supplement use and reduced cognitive decline.",
+      "keyFindings": [
+        "Omega-3 supplements linked to reduced cognitive decline in older adults.",
+        "Participants showed improved memory recall tasks."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-015"
+  },
+  {
+    "id": "plausible_correlated-015",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Omega-3 supplements are associated with reduced cognitive decline in young adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Nutritional Supplements and Cognitive Decline",
+      "authors": [
+        "Jones P.",
+        "Ahmed K."
+      ],
+      "publishedAt": "2023-05-01",
+      "abstract": "A two-year double-blind trial examined the effects of omega-3 supplements on cognitive function in older adults. Results indicate a correlation between supplement use and reduced cognitive decline.",
+      "keyFindings": [
+        "Omega-3 supplements linked to reduced cognitive decline in older adults.",
+        "Participants showed improved memory recall tasks."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-015",
+    "overclaimDimension": "a"
+  },
+  {
+    "id": "clean_correct-016",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Behavioral interventions are associated with weight loss success.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Behavioral Interventions and Weight Loss",
+      "authors": [
+        "Foster L.",
+        "Hughes B."
+      ],
+      "publishedAt": "2020-02-01",
+      "abstract": "In a six-month study of 400 participants, various behavioral interventions were tested for their effects on weight loss. Results showed a strong association between intervention adherence and weight loss success.",
+      "keyFindings": [
+        "Behavioral interventions associated with weight loss success.",
+        "Participants adhering to interventions lost more weight."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-016"
+  },
+  {
+    "id": "plausible_correlated-016",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Behavioral interventions cause weight loss.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Behavioral Interventions and Weight Loss",
+      "authors": [
+        "Foster L.",
+        "Hughes B."
+      ],
+      "publishedAt": "2020-02-01",
+      "abstract": "In a six-month study of 400 participants, various behavioral interventions were tested for their effects on weight loss. Results showed a strong association between intervention adherence and weight loss success.",
+      "keyFindings": [
+        "Behavioral interventions associated with weight loss success.",
+        "Participants adhering to interventions lost more weight."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-016",
+    "overclaimDimension": "b"
+  },
+  {
+    "id": "clean_correct-017",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Lower ambient noise levels are associated with better reading comprehension in high school students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Impact of Ambient Noise on Reading Comprehension",
+      "authors": [
+        "Brooks E.",
+        "Sanchez T."
+      ],
+      "publishedAt": "2015-11-01",
+      "abstract": "This experimental study assessed the impact of ambient noise levels on reading comprehension in 150 high school students over a month. Results show a significant association between lower noise levels and higher comprehension scores.",
+      "keyFindings": [
+        "Lower ambient noise linked with better reading comprehension.",
+        "Students performed better in quieter environments."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-017"
+  },
+  {
+    "id": "plausible_correlated-017",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Lower ambient noise levels improve reading comprehension in high school students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Impact of Ambient Noise on Reading Comprehension",
+      "authors": [
+        "Brooks E.",
+        "Sanchez T."
+      ],
+      "publishedAt": "2015-11-01",
+      "abstract": "This experimental study assessed the impact of ambient noise levels on reading comprehension in 150 high school students over a month. Results show a significant association between lower noise levels and higher comprehension scores.",
+      "keyFindings": [
+        "Lower ambient noise linked with better reading comprehension.",
+        "Students performed better in quieter environments."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-017",
+    "overclaimDimension": "c"
+  },
+  {
+    "id": "clean_correct-018",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Brief daily mindfulness training is associated with small reductions in stress levels.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Effects of Brief Mindfulness Training on Stress Reduction",
+      "authors": [
+        "Cooper E.",
+        "Nguyen T."
+      ],
+      "publishedAt": "2017-03-01",
+      "abstract": "A 4-week study involving 100 employees assessed the effects of brief daily mindfulness training sessions on stress levels. Results indicate a small reduction in reported stress levels after the intervention period.",
+      "keyFindings": [
+        "Brief mindfulness training reduced stress levels over 4 weeks.",
+        "Participants reported feeling more relaxed post-intervention."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-018"
+  },
+  {
+    "id": "plausible_correlated-018",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Brief daily mindfulness training is associated with large reductions in stress levels.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Effects of Brief Mindfulness Training on Stress Reduction",
+      "authors": [
+        "Cooper E.",
+        "Nguyen T."
+      ],
+      "publishedAt": "2017-03-01",
+      "abstract": "A 4-week study involving 100 employees assessed the effects of brief daily mindfulness training sessions on stress levels. Results indicate a small reduction in reported stress levels after the intervention period.",
+      "keyFindings": [
+        "Brief mindfulness training reduced stress levels over 4 weeks.",
+        "Participants reported feeling more relaxed post-intervention."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-018",
+    "overclaimDimension": "d"
+  },
+  {
+    "id": "clean_correct-019",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Renewable energy adoption is associated with economic growth in developed countries.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Renewable Energy Adoption and Economic Growth",
+      "authors": [
+        "Taylor A.",
+        "Martin L."
+      ],
+      "publishedAt": "2021-08-01",
+      "abstract": "This study analyzed the impact of renewable energy adoption on economic growth in developed countries over a 15-year period. Findings suggest a positive correlation between increased reliance on renewables and GDP growth in these regions.",
+      "keyFindings": [
+        "Renewable energy adoption correlated with GDP growth in developed countries.",
+        "Positive economic impacts observed with increased renewable use."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-019"
+  },
+  {
+    "id": "plausible_correlated-019",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Renewable energy adoption is associated with economic growth globally.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Renewable Energy Adoption and Economic Growth",
+      "authors": [
+        "Taylor A.",
+        "Martin L."
+      ],
+      "publishedAt": "2021-08-01",
+      "abstract": "This study analyzed the impact of renewable energy adoption on economic growth in developed countries over a 15-year period. Findings suggest a positive correlation between increased reliance on renewables and GDP growth in these regions.",
+      "keyFindings": [
+        "Renewable energy adoption correlated with GDP growth in developed countries.",
+        "Positive economic impacts observed with increased renewable use."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-019",
+    "overclaimDimension": "e"
+  },
+  {
+    "id": "clean_correct-020",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Increased screen time is associated with delayed sleep onset in children aged 5-10.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Influence of Screen Time on Sleep Patterns in Children",
+      "authors": [
+        "Nelson G.",
+        "White J."
+      ],
+      "publishedAt": "2020-05-01",
+      "abstract": "A longitudinal study over 18 months observed the sleep patterns of 500 children aged 5-10 in relation to their daily screen time. Results indicate that higher screen time is associated with delayed sleep onset and reduced sleep duration.",
+      "keyFindings": [
+        "Higher screen time linked to delayed sleep onset in children.",
+        "Children with reduced screen time showed better sleep quality."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-020"
+  },
+  {
+    "id": "plausible_correlated-020",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Increased screen time is associated with delayed sleep onset in adolescents.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Influence of Screen Time on Sleep Patterns in Children",
+      "authors": [
+        "Nelson G.",
+        "White J."
+      ],
+      "publishedAt": "2020-05-01",
+      "abstract": "A longitudinal study over 18 months observed the sleep patterns of 500 children aged 5-10 in relation to their daily screen time. Results indicate that higher screen time is associated with delayed sleep onset and reduced sleep duration.",
+      "keyFindings": [
+        "Higher screen time linked to delayed sleep onset in children.",
+        "Children with reduced screen time showed better sleep quality."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-020",
+    "overclaimDimension": "a"
+  },
+  {
+    "id": "clean_correct-021",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Participation in financial literacy programs is associated with improved financial decision-making skills among high school students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Financial Literacy Programs in High Schools",
+      "authors": [
+        "Collins B.",
+        "Diaz R."
+      ],
+      "publishedAt": "2019-01-01",
+      "abstract": "This study evaluated the impact of financial literacy programs on high school students' financial decision-making over an academic year. Results show a significant association between program participation and improved financial decision-making skills.",
+      "keyFindings": [
+        "Financial literacy programs linked to improved decision-making.",
+        "Students showed better understanding of financial concepts post-program."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-021"
+  },
+  {
+    "id": "plausible_correlated-021",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Participation in financial literacy programs improves financial decision-making skills among high school students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Financial Literacy Programs in High Schools",
+      "authors": [
+        "Collins B.",
+        "Diaz R."
+      ],
+      "publishedAt": "2019-01-01",
+      "abstract": "This study evaluated the impact of financial literacy programs on high school students' financial decision-making over an academic year. Results show a significant association between program participation and improved financial decision-making skills.",
+      "keyFindings": [
+        "Financial literacy programs linked to improved decision-making.",
+        "Students showed better understanding of financial concepts post-program."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-021",
+    "overclaimDimension": "b"
+  },
+  {
+    "id": "clean_correct-022",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Virtual reality exposure therapy is associated with reduced fear levels in individuals with arachnophobia.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Virtual Reality Exposure and Its Effect on Phobias",
+      "authors": [
+        "Stewart C.",
+        "Kim J."
+      ],
+      "publishedAt": "2022-11-01",
+      "abstract": "In a controlled trial, 80 participants with clinically diagnosed arachnophobia underwent virtual reality exposure therapy over a five-week period. Findings indicate a reduction in self-reported fear levels post intervention.",
+      "keyFindings": [
+        "VR exposure therapy reduced fear levels in arachnophobia.",
+        "Participants reported increased tolerance to spiders."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-022"
+  },
+  {
+    "id": "plausible_correlated-022",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Virtual reality exposure therapy eliminates fear in individuals with arachnophobia.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Virtual Reality Exposure and Its Effect on Phobias",
+      "authors": [
+        "Stewart C.",
+        "Kim J."
+      ],
+      "publishedAt": "2022-11-01",
+      "abstract": "In a controlled trial, 80 participants with clinically diagnosed arachnophobia underwent virtual reality exposure therapy over a five-week period. Findings indicate a reduction in self-reported fear levels post intervention.",
+      "keyFindings": [
+        "VR exposure therapy reduced fear levels in arachnophobia.",
+        "Participants reported increased tolerance to spiders."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-022",
+    "overclaimDimension": "c"
+  },
+  {
+    "id": "clean_correct-023",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Increased water intake is associated with moderate improvements in skin hydration.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Water Intake and Its Effect on Skin Hydration",
+      "authors": [
+        "Ramirez L.",
+        "Turner F."
+      ],
+      "publishedAt": "2017-09-01",
+      "abstract": "A six-month study evaluated the impact of increased water intake on skin hydration levels in 200 adults. Results indicate a moderate improvement in skin hydration with increased daily water consumption.",
+      "keyFindings": [
+        "Increased water intake moderately improved skin hydration.",
+        "Participants noted better skin elasticity."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-023"
+  },
+  {
+    "id": "plausible_correlated-023",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Increased water intake is associated with drastic improvements in skin hydration.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Water Intake and Its Effect on Skin Hydration",
+      "authors": [
+        "Ramirez L.",
+        "Turner F."
+      ],
+      "publishedAt": "2017-09-01",
+      "abstract": "A six-month study evaluated the impact of increased water intake on skin hydration levels in 200 adults. Results indicate a moderate improvement in skin hydration with increased daily water consumption.",
+      "keyFindings": [
+        "Increased water intake moderately improved skin hydration.",
+        "Participants noted better skin elasticity."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-023",
+    "overclaimDimension": "d"
+  },
+  {
+    "id": "clean_correct-024",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Vitamin D supplementation is associated with enhanced immune response in adults with deficiencies.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Vitamin D in Immune System Function",
+      "authors": [
+        "Lopez M.",
+        "Evans H."
+      ],
+      "publishedAt": "2018-06-01",
+      "abstract": "This review synthesizes data from various studies on the role of Vitamin D in immune function among adults. Evidence suggests Vitamin D supplementation is linked with enhanced immune response, particularly in populations with deficiencies.",
+      "keyFindings": [
+        "Vitamin D linked with enhanced immune response in deficient populations.",
+        "Supplementation showed positive effects on immune cell function."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-024"
+  },
+  {
+    "id": "plausible_correlated-024",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Vitamin D supplementation is associated with enhanced immune response in the general population.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Vitamin D in Immune System Function",
+      "authors": [
+        "Lopez M.",
+        "Evans H."
+      ],
+      "publishedAt": "2018-06-01",
+      "abstract": "This review synthesizes data from various studies on the role of Vitamin D in immune function among adults. Evidence suggests Vitamin D supplementation is linked with enhanced immune response, particularly in populations with deficiencies.",
+      "keyFindings": [
+        "Vitamin D linked with enhanced immune response in deficient populations.",
+        "Supplementation showed positive effects on immune cell function."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-024",
+    "overclaimDimension": "e"
+  },
+  {
+    "id": "clean_correct-025",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Caffeine consumption is associated with a temporary enhancement in short-term memory in young adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Caffeine on Short-Term Memory in Young Adults",
+      "authors": [
+        "Fletcher K.",
+        "Wong E."
+      ],
+      "publishedAt": "2020-12-01",
+      "abstract": "This study looked at the impact of caffeine consumption on short-term memory across 300 young adults over a period of two weeks. Results suggest a temporary enhancement in short-term memory performance post-caffeine intake.",
+      "keyFindings": [
+        "Caffeine consumption temporarily enhanced short-term memory.",
+        "Participants showed improved recall in memory tasks post-caffeine."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-025"
+  },
+  {
+    "id": "plausible_correlated-025",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Caffeine consumption is associated with a temporary enhancement in short-term memory in older adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Caffeine on Short-Term Memory in Young Adults",
+      "authors": [
+        "Fletcher K.",
+        "Wong E."
+      ],
+      "publishedAt": "2020-12-01",
+      "abstract": "This study looked at the impact of caffeine consumption on short-term memory across 300 young adults over a period of two weeks. Results suggest a temporary enhancement in short-term memory performance post-caffeine intake.",
+      "keyFindings": [
+        "Caffeine consumption temporarily enhanced short-term memory.",
+        "Participants showed improved recall in memory tasks post-caffeine."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-025",
+    "overclaimDimension": "a"
+  },
+  {
+    "id": "clean_correct-026",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Regular physical exercise is associated with improvements in cognitive performance among seniors.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Exercise and Its Impact on Cognitive Function in Seniors",
+      "authors": [
+        "Adams N.",
+        "Peters D."
+      ],
+      "publishedAt": "2016-03-01",
+      "abstract": "A study involving 500 seniors over one year evaluated the effects of regular physical exercise on cognitive function. Results show a significant association between regular exercise and improvements in cognitive performance.",
+      "keyFindings": [
+        "Regular exercise linked to improvements in cognitive performance.",
+        "Participants demonstrated enhanced memory and attention."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-026"
+  },
+  {
+    "id": "plausible_correlated-026",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Regular physical exercise improves cognitive performance among seniors.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Exercise and Its Impact on Cognitive Function in Seniors",
+      "authors": [
+        "Adams N.",
+        "Peters D."
+      ],
+      "publishedAt": "2016-03-01",
+      "abstract": "A study involving 500 seniors over one year evaluated the effects of regular physical exercise on cognitive function. Results show a significant association between regular exercise and improvements in cognitive performance.",
+      "keyFindings": [
+        "Regular exercise linked to improvements in cognitive performance.",
+        "Participants demonstrated enhanced memory and attention."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-026",
+    "overclaimDimension": "b"
+  },
+  {
+    "id": "clean_correct-027",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Natural lighting in classrooms is associated with improved concentration levels in high school students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Impact of Classroom Lighting on Student Concentration",
+      "authors": [
+        "Robinson T.",
+        "Lucas G."
+      ],
+      "publishedAt": "2021-04-01",
+      "abstract": "This study examined the influence of natural versus artificial lighting on concentration levels in 300 high school students over a three-month period. Results indicated a correlation between natural lighting and improved concentration.",
+      "keyFindings": [
+        "Natural lighting correlated with improved student concentration.",
+        "Classrooms with more natural light saw increased student focus."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-027"
+  },
+  {
+    "id": "plausible_correlated-027",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Natural lighting in classrooms improves concentration levels in high school students.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Impact of Classroom Lighting on Student Concentration",
+      "authors": [
+        "Robinson T.",
+        "Lucas G."
+      ],
+      "publishedAt": "2021-04-01",
+      "abstract": "This study examined the influence of natural versus artificial lighting on concentration levels in 300 high school students over a three-month period. Results indicated a correlation between natural lighting and improved concentration.",
+      "keyFindings": [
+        "Natural lighting correlated with improved student concentration.",
+        "Classrooms with more natural light saw increased student focus."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-027",
+    "overclaimDimension": "c"
+  },
+  {
+    "id": "clean_correct-028",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Short-duration aerobic exercise is associated with modest improvements in cardiovascular fitness.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Short-Duration Aerobic Exercise and Cardiovascular Fitness",
+      "authors": [
+        "Scottie W.",
+        "Hansen R."
+      ],
+      "publishedAt": "2018-02-01",
+      "abstract": "A 10-week program evaluated the effects of short-duration aerobic exercise sessions on cardiovascular fitness in 150 adults. The study found modest improvements in VO2 max and overall cardiovascular health.",
+      "keyFindings": [
+        "Short-duration exercise modestly improved VO2 max.",
+        "Participants showed slight enhancements in cardiovascular health."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-028"
+  },
+  {
+    "id": "plausible_correlated-028",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Short-duration aerobic exercise is associated with significant improvements in cardiovascular fitness.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Short-Duration Aerobic Exercise and Cardiovascular Fitness",
+      "authors": [
+        "Scottie W.",
+        "Hansen R."
+      ],
+      "publishedAt": "2018-02-01",
+      "abstract": "A 10-week program evaluated the effects of short-duration aerobic exercise sessions on cardiovascular fitness in 150 adults. The study found modest improvements in VO2 max and overall cardiovascular health.",
+      "keyFindings": [
+        "Short-duration exercise modestly improved VO2 max.",
+        "Participants showed slight enhancements in cardiovascular health."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-028",
+    "overclaimDimension": "d"
+  },
+  {
+    "id": "clean_correct-029",
+    "itemType": "clean_correct",
+    "generatorFamily": "gpt",
+    "premiseText": "Moderate online gaming is associated with enhanced social skills in adolescents.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Online Gaming on Social Skills Development",
+      "authors": [
+        "Dawson V.",
+        "Richards S."
+      ],
+      "publishedAt": "2022-06-01",
+      "abstract": "Research over a two-year span involving 500 adolescents investigated the effects of online gaming on social skills development. Findings demonstrate an association between moderate online gaming and enhanced social interaction skills.",
+      "keyFindings": [
+        "Moderate online gaming associated with enhanced social skills.",
+        "Participants showed improved teamwork and communication."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-029"
+  },
+  {
+    "id": "plausible_correlated-029",
+    "itemType": "plausible_correlated",
+    "generatorFamily": "gpt",
+    "premiseText": "Moderate online gaming is associated with enhanced social skills in all age groups.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Online Gaming on Social Skills Development",
+      "authors": [
+        "Dawson V.",
+        "Richards S."
+      ],
+      "publishedAt": "2022-06-01",
+      "abstract": "Research over a two-year span involving 500 adolescents investigated the effects of online gaming on social skills development. Findings demonstrate an association between moderate online gaming and enhanced social interaction skills.",
+      "keyFindings": [
+        "Moderate online gaming associated with enhanced social skills.",
+        "Participants showed improved teamwork and communication."
+      ]
+    },
+    "groundTruthError": null,
+    "pairId": "pair-029",
+    "overclaimDimension": "e"
+  },
+  {
+    "id": "obvious_error-000",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Eating dark chocolate daily improves cardiovascular health in adults over 50.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Neural Network Architectures and Their Impact on Image Recognition",
+      "authors": [
+        "Lopez J."
+      ],
+      "publishedAt": "2021-01-01",
+      "abstract": "This study analyzes the efficacy of different neural network architectures for image recognition tasks. Over three months, various models were tested on a dataset of 100,000 images. The results show that convolutional neural networks outperform other architectures in accuracy and processing speed.",
+      "keyFindings": [
+        "Convolutional neural networks achieved the highest accuracy.",
+        "Processing speed improved with deeper network structures."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-001",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Increasing the minimum wage reduces unemployment rates among young adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Cognitive Behavioral Therapy on Anxiety Disorders",
+      "authors": [
+        "Nguyen T."
+      ],
+      "publishedAt": "2018-01-01",
+      "abstract": "This study investigates the impact of cognitive behavioral therapy on the severity of anxiety disorders. A sample of 200 adults participated in a 12-week therapy program. The results indicate a significant reduction in anxiety symptoms post-treatment.",
+      "keyFindings": [
+        "Cognitive behavioral therapy significantly reduces anxiety symptoms.",
+        "Participants reported improved quality of life after treatment."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-002",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Regular physical exercise increases the cognitive performance of elderly individuals.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Impact of Artificial Intelligence on Consumer Behavior",
+      "authors": [
+        "Kim H."
+      ],
+      "publishedAt": "2022-01-01",
+      "abstract": "This research explores how artificial intelligence influences consumer purchasing decisions in online environments. A six-month study involving 500 participants was conducted, revealing that personalized AI recommendations increase purchase likelihood.",
+      "keyFindings": [
+        "AI recommendations boost online purchase likelihood.",
+        "Consumer satisfaction is higher with personalized AI interactions."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-003",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Using smartphones before bed leads to better sleep quality in teenagers.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Climate Change Effects on Urban Wildlife Biodiversity",
+      "authors": [
+        "Morgan L."
+      ],
+      "publishedAt": "2019-01-01",
+      "abstract": "This study assesses how climate change affects urban wildlife biodiversity over five years. The research indicates a decline in species diversity and population sizes, with particular stress on amphibian populations.",
+      "keyFindings": [
+        "Decline in urban wildlife species diversity.",
+        "Amphibian populations are significantly stressed by climate change."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-004",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Mediterranean diet lowers the risk of developing Type 2 diabetes.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Impact of Video Games on Cognitive Development in Children",
+      "authors": [
+        "Patel R."
+      ],
+      "publishedAt": "2020-01-01",
+      "abstract": "The study examines the effects of video gaming on cognitive abilities in children aged 7-12 over a period of one year. Findings suggest improvement in problem-solving skills and hand-eye coordination among regular gamers.",
+      "keyFindings": [
+        "Video gaming enhances problem-solving skills.",
+        "Regular gamers show improved hand-eye coordination."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-005",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Social media usage significantly increases empathy in young adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Economic Impacts of Renewable Energy Adoption",
+      "authors": [
+        "Davis K."
+      ],
+      "publishedAt": "2023-01-01",
+      "abstract": "This investigation evaluates the economic effects of adopting renewable energy technologies in five developing countries over a decade. Results show increased GDP growth and job creation in each case.",
+      "keyFindings": [
+        "Renewable energy adoption boosts GDP growth.",
+        "Significant job creation associated with renewable energy industries."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-006",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Exposure to nature reduces symptoms of ADHD in children.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Algorithmic Trading: Efficiency and Market Dynamics",
+      "authors": [
+        "Sato M."
+      ],
+      "publishedAt": "2017-01-01",
+      "abstract": "This paper examines the role of algorithmic trading in financial markets over a two-year period. Findings indicate that algorithmic trading increases market efficiency but also contributes to short-term volatility.",
+      "keyFindings": [
+        "Algorithmic trading enhances market efficiency.",
+        "Short-term market volatility is higher with algorithmic trading."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-007",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Vaccination rates are positively correlated with educational attainment.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Sea-Level Rise and Its Effects on Coastal Real Estate Values",
+      "authors": [
+        "Chen Z."
+      ],
+      "publishedAt": "2016-01-01",
+      "abstract": "The research investigates how rising sea levels affect coastal real estate values over a 15-year period. Results suggest a decline in property values due to increased flooding risk.",
+      "keyFindings": [
+        "Sea-level rise leads to decreasing coastal real estate values.",
+        "Flooding risk reduces property desirability."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-008",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Higher dietary fiber intake significantly contributes to weight loss in adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Machine Learning in Predicting Stock Market Trends",
+      "authors": [
+        "Garcia L."
+      ],
+      "publishedAt": "2023-01-01",
+      "abstract": "This study explores machine learning algorithms for predicting stock market trends over a decade. It concludes that machine learning models provide accurate forecasts but depend heavily on quality data inputs.",
+      "keyFindings": [
+        "Machine learning models can accurately forecast stock trends.",
+        "Data quality is critical for model success."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-009",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Drinking green tea daily improves bone density in postmenopausal women.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Impact of Autonomous Vehicles on Urban Traffic Congestion",
+      "authors": [
+        "Hernandez P."
+      ],
+      "publishedAt": "2015-01-01",
+      "abstract": "The study evaluates the impact of autonomous vehicles on urban traffic congestion over a five-year period. Results show a reduction in traffic congestion and improved travel times with increased adoption of autonomous vehicles.",
+      "keyFindings": [
+        "Autonomous vehicles reduce urban traffic congestion.",
+        "Travel times improve with autonomous vehicle adoption."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-010",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Consuming omega-3 fatty acids reduces symptoms of depression.",
+    "citationToken": "S1",
+    "source": {
+      "title": "E-Learning Platforms and Student Engagement: A Quantitative Study",
+      "authors": [
+        "White G."
+      ],
+      "publishedAt": "2018-01-01",
+      "abstract": "Over an academic year, this study measures student engagement across various e-learning platforms. The findings show that interactive features enhance engagement, while lack of personalization lowers student satisfaction.",
+      "keyFindings": [
+        "Interactive features boost student engagement on e-learning platforms.",
+        "Personalization is key to improving student satisfaction."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-011",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Daily meditation increases workplace productivity among employees.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Global Trade Policies and Their Economic Impacts",
+      "authors": [
+        "Ibrahim S."
+      ],
+      "publishedAt": "2020-01-01",
+      "abstract": "Analyzing trade policies of ten major economies over 20 years, this paper assesses their impact on economic growth. The research concludes that liberal trade policies tend to boost GDP, while protectionist approaches may hinder growth.",
+      "keyFindings": [
+        "Liberal trade policies enhance economic growth.",
+        "Protectionist trade measures can limit GDP growth."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-012",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Listening to classical music enhances short-term memory retention.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Influence of Social Media on Political Campaigns",
+      "authors": [
+        "Foster N."
+      ],
+      "publishedAt": "2017-01-01",
+      "abstract": "This study investigates the role of social media in shaping political campaigns over two election cycles. Results show social media platforms increase voter engagement and can significantly influence public opinion.",
+      "keyFindings": [
+        "Social media improves voter engagement during campaigns.",
+        "Public opinion is significantly shaped by social media activity."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-013",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Urban green spaces are linked to lower rates of asthma in children.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Economic Viability of Space Exploration Projects",
+      "authors": [
+        "Cooper V."
+      ],
+      "publishedAt": "2021-01-01",
+      "abstract": "This research evaluates the economic benefits and costs of space exploration projects over a decade. Findings indicate that, while initial investments are high, the potential technological and scientific gains justify the expenditures.",
+      "keyFindings": [
+        "Space exploration offers potential technological advances.",
+        "Initial high costs are offset by long-term benefits."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-014",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Playing a musical instrument reduces stress levels in adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Digital Marketing Strategies and Small Business Growth",
+      "authors": [
+        "Perez J."
+      ],
+      "publishedAt": "2019-01-01",
+      "abstract": "This study examines the impact of digital marketing strategies on the growth of small businesses over five years. Results suggest that companies incorporating comprehensive digital marketing experience higher growth rates.",
+      "keyFindings": [
+        "Digital marketing enhances small business growth.",
+        "Comprehensive digital strategies lead to significant growth."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-015",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Drinking coffee is linked to a reduced risk of Parkinson's disease.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Dynamics of Cryptocurrency Markets",
+      "authors": [
+        "Taylor B."
+      ],
+      "publishedAt": "2022-01-01",
+      "abstract": "Studying the cryptocurrency markets over a decade, this paper analyzes price volatility and investor behavior. The findings indicate high volatility and speculative trading as major influences on market dynamics.",
+      "keyFindings": [
+        "Cryptocurrency markets exhibit high price volatility.",
+        "Speculative trading impacts market dynamics significantly."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-016",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Using bicycles instead of cars reduces urban pollution levels.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Advancements in Quantum Computing and Their Applications",
+      "authors": [
+        "Jones R."
+      ],
+      "publishedAt": "2016-01-01",
+      "abstract": "This research explores the advancements in quantum computing technology over the past decade. The study highlights breakthroughs in speed and efficiency, indicating promising applications in data encryption and problem-solving.",
+      "keyFindings": [
+        "Quantum computing has made significant advancements.",
+        "Potential applications include enhanced data encryption."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-017",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Flossing daily reduces the risk of cardiovascular diseases.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Artificial Intelligence in Automated Customer Service",
+      "authors": [
+        "Ng T."
+      ],
+      "publishedAt": "2020-01-01",
+      "abstract": "Investigating the role of AI in customer service, this study covers a two-year period assessing AI's impact on customer satisfaction. Results demonstrate that AI-driven support systems increase customer satisfaction and reduce response times.",
+      "keyFindings": [
+        "AI improves customer satisfaction in service settings.",
+        "Response times are quicker with AI-driven support systems."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-018",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Mindfulness practices lead to reduced anxiety symptoms in adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Ecological Impacts of Deforestation in the Amazon",
+      "authors": [
+        "Lee C."
+      ],
+      "publishedAt": "2018-01-01",
+      "abstract": "This study examines the effects of deforestation in the Amazon rainforest over 20 years. Findings indicate significant loss of biodiversity and disruption of local climate patterns due to large-scale tree removal.",
+      "keyFindings": [
+        "Deforestation leads to biodiversity loss.",
+        "Local climate patterns are disrupted by large-scale tree removal."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-019",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Dietary supplements containing vitamin D decrease bone fracture rates.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Blockchain Technology in Supply Chain Management",
+      "authors": [
+        "Young D."
+      ],
+      "publishedAt": "2021-01-01",
+      "abstract": "Over a five-year period, this study investigates how blockchain technology impacts supply chain efficiency. Results show increased transparency and traceability, leading to improved coordination and reduced errors.",
+      "keyFindings": [
+        "Blockchain enhances supply chain transparency.",
+        "Traceability improves coordination and reduces errors."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-020",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Pet ownership is linked to lower levels of stress and anxiety.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Effect of Ocean Acidification on Marine Life",
+      "authors": [
+        "Smith A."
+      ],
+      "publishedAt": "2018-01-01",
+      "abstract": "This research assesses the impacts of ocean acidification on marine species over a decade. Findings indicate a decline in calcifying species and altered food web structures due to increased acidity levels.",
+      "keyFindings": [
+        "Ocean acidification reduces calcifying species populations.",
+        "Food web structures are altered by rising acidity levels."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-021",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "High protein diets aid in the development of muscle mass.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Global Migration Patterns and Their Socioeconomic Impacts",
+      "authors": [
+        "Ahmed L."
+      ],
+      "publishedAt": "2017-01-01",
+      "abstract": "This paper analyzes global migration patterns and their economic and social impacts over 50 years. The study concludes that migration contributes to economic growth and cultural diversification but also presents integration challenges.",
+      "keyFindings": [
+        "Migration drives economic growth and cultural diversity.",
+        "Integration challenges are significant with increased migration."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-022",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Reading fiction improves emotional intelligence in adults.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Mechanics of Black Hole Formation",
+      "authors": [
+        "O'Brien T."
+      ],
+      "publishedAt": "2019-01-01",
+      "abstract": "This astrophysical study investigates the processes leading to black hole formation over millennia. Results provide evidence of massive star collapse and detail the stages of black hole emergence.",
+      "keyFindings": [
+        "Black holes form from massive star collapse.",
+        "Stages of black hole emergence are detailed in the study."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-023",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Aerobic exercise reduces the risk of developing chronic diseases.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Psychological Impact of Gaming Avatars on Self-Perception",
+      "authors": [
+        "Diaz F."
+      ],
+      "publishedAt": "2016-01-01",
+      "abstract": "Examining the influence of gaming avatars on players' self-perception, this study involves 300 participants over six months. The findings suggest that players often adopt traits of their avatars, impacting self-esteem and identity.",
+      "keyFindings": [
+        "Gaming avatars influence player self-perception.",
+        "Avatar traits can impact self-esteem and identity formation."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-024",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Drinking adequate water improves skin elasticity and appearance.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Role of Nanotechnology in Waste Management",
+      "authors": [
+        "Chen X."
+      ],
+      "publishedAt": "2020-01-01",
+      "abstract": "This research explores how nanotechnology can improve waste management systems over a decade. The study finds that nanomaterials enhance waste decomposition rates and increase recycling efficiency.",
+      "keyFindings": [
+        "Nanotechnology increases waste decomposition rates.",
+        "Recycling efficiency is improved with nanomaterials."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-025",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Mindful eating habits help in reducing overeating behavior.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Evolution of Renewable Energy Storage Solutions",
+      "authors": [
+        "Turner J."
+      ],
+      "publishedAt": "2022-01-01",
+      "abstract": "This study examines advances in energy storage technologies over 15 years, focusing on renewable energy sources. The research highlights improvements in battery efficiency and reduced costs as key developments.",
+      "keyFindings": [
+        "Battery efficiency has significantly improved.",
+        "Storage costs for renewable energy have decreased."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-026",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Yoga practice is associated with lower blood pressure in hypertensive patients.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Effects of Digital Transformation on Manufacturing Industries",
+      "authors": [
+        "Brown L."
+      ],
+      "publishedAt": "2015-01-01",
+      "abstract": "Over a five-year period, this investigation assesses the impact of digital transformation in manufacturing industries. Findings show increased production efficiency and reduced operational costs due to digital integration.",
+      "keyFindings": [
+        "Digital transformation boosts production efficiency.",
+        "Operational costs are reduced with digital integration."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-027",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Using public transportation increases daily physical activity levels.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Advances in Gene Editing for Agricultural Enhancements",
+      "authors": [
+        "Wilson G."
+      ],
+      "publishedAt": "2023-01-01",
+      "abstract": "This paper explores advancements in gene editing technologies for agriculture over the past decade. The findings emphasize improved crop resilience and increased yields as significant outcomes of gene-editing applications.",
+      "keyFindings": [
+        "Gene editing leads to improved crop resilience.",
+        "Increased agricultural yields result from gene-editing technologies."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-028",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "High levels of vitamin C intake improve immune system function.",
+    "citationToken": "S1",
+    "source": {
+      "title": "Economic Impacts of Urbanization in Emerging Economies",
+      "authors": [
+        "Kumar S."
+      ],
+      "publishedAt": "2019-01-01",
+      "abstract": "This study assesses the economic consequences of urbanization in emerging economies over 30 years. Results suggest increased economic output but also highlight challenges such as infrastructure demands and social inequality.",
+      "keyFindings": [
+        "Urbanization boosts economic output in emerging economies.",
+        "Challenges include infrastructure demands and social inequality."
+      ]
+    },
+    "groundTruthError": null
+  },
+  {
+    "id": "obvious_error-029",
+    "itemType": "obvious_error",
+    "generatorFamily": "gpt",
+    "premiseText": "Participating in group sports lowers the risk of obesity in children.",
+    "citationToken": "S1",
+    "source": {
+      "title": "The Effects of Virtual Reality on Retail Shopping Experiences",
+      "authors": [
+        "Thompson E."
+      ],
+      "publishedAt": "2021-01-01",
+      "abstract": "This research evaluates the impact of virtual reality on consumer behavior in retail environments. Conducted over a year, the study finds that VR enhances customer engagement and leads to increased sales conversion rates.",
+      "keyFindings": [
+        "VR technology boosts customer engagement in retail.",
+        "Sales conversion rates increase with VR experiences."
+      ]
+    },
+    "groundTruthError": null
+  }
+]

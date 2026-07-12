@@ -1,0 +1,365 @@
+# AIF Ontology Mapping Configuration
+# Maps Mesh's argumentation scheme model to W3C AIF ontology
+# Reference: http://www.arg.dundee.ac.uk/aif
+
+# Namespace Definitions
+namespaces:
+  aif: "http://www.arg.dundee.ac.uk/aif#"
+  mesh: "http://mesh-platform.io/ontology/aif#"
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  owl: "http://www.w3.org/2002/07/owl#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+
+# Base URI for Mesh-generated AIF resources
+baseURI: "http://mesh-platform.io/aif"
+
+# ArgumentScheme → aif:Scheme (S-node)
+# Represents inference rules and argumentation schemes
+argumentScheme:
+  aifClass: "aif:Scheme"
+  nodeType: "S-node"
+  properties:
+    # Core AIF properties
+    - meshField: "schemeKey"
+      aifProperty: "rdfs:label"
+      type: "xsd:string"
+      required: true
+      description: "Unique identifier for the scheme"
+    
+    - meshField: "name"
+      aifProperty: "aif:schemeName"
+      type: "xsd:string"
+      required: true
+      description: "Human-readable name of the scheme"
+    
+    - meshField: "summary"
+      aifProperty: "rdfs:comment"
+      type: "xsd:string"
+      required: true
+      description: "Brief summary of the scheme"
+    
+    - meshField: "description"
+      aifProperty: "aif:description"
+      type: "xsd:string"
+      required: false
+      description: "Detailed description of when and how to use the scheme"
+    
+    # Hierarchy properties
+    - meshField: "parentSchemeId"
+      aifProperty: "aif:isSubtypeOf"
+      type: "owl:ObjectProperty"
+      range: "aif:Scheme"
+      required: false
+      description: "Reference to parent scheme in hierarchy"
+    
+    # Mesh-specific extensions
+    - meshField: "clusterTag"
+      aifProperty: "mesh:clusterTag"
+      type: "xsd:string"
+      required: false
+      description: "Cluster family identifier for grouping related schemes"
+    
+    - meshField: "inheritCQs"
+      aifProperty: "mesh:inheritCQs"
+      type: "xsd:boolean"
+      default: true
+      required: false
+      description: "Whether this scheme inherits critical questions from parent"
+    
+    - meshField: "schemeCategory"
+      aifProperty: "mesh:schemeCategory"
+      type: "xsd:string"
+      required: false
+      description: "Category of the scheme (e.g., practical, epistemic, source-based)"
+    
+    # Metadata
+    - meshField: "createdAt"
+      aifProperty: "mesh:createdAt"
+      type: "xsd:dateTime"
+      required: false
+      description: "Timestamp when scheme was created"
+    
+    - meshField: "updatedAt"
+      aifProperty: "mesh:updatedAt"
+      type: "xsd:dateTime"
+      required: false
+      description: "Timestamp when scheme was last updated"
+
+# CriticalQuestion → aif:Question
+# Represents questions that challenge the scheme application
+criticalQuestion:
+  aifClass: "aif:Question"
+  properties:
+    - meshField: "question"
+      aifProperty: "aif:questionText"
+      type: "xsd:string"
+      required: true
+      description: "The text of the critical question"
+    
+    - meshField: "category"
+      aifProperty: "aif:questionCategory"
+      type: "xsd:string"
+      required: false
+      description: "Category of question (premises, exceptions, alternatives, etc.)"
+    
+    - meshField: "order"
+      aifProperty: "mesh:questionOrder"
+      type: "xsd:integer"
+      required: false
+      description: "Display order for the question"
+    
+    # Inheritance metadata
+    - meshField: "sourceSchemeId"
+      aifProperty: "mesh:inheritedFrom"
+      type: "owl:ObjectProperty"
+      range: "aif:Scheme"
+      required: false
+      description: "Original scheme that defined this question (for inherited CQs)"
+    
+    - meshField: "inheritanceDepth"
+      aifProperty: "mesh:inheritanceDepth"
+      type: "xsd:integer"
+      required: false
+      description: "How many levels removed from the original definition"
+
+  # Relationship to scheme
+  relationships:
+    - aifProperty: "aif:hasQuestion"
+      domain: "aif:Scheme"
+      range: "aif:Question"
+      description: "Links a scheme to its critical questions"
+    
+    - aifProperty: "aif:questionFor"
+      domain: "aif:Question"
+      range: "aif:Scheme"
+      inverse: "aif:hasQuestion"
+      description: "Inverse: Links a question back to its scheme"
+
+# Argument → aif:Argument
+# Represents an actual argument instance using a scheme
+argument:
+  aifClass: "aif:Argument"
+  properties:
+    - meshField: "claimText"
+      aifProperty: "aif:hasClaim"
+      type: "aif:I-node"
+      required: true
+      description: "The main claim of the argument"
+    
+    - meshField: "premises"
+      aifProperty: "aif:hasPremise"
+      type: "aif:I-node"
+      collection: true
+      required: false
+      description: "Premises supporting the claim"
+    
+    - meshField: "schemeId"
+      aifProperty: "aif:appliesScheme"
+      type: "owl:ObjectProperty"
+      range: "aif:Scheme"
+      required: false
+      description: "The scheme used to construct this argument"
+    
+    - meshField: "confidence"
+      aifProperty: "mesh:confidence"
+      type: "xsd:float"
+      range: "[0.0, 1.0]"
+      required: false
+      description: "Confidence score for the argument"
+
+# Custom Mesh Ontology Extensions
+# Properties not in standard AIF but needed for Mesh features
+meshExtensions:
+  # Scheme clustering and hierarchy
+  - property: "mesh:clusterTag"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Scheme"
+    range: "xsd:string"
+    description: "Cluster family identifier for scheme grouping"
+  
+  - property: "mesh:inheritCQs"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Scheme"
+    range: "xsd:boolean"
+    description: "Whether scheme inherits critical questions from parent"
+  
+  - property: "mesh:hasAncestor"
+    type: "owl:ObjectProperty"
+    domain: "aif:Scheme"
+    range: "aif:Scheme"
+    transitive: true
+    description: "Transitive ancestor relationship (includes grandparents, etc.)"
+  
+  # CQ inheritance tracking
+  - property: "mesh:inheritedFrom"
+    type: "owl:ObjectProperty"
+    domain: "aif:Question"
+    range: "aif:Scheme"
+    description: "Original scheme that defined this critical question"
+  
+  - property: "mesh:inheritanceDepth"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Question"
+    range: "xsd:integer"
+    description: "How many levels removed from the original definition"
+  
+  # Question inheritance metadata (for complex tracking)
+  - class: "mesh:QuestionInheritance"
+    type: "owl:Class"
+    description: "Metadata about question inheritance between schemes"
+    properties:
+      - property: "mesh:childScheme"
+        range: "aif:Scheme"
+        description: "Scheme that inherits the question"
+      
+      - property: "mesh:parentScheme"
+        range: "aif:Scheme"
+        description: "Scheme that defined the question"
+      
+      - property: "mesh:inheritedQuestion"
+        range: "aif:Question"
+        description: "The question being inherited"
+      
+      - property: "mesh:inheritanceDepth"
+        range: "xsd:integer"
+        description: "Distance in hierarchy"
+  
+  # Metadata
+  - property: "mesh:createdAt"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Scheme"
+    range: "xsd:dateTime"
+    description: "Creation timestamp"
+  
+  - property: "mesh:updatedAt"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Scheme"
+    range: "xsd:dateTime"
+    description: "Last update timestamp"
+  
+  - property: "mesh:questionOrder"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Question"
+    range: "xsd:integer"
+    description: "Display order for questions"
+  
+  - property: "mesh:schemeCategory"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Scheme"
+    range: "xsd:string"
+    description: "Category of the scheme"
+  
+  - property: "mesh:confidence"
+    type: "owl:DatatypeProperty"
+    domain: "aif:Argument"
+    range: "xsd:float"
+    description: "Confidence score [0.0, 1.0]"
+
+# URI Construction Patterns
+uriPatterns:
+  scheme: "{baseURI}/schemes/{schemeKey}"
+  question: "{baseURI}/schemes/{schemeKey}/questions/{questionId}"
+  argument: "{baseURI}/arguments/{argumentId}"
+  inheritance: "{baseURI}/inheritance/{childSchemeId}/{questionId}"
+
+# Export Options
+exportOptions:
+  # Which formats to support
+  formats:
+    - "rdfxml"    # RDF/XML (W3C standard, verbose)
+    - "turtle"    # Turtle (compact, human-readable)
+    - "jsonld"    # JSON-LD (web-friendly)
+  
+  # What to include by default
+  includeByDefault:
+    hierarchy: true
+    criticalQuestions: true
+    inheritedCQs: true
+    metadata: true
+    meshExtensions: true
+  
+  # Validation
+  validateOnExport: true
+  strictMode: false  # If true, fail on any AIF spec deviation
+
+# Known AIF Implementations (for compatibility testing)
+compatibilityTargets:
+  - name: "OVA (Online Visualisation of Argument)"
+    url: "http://ova.arg-tech.org"
+    notes: "Popular argument visualization tool"
+  
+  - name: "Carneades"
+    url: "http://carneades.github.io"
+    notes: "Argumentation system with AIF support"
+  
+  - name: "Arg:Tech AIFdb"
+    url: "http://aifdb.org"
+    notes: "Argument database using AIF"
+
+# Notes and Design Decisions
+designDecisions:
+  - decision: "Use aif:isSubtypeOf for parent-child relationships"
+    rationale: "Standard OWL property for class hierarchies, well-understood semantics"
+    alternatives: ["rdfs:subClassOf", "custom mesh:childOf"]
+  
+  - decision: "Create mesh: namespace for extensions"
+    rationale: "Keep Mesh-specific properties separate from standard AIF"
+    alternatives: ["Extend aif: namespace directly (bad practice)"]
+  
+  - decision: "Use mesh:QuestionInheritance class for provenance"
+    rationale: "Allows detailed tracking of inheritance chains"
+    alternatives: ["Simple property only (less expressive)"]
+  
+  - decision: "Support multiple export formats"
+    rationale: "Maximize interoperability with other tools"
+    alternatives: ["RDF/XML only (AIF standard)"]
+  
+  - decision: "Make mesh:hasAncestor transitive"
+    rationale: "Enables efficient SPARQL queries for 'all ancestors'"
+    alternatives: ["Compute ancestors on-demand (slower)"]
+
+# Validation Rules
+validationRules:
+  scheme:
+    - rule: "Must have rdfs:label (schemeKey)"
+      severity: "error"
+    
+    - rule: "Must have aif:schemeName"
+      severity: "error"
+    
+    - rule: "If aif:isSubtypeOf is present, target must exist"
+      severity: "error"
+    
+    - rule: "mesh:clusterTag should match parent's clusterTag"
+      severity: "warning"
+    
+    - rule: "If mesh:inheritCQs is true, must have parentScheme"
+      severity: "warning"
+  
+  question:
+    - rule: "Must have aif:questionText"
+      severity: "error"
+    
+    - rule: "If mesh:inheritedFrom is present, sourceScheme must exist"
+      severity: "error"
+    
+    - rule: "mesh:inheritanceDepth should match actual distance"
+      severity: "warning"
+
+# Example URIs (for documentation)
+examples:
+  scheme:
+    uri: "http://mesh-platform.io/aif/schemes/practical_reasoning"
+    label: "practical_reasoning"
+    name: "Practical Reasoning"
+  
+  question:
+    uri: "http://mesh-platform.io/aif/schemes/practical_reasoning/questions/cq1"
+    text: "Are there alternative actions that would better achieve the goal?"
+  
+  inheritance:
+    uri: "http://mesh-platform.io/aif/inheritance/sunk_cost_argument/cq1"
+    childScheme: "sunk_cost_argument"
+    parentScheme: "practical_reasoning"
+    inheritedQuestion: "cq1"

@@ -1,0 +1,44 @@
+{
+  "id": "small-coequal-hubs",
+  "description": "Small (6 args) deliberation with three co-equal hubs.",
+  "adversarialGates": ["co-equal-hubs-not-collapsed"],
+  "readout": {
+    "deliberationId": "fix-small-coequal",
+    "contentHash": "fix-hash-small-coequal-v1",
+    "fingerprint": {
+      "argumentCount": 6
+    },
+    "frontier": {
+      "unansweredCqs": [],
+      "unansweredUndercuts": [],
+      "unansweredUndermines": [],
+      "terminalLeaves": [],
+      "loadBearingnessRanking": ["a1", "a2", "a3", "a4", "a5", "a6"],
+      "loadBearingnessScores": { "a1": 10, "a2": 10, "a3": 9, "a4": 2, "a5": 1, "a6": 0 },
+      "contestednessRanking": []
+    },
+    "topology": {
+      "hubs": {
+        "set": [
+          { "argumentId": "a1", "score": 10 },
+          { "argumentId": "a2", "score": 10 },
+          { "argumentId": "a3", "score": 9 }
+        ],
+        "topScore": 10,
+        "coequalThreshold": 2,
+        "shape": "co-equal-cluster"
+      },
+      "loadBearingPremises": [],
+      "ambiguity": {
+        "hubAmbiguity": "medium",
+        "premiseConcentration": "none",
+        "cautions": ["3 arguments share the top load-bearingness tier (scores within 2 of the top score 10). Do not name a single \"hub\" — the briefing contains multiple co-equal candidates."]
+      },
+      "sizeTier": { "argumentCount": 6, "tier": "small", "hierarchicalMode": false, "disclosure": null }
+    },
+    "refusalSurface": { "cannotConcludeBecause": [] },
+    "chains": { "deliberationId": "fix-small-coequal", "chains": [], "uncoveredClaims": [] },
+    "topArguments": [],
+    "mostContested": []
+  }
+}

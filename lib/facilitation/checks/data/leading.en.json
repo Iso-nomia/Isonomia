@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "version": 1,
+    "language": "en",
+    "note": "Each rule emits one row per match. severity is the row severity."
+  },
+  "patterns": [
+    {
+      "key": "dont_you_think",
+      "regex": "\\b(don['’]?t|do not) you (think|agree)\\b",
+      "flags": "i",
+      "severity": "BLOCK",
+      "messageTemplate": "Presupposition of agreement: '{value}'."
+    },
+    {
+      "key": "isnt_it_true",
+      "regex": "\\bisn['’]?t it (true|obvious|clear)\\b",
+      "flags": "i",
+      "severity": "BLOCK",
+      "messageTemplate": "Asserts truth: '{value}'."
+    },
+    {
+      "key": "obviously",
+      "regex": "\\bobviously\\b",
+      "flags": "i",
+      "severity": "WARN",
+      "messageTemplate": "'obviously' implies the answer is self-evident."
+    },
+    {
+      "key": "surely",
+      "regex": "\\bsurely\\b",
+      "flags": "i",
+      "severity": "WARN",
+      "messageTemplate": "'surely' implies the answer is self-evident."
+    },
+    {
+      "key": "clearly",
+      "regex": "\\bclearly\\b(?!\\s+(state|stated|stating|articulate|defined))",
+      "flags": "i",
+      "severity": "WARN",
+      "messageTemplate": "'clearly' implies the answer is self-evident."
+    }
+  ],
+  "presuppositionVerbs": [
+    "restore",
+    "continue",
+    "stop",
+    "resume",
+    "keep"
+  ],
+  "presuppositionMessageTemplate": "Presupposition trigger '{value}' assumes the prior state."
+}

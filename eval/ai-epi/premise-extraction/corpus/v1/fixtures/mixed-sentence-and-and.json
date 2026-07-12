@@ -1,0 +1,18 @@
+{
+  "id": "mixed-sentence-and-and",
+  "claimText": "The reform raises revenue and protects low-income filers. It also closes a long-standing audit loophole.",
+  "expectedAtoms": [
+    { "text": "The reform raises revenue" },
+    {
+      "text": "protects low-income filers",
+      "aliases": ["The reform protects low-income filers"]
+    },
+    {
+      "text": "It also closes a long-standing audit loophole",
+      "aliases": [
+        "It closes a long-standing audit loophole",
+        "The reform closes a long-standing audit loophole"
+      ]
+    }
+  ]
+}

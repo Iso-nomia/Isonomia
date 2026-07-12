@@ -1,0 +1,13 @@
+{
+  "name": "Click Counter",
+  "description": "Increments a count whenever the trigger node is clicked.",
+  "graph": {
+    "nodes": [
+      { "id": "trigger", "type": "trigger", "action": "increment" },
+      { "id": "display", "type": "display", "action": "show" }
+    ],
+    "edges": [
+      { "id": "e1", "source": "trigger", "target": "display" }
+    ]
+  }
+}

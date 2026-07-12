@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "aif": "http://www.arg.dundee.ac.uk/aif#",
+    "text": "aif:text",
+    "usesScheme": "aif:usesScheme",
+    "Premise": "aif:Premise",
+    "Conclusion": "aif:Conclusion",
+    "ConflictingElement": "aif:ConflictingElement",
+    "ConflictedElement": "aif:ConflictedElement"
+  },
+  "@graph": [
+    { "@id": "I:goal",     "@type": "aif:InformationNode", "aif:text": "Goal: reduce road fatalities" },
+    { "@id": "I:value",    "@type": "aif:InformationNode", "aif:text": "Value: Safety is strongly held" },
+    { "@id": "I:action",   "@type": "aif:InformationNode", "aif:text": "Action: Lower the speed limit to 25 mph" },
+    { "@id": "I:link",     "@type": "aif:InformationNode", "aif:text": "Lowering the limit promotes safety and helps achieve the goal" },
+
+    { "@id": "S:ra_vpr",   "@type": "aif:RA", "aif:usesScheme": "value_based_pr" },
+    { "@id": "I:ought",    "@type": "aif:InformationNode", "aif:text": "We ought to lower the speed limit to 25 mph" },
+
+    { "@type":"aif:Premise",    "aif:from":"I:goal",   "aif:to":"S:ra_vpr" },
+    { "@type":"aif:Premise",    "aif:from":"I:value",  "aif:to":"S:ra_vpr" },
+    { "@type":"aif:Premise",    "aif:from":"I:link",   "aif:to":"S:ra_vpr" },
+    { "@type":"aif:Conclusion", "aif:from":"S:ra_vpr", "aif:to":"I:ought" },
+
+    { "@id": "I:neg_cons",  "@type": "aif:InformationNode", "aif:text": "Lower speed limit will increase congestion and delay emergency response" },
+    { "@id": "I:cause_neg", "@type": "aif:InformationNode", "aif:text": "Lowering tends to cause these negative effects" },
+    { "@id": "S:ra_neg",    "@type": "aif:RA", "aif:usesScheme": "negative_consequences" },
+    { "@id": "I:not_ought", "@type": "aif:InformationNode", "aif:text": "We should not lower the speed limit to 25 mph" },
+
+    { "@type":"aif:Premise",    "aif:from":"I:action",   "aif:to":"S:ra_neg" },
+    { "@type":"aif:Premise",    "aif:from":"I:neg_cons", "aif:to":"S:ra_neg" },
+    { "@type":"aif:Premise",    "aif:from":"I:cause_neg","aif:to":"S:ra_neg" },
+    { "@type":"aif:Conclusion", "aif:from":"S:ra_neg",   "aif:to":"I:not_ought" },
+
+    { "@id": "CA:conflict", "@type": "aif:CA" },
+    { "@type":"aif:ConflictingElement", "aif:from":"I:not_ought", "aif:to":"CA:conflict" },
+    { "@type":"aif:ConflictedElement",  "aif:from":"CA:conflict", "aif:to":"I:ought" }
+  ]
+}

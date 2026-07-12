@@ -1,0 +1,15 @@
+@prefix aif: <http://www.arg.dundee.ac.uk/aif#>.
+@prefix mesh: <http://mesh-platform.io/ontology/aif#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://mesh-platform.io/aif/schemes/slippery_slope> a aif:Scheme;
+    rdfs:label "slippery_slope";
+    aif:schemeName "Slippery Slope";
+    rdfs:comment "Doing A will (likely) lead down a chain to unacceptable C; therefore avoid A.";
+    aif:isSubtypeOf <http://mesh-platform.io/aif/schemes/negative_consequences>;
+    mesh:hasAncestor <http://mesh-platform.io/aif/schemes/negative_consequences>, <http://mesh-platform.io/aif/schemes/practical_reasoning>;
+    mesh:clusterTag "practical_reasoning_family";
+    mesh:inheritCQs true.

@@ -1,0 +1,49 @@
+@prefix aif: <http://www.arg.dundee.ac.uk/aif#>.
+@prefix mesh: <http://mesh-platform.io/ontology/aif#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://mesh-platform.io/aif/schemes/practical_reasoning> a aif:Scheme;
+    rdfs:label "practical_reasoning";
+    aif:schemeName "Practical Reasoning (Goal→Means→Ought)";
+    rdfs:comment "";
+    mesh:clusterTag "practical_reasoning_family";
+    mesh:inheritCQs true.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/alternatives> aif:questionText "Are there better alternatives to A?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/feasible> aif:questionText "Is A feasible?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/side_effects> aif:questionText "Does A have significant negative consequences?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.GOAL_ACCEPTED> aif:questionText "Is the goal/value G explicit and acceptable?";
+    mesh:attackKind "UNDERMINES".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.MEANS_EFFECTIVE> aif:questionText "Will doing A actually achieve G in the present context?";
+    mesh:attackKind "UNDERCUTS".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.ALTERNATIVES> aif:questionText "Is there a better alternative than A to achieve G?";
+    mesh:attackKind "REBUTS".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.SIDE_EFFECTS> aif:questionText "Do negative consequences of A outweigh achieving G?";
+    mesh:attackKind "REBUTS".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.FEASIBILITY> aif:questionText "Is A feasible for the agent (ability, resources, time)?";
+    mesh:attackKind "UNDERMINES".
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY> a aif:Question.
+<http://mesh-platform.io/aif/schemes/practical_reasoning> aif:hasQuestion <http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY>.
+<http://mesh-platform.io/aif/schemes/practical_reasoning/questions/PR.PERMISSIBILITY> aif:questionText "Is doing A permissible/appropriate given norms or constraints?";
+    mesh:attackKind "REBUTS".

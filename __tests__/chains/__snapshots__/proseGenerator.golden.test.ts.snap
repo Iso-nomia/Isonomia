@@ -1,0 +1,773 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`M0 golden — blocked-conclusion fixture essay snapshot — blocked conclusion (deliberative / informed) 1`] = `
+"# Blocked Conclusion: AI moratorium claim
+
+*A simple chain whose conclusion is blocked by an unanswered objection in the deliberation's refusal surface.*
+
+---
+
+The question before us is whether a 6-month moratorium on frontier-model training is warranted, given an unanswered relocation-of-risk objection. This essay traces a sequence of interconnected arguments, each building upon its predecessor in a logical chain.
+
+The analysis begins from two foundational considerations: "Frontier-model benchmark scores have doubled year-over-year."; and "A unilateral moratorium would shift frontier development to less safety-consciou...".
+
+Frontier-model benchmark scores have doubled year-over-year.
+
+Against this view, a unilateral moratorium would shift frontier development to less safety-conscious actors.
+
+By contrast, the opposing view counters that the same validity claim — Unanswered relocation-of-risk objection.
+
+It remains an open question whether a 6-month moratorium on frontier-model training is warranted. Plausibly, on the available evidence, this follows from the fact that Capability gains are outpacing alignment research.
+
+
+---
+
+The recognition that the same thesis supplies one strand toward the still-open question of whether a 6-month moratorium on frontier-model training is warranted, though the chain's conclusion remains blocked.
+
+---
+
+Taking stock, two premises survive the foregoing exchange: Frontier-model benchmark scores have doubled year-over-year; and a unilateral moratorium would shift frontier development to less safety-conscious actors.
+
+A residual contested band persists, leaving open whether this same position stands? These questions remain live and the conclusions above should be read against them.
+
+This chain's conclusion remains blocked by one unanswered objection; the weakest link is the unanswered relocation-of-risk objection. Do not read the above as a closed verdict.
+
+These standings are provisional: the arguments give reasons for belief, not proof beyond doubt."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — academic / expert 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. The author addresses the following questions: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. The author addresses the following question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. The author addresses the following questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. The author addresses the following question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — academic / general 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — academic / informed 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — deliberative / expert 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. The author addresses the following questions: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. The author addresses the following question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. The author addresses the following questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. The author addresses the following question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — deliberative / general 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — deliberative / informed 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — journalistic / expert 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. The author addresses the following questions: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. The author addresses the following question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. The author addresses the following questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. The author addresses the following question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — journalistic / general 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — journalistic / informed 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — persuasive / expert 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. The author addresses the following questions: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. The author addresses the following question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. The author addresses the following questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. The author addresses the following question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — persuasive / general 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateEssay matrix essay matches snapshot — persuasive / informed 1`] = `
+"# Hinge #1: Feeling-thermometer measurement validity
+
+*A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.*
+
+---
+
+The question before us is whether feeling-thermometer scales are a valid instrument for measuring affective polarization. The argumentative landscape forms a complex network of interrelated claims, which this essay navigates systematically.
+
+The analysis begins from two foundational considerations: "ANES panel data show stable in-party / out-party thermometer differentials over ..."; and "Paired thermometer + trait batteries isolate an affective component that survive...".
+
+ANES panel data show stable in-party / out-party thermometer differentials over multiple waves. This follows from the fact that Differentials are robust to respondent-fixed-effects specifications. Two questions remain open for the critical reader: Is the data correctly measured? Is the sample representative?
+
+In response, paired thermometer + trait batteries isolate an affective component that survives ideology controls. This follows from the fact that Trait-rating supplements reduce shared variance with ideology to under 30%.
+
+Synthesizing these strands, it remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists. Plausibly, on the available evidence, this follows from the fact that No single instrument disambiguates ideology from affect in highly co-partisan respondents. A further critical question: Are there alternative means to G?
+
+Even granting the premise, this inference is undercut by the same validity claim — Iyengar's paired-instrument design undercuts the conflation premise.
+
+It remains an open question whether Feeling-thermometer gaps conflate ideological disagreement with personal animus. Plausibly, on the available evidence, this follows from the fact that Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming. Further open questions: Is the source a genuine expert in the relevant field? Are there other experts who disagree?
+
+By contrast, the rebuttal holds that the same thesis — Druckman's measurement critique directly attacks the validity claim.
+
+Feeling-thermometer scales validly measure affective polarization in U.S. survey panels. Several factors converge to support this view. First, Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves. Finally, the scale exhibits high test-retest reliability within respondents. A further critical question: Is the assertion within the expert's domain of expertise?
+
+
+---
+
+The argument that ANES panel data show stable in-party / out-party thermometer differentials over multiple waves provides grounding for this same position — a substantial contribution to the overall argument. ANES panel evidence directly supports the validity claim.
+
+Importantly, the argument is qualified: a mixed-measurement strategy improves validity; a residual contested band persists introduces conditions that refine our understanding of Feeling-thermometer scales validly measure affective polarization in U.S. survey panels.
+
+---
+
+Taking stock, three premises survive the foregoing exchange: Feeling-thermometer scales validly measure affective polarization in U.S. survey panels; ANES panel data show stable in-party / out-party thermometer differentials over multiple waves; and Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+Among the objections raised, the objection that Druckman's measurement critique directly attacks the validity claim was undermined by the rejoinder that Paired thermometer + trait batteries isolate an affective component that survives ideology controls.
+
+A residual contested band persists, leaving open whether the same conclusion stands. These questions remain live and the conclusions above should be read against them.
+
+As with all defeasible reasoning, these standings remain open to revision in light of new evidence or stronger counterarguments."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateProse matrix prose matches snapshot — academic 1`] = `
+"I. Introduction
+
+This document analyzes Hinge #1: Feeling-thermometer measurement validity, a chain of 5 interconnected arguments. The argumentative structure forms an interconnected network of claims and inferences. Arguments relate to one another in complex ways, with support, attack, and qualification relationships creating a rich deliberative fabric. A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives. The analysis proceeds by examining each argument in turn, elucidating its structure and relationship to other arguments in the chain.
+
+navigates an interconnected web of considerations
+
+II. Analysis of Arguments
+
+1.1. Employing evidence reasoning: "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves."
+
+Empirical data E supports claim C.
+
+This reasoning employs the "Argument from Evidence" argumentation scheme.
+
+The argument rests on the premise: "Differentials are robust to respondent-fixed-effects specifications."
+
+This form of argument invites scrutiny of the following questions:
+• Is the data correctly measured?
+• Is the sample representative?
+
+---
+
+1.2. Employing evidence reasoning: "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+
+Empirical data E supports claim C.
+
+This reasoning employs the "Argument from Evidence" argumentation scheme.
+
+The argument rests on the premise: "Trait-rating supplements reduce shared variance with ideology to under 30%."
+
+This form of argument invites scrutiny of the following questions:
+• Is the data correctly measured?
+
+---
+
+1.3. From a practical standpoint: "It remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists.—this matter awaits further examination"
+
+This argument employs practical reasoning, connecting means to ends. The structure is: given a desired goal, and that a particular action would achieve that goal, there is reason to perform that action.
+
+The argument rests on the premise: "No single instrument disambiguates ideology from affect in highly co-partisan respondents."
+
+This form of argument invites scrutiny of the following questions:
+• Are there alternative means to G?
+
+---
+
+1.4. Drawing upon expert testimony: "It remains an open question whether feeling-thermometer gaps conflate ideological disagreement with personal animus.—this matter awaits further examination"
+
+This argument invokes the authority of specialized knowledge. The reasoning proceeds as follows: when an expert in a relevant field asserts a proposition within their domain of expertise, that proposition carries significant epistemic weight.
+
+The argument rests on the premise: "Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming."
+
+Questioning the inferential link, we note that this follows from: "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+
+This form of argument invites scrutiny of the following questions:
+• Is the source a genuine expert in the relevant field?
+• Are there other experts who disagree?
+
+---
+
+1.5. Drawing upon expert testimony: "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+
+This argument invokes the authority of specialized knowledge. The reasoning proceeds as follows: when an expert in a relevant field asserts a proposition within their domain of expertise, that proposition carries significant epistemic weight.
+
+The argument is supported by 2 explicit premises: (1) "Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves."; (2) "The scale exhibits high test-retest reliability within respondents."
+
+In support of this conclusion, we note that this follows from: "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves." Additionally, Directly contradicting, we note that this follows from: Pending resolution of this question, "Feeling-thermometer gaps conflate ideological disagreement with personal animus." Additionally, Related to this, we note that this follows from: Pending resolution of this question, "A mixed-measurement strategy improves validity; a residual contested band persists."
+
+This form of argument invites scrutiny of the following questions:
+• Is the source a genuine expert in the relevant field?
+• Is the assertion within the expert's domain of expertise?
+• Are there other experts who disagree?
+
+III. Conclusion
+
+This analysis has examined 5 arguments and their interconnections. The chain culminates in 1 final conclusion. The dialectical structure includes 2 oppositional relationships, reflecting scholarly debate on the topic. Further investigation of the critical questions associated with each scheme would strengthen this analysis."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateProse matrix prose matches snapshot — legal_brief 1`] = `
+"I. Introduction
+
+Hinge #1: Feeling-thermometer measurement validity presents a structured analysis comprising 5 arguments connected through 4 logical relationships. The argumentative structure forms an interconnected network of claims and inferences. Arguments relate to one another in complex ways, with support, attack, and qualification relationships creating a rich deliberative fabric.
+
+A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.
+
+The purpose of this analysis is: Whether feeling-thermometer scales are a valid instrument for measuring affective polarization.
+
+The arguments are presented below in logical order, as the reasoning navigates an interconnected web of considerations.
+
+navigates an interconnected web of considerations
+
+II. Analysis of Arguments
+
+1.1. Employing evidence reasoning: "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves."
+
+Empirical data E supports claim C.
+
+This reasoning employs the "Argument from Evidence" argumentation scheme.
+
+The argument rests on the premise: "Differentials are robust to respondent-fixed-effects specifications."
+
+This form of argument invites scrutiny of the following questions:
+• Is the data correctly measured?
+• Is the sample representative?
+
+---
+
+1.2. Employing evidence reasoning: "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+
+Empirical data E supports claim C.
+
+This reasoning employs the "Argument from Evidence" argumentation scheme.
+
+The argument rests on the premise: "Trait-rating supplements reduce shared variance with ideology to under 30%."
+
+This form of argument invites scrutiny of the following questions:
+• Is the data correctly measured?
+
+---
+
+1.3. From a practical standpoint: "It remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists.—this matter awaits further examination"
+
+This argument employs practical reasoning, connecting means to ends. The structure is: given a desired goal, and that a particular action would achieve that goal, there is reason to perform that action.
+
+The argument rests on the premise: "No single instrument disambiguates ideology from affect in highly co-partisan respondents."
+
+This form of argument invites scrutiny of the following questions:
+• Are there alternative means to G?
+
+---
+
+1.4. Drawing upon expert testimony: "It remains an open question whether feeling-thermometer gaps conflate ideological disagreement with personal animus.—this matter awaits further examination"
+
+This argument invokes the authority of specialized knowledge. The reasoning proceeds as follows: when an expert in a relevant field asserts a proposition within their domain of expertise, that proposition carries significant epistemic weight.
+
+The argument rests on the premise: "Survey-experimental manipulations of policy framing shift thermometer ratings independent of personal-affect priming."
+
+Questioning the inferential link, we note that this follows from: "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+
+This form of argument invites scrutiny of the following questions:
+• Is the source a genuine expert in the relevant field?
+• Are there other experts who disagree?
+
+---
+
+1.5. Drawing upon expert testimony: "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+
+This argument invokes the authority of specialized knowledge. The reasoning proceeds as follows: when an expert in a relevant field asserts a proposition within their domain of expertise, that proposition carries significant epistemic weight.
+
+The argument is supported by 2 explicit premises: (1) "Boxell, Gentzkow, and Shapiro (2024) validated the thermometer scale across multiple ANES waves."; (2) "The scale exhibits high test-retest reliability within respondents."
+
+In support of this conclusion, we note that this follows from: "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves." Additionally, Directly contradicting, we note that this follows from: Pending resolution of this question, "Feeling-thermometer gaps conflate ideological disagreement with personal animus." Additionally, Related to this, we note that this follows from: Pending resolution of this question, "A mixed-measurement strategy improves validity; a residual contested band persists."
+
+This form of argument invites scrutiny of the following questions:
+• Is the source a genuine expert in the relevant field?
+• Is the assertion within the expert's domain of expertise?
+• Are there other experts who disagree?
+
+III. Conclusion
+
+In summary, this chain of argumentation ultimately supports the conclusion that: "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+
+The strength of these conclusions depends upon the soundness of the underlying premises and the validity of the inferential steps connecting them. The presence of 2 critical challenges indicates points of contention that may affect the overall persuasiveness of the argument chain. The chain draws from 3 independent starting points, which may represent different lines of reasoning or sources of evidence."
+`;
+
+exports[`M0 golden — chain prose generators (Hinge #1 fixture) generateProse matrix prose matches snapshot — summary 1`] = `
+"I. Introduction
+
+Hinge #1: Feeling-thermometer measurement validity contains 5 arguments and 4 connections. The argumentative structure forms an interconnected network of claims and inferences. A's two supporting arguments stand; B's methodological critique was undermined by Iyengar's response, but an open qualifier survives.
+
+navigates an interconnected web of considerations
+
+II. Analysis of Arguments
+
+1.1. Employing evidence reasoning: "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves."
+
+This form of argument invites scrutiny of the following questions:
+• Is the data correctly measured?
+• Is the sample representative?
+
+---
+
+1.2. Employing evidence reasoning: "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+
+This form of argument invites scrutiny of the following questions:
+• Is the data correctly measured?
+
+---
+
+1.3. From a practical standpoint: "It remains an open question whether a mixed-measurement strategy improves validity; a residual contested band persists.—this matter awaits further examination"
+
+This form of argument invites scrutiny of the following questions:
+• Are there alternative means to G?
+
+---
+
+1.4. Drawing upon expert testimony: "It remains an open question whether feeling-thermometer gaps conflate ideological disagreement with personal animus.—this matter awaits further examination"
+
+Questioning the inferential link, we note that this follows from: "Paired thermometer + trait batteries isolate an affective component that survives ideology controls."
+
+This form of argument invites scrutiny of the following questions:
+• Is the source a genuine expert in the relevant field?
+• Are there other experts who disagree?
+
+---
+
+1.5. Drawing upon expert testimony: "Feeling-thermometer scales validly measure affective polarization in U.S. survey panels."
+
+In support of this conclusion, we note that this follows from: "ANES panel data show stable in-party / out-party thermometer differentials over multiple waves." Additionally, Directly contradicting, we note that this follows from: Pending resolution of this question, "Feeling-thermometer gaps conflate ideological disagreement with personal animus." Additionally, Related to this, we note that this follows from: Pending resolution of this question, "A mixed-measurement strategy improves validity; a residual contested band persists."
+
+This form of argument invites scrutiny of the following questions:
+• Is the source a genuine expert in the relevant field?
+• Is the assertion within the expert's domain of expertise?
+• Are there other experts who disagree?
+
+III. Conclusion
+
+This analysis has examined 5 arguments and their interconnections. The chain culminates in 1 final conclusion."
+`;

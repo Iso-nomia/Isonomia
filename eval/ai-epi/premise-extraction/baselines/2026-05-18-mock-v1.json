@@ -1,0 +1,170 @@
+{
+  "runAt": "2026-05-18T04:25:28.920Z",
+  "client": "mock",
+  "corpusVersion": "v1",
+  "aggregate": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "fixtureCount": 5
+  },
+  "reports": [
+    {
+      "fixtureId": "single-atom",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 1,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "Carbon pricing reduces emissions",
+            "provenanceSpan": [
+              0,
+              33
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "and-conjunction",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 2,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The proposal is fiscally sound",
+            "provenanceSpan": [
+              0,
+              30
+            ]
+          },
+          {
+            "text": "politically popular",
+            "provenanceSpan": [
+              35,
+              55
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "because-link",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 2,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The bill should pass",
+            "provenanceSpan": [
+              0,
+              20
+            ]
+          },
+          {
+            "text": "it closes a tax loophole",
+            "provenanceSpan": [
+              29,
+              54
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "list-with-semicolons",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 3,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The project is on schedule",
+            "provenanceSpan": [
+              0,
+              26
+            ]
+          },
+          {
+            "text": "the budget is intact",
+            "provenanceSpan": [
+              28,
+              48
+            ]
+          },
+          {
+            "text": "the team is morale-positive",
+            "provenanceSpan": [
+              50,
+              78
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    },
+    {
+      "fixtureId": "mixed-sentence-and-and",
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "truePositives": 3,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "extraction": {
+        "premises": [
+          {
+            "text": "The reform raises revenue",
+            "provenanceSpan": [
+              0,
+              25
+            ]
+          },
+          {
+            "text": "protects low-income filers",
+            "provenanceSpan": [
+              30,
+              57
+            ]
+          },
+          {
+            "text": "It also closes a long-standing audit loophole",
+            "provenanceSpan": [
+              58,
+              104
+            ]
+          }
+        ]
+      },
+      "warnings": [],
+      "unmatchedExpected": [],
+      "unmatchedExtracted": []
+    }
+  ]
+}

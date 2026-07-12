@@ -1,0 +1,30 @@
+{
+  "version": "v1",
+  "fixtures": [
+    {
+      "id": "small-single-hub",
+      "path": "fixtures/small-single-hub.json",
+      "description": "Small (5 args) deliberation with one clearly dominant hub. Non-adversarial baseline."
+    },
+    {
+      "id": "small-coequal-hubs",
+      "path": "fixtures/small-coequal-hubs.json",
+      "description": "Small (6 args) deliberation with three co-equal hubs. Adversarial: probes hub-collapse failure."
+    },
+    {
+      "id": "medium-diffuse",
+      "path": "fixtures/medium-diffuse.json",
+      "description": "Medium (40 args) deliberation with diffuse hub structure (>5 co-equal). Adversarial: briefing must NOT name a single hub."
+    },
+    {
+      "id": "medium-with-refusals",
+      "path": "fixtures/medium-with-refusals.json",
+      "description": "Medium (30 args) deliberation with two unanswered-undercut blocked conclusions. Adversarial: refusal must not be overridden."
+    },
+    {
+      "id": "large-hierarchical",
+      "path": "fixtures/large-hierarchical.json",
+      "description": "Very-large (300 args) deliberation triggering hierarchicalMode. Adversarial: briefing must surface size disclosure."
+    }
+  ]
+}

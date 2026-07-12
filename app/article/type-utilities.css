@@ -1,0 +1,13 @@
+/* app/article/type-utilities.css */
+@layer utilities {
+    .ff-body { font-family: var(--ff-body); }
+    .ff-alt  { font-family: var(--ff-alt); }
+  
+    .fs-12 { font-size: var(--size-12); }
+    .fs-14 { font-size: var(--size-14); }
+    .fs-32 { font-size: var(--size-32); }
+    .fs-48 { font-size: var(--size-48); }
+  
+    .clr-accent { color: var(--clr-accent); }
+  }
+  
