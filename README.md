@@ -4,6 +4,8 @@
 
 Isonomia is an open-source platform for community gathering and structured reasoning. It unifies a general-purpose social platform with a formal deliberation engine under a single data model, so that any conversation can be upgraded to a tracked deliberation through a single reversible action, and every resulting claim, argument, and deliberation is addressable, citable, challengeable, and durable.
 
+[Read this document for more detailed information.](Isonomia Overview.md)
+
 The social layer is complete as a standalone platform: a chronological feed with eight post types, profiles and follows, persistent rooms and lounges, spatial canvas environments, sheaf-based layered messaging with drifts, proposals and polls, a long-form article system with anchored comments and rhetoric overlays, and shared document libraries.
 
 The reasoning layer sits beside it and implements four families of formalism: structured argumentation via ASPIC+ grounded extensions and the Walton taxonomy of schemes with auto-generated critical questions; interactive proof theory via Ludics designs, with a generative substrate of witnessing records, articulation lattices, and fossil retractions; typed dialogue protocols with commitment stores; and a category-theoretic evidence algebra over typed evidence arrows, with closed-monoid confidence folding over a lawful log-odds (weight-of-evidence) semiring and culprit-set belief revision. Evidence enters through a six-stage citation resolver (arXiv, Crossref, page metadata, OpenAlex, LLM extraction, Wayback) with four-tier confidence gating.
