@@ -4,7 +4,7 @@
 
 Isonomia is an open-source platform for community gathering and structured reasoning. It unifies a general-purpose social platform with a formal deliberation engine under a single data model, so that any conversation can be upgraded to a tracked deliberation through a single reversible action, and every resulting claim, argument, and deliberation is addressable, citable, challengeable, and durable.
 
-[Read this document for more detailed information.](Isonomia Overview.md)
+[Read this document for more detailed information.]([Isonomia Overview.md](https://github.com/Iso-nomia/Isonomia/blob/main/Isonomia%20Overview.md))
 
 The social layer is complete as a standalone platform: a chronological feed with eight post types, profiles and follows, persistent rooms and lounges, spatial canvas environments, sheaf-based layered messaging with drifts, proposals and polls, a long-form article system with anchored comments and rhetoric overlays, and shared document libraries.
 
